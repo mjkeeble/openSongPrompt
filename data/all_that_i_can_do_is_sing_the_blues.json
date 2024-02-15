@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "All That I Can Do Is Sing The Blues",
+    "key": "G",
+    "tempo": 135,
+    "timeSignature": "4/4",
+    "countIn": ["1", "2", "3", "4"]
+  },
+  "song": [
+    {
+      "section": "Verse 1",
+      "lyrics": [
+        "You’ve got me where you want me You’ve got me on the floor",
+        "I’ve had my share of troubles",
+        "But I ain’t been down here before You used to say you loved me",
+        "But now I don’t believe that that was true You’ve got me where you want me",
+        "And all that I can do is sing the blues"
+      ]
+    },
+    {
+      "section": "Verse 2",
+      "lyrics": [
+        "You’ve been spending all my money Now I haven’t got a dime",
+        "I didn’t care one penny",
+        "When I thought that you were mine Now that I’ve seen through you",
+        "I don’t believe that that was ever true (I’m telling you)",
+        "Now I’m sad and broke and lonely And all that I can do is sing the blues"
+      ]
+    },
+    {
+      "section": "Bridge",
+      "lyrics": [
+        "Why did you start throwing those sticks and stones",
+        "Giving me the third degree?",
+        "I know that there’s no going back",
+        "But you still matter to me"
+      ]
+    },
+    {
+      "section": "Verse 3",
+      "lyrics": [
+        "I lent you my car",
+        "You didn’t bring it back",
+        "Now I’m mourning for my 1956 Cadillac",
+        "I’ve been walking so long",
+        "I’ve got holes in both soles of my shoes",
+        "(It’s true)",
+        "Now I’m a long way from home",
+        "And all that I can do is sing the blues"
+      ]
+    }
+  ]
+}
