@@ -11,3 +11,11 @@ export const hasMatchingBrackets = (str: string): boolean => {
   }
   return depth === 0;
 };
+
+export const displayDate = (date: string): string => {
+  return new Date(date).toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  });
+};
