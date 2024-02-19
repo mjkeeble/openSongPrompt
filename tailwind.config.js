@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#000000', // black background
-        primary: '#00FF00', // green as the primary text color
-        highlight: '#FFFFF', // white as the text color for highlighting
-        alternative: '#FF0000', // red as an alternative text color
+        'background': '#000000', // black background
+        'primary': '#00FF00', // green as the primary text color
+        'chord': '#FFFFF', // white as the text color for highlighting
+        'red-title': '#FF0000', // red as an alternative text color
       },
     },
   },
