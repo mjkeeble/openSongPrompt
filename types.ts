@@ -1,17 +1,31 @@
-export type TSetList = string[];
+export type TGig = {
+  id: number;
+  location: string;
+  date: string;
+  setList: string[];
+};
 
 export type TSong = {
   meta: TSongMetadata;
   effects?: TEffectSettings;
   amp?: TAmpSettings;
-  song: TSongWithChordPage | TLyricsSectionWithChords[] | TLyricsSection[];
+  pages: {
+    section?: string;
+    chords?: TChordSection[];
+    lyrics?: string[];
+  }[];
 };
 export type TSongMetadata = {
   title: string;
   key: string;
-  tempo?: number;
+  countTempo?: number;
   timeSignature?: string;
   countIn?: string[];
+  by?: {
+    lyrics: string;
+    music: string;
+  };
+  gemaRef?: string;
 };
 
 export type TEffectSettings = {
@@ -31,25 +45,12 @@ export type TAmpSettings = {
   nfb: boolean;
 };
 
-type TAmpTremeloOn = {
+export type TAmpTremeloOn = {
   speed: number;
   intensity: boolean;
 };
 
-type TLyricsSection = {
-  section: string;
-  lyrics?: string[];
-};
-type TLyricsSectionWithChords = TLyricsSection & {
-  chords: string[][];
-};
-
-type TChordSection = {
+export type TChordSection = {
   section: string;
   chords: string[][];
-};
-
-type TSongWithChordPage = {
-  chords: TChordSection[];
-  lyrics: TLyricsSection[];
 };

@@ -1,12 +1,14 @@
-{
+import {TSong} from "../../types";
+
+export const ALL_THAT_I_CAN_DO_IS_SING_THE_BLUES: TSong ={
   "meta": {
     "title": "All That I Can Do Is Sing The Blues",
     "key": "G",
-    "tempo": 135,
+    "countTempo": 135,
     "timeSignature": "4/4",
     "countIn": ["1", "2", "3", "4"]
   },
-  "song": [
+  "pages": [
     {
       "section": "Verse 1",
       "lyrics": [
