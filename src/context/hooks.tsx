@@ -1,8 +1,10 @@
 import { useContext } from 'react';
-import { SongContext } from './songContext';
+import {SongContext} from '.';
+import {GigContext} from '.';
+
 
 export const useGig = () => {
-  return useContext(SongContext);
+  return useContext(GigContext);
 };
 
 export const useSong = () => {

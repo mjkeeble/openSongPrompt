@@ -1,13 +1,30 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
-        'background': '#000000', // black background
-        'primary': '#00FF00', // green as the primary text color
-        'chord': '#FFFFF', // white as the text color for highlighting
+        background: '#000000', // black background
+        primary: '#00FF00', // green as the primary text color
+        chord: '#FFFFF', // white as the text color for highlighting
         'red-title': '#FF0000', // red as an alternative text color
+        transparent: 'transparent',
+        'bj-white': '#faf7ff',
+        'bj-blue': '#1c3ba9',
+        'bj-blue-dark': '#000564',
+        'bj-blue-light': '#cec9ff',
+        'bj-blue-mid': '#7b7ef8',
+        'bj-green-light': '#6cbaa2',
+        'bj-green-mid': '#068488',
+        'bj-green-dark': '#324b4c',
+        'bj-red': '#9c001b',
+        'bj-red-dark': '#743700',
+      },
+      fontFamily: {
+        fredericka: ['fredericka', 'sans-serif'],
+      },
+      boxShadow: {
+        '3xl': '0 35px 60px -15px rgba(255, 255, 255, 0.3)',
       },
     },
   },

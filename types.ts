@@ -1,8 +1,8 @@
 export type TGig = {
-  id: number;
+  id: string;
   location: string;
   date: string;
-  setList: string[];
+  setList: (string | null)[];
 };
 
 export type TSong = {

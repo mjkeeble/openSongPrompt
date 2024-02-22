@@ -1,20 +1,14 @@
 import { createContext, useState } from 'react';
-import { TGig } from '../../types';
 
 type GigContextType = {
-  gig: TGig | undefined;
-  setGig: (gig: TGig) => void;
+  selectedGig: string;
+  setSelectedGig: (gig: string) => void;
 };
 
-export const GigContext = createContext<GigContextType | undefined>(undefined);
+export const GigContext = createContext<GigContextType>({ selectedGig: '1', setSelectedGig: () => {} });
 
 export const GigProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [gig, setGig] = useState<TGig | undefined>(undefined);
+  const [selectedGig, setSelectedGig] = useState('');
 
-  // const handleSetGig = (id: string) => {
-  //   const gig = GIGS.find((gig) => gig.id === parseInt(id, 10));
-  //   setGig(gig);
-  // };
-
-  return <GigContext.Provider value={{ gig, setGig }}>{children}</GigContext.Provider>;
+  return <GigContext.Provider value={{ selectedGig, setSelectedGig }}>{children}</GigContext.Provider>;
 };
