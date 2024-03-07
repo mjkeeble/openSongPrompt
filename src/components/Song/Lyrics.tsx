@@ -1,43 +1,38 @@
 import React from 'react';
 
-interface TextWithInlineSpansProps {
-  text: string[];
-}
+type TProps = {
+  lyrics: string[];
+};
 
-const TextWithInlineSpans: React.FC<TextWithInlineSpansProps> = ({ text }) => {
+// Usage:
+const Lyrics: React.FC<TProps> = ({ lyrics }) => {
+
+  // Regular expression pattern to match "[" at the beginning and "]" at the end of the string
+  const regex = /^\[.*\]$/;
+
+  const isComment = (str: string): boolean => {
+    return regex.test(str);
+  };
+  if (!lyrics.length) return <NoLyricsMessage />;
+
   return (
-    <div>
-      {text.map((line, lineIndex) => (
-        <p key={lineIndex}>
-          {line.split(/(\[.*?\])/).map((part: string, index: number) => {
-            if (index % 2 === 0) {
-              return <span key={index} className='text-white font-bold'>{part}</span>;
-            } else {
-              return (
-                <span key={index} style={{ fontWeight: 'bold' }}>
-                  {part}
-                </span>
-              );
-            }
-          })}
+    <div >
+      {lyrics.map((line, index) => (
+        <p
+          key={index}
+          className={`${isComment(line) ? 'text-bj-green-light' : 'text-inherit'} text-lyric min-h-8 text-left pl-12 -indent-12 leading-tight`}
+        >
+          {isComment(line) ? line.substring(1, line.length - 1) : line}
         </p>
       ))}
     </div>
   );
 };
 
-// Usage:
-const Lyrics: React.FC = () => {
-  const texts: string[][] = [
-    ['[This] is a demonstration [of what] I want.', 'Another [example] with square brackets [inside].'],
-    ['[This] is another example.', 'Yet [another] one.'],
-  ];
-
+const NoLyricsMessage = () => {
   return (
-    <div>
-      {texts.map((line, index) => (
-        <TextWithInlineSpans key={index} text={line} />
-      ))}
+    <div className="grid h-full w-full items-center justify-center">
+      <p className="text-bj-green-light text-lyric font-semibold">No lyrics here!</p>
     </div>
   );
 };

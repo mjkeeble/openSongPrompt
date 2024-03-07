@@ -1,15 +1,16 @@
 import  { useEffect, useState } from 'react';
-import {TGig} from '../../../types';
+import {TInternalGig} from '../../../types';
+import songs from '../../../data/songs.json';
 
 // Your component remains largely the same, with the addition of useEffect for keydown event handling
 
-const GigViewer = ({ gig }: { gig: TGig }) => {
+const GigViewer = ({ gig }: { gig: TInternalGig }) => {
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
 
-  const currentItemId = gig.setList[currentSongIndex];
+  const currentItemId = gig.setlist[currentSongIndex];
   const currentItemIsPause = currentItemId === null;
-  const currentSong = currentItemIsPause ? null : songs.find((song) => song.meta.title === currentItemId);
+  const currentSong = currentItemIsPause ? null : songs.find((song) => song.id.toString() === currentItemId);
 
   
 
@@ -22,9 +23,9 @@ const GigViewer = ({ gig }: { gig: TGig }) => {
       setCurrentPageIndex(currentPageIndex - 1);
     } else if (currentSongIndex > 0) {
       setCurrentSongIndex(currentSongIndex - 1);
-      const previousItemId = gig.setList[currentSongIndex - 1];
+      const previousItemId = gig.setlist[currentSongIndex - 1];
       const previousItemIsPause = previousItemId === null;
-      const previousSong = previousItemIsPause ? null : songs.find((song) => song.meta.title === previousItemId);
+      const previousSong = previousItemIsPause ? null : songs.find((song) => song.title === previousItemId);
       setCurrentPageIndex(previousSong ? previousSong.pages.length - 1 : 0);
     }
   };
@@ -32,7 +33,7 @@ const GigViewer = ({ gig }: { gig: TGig }) => {
     const goToNext = () => {
       if (currentSong && currentPageIndex < currentSong.pages.length - 1) {
         setCurrentPageIndex(currentPageIndex + 1);
-      } else if (currentSongIndex < gig.setList.length - 1) {
+      } else if (currentSongIndex < gig.setlist.length - 1) {
         setCurrentSongIndex(currentSongIndex + 1);
         setCurrentPageIndex(0); // Reset for next song
       }
@@ -53,7 +54,7 @@ const GigViewer = ({ gig }: { gig: TGig }) => {
     return () => {
       document.removeEventListener('keydown', handleKeyPress);
     };
-  }, [currentSongIndex, currentPageIndex, gig.setList, currentSong]); // Make sure to include dependencies
+  }, [currentSongIndex, currentPageIndex, gig.setlist, currentSong]); // Make sure to include dependencies
 
   return (
     <div>
@@ -61,7 +62,7 @@ const GigViewer = ({ gig }: { gig: TGig }) => {
         <p>Pause</p>
       ) : (
         <div>
-          <h2>{currentSong?.meta.title}</h2>
+          <h2>{currentSong?.title}</h2>
           {/* Display logic for song's metadata, effects, amp settings, and pages */}
         </div>
       )}
