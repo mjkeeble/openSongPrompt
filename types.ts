@@ -9,11 +9,7 @@ export type TSong = {
   meta: TSongMetadata;
   effects?: TEffectSettings;
   amp?: TAmpSettings;
-  pages: {
-    section?: string;
-    chords?: TChordSection[];
-    lyrics?: string[];
-  }[];
+  pages: TPage[];
 };
 export type TSongMetadata = {
   title: string;
@@ -53,4 +49,10 @@ export type TAmpTremeloOn = {
 export type TChordSection = {
   section: string;
   chords: string[][];
+};
+
+export type TPage = {
+  section?: string;
+  chords?: TChordSection[];
+  lyrics?: string[];
 };
