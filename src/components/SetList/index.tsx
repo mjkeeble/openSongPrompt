@@ -1,15 +1,23 @@
 import { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import GIGS from '../../../data/gigs';
-import * as songs from '../../../data/songs';
-import { TGig, TSong } from '../../../types';
+import songs from '../../../data/songs.json';
+import { TGig, TInternalGig, TSong } from '../../types';
 import { displayDate } from '../../utils';
 
 // export const SetList: React.FC<TGig> = ({ location, date, setList }) => {
 export const SetList = () => {
   const { id } = useParams();
   const Navigate = useNavigate();
-  const gig: TGig | undefined = GIGS.find((gigFromList: TGig) => gigFromList.id === id);
+  const importedGig: TGig | undefined = GIGS.find((gigFromList: TGig) => gigFromList.id === id);
+  const gig: TInternalGig | undefined = importedGig
+    ? {
+        ...importedGig,
+        setlist: importedGig.setlist.flatMap((subArray) => ["break", ...subArray]),
+      }
+    : undefined;
+
+  if (gig) gig.setlist.push("break");
 
   useEffect(() => {
     const handleKeyPress = (event: { key: string }) => {
@@ -27,38 +35,33 @@ export const SetList = () => {
     };
   }, [Navigate]);
 
-  console.log(gig?.setList || 'no setlist found');
   return (
     <div>
       <h1>Set List</h1>
-      {gig ? (
+      {!gig ? (
+        <h1>Gig not found</h1>
+      ) : (
         <>
-          <h2>
-            {displayDate(gig.date)}, {gig.location}
-          </h2>
+            <h5>
+            {displayDate(gig.dateTime)}, {gig.venue}, {gig.town}
+          </h5>
 
-          {gig.setList.map((songId: string | null) => {
-            if (!songId) return <hr className="my-7" />;
-            console.log('🚀 -----------------------------------------🚀');
-            console.log('🚀 => {gig.setList.map => songId:', songId);
-            console.log('🚀 -----------------------------------------🚀');
-            const song: TSong | undefined = (songs as unknown as { [key: string]: TSong })[songId];
+          {gig.setlist.map((songId: string,index) => {
+            if (!songId) return <hr key={index} className="my-7" />;
+
+            const song: TSong | undefined = songs.find((song) => {
+              return song.id.toString() === songId;
+            });
             if (!song)
               return (
-                <p className='text-bj-red'>
+                <p key={index} className="text-bj-red">
                   <em>SONG NOT FOUND!!</em>
                 </p>
               );
 
-            return (
-              <div key={songId}>
-                <p className="mb-4">{song.meta.title}</p>
-              </div>
-            );
+            return <p key={index}>{song.title}</p>;
           })}
         </>
-      ) : (
-        <h1>Gig not found</h1>
       )}
     </div>
   );

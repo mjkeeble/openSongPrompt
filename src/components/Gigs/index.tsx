@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef, forwardRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import GIGS from '../../../data/gigs';
-import { TGig } from '../../../types';
+import { TGig } from '../../types';
 import { useGig } from '../../context';
 import { displayDate } from '../../utils';
 import dateBasedStatus from './utils';
@@ -17,11 +17,11 @@ export const Gigs = () => {
 
     // Find the index of the gig for today or the last gig before today
     const gigIndex = GIGS.reduce((acc, gig, index) => {
-      const gigDate = new Date(gig.date);
+      const gigDate = new Date(gig.dateTime);
       gigDate.setHours(0, 0, 0, 0); // Normalize gig date
 
       // If gigDate is today or before today and closer to today than the current acc
-      if (gigDate <= today && (acc === -1 || gigDate > new Date(GIGS[acc].date))) {
+      if (gigDate <= today && (acc === -1 || gigDate > new Date(GIGS[acc].dateTime))) {
         return index;
       }
       return acc;
@@ -50,12 +50,12 @@ export const Gigs = () => {
           <li key={gigFromList.id}>
             <Button
               ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
-              classes={`${dateBasedStatus(gigFromList.date, gigFromList.id, selectedGig)}`}
+              classes={`${dateBasedStatus(gigFromList.dateTime, gigFromList.id, selectedGig)}`}
               onclick={() => {
                 setSelectedGig(gigFromList.id);
                 Navigate(`/setList/${gigFromList.id}`);
               }}
-              text={`${displayDate(gigFromList.date)}, ${gigFromList.location}`}
+              text={`${displayDate(gigFromList.dateTime)}, ${gigFromList.venue}, ${gigFromList.town}`}
             />
           </li>
         ))}
@@ -71,8 +71,7 @@ type TProps = {
 };
 
 
-const Button: React.forwardRef<HTMLButtonElement, TProps>((props: {classes: any; text: any; onclick: any;}, ref: React.LegacyRef<HTMLButtonElement> | undefined) => {
-  const {classes, text, onclick} = props
+const Button = forwardRef<HTMLButtonElement, TProps>(({ classes, text, onclick }, ref) => {
   return (
     <button
       ref={ref}
