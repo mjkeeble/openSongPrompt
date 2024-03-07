@@ -4,7 +4,7 @@ import { Gigs, ScreenSaver, SetList, Song } from './components';
 
 function App() {
   return (
-    <div id="App">
+    <div id="App" className="h-full text-bj-white">
       <Routes>
         <Route path="/" element={<Gigs />} />
         <Route path="song/:id" element={<Song />} />

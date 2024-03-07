@@ -3,6 +3,15 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      boxShadow: {
+        '3xl': '0 35px 60px -15px rgba(255, 255, 255, 1)',
+        logo: [
+          '0 0 35px -15px rgba(255, 255, 255, 1)',
+          '0 0 70px -15px rgba(255, 255, 255, 1)',
+          '0 0 150px -15px rgba(255, 255, 255, 1)',
+          '0 0 300px -15px rgba(255, 255, 255, 1)',
+        ],
+      },
       colors: {
         background: '#000000', // black background
         primary: '#00FF00', // green as the primary text color
@@ -20,11 +29,19 @@ export default {
         'bj-red': '#9c001b',
         'bj-red-dark': '#743700',
       },
+      dropShadow: {
+        logo: [
+          '0 0 35px rgba(255, 255, 255, 1)',
+          '0 0 70px rgba(255, 255, 255, 1)',
+          '0 0 150px rgba(255, 255, 255, 1)',
+          '0 0 300px rgba(255, 255, 255, 1)',
+        ],
+      },
       fontFamily: {
         fredericka: ['fredericka', 'sans-serif'],
       },
-      boxShadow: {
-        '3xl': '0 35px 60px -15px rgba(255, 255, 255, 0.3)',
+      fontSize: {
+        lyric: '5.125rem',
       },
     },
   },
