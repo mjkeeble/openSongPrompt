@@ -1,6 +1,6 @@
 export type TGig = {
   id: string;
-  venue: string
+  venue: string;
   town: string;
   dateTime: string;
   setlist: string[][];
@@ -8,10 +8,10 @@ export type TGig = {
 
 export type TInternalGig = {
   id: string;
-  venue: string
+  venue: string;
   town: string;
   dateTime: string;
-  setlist: string[]
+  setlist: string[];
 };
 
 export type TSong = {
@@ -34,4 +34,9 @@ type TLyricPage = {
   section: string;
   lyrics: string[];
   duration?: number; // in bars
+};
+
+export type TAction = {
+  keyPressed: string | undefined;
+  isLongPress: boolean | undefined;
 };
