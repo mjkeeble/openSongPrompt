@@ -28,7 +28,7 @@
           "You’ve got me where you want me",
           "And all that I can do is sing the blues"
         ],
-        "duration": 14
+        "duration": 16
       },
       {
         "section": "Verse 2",
@@ -120,7 +120,7 @@
           "But do I look familiar",
           "In any kind of way?"
         ],
-        "duration": 16
+        "duration": 20
       },
       {
         "section": "Chorus",
@@ -242,7 +242,7 @@
           ["E7", "D7", "A7", ""]
         ],
         "lyrics": [],
-        "duration": 11
+        "duration": 12
       },
       {
         "section": "Chorus",
@@ -430,7 +430,7 @@
           ["Dm", "A7", "Dm", ""]
         ],
         "lyrics": [],
-        "duration": 15
+        "duration": 16
       },
       {
         "section": "Verse 1",
@@ -569,7 +569,7 @@
         "section": "Intro",
         "chords": [["A  E7", "D7  E7", "A  D7", "A  E"]],
         "lyrics": [],
-        "duration": 3
+        "duration": 4
       },
       {
         "section": "Verse 1",
@@ -668,7 +668,7 @@
           ["G 7/9", "F# 7/9", "Bm", "-"]
         ],
         "lyrics": [],
-        "duration": 11
+        "duration": 12
       },
       {
         "section": "Verse 1",
@@ -780,7 +780,7 @@
           ["", "", "", ""]
         ],
         "lyrics": ["line 1", "line 2", "line 3", "line 4"],
-        "duration": 11
+        "duration": 12
       },
       {
         "section": "Verse 1",
@@ -886,7 +886,7 @@
           ["E7", "D7", "A7", ""]
         ],
         "lyrics": [],
-        "duration": 11
+        "duration": 12
       },
       {
         "section": "Verse 1",
@@ -972,7 +972,7 @@
         "section": "Intro",
         "chords": [["C  C7", "-", "-"]],
         "lyrics": [],
-        "duration": 3
+        "duration": 4
       },
       {
         "section": "Verse 1",
@@ -1097,7 +1097,7 @@
         "section": "Intro",
         "chords": [["Ab", "C", "Db", "Bbm"]],
         "lyrics": [],
-        "duration": 3
+        "duration": 4
       },
       {
         "section": "Verse 1 - 2",
@@ -1237,7 +1237,7 @@
           ["E", "D", "A", "E"]
         ],
         "lyrics": [],
-        "duration": 11
+        "duration": 12
       },
       {
         "section": "Verse 1",
@@ -1349,7 +1349,7 @@
           ["E7", "D7", "A7", "E7"]
         ],
         "lyrics": [],
-        "duration": 11
+        "duration": 12
       },
       {
         "section": "Verse 1 - 2",
@@ -1432,7 +1432,7 @@
           "I'm thinking something like Olivia is",
           "What I need to find"
         ],
-        "duration": 15
+        "duration": 16
       },
       {
         "section": "Verse 2",
@@ -1609,13 +1609,8 @@
     "pages": [
       {
         "section": "",
-        "chords": [
-          ["", "", "", ""],
-          ["", "", "", ""],
-          ["", "", "", ""],
-          ["", "", "", ""]
-        ],
-        "lyrics": ["line 1", "line 2", "line 3", "line 4"],
+        "chords": [ ],
+        "lyrics": [ ],
         "duration": 12
       }
     ]
@@ -1641,7 +1636,7 @@
           "Life was hard, trouble was troubling me",
           "Keep me warm in your love all the time"
         ],
-        "duration": 11
+        "duration": 12
       },
       {
         "section": "Verse 1 - 2",
@@ -1759,7 +1754,7 @@
           "Yeah, kissin' in the dark",
           "Kissin' in the dark, honey, that's my birthmark"
         ],
-        "duration": 23
+        "duration": 24
       },
       {
         "section": "Verse 2",
@@ -1848,7 +1843,9 @@
           "You know, I caught her messing around with another man",
           "I'm going down to shoot my old lady",
           "You know, I caught her messing around with another man",
-          "And that ain't too cool"
+          "And that ain't too cool",
+          "",
+          "[=> FOOTSWITCH]"
         ]
       },
       {
@@ -1859,12 +1856,13 @@
           "You shot her down now",
           "Hey Joe, I heard you shot your lady down",
           "Shot her down in the ground, yeah",
-          "Yeah",
-          "Yes, I did, I shot her",
+          "Yeah. Yes, I did, I shot her",
           "You know I caught her messin' round, messin' round town",
           "Yes, I did, I shot her",
           "You know I caught my old lady messin' 'round town",
-          "And I gave her the gun. I shot her"
+          "And I gave her the gun. I shot her",
+          "",
+          "[=> FOOTSWITCH]" 
         ]
       },
 
@@ -1882,7 +1880,9 @@
           "Yes, I did, I shot her",
           "You know I caught my old lady messin' 'round town",
           "And I gave her the gun",
-          "I shot her"
+          "I shot her",
+          "",
+          "[=> FOOTSWITCH]"
         ]
       },
       {
@@ -1898,7 +1898,9 @@
           "Hey, Joe",
           "Where you gonna run to now? Where you gonna run to?",
           "Hey Joe, I said",
-          "Where you gonna run to now? Where you, where you gonna go?"
+          "Where you gonna run to now? Where you, where you gonna go?",
+          "",
+          "[=> FOOTSWITCH]"
         ]
       },
       {
@@ -1915,7 +1917,9 @@
           "Ain't no hangman gonna",
           "He ain't gonna put a rope around me",
           "You better believe right now",
-          "I gotta go now"
+          "I gotta go now",
+          "",
+          "[=> FOOTSWITCH]"
         ]
       },
       {
@@ -1946,7 +1950,7 @@
           ["C", "C", "D/", "C/"]
         ],
         "lyrics": [],
-        "duration": 7
+        "duration": 8
       },
       {
         "section": "Verse 1",
@@ -2096,7 +2100,7 @@
           "Freedom Train, oh Freedom Train",
           "Please listen to my song"
         ],
-        "duration": 19
+        "duration": 20
       },
       {
         "section": "Verse 2",
@@ -2214,7 +2218,7 @@
           "You know I love you woman ",
           "But I only get the blues with you"
         ],
-        "duration": 19
+        "duration": 20
       },
       {
         "section": "Verse 2",
@@ -2329,7 +2333,7 @@
           "Every generation just the same",
           "On Poverty Road"
         ],
-        "duration": 45
+        "duration": 46
       },
       {
         "section": "Verse 2",
@@ -2459,7 +2463,7 @@
           "From now on I'm gonna treat you like a queen",
           "I'm gonna take my own advice and treat you right"
         ],
-        "duration": 19
+        "duration": 20
       },
       {
         "section": "Verse 2",
@@ -2533,7 +2537,7 @@
         "section": "Intro",
         "chords": [["E", "A", "E", "-"]],
         "lyrics": [],
-        "duration": 3
+        "duration": 4
       },
       {
         "section": "Verse 1",
@@ -2669,13 +2673,13 @@
       {
         "section": "Verse 1",
         "chords": [
-          ["Am - Am9 -", "C D Am -"],
-          ["Am - - -"],
-          ["Am - Am9 -", "C D Am -"],
-          ["D - Am -", "C D Am -"],
-          ["D - Am -", "D - C Bm"],
-          ["D - Am -", "C D Am -"],
-          ["Am - - -"]
+          ["Am Am9 ", "C D Am"],
+          ["Am "],
+          ["Am Am9", "C D Am"],
+          ["Am Am9", "C D Am"],
+          ["D Am", "D C Bm"],
+          ["D Am", "C D Am"],
+          ["Am"]
         ],
         "lyrics": [
           "My days, they are the highway kind",
@@ -2687,17 +2691,11 @@
           "Watch it grow into a night",
           "And fill the spinnin' sky"
         ],
-        "duration": 11
+        "duration": 12
       },
       {
         "section": "Verse 2",
-        "chords": [
-          ["Am - Am9 -", "C D Am -"],
-          ["D - Am -", "C D Am -"],
-          ["D - Am -", "D - C Bm"],
-          ["D - Am -", "C D Am -"],
-          ["Am - - -"]
-        ],
+        "chords": [["Am Am9", "C D Am"], ["Am Am9", "C D Am"], ["D Am", "D C Bm"], ["D Am", "C D Am"], ["Am"]],
         "lyrics": [
           "Time among the pine trees",
           "It felt like breath of air",
@@ -2711,14 +2709,8 @@
         "duration": 9
       },
       {
-        "section": "Verse 2",
-        "chords": [
-          ["Am - Am9 -", "C D Am -"],
-          ["D - Am -", "C D Am -"],
-          ["D - Am -", "D - C Bm"],
-          ["D - Am -", "C D Am -"],
-          ["Am - - -"]
-        ],
+        "section": "Verse 3",
+        "chords": [["Am Am9", "C D Am"], ["Am Am9", "C D Am"], ["D Am", "D C Bm"], ["D Am", "C D Am"], ["Am"]],
         "lyrics": [
           "Well, I don't know too much for true",
           "But my heart knows how to pound",
@@ -2732,14 +2724,8 @@
         "duration": 9
       },
       {
-        "section": "Verse 2",
-        "chords": [
-          ["Am - Am9 -", "C D Am -"],
-          ["D - Am -", "C D Am -"],
-          ["D - Am -", "D - C Bm"],
-          ["D - Am -", "C D Am -"],
-          ["Am - - -"]
-        ],
+        "section": "Verse 4",
+        "chords": [["Am Am9", "C D Am"], ["Am Am9", "C D Am"], ["D Am", "D C Bm"], ["D Am", "C D Am"], ["Am"]],
         "lyrics": [
           "You're the only one I want now",
           "I never heard your name",
@@ -2788,7 +2774,7 @@
           "Oh Lord!",
           "When are we gonna learn?"
         ],
-        "duration": 21
+        "duration": 22
       },
       {
         "section": "Verse 2",
@@ -2826,7 +2812,7 @@
         "duration": 13
       },
       {
-        "section": "Verse 2",
+        "section": "Verse 3",
         "chords": [
           ["Am", "E7", "Am", "E7"],
           ["Am", "E7", "Am", "E7"],
@@ -2870,7 +2856,7 @@
           "She said, ”Darling, don't be in such a rush.",
           "You can look all you want, but don't touch!”"
         ],
-        "duration": 13
+        "duration": 14
       },
       {
         "section": "Verse 2",
