@@ -1,6 +1,6 @@
+import { Gigs, Screensaver, Setlist, Song } from '@components/index';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import { Gigs, ScreenSaver, SetList, Song } from './components';
 
 function App() {
   return (
@@ -8,8 +8,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Gigs />} />
         <Route path="song/:id" element={<Song />} />
-        <Route path="screensaver" element={<ScreenSaver />} />
-        <Route path="setlist/:id" element={<SetList />} />
+        <Route path="screensaver" element={<Screensaver />} />
+        <Route path="setlist/:id" element={<Setlist />} />
       </Routes>
     </div>
   );
