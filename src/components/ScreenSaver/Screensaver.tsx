@@ -4,7 +4,7 @@
 
 // import svg from '../../../public/blues_jab_logo.svg' and display it
 
-export const ScreenSaver = () => {
+const Screensaver = () => {
   return (
     <div>
       <div className="flex h-screen flex-col items-center justify-center">
@@ -19,3 +19,5 @@ export const ScreenSaver = () => {
     </div>
   );
 };
+
+export default Screensaver;

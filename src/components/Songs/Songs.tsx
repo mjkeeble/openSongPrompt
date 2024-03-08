@@ -1,10 +1,10 @@
 import  { useEffect, useState } from 'react';
-import {TInternalGig} from '../../../types';
+import {TInternalGig} from '../../types';
 import songs from '../../../data/songs.json';
 
-// Your component remains largely the same, with the addition of useEffect for keydown event handling
 
-const GigViewer = ({ gig }: { gig: TInternalGig }) => {
+
+const Songs = ({ gig }: { gig: TInternalGig }) => {
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
 
@@ -71,4 +71,4 @@ const GigViewer = ({ gig }: { gig: TInternalGig }) => {
   );
 };
 
-export default GigViewer;
+export default Songs;

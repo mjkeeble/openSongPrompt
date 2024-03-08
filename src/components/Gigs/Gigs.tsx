@@ -2,11 +2,11 @@ import { useEffect, useRef, forwardRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import GIGS from '../../../data/gigs';
 import { TGig } from '../../types';
-import { useGig } from '../../context';
+import { useGig } from '@hooks/index';
 import { displayDate } from '../../utils';
 import dateBasedStatus from './utils';
 
-export const Gigs = () => {
+const Gigs = () => {
   const { selectedGig, setSelectedGig } = useGig();
   const Navigate = useNavigate();
   const buttonsRef = useRef<HTMLButtonElement[]>([]);
@@ -48,7 +48,7 @@ export const Gigs = () => {
       <ul className="boxShadow">
         {GIGS.map((gigFromList: TGig, index) => (
           <li key={gigFromList.id}>
-            <Button
+            <GigButton
               ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
               classes={`${dateBasedStatus(gigFromList.dateTime, gigFromList.id, selectedGig)}`}
               onclick={() => {
@@ -71,7 +71,7 @@ type TProps = {
 };
 
 
-const Button = forwardRef<HTMLButtonElement, TProps>(({ classes, text, onclick }, ref) => {
+const GigButton = forwardRef<HTMLButtonElement, TProps>(({ classes, text, onclick }, ref) => {
   return (
     <button
       ref={ref}
@@ -82,3 +82,5 @@ const Button = forwardRef<HTMLButtonElement, TProps>(({ classes, text, onclick }
     </button>
   );
 });
+
+export default Gigs;
