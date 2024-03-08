@@ -10,6 +10,7 @@ type TProps = {
 
 const Chords: React.FC<TProps> = ({ chords }) => {
   return (
+    
     <table className="w-full table-auto border-collapse p-2 text-7xl">
       <tbody>
         {chords.map((row, rowIndex) => (
