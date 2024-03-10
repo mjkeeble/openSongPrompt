@@ -1,67 +1,66 @@
 import { useKeyPressMonitor } from '@hooks/index';
+// import debounce from 'lodash.debounce';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { Screensaver } from '..';
 import songs from '../../../data/songs.json';
 import { BREAK } from '../../const.ts';
 import { TSong } from '../../types';
 import Chords from './Chords';
 import Lyrics from './Lyrics';
-import { handleInteraction } from './interaction';
-
-export type TCurrentLocation = {
-  songIndex: number;
-  page: number;
-};
+import {HandleSongPageInteraction} from './interaction';
+import { useSetlist } from '@hooks/index';
 
 const Song = () => {
-  // const Navigate = useNavigate();
-  const { id } = useParams();
-  const { action, handleKeyDown, handleKeyUp } = useKeyPressMonitor();
-  const [currentLocation, setCurrentLocation] = useState<TCurrentLocation>({ songIndex: 0, page: 0 });
+  const Navigate = useNavigate();
+  const {setlist} = useSetlist();
+  const {id} = useParams();
+  const setlistIndex: number = parseInt(id!)
+  const { action, onKeyDown, onKeyUp } = useKeyPressMonitor();
+  const [currentPage, setCurrentPage] = useState<number>(0);
 
   useEffect(() => {
-    document.addEventListener('keydown', handleKeyDown);
-    document.addEventListener('keyup', handleKeyUp);
+    document.addEventListener('keydown', onKeyDown);
+    document.addEventListener('keyup', onKeyUp);
 
     return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-      document.removeEventListener('keyup', handleKeyUp);
+      document.removeEventListener('keydown', onKeyDown);
+      document.removeEventListener('keyup', onKeyUp);
     };
-  }, [handleKeyDown, handleKeyUp]);
-
-
+  }, [onKeyDown, onKeyUp]);
 
   useEffect(() => {
-    handleInteraction({
+    HandleSongPageInteraction({
       action,
-      currentLocation,
-      setCurrentLocation,
-      songPages: songs[currentLocation.songIndex].pages.length,
+      currentSong: setlistIndex,
+      currentPage,
+      setCurrentPage,
+      //filter songs for the id and return the number of pages as songPages,
+      songPages: songs.find((song: TSong) => song.id === setlistIndex || null)?.pages.length || 0,
+      Navigate,
     });
-  }, [action, currentLocation]);
+  }, [action, currentPage, setlistIndex, Navigate]);
 
-  // console.log(id, id === BREAK, id === 'break')
-  if (id === BREAK) return <Screensaver />;
+  if (!setlistIndex)
 
-  // const handleOnKeyUp = (event: React.KeyboardEvent) => {
-  //   console.log('key up', event.key);
-  // };
+  if (setlist[setlistIndex] === BREAK) return <Screensaver />;
 
-  const song: TSong | undefined = songs.find((song) => song.id === parseInt(id!) || null);
+ 
+ 
+  const song: TSong | undefined = 
+    songs.find((song: TSong) => song.id === setlist[setlistIndex] );
 
   if (!song) {
     return (
       <>
         <h1>No song found!</h1>
-        <p>id: {id}</p>
+        <p>id: {setlistIndex}</p>
       </>
     );
   }
-
   const currentTime = new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
 
-  if (currentLocation.page === 0) {
+  if (!currentPage) {
     return (
       <div className="flex h-screen w-full flex-col p-2">
         <header className=" m-2 flex items-start justify-between text-6xl ">
@@ -78,22 +77,24 @@ const Song = () => {
         {song.setup && <p>{song.setup}</p>}
       </div>
     );
+  } else {
+    return (
+      <div className="grid h-full w-full grid-cols-12 divide-x">
+        <div className="h-fullp-4 col-span-5">
+          <p className="mb-8 ml-6 text-left text-7xl font-semibold text-bj-green-light">
+            {song.pages[currentPage - 1].section}{' '}
+            <span className="text-3xl">
+              {currentPage}/{song.pages.length}
+            </span>
+          </p>
+          <Chords chords={song.pages[currentPage - 1].chords} />
+        </div>
+        <div className="col-span-7 h-full px-4">
+          <Lyrics lyrics={song.pages[currentPage - 1].lyrics} />
+        </div>
+      </div>
+    );
   }
-
-  return (
-    <div className="grid h-full w-full grid-cols-12 divide-x">
-      <div className="h-fullp-4 col-span-5">
-        <p className="mb-8 ml-6 text-left text-7xl font-semibold text-bj-green-light">
-          {song.pages[currentLocation.page - 1].section}{" "}
-          <span className="text-3xl">{currentLocation.page}/{song.pages.length}</span>
-        </p>
-        <Chords chords={song.pages[currentLocation.page - 1].chords} />
-      </div>
-      <div className="col-span-7 h-full px-4">
-        <Lyrics lyrics={song.pages[currentLocation.page - 1].lyrics} />
-      </div>
-    </div>
-  );
 };
 
 const SetupText = (setup: string) => {

@@ -1,13 +1,11 @@
-import { useEffect, useRef, forwardRef } from 'react';
-import {useNavigate} from 'react-router-dom';
+import { forwardRef, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import gigs from '../../../data/gigs.json';
 import { TGig } from '../../types';
-import { useGig } from '@hooks/index';
 import { displayDate } from '../../utils';
-import dateBasedStatus from './utils';
+import getDateBasedStyling from './utils';
 
 const Gigs = () => {
-  const { selectedGig, setSelectedGig } = useGig();
   const Navigate = useNavigate();
   const buttonsRef = useRef<HTMLButtonElement[]>([]);
   const sortedGigs: TGig[] = gigs.sort((a, b) => new Date(a.dateTime).valueOf() - new Date(b.dateTime).valueOf());
@@ -51,9 +49,8 @@ const Gigs = () => {
           <li key={gigFromList.id}>
             <GigButton
               ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
-              classes={`${dateBasedStatus(gigFromList.dateTime, gigFromList.id, selectedGig)}`}
+              classes={`${getDateBasedStyling(gigFromList.dateTime)}`}
               onclick={() => {
-                setSelectedGig(gigFromList.id);
                 Navigate(`/setList/${gigFromList.id}`);
               }}
               text={`${displayDate(gigFromList.dateTime)}, ${gigFromList.venue}, ${gigFromList.town}`}
@@ -70,7 +67,6 @@ type TProps = {
   text: string;
   onclick?: () => void;
 };
-
 
 const GigButton = forwardRef<HTMLButtonElement, TProps>(({ classes, text, onclick }, ref) => {
   return (

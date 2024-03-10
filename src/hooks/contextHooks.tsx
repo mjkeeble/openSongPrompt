@@ -1,7 +1,7 @@
 import { SetlistContext, SongContext } from '@context/index';
 import { useContext } from 'react';
 
-export const useSetList = () => {
+export const useSetlist = () => {
   return useContext(SetlistContext);
 };
 

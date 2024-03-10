@@ -1,24 +1,24 @@
+import { useSetlist } from '@hooks/contextHooks';
 import { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import gigs from '../../../data/gigs.json';
 import songs from '../../../data/songs.json';
-import { TGig, TInternalGig, TSong } from '../../types';
-import { displayDate } from '../../utils';
 import { BREAK } from '../../const';
+import { TGig, TSong, TSetlist, TBreak } from '../../types';
+import { displayDate } from '../../utils';
 
 // export const SetList: React.FC<TGig> = ({ location, date, setList }) => {
 const Setlist = () => {
   const { id } = useParams();
   const Navigate = useNavigate();
-  const importedGig: TGig | undefined = gigs.find((gigFromList: TGig) => gigFromList.id === id);
-  const gig: TInternalGig | undefined = importedGig
-    ? {
-        ...importedGig,
-        setlist: importedGig.setlist.flatMap((subArray) => ['break', ...subArray]),
-      }
-    : undefined;
+  const { setlist, setSetlist } = useSetlist();
+  const gig: TGig | undefined = gigs.find((gigFromList: TGig) => gigFromList.id === id);
+  const consolidatedSetlist = (gig: TGig | undefined): TSetlist => {
+    if (!gig) return [];
+    return gig.setlist.flatMap((subArray) => [BREAK as TBreak, ...subArray.map(Number)]).concat([BREAK as TBreak]);
+  } 
 
-  if (gig) gig.setlist.push('break');
+  setSetlist(consolidatedSetlist(gig));
 
   useEffect(() => {
     const handleKeyPress = (event: { key: string }) => {
@@ -47,11 +47,11 @@ const Setlist = () => {
             {displayDate(gig.dateTime)}, {gig.venue}, {gig.town}
           </h5>
 
-          {gig.setlist.map((songId: string, index) => {
+          {setlist.map((songId: number | TBreak, index) => {
             if (songId === BREAK) return <hr key={index} className="my-7" />;
 
             const song: TSong | undefined = songs.find((song) => {
-              return song.id.toString() === songId;
+              return song.id === songId;
             });
             if (!song)
               return (

@@ -1,35 +1,79 @@
 import { Dispatch, SetStateAction } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { TAction } from 'src/types';
-import { TCurrentLocation } from './Song';
 
 type TProps = {
   action: TAction;
-  currentLocation: TCurrentLocation;
-  setCurrentLocation: Dispatch<SetStateAction<TCurrentLocation>>;
+  currentSong: number;
+  currentPage: number;
+  setCurrentPage: Dispatch<SetStateAction<number>>;
   songPages: number;
+  Navigate: ReturnType<typeof useNavigate>;
 };
 
 const activeKeys = ['j', 'k', 'm'];
 
 // This component returns null. It is only responsible for handling user commands
 
-export const handleInteraction: React.FC<TProps> = ({ action, currentLocation, setCurrentLocation, songPages }) => {
+export const HandleSongPageInteraction: React.FC<TProps> = ({
+  action,
+  currentSong,
+  currentPage,
+  setCurrentPage,
+  songPages,
+  Navigate
+}) => {
+  console.log("🚀 ---------------------------🚀");
+  console.log("🚀 => songPages:", songPages);
+  console.log("🚀 ---------------------------🚀");
+
   // if action data is incomplete or pressed button is invalid, ignore
-  if (!action.keyPressed || action.isLongPress === undefined || !activeKeys.includes(action.keyPressed)) return null;
+  if (!action.keyPressed || !activeKeys.includes(action.keyPressed)) return null;
 
-  // j short press - one page back within current song
+  // j short press
   if (action.keyPressed === 'j' && !action.isLongPress) {
-    setCurrentLocation({ ...currentLocation, page: Math.max(0, currentLocation.page - 1) });
+    // go to previous page in song
+    if (currentPage) setCurrentPage(currentPage - 1);
   }
 
-  // k short press - one page forward within current song
+  // k short press
   if (action.keyPressed === 'k' && !action.isLongPress) {
-    setCurrentLocation({ ...currentLocation, page: Math.min(songPages, currentLocation.page + 1) });
+    if (currentPage < songPages) {
+      // go to next page in song
+      setCurrentPage(currentPage + 1);
+    } else {
+      // go to next song if at the end of this one
+      Navigate(`/song/${currentSong + 1}`);
+    }
   }
 
-  // m short press - go to setlist of currentLocation.page ===0
-  if (action.keyPressed === 'm' && !action.isLongPress) {
-    setCurrentLocation({ ...currentLocation, page: 0 });
+  //m long press
+  if (action.keyPressed === 'm' && action.isLongPress) {
+    if (!currentPage) {
+      console.log('go to setlist');
+      // TODO:add navigation to setlist
+    } else {
+      console.log('freeze timer');
+      // TODO:add timer freeze
+    }
   }
+
+  // k long press
+  if (action.keyPressed === 'k' && action.isLongPress) {
+    // navigate to next song
+    Navigate(`/song/${currentSong + 1}`);
+  }
+
+  // j long press
+  if (action.keyPressed === 'j' && action.isLongPress) {
+    if (!currentPage) {
+      // navigate to previous song if on the title page
+      Navigate(`/song/${currentSong - 1}`);
+    } else {
+      // navigate to start of current song if on a lyrics page
+      Navigate(`/song/${currentSong}`);
+    }
+  }
+
   return null;
 };
