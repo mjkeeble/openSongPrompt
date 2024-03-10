@@ -1,8 +1,8 @@
-import { GigContext, SongContext } from '@context/index';
+import { SetlistContext, SongContext } from '@context/index';
 import { useContext } from 'react';
 
-export const useGig = () => {
-  return useContext(GigContext);
+export const useSetList = () => {
+  return useContext(SetlistContext);
 };
 
 export const useSong = () => {
