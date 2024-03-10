@@ -6,14 +6,6 @@ export type TGig = {
   setlist: string[][];
 };
 
-export type TInternalGig = {
-  id: string;
-  venue: string;
-  town: string;
-  dateTime: string;
-  setlist: string[];
-};
-
 export type TSong = {
   id: number;
   title: string;
@@ -40,3 +32,7 @@ export type TAction = {
   keyPressed: string | null;
   isLongPress: boolean;
 };
+
+export type TBreak = 'break';
+
+export type TSetlist = (number | TBreak)[];
