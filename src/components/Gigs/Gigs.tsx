@@ -1,6 +1,6 @@
 import { useEffect, useRef, forwardRef } from 'react';
-import { useNavigate } from 'react-router-dom';
-import GIGS from '../../../data/gigs';
+import {useNavigate} from 'react-router-dom';
+import gigs from '../../../data/gigs.json';
 import { TGig } from '../../types';
 import { useGig } from '@hooks/index';
 import { displayDate } from '../../utils';
@@ -10,18 +10,19 @@ const Gigs = () => {
   const { selectedGig, setSelectedGig } = useGig();
   const Navigate = useNavigate();
   const buttonsRef = useRef<HTMLButtonElement[]>([]);
+  const sortedGigs: TGig[] = gigs.sort((a, b) => new Date(a.dateTime).valueOf() - new Date(b.dateTime).valueOf());
 
   useEffect(() => {
     const today = new Date();
     today.setHours(0, 0, 0, 0); // Normalize today's date
 
     // Find the index of the gig for today or the last gig before today
-    const gigIndex = GIGS.reduce((acc, gig, index) => {
+    const gigIndex = sortedGigs.reduce((acc, gig, index) => {
       const gigDate = new Date(gig.dateTime);
       gigDate.setHours(0, 0, 0, 0); // Normalize gig date
 
       // If gigDate is today or before today and closer to today than the current acc
-      if (gigDate <= today && (acc === -1 || gigDate > new Date(GIGS[acc].dateTime))) {
+      if (gigDate <= today && (acc === -1 || gigDate > new Date(sortedGigs[acc].dateTime))) {
         return index;
       }
       return acc;
@@ -31,7 +32,7 @@ const Gigs = () => {
     if (gigIndex !== -1 && buttonsRef.current[gigIndex]) {
       buttonsRef.current[gigIndex].focus();
     }
-  }, []);
+  }, [sortedGigs]);
 
   const handleKeyDown = (event: { key: string }) => {
     const currentIndex = buttonsRef.current.findIndex((button) => button === document.activeElement);
@@ -46,7 +47,7 @@ const Gigs = () => {
     <div onKeyDown={handleKeyDown} tabIndex={0}>
       <h1 className="mb-5 font-fredericka text-5xl text-bj-white">Gigs</h1>
       <ul className="boxShadow">
-        {GIGS.map((gigFromList: TGig, index) => (
+        {sortedGigs.map((gigFromList: TGig, index) => (
           <li key={gigFromList.id}>
             <GigButton
               ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}

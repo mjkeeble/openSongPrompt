@@ -1,30 +1,26 @@
-# React + TypeScript + Vite
+# Songprompter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a local web app that works as a teleprompter for musicians in the browser. I say local in the sense that it is intended to be self-contained on the front end - the necessary data is stored locally in JSON files - the last thing you want is for your teleprompter to fail mid-concert because it can't reach the server!
 
-Currently, two official plugins are available:
+Please note that it was developed for personal use based on my requirements, so will probably not have functionality that others need or expect. Also I run it locally in a dev environment, so you will need to know how to set this up to be able to use it.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Running the app
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+The app was run developed to run on Node 18.18.2. It uses React 18.2. To run the app enter the following command in the terminal:
+```
+$ npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+The app runs in the browser at [`localhost:5173`](url:'localhost:5173')
+I recommend running it in full screen mode (you will need to activate this by hand in your browser) to maximise the space available for content.
+
+I run the app on a Raspbery Pi with an external 4k screen. Navigation works using keypresses as detailed below. I use an Arduino as a keyboard emulator attached to footpedals to allow hands-free operation on stage.
+
+## Customisation
+
+As I said, this was written for personal use and the formating is optimised for the screen I used. You may need to change the settings to optimise it on your screen. Formatting is mainly done inline using [*tailwindcss*](url:'https://tailwindcss.com/docs/installation').
+
+## Navigation
+
+## Data storage
+Data is stored in JSON files in the `data` folder. There is one file for gigs, and another for songs. See the types.ts file for schema details. The gigs JSON is of type `TGig[]`, songs is of type `TSong[]`.

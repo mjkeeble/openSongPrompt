@@ -1,15 +1,16 @@
 import { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import GIGS from '../../../data/gigs';
+import gigs from '../../../data/gigs.json';
 import songs from '../../../data/songs.json';
 import { TGig, TInternalGig, TSong } from '../../types';
 import { displayDate } from '../../utils';
+import { BREAK } from '../../const';
 
 // export const SetList: React.FC<TGig> = ({ location, date, setList }) => {
 const Setlist = () => {
   const { id } = useParams();
   const Navigate = useNavigate();
-  const importedGig: TGig | undefined = GIGS.find((gigFromList: TGig) => gigFromList.id === id);
+  const importedGig: TGig | undefined = gigs.find((gigFromList: TGig) => gigFromList.id === id);
   const gig: TInternalGig | undefined = importedGig
     ? {
         ...importedGig,
@@ -47,7 +48,7 @@ const Setlist = () => {
           </h5>
 
           {gig.setlist.map((songId: string, index) => {
-            if (!songId) return <hr key={index} className="my-7" />;
+            if (songId === BREAK) return <hr key={index} className="my-7" />;
 
             const song: TSong | undefined = songs.find((song) => {
               return song.id.toString() === songId;

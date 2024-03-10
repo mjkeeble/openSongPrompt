@@ -37,6 +37,6 @@ type TLyricPage = {
 };
 
 export type TAction = {
-  keyPressed: string | undefined;
-  isLongPress: boolean | undefined;
+  keyPressed: string | null;
+  isLongPress: boolean;
 };
