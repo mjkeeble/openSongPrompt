@@ -1,24 +1,20 @@
-import { useSetlist } from '@hooks/contextHooks';
+
 import { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import gigs from '../../../data/gigs.json';
 import songs from '../../../data/songs.json';
 import { BREAK } from '../../const';
-import { TGig, TSong, TSetlist, TBreak } from '../../types';
+import { TGig, TSong, TBreak, TSetlist } from '../../types';
 import { displayDate } from '../../utils';
+import {getSetlist} from '@context/index';
 
 // export const SetList: React.FC<TGig> = ({ location, date, setList }) => {
 const Setlist = () => {
   const { id } = useParams();
   const Navigate = useNavigate();
-  const { setlist, setSetlist } = useSetlist();
   const gig: TGig | undefined = gigs.find((gigFromList: TGig) => gigFromList.id === id);
-  const consolidatedSetlist = (gig: TGig | undefined): TSetlist => {
-    if (!gig) return [];
-    return gig.setlist.flatMap((subArray) => [BREAK as TBreak, ...subArray.map(Number)]).concat([BREAK as TBreak]);
-  } 
+  const setlist:TSetlist = getSetlist()
 
-  setSetlist(consolidatedSetlist(gig));
 
   useEffect(() => {
     const handleKeyPress = (event: { key: string }) => {

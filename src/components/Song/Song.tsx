@@ -1,6 +1,7 @@
 import { useKeyPressMonitor } from '@hooks/index';
 // import debounce from 'lodash.debounce';
-import { useEffect, useState } from 'react';
+import {useEffect, useState} from 'react';
+import { getSetlist } from '@context/index';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Screensaver } from '..';
 import songs from '../../../data/songs.json';
@@ -8,14 +9,16 @@ import { BREAK } from '../../const.ts';
 import { TSong } from '../../types';
 import Chords from './Chords';
 import Lyrics from './Lyrics';
-import {HandleSongPageInteraction} from './interaction';
-import { useSetlist } from '@hooks/index';
+import { HandleSongPageInteraction } from './interaction';
 
 const Song = () => {
   const Navigate = useNavigate();
-  const {setlist} = useSetlist();
-  const {id} = useParams();
-  const setlistIndex: number = parseInt(id!)
+  const setlist = getSetlist();
+  console.log("🚀 -------------------------------🚀");
+  console.log("🚀 => Song => setlist:", setlist);
+  console.log("🚀 -------------------------------🚀");
+  const { id } = useParams();
+  const setlistIndex: number = parseInt(id!);
   const { action, onKeyDown, onKeyUp } = useKeyPressMonitor();
   const [currentPage, setCurrentPage] = useState<number>(0);
 
@@ -41,14 +44,12 @@ const Song = () => {
     });
   }, [action, currentPage, setlistIndex, Navigate]);
 
-  if (!setlistIndex)
+  if (setlistIndex > setlist.length) Navigate('/');
+  if (!setlistIndex ||setlist[setlistIndex] === BREAK) return <Screensaver />;
 
-  if (setlist[setlistIndex] === BREAK) return <Screensaver />;
+  console.log('setlistIndex', setlistIndex, setlist[setlistIndex]);
 
- 
- 
-  const song: TSong | undefined = 
-    songs.find((song: TSong) => song.id === setlist[setlistIndex] );
+  const song: TSong | undefined = songs.find((song: TSong) => song.id === setlist[setlistIndex]);
 
   if (!song) {
     return (

@@ -1,11 +1,13 @@
 import { forwardRef, useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
+import { storeSetlist } from '@context/index';
 import gigs from '../../../data/gigs.json';
 import { TGig } from '../../types';
 import { displayDate } from '../../utils';
-import getDateBasedStyling from './utils';
+import {getDateBasedStyling, consolidateSetlist} from './utils';
 
 const Gigs = () => {
+
   const Navigate = useNavigate();
   const buttonsRef = useRef<HTMLButtonElement[]>([]);
   const sortedGigs: TGig[] = gigs.sort((a, b) => new Date(a.dateTime).valueOf() - new Date(b.dateTime).valueOf());
@@ -41,6 +43,12 @@ const Gigs = () => {
     }
   };
 
+  const handleSelectGig = (gig: TGig): void => {
+    storeSetlist(consolidateSetlist(gig));
+    Navigate(`/setList/${gig.id}`);
+    
+  }
+
   return (
     <div onKeyDown={handleKeyDown} tabIndex={0}>
       <h1 className="mb-5 font-fredericka text-5xl text-bj-white">Gigs</h1>
@@ -50,9 +58,7 @@ const Gigs = () => {
             <GigButton
               ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
               classes={`${getDateBasedStyling(gigFromList.dateTime)}`}
-              onclick={() => {
-                Navigate(`/setList/${gigFromList.id}`);
-              }}
+              onclick={() => handleSelectGig(gigFromList)}
               text={`${displayDate(gigFromList.dateTime)}, ${gigFromList.venue}, ${gigFromList.town}`}
             />
           </li>

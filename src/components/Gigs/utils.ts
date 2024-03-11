@@ -1,4 +1,7 @@
-const getDateBasedStyling = (date: string): string => {
+import { BREAK } from '../../const';
+import { TBreak, TGig, TSetlist } from '../../types';
+
+export const getDateBasedStyling = (date: string): string => {
   const gigDate = new Date(date).setHours(0, 0, 0, 0);
   const now = new Date().setHours(0, 0, 0, 0);
 
@@ -6,4 +9,8 @@ const getDateBasedStyling = (date: string): string => {
   if (gigDate > now) return 'bg-bj-blue-dark text-bj-blue-light';
   return 'bg-bj-green-mid font-bold text-2xl';
 };
-export default getDateBasedStyling;
+
+export const consolidateSetlist = (gig: TGig | undefined): TSetlist => {
+  if (!gig) return [];
+  return gig.setlist.flatMap((subArray) => [BREAK as TBreak, ...subArray.map(Number)]).concat([BREAK as TBreak]);
+};
