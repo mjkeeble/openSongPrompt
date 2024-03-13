@@ -21,23 +21,28 @@ export const HandleSongPageInteraction: React.FC<TProps> = ({
   currentPage,
   setCurrentPage,
   songPages,
-  Navigate
+  Navigate,
 }) => {
-  console.log("🚀 ---------------------------🚀");
-  console.log("🚀 => songPages:", songPages);
-  console.log("🚀 ---------------------------🚀");
+  // console.log('🚀 ---------------------------🚀');
+  // console.log('🚀 => songPages:', songPages);
+  // console.log('🚀 ---------------------------🚀');
 
   // if action data is incomplete or pressed button is invalid, ignore
   if (!action.keyPressed || !activeKeys.includes(action.keyPressed)) return null;
 
   // j short press
   if (action.keyPressed === 'j' && !action.isLongPress) {
+    console.log(' j short');
+
     // go to previous page in song
-    if (currentPage) setCurrentPage(currentPage - 1);
+    if (currentPage > 0) {
+      setCurrentPage(currentPage - 1);
+    }
   }
 
   // k short press
   if (action.keyPressed === 'k' && !action.isLongPress) {
+    console.log(' k short');
     if (currentPage < songPages) {
       // go to next page in song
       setCurrentPage(currentPage + 1);
@@ -49,23 +54,26 @@ export const HandleSongPageInteraction: React.FC<TProps> = ({
 
   //m long press
   if (action.keyPressed === 'm' && action.isLongPress) {
+    console.log(' m long');
     if (!currentPage) {
-      console.log('go to setlist');
+      // console.log('go to setlist');
       // TODO:add navigation to setlist
     } else {
-      console.log('freeze timer');
+      // console.log('freeze timer');
       // TODO:add timer freeze
     }
   }
 
   // k long press
   if (action.keyPressed === 'k' && action.isLongPress) {
+    console.log(' k long');
     // navigate to next song
     Navigate(`/song/${currentSong + 1}`);
   }
 
   // j long press
   if (action.keyPressed === 'j' && action.isLongPress) {
+    console.log(' j long');
     if (!currentPage) {
       // navigate to previous song if on the title page
       Navigate(`/song/${currentSong - 1}`);

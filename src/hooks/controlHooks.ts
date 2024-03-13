@@ -36,7 +36,7 @@ export const useKeyPressMonitor = (): KeyPressData => {
   };
 
   const handleKeyDown = (event: KeyboardEvent) => {
-    // console.log('keypress down', event.key, event.repeat);
+    console.log('keypress down', event.key, event.repeat);
 
     // abort if not a valid key
     if (!['j', 'k', 'm'].includes(event.key) || event.repeat) return;
@@ -48,7 +48,7 @@ export const useKeyPressMonitor = (): KeyPressData => {
   };
 
   const handleKeyUp = (event: KeyboardEvent) => {
-    // console.log('keypress up', event.key,'repeat', event.repeat);
+    console.log('keypress up', event.key,'repeat', event.repeat);
     if (event.key !== keyPressed.current || event.repeat) return;
     clearTimeout(startTimerRef.current);
 
