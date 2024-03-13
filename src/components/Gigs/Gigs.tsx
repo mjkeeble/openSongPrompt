@@ -1,13 +1,12 @@
 import { forwardRef, useEffect, useRef } from 'react';
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { storeSetlist } from '@context/index';
 import gigs from '../../../data/gigs.json';
 import { TGig } from '../../types';
 import { displayDate } from '../../utils';
-import {getDateBasedStyling, consolidateSetlist} from './utils';
+import { getDateBasedStyling, consolidateSetlist } from './utils';
 
 const Gigs = () => {
-
   const Navigate = useNavigate();
   const buttonsRef = useRef<HTMLButtonElement[]>([]);
   const sortedGigs: TGig[] = gigs.sort((a, b) => new Date(a.dateTime).valueOf() - new Date(b.dateTime).valueOf());
@@ -46,8 +45,7 @@ const Gigs = () => {
   const handleSelectGig = (gig: TGig): void => {
     storeSetlist(consolidateSetlist(gig));
     Navigate(`/setList/${gig.id}`);
-    
-  }
+  };
 
   return (
     <div onKeyDown={handleKeyDown} tabIndex={0}>
@@ -78,7 +76,7 @@ const GigButton = forwardRef<HTMLButtonElement, TProps>(({ classes, text, onclic
   return (
     <button
       ref={ref}
-      className={`${classes} my-1 w-full rounded-md border-none p-2 text-center transition-colors duration-300 ease-in-out hover:ring-2 hover:ring-bj-red hover:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-bj-green-mid focus:ring-offset-2`}
+      className={`${classes} my-1 w-1/2 rounded-md border-none p-2 text-center text-2xl transition-colors duration-300 ease-in-out hover:ring-2 hover:ring-bj-red hover:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-bj-green-mid focus:ring-offset-2`}
       onClick={onclick}
     >
       {text}
