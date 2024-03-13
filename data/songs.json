@@ -344,8 +344,8 @@
     "duration_seconds": 15,
     "lineup": "Band",
     "key": "Am",
-    "tempo": 105,
-    "timeSignature": "12/8",
+    "tempo": 73,
+    "timeSignature": "4-4",
     "pages": [
       {
         "section": "Verse 1",
@@ -562,7 +562,7 @@
     "duration_seconds": 40,
     "lineup": "Band",
     "key": "A",
-    "tempo": 112,
+    "tempo": 75,
     "timeSignature": "4/4",
     "pages": [
       {
@@ -875,7 +875,7 @@
     "duration_seconds": 30,
     "lineup": "Band",
     "key": "A",
-    "tempo": 170,
+    "tempo": 140,
     "timeSignature": "4/4",
     "pages": [
       {
@@ -1226,8 +1226,8 @@
     "duration_seconds": 30,
     "lineup": "Band",
     "key": "A",
-    "tempo": 150,
-    "timeSignature": "4/4/",
+    "tempo": 145,
+    "timeSignature": "4/4",
     "pages": [
       {
         "section": "Intro",
@@ -1338,7 +1338,7 @@
     "duration_seconds": 0,
     "lineup": "Band",
     "key": "A",
-    "tempo": 130,
+    "tempo": 115,
     "timeSignature": "4/4",
     "pages": [
       {
@@ -1383,7 +1383,7 @@
           "",
           "[SOLO]",
           "",
-          "[ => Footswitch ]"
+          "[ \u21D2 Footswitch ]"
         ]
       },
       {
@@ -1689,7 +1689,7 @@
           "Keep me warm in your love all the time",
           "",
           "[SOLO]",
-          "[=> Footswitch]"
+          "[ \u21D2 Footswitch ]"
         ]
       },
       {
@@ -1830,7 +1830,7 @@
     "duration_seconds": 30,
     "lineup": "Band",
     "key": "A",
-    "tempo": 169,
+    "tempo": 85,
     "timeSignature": "4/4",
     "pages": [
       {
@@ -1845,7 +1845,7 @@
           "You know, I caught her messing around with another man",
           "And that ain't too cool",
           "",
-          "[=> FOOTSWITCH]"
+          "[\u21D2 FOOTSWITCH]"
         ]
       },
       {
@@ -1862,7 +1862,7 @@
           "You know I caught my old lady messin' 'round town",
           "And I gave her the gun. I shot her",
           "",
-          "[=> FOOTSWITCH]" 
+          "[\u21D2 FOOTSWITCH]" 
         ]
       },
 
@@ -1882,7 +1882,7 @@
           "And I gave her the gun",
           "I shot her",
           "",
-          "[=> FOOTSWITCH]"
+          "[\u21D2 FOOTSWITCH]"
         ]
       },
       {
@@ -1900,7 +1900,7 @@
           "Hey Joe, I said",
           "Where you gonna run to now? Where you, where you gonna go?",
           "",
-          "[=> FOOTSWITCH]"
+          "[\u21D2 FOOTSWITCH]"
         ]
       },
       {
@@ -1919,7 +1919,7 @@
           "You better believe right now",
           "I gotta go now",
           "",
-          "[=> FOOTSWITCH]"
+          "[\u21D2 FOOTSWITCH]"
         ]
       },
       {
@@ -2076,7 +2076,7 @@
     "duration_seconds": 0,
     "lineup": "Mark (acoustic)",
     "key": "C",
-    "tempo": 90,
+    "tempo": 65,
     "timeSignature": "12/8",
     "pages": [
       {
@@ -2749,7 +2749,7 @@
     "lineup": "Mark (acoustic)",
     "key": "Cm",
     "tempo": 120,
-    "timeSignature": "",
+    "timeSignature": "4/4",
     "setup": "Capo 3rd fret",
     "pages": [
       {
@@ -2911,7 +2911,7 @@
     "duration_seconds": 45,
     "lineup": "Band + guest",
     "key": "E",
-    "tempo": 124,
+    "tempo": 133,
     "timeSignature": "4/4",
     "pages": [
       {
@@ -2955,7 +2955,7 @@
           "Well, I could tell that they was mine",
           "From the oil and the gasoline",
           "",
-          "[ => Footswitch ]"
+          "[ \u21D2 Footswitch ]"
         ]
       },
       {
