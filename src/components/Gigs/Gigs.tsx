@@ -1,10 +1,10 @@
+import { storeSetlist } from '@context/index';
 import { forwardRef, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { storeSetlist } from '@context/index';
 import gigs from '../../../data/gigs.json';
 import { TGig } from '../../types';
 import { displayDate } from '../../utils';
-import { getDateBasedStyling, consolidateSetlist } from './utils';
+import { consolidateSetlist, getDateBasedStyling } from './utils';
 
 const Gigs = () => {
   const Navigate = useNavigate();
@@ -35,9 +35,11 @@ const Gigs = () => {
 
   const handleKeyDown = (event: { key: string }) => {
     const currentIndex = buttonsRef.current.findIndex((button) => button === document.activeElement);
-    if (event.key === 'k' && currentIndex > 0) {
+    if (event.key === 'm') {
+      buttonsRef.current[currentIndex].click();
+    } else if (event.key === 'j' && currentIndex > 0) {
       buttonsRef.current[currentIndex - 1].focus();
-    } else if (event.key === 'l' && currentIndex < buttonsRef.current.length - 1) {
+    } else if (event.key === 'k' && currentIndex < buttonsRef.current.length - 1) {
       buttonsRef.current[currentIndex + 1].focus();
     }
   };
@@ -76,7 +78,7 @@ const GigButton = forwardRef<HTMLButtonElement, TProps>(({ classes, text, onclic
   return (
     <button
       ref={ref}
-      className={`${classes} my-1 w-1/2 rounded-md border-none p-2 text-center text-2xl transition-colors duration-300 ease-in-out hover:ring-2 hover:ring-bj-red hover:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-bj-green-mid focus:ring-offset-2`}
+      className={`my-2 w-1/2 rounded-md border-none p-2 text-center text-3xl transition-colors duration-300 ease-in-out hover:ring-2 hover:ring-bj-red hover:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-bj-green-mid focus:ring-offset-2 ${classes}`}
       onClick={onclick}
     >
       {text}
