@@ -1,6 +1,5 @@
-import { useKeyPressMonitor } from '@hooks/index';
-// import debounce from 'lodash.debounce';
 import { getSetlist } from '@context/index';
+import { useKeyPressMonitor } from '@hooks/index';
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Screensaver } from '..';
@@ -17,8 +16,9 @@ const Song = () => {
 
   const { id } = useParams();
   const setlistIndex: number = parseInt(id!);
-  const { action, onKeyDown, onKeyUp } = useKeyPressMonitor();
-  const [currentPage, setCurrentPage] = useState<number>(1);
+  const { action, resetAction, onKeyDown, onKeyUp } = useKeyPressMonitor();
+  const [currentPage, setCurrentPage] = useState<number>(0);
+  const [timerHalted, setTimerHalted] = useState<boolean>(false);
 
   useEffect(() => {
     document.addEventListener('keydown', onKeyDown);
@@ -31,21 +31,22 @@ const Song = () => {
   }, [onKeyDown, onKeyUp]);
 
   useEffect(() => {
-    console.log('page interaction');
+    if (setlistIndex > setlist.length) Navigate('/setlist/');
+    console.log('ACTION:', action);
+    
+    
     HandleSongPageInteraction({
-      action,
+      action: action,
+      resetAction,
       currentSong: setlistIndex,
       currentPage,
       setCurrentPage,
-      //filter songs for the id and return the number of pages as songPages,
-      songPages: songs.find((song: TSong) => song.id === setlistIndex || null)?.pages.length || 0,
+      timerHalted,
+      setTimerHalted,
+      songPages: songs.find((song: TSong) => song.id === setlist[setlistIndex] || null)?.pages.length || 0,
       Navigate,
     });
-  }, [Navigate, action, currentPage, setlistIndex]);
-
-  useEffect(() => {
-    if (setlistIndex > setlist.length) Navigate('setlist/');
-  }, [setlistIndex, setlist, Navigate]);
+  }, [Navigate, action, currentPage, resetAction, setlist, setlistIndex, timerHalted]);
 
   if (!setlistIndex || setlist[setlistIndex] === BREAK) return <Screensaver />;
 
@@ -58,7 +59,7 @@ const Song = () => {
         <p>setlist[setlistIndex]: {setlist[setlistIndex]}</p>
       </>
     );
-  } 
+  }
 
   return (
     <div className="h-screen w-full">
@@ -71,7 +72,7 @@ const Song = () => {
           timeSignature={song.timeSignature}
         />
       ) : (
-        <LyricPage song={song} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+        <LyricPage song={song} currentPage={currentPage} setCurrentPage={setCurrentPage} timerHalted={timerHalted} />
       )}
     </div>
   );

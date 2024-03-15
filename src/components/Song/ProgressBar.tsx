@@ -3,29 +3,27 @@ import React, { useEffect, useState } from 'react';
 type TProps = {
   tempo: number;
   timeSignature: string;
-  duration: number;
+  timerHalted: boolean;
+  duration: number | undefined;
   currentPage: number;
   setCurrentPage: (page: number) => void;
   finalPage: boolean;
 };
 
-const ProgressBar: React.FC<TProps> = ({tempo, timeSignature, duration, currentPage, setCurrentPage, finalPage}) => {
-  console.log("🚀 -------------------------🚀");
-  console.log("🚀 => duration:", duration);
-  console.log("🚀 => timeSignature:", timeSignature);
-  console.log("🚀 => tempo:", tempo);
-  console.log("🚀 -------------------------🚀");
-  
+const ProgressBar: React.FC<TProps> = ({
+  tempo,
+  timeSignature,
+  duration,
+  currentPage,
+  setCurrentPage,
+  timerHalted,
+  finalPage,
+}) => {
   const [progress, setProgress] = useState(0);
-  const adjustedDuration = currentPage === 1 ? duration - 1 : duration;
-  
 
+  const adjustedDuration = currentPage === 1 ? (duration ? duration - 1 : 0) : duration ? duration : 0;
   const barLength: number = ['3/4', '6/8'].includes(timeSignature) ? 3 : 4;
- 
   const pageDurationMs: number = (60000 / tempo) * adjustedDuration * barLength;
-  console.log("🚀 -------------------------------------🚀");
-  console.log("🚀 => pageDurationMs:", pageDurationMs);
-  console.log("🚀 -------------------------------------🚀");
 
   useEffect(() => {
     let timerID: NodeJS.Timeout;
@@ -42,7 +40,7 @@ const ProgressBar: React.FC<TProps> = ({tempo, timeSignature, duration, currentP
             }
             return 0;
           } else {
-            return currentProgress + increment;
+            return timerHalted ? currentProgress : currentProgress + increment;
           }
         });
       }, interval);
@@ -54,11 +52,18 @@ const ProgressBar: React.FC<TProps> = ({tempo, timeSignature, duration, currentP
         clearInterval(timerID);
       }
     };
-  }, [currentPage, finalPage, pageDurationMs, setCurrentPage, tempo]);
+  }, [currentPage, finalPage, pageDurationMs, setCurrentPage, tempo, timerHalted]);
+
+  useEffect(() => {
+    // reset timer when page changes
+    setProgress(0);
+  }, [currentPage]);
+
+  if (!duration) return null;
 
   // Adding a key prop to force reinitialization of the component when currentPage changes
   return (
-    <div key={currentPage} className="h-6 w-full p-4">
+    <div key={currentPage} className="w-full p-4">
       <div
         className={`h-6 transition-all duration-300 ease-linear ${progress < 90 ? 'bg-bj-blue-light' : 'bg-bj-green-light'}`}
         style={{ width: `${progress}%` }}

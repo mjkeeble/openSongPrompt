@@ -1,4 +1,3 @@
-export * from './Button';
 export * from './Gigs';
 export * from './ScreenSaver';
 export * from './Setlist';

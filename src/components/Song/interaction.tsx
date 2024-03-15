@@ -4,10 +4,13 @@ import { TAction } from 'src/types';
 
 type TProps = {
   action: TAction;
+  resetAction: () => void;
   currentSong: number;
   currentPage: number;
   setCurrentPage: Dispatch<SetStateAction<number>>;
   songPages: number;
+  timerHalted: boolean;
+  setTimerHalted: Dispatch<SetStateAction<boolean>>;
   Navigate: ReturnType<typeof useNavigate>;
 };
 
@@ -17,63 +20,83 @@ const activeKeys = ['j', 'k', 'm'];
 
 export const HandleSongPageInteraction: React.FC<TProps> = ({
   action,
+  resetAction,
   currentSong,
   currentPage,
   setCurrentPage,
+  timerHalted,
+  setTimerHalted,
   songPages,
   Navigate,
 }) => {
-  // console.log('🚀 ---------------------------🚀');
-  // console.log('🚀 => songPages:', songPages);
-  // console.log('🚀 ---------------------------🚀');
+  console.log('🚀 HandleSongPageInteraction  🚀');
+
+  if (!action.keyPressed && !action.isLongPress) return null;
 
   // if action data is incomplete or pressed button is invalid, ignore
-  if (!action.keyPressed || !activeKeys.includes(action.keyPressed)) return null;
+  if (!action.keyPressed || !activeKeys.includes(action.keyPressed)) {
+    resetAction();
+    return null;
+  }
 
   // j short press
   if (action.keyPressed === 'j' && !action.isLongPress) {
-    console.log(' j short');
+    resetAction();
 
     // go to previous page in song
     if (currentPage > 0) {
       setCurrentPage(currentPage - 1);
     }
+    setTimerHalted(false);
+    return null;
   }
 
   // k short press
   if (action.keyPressed === 'k' && !action.isLongPress) {
-    console.log(' k short');
+    resetAction();
     if (currentPage < songPages) {
       // go to next page in song
+
       setCurrentPage(currentPage + 1);
+      
     } else {
       // go to next song if at the end of this one
+
+      setCurrentPage(0);
       Navigate(`/song/${currentSong + 1}`);
     }
+    setTimerHalted(false);
+    return null;
+  }
+
+  if (action.keyPressed === 'm' && !action.isLongPress) {
+    resetAction();
+    setTimerHalted(!timerHalted); 
+    return null;
   }
 
   //m long press
   if (action.keyPressed === 'm' && action.isLongPress) {
-    console.log(' m long');
+    resetAction();
     if (!currentPage) {
-      // console.log('go to setlist');
-      // TODO:add navigation to setlist
-    } else {
-      // console.log('freeze timer');
-      // TODO:add timer freeze
+      setTimerHalted(false);
+      Navigate('/setlist/1');
     }
+    return null;
   }
 
   // k long press
   if (action.keyPressed === 'k' && action.isLongPress) {
-    console.log(' k long');
+    resetAction();
     // navigate to next song
+    setTimerHalted(false);
     Navigate(`/song/${currentSong + 1}`);
+    return null;
   }
 
   // j long press
   if (action.keyPressed === 'j' && action.isLongPress) {
-    console.log(' j long');
+    resetAction();
     if (!currentPage) {
       // navigate to previous song if on the title page
       Navigate(`/song/${currentSong - 1}`);
@@ -81,6 +104,7 @@ export const HandleSongPageInteraction: React.FC<TProps> = ({
       // navigate to start of current song if on a lyrics page
       Navigate(`/song/${currentSong}`);
     }
+    setTimerHalted(false);
   }
 
   return null;

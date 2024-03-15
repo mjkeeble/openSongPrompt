@@ -7,6 +7,7 @@ type TAction = {
 
 type KeyPressData = {
   action: TAction;
+  resetAction: () => void;
   onKeyDown: (event: KeyboardEvent) => void;
   onKeyUp: (event: KeyboardEvent) => void;
 };
@@ -14,29 +15,31 @@ type KeyPressData = {
 export const useKeyPressMonitor = (): KeyPressData => {
   const keyPressed = useRef<string | null>(null);
   const isLongPress = useRef<boolean>(false);
-  const startTimerRef = useRef<number>();
-  const resetActionTimerRef = useRef<number>();
+  const startTimerRef = useRef<NodeJS.Timeout>();
+  const resetActionTimerRef = useRef<NodeJS.Timeout>();
+const [action, setAction] = useState<TAction>({ keyPressed: null, isLongPress: false });
 
-  const [action, setAction] = useState<TAction>({ keyPressed: null, isLongPress: false });
+
+  const resetAction = () => setAction({keyPressed: null, isLongPress: false});
   
-    const resetActionTimer = () => {
-      resetActionTimerRef.current = setTimeout(() => {
-        setAction({ keyPressed: null, isLongPress: false });
-      }, 400);
-    };
+  const resetActionTimer = () => {
+    resetActionTimerRef.current = setTimeout(() => {
+      setAction({ keyPressed: null, isLongPress: false });
+    }, 400);
+  };
 
   const startPressTimer = () => {
-    // console.log('🚀 => startPressTimer => startPressTimer');
+    
     isLongPress.current = false;
     startTimerRef.current = setTimeout(() => {
       isLongPress.current = true;
-      setAction({keyPressed: keyPressed.current, isLongPress: isLongPress.current});
+      setAction({ keyPressed: keyPressed.current, isLongPress: isLongPress.current });
       resetActionTimer();
-    }, 1000);
+    }, 1000) as NodeJS.Timeout;
   };
 
   const handleKeyDown = (event: KeyboardEvent) => {
-    console.log('keypress down', event.key, event.repeat);
+    
 
     // abort if not a valid key
     if (!['j', 'k', 'm'].includes(event.key) || event.repeat) return;
@@ -48,7 +51,6 @@ export const useKeyPressMonitor = (): KeyPressData => {
   };
 
   const handleKeyUp = (event: KeyboardEvent) => {
-    console.log('keypress up', event.key,'repeat', event.repeat);
     if (event.key !== keyPressed.current || event.repeat) return;
     clearTimeout(startTimerRef.current);
 
@@ -58,12 +60,16 @@ export const useKeyPressMonitor = (): KeyPressData => {
 
       // Clear the action indicating the key press ended
       resetActionTimer();
-      // console.log('🚀 => handleKeyUp => resetAction:', action.keyPressed, action.isLongPress);
     }
   };
 
+  console.log("🚀 -------------------------------------------🚀");
+  console.log("🚀 => useKeyPressMonitor => action:", action);
+  console.log("🚀 -------------------------------------------🚀");
+
   return {
     action,
+    resetAction,
     onKeyDown: handleKeyDown,
     onKeyUp: handleKeyUp,
   };
