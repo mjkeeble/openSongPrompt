@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.eslintcache
+
+# non-program files
+*.pptx

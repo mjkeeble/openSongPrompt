@@ -1,4 +1,4 @@
-# Songprompter
+# SongPrompter
 
 This is a local web app that works as a teleprompter for musicians in the browser. I say local in the sense that it is intended to be self-contained on the front end - the necessary data is stored locally in JSON files - the last thing you want is for your teleprompter to fail mid-concert because it can't reach the server!
 
