@@ -36,6 +36,10 @@ const Gigs = () => {
   const handleKeyDown = (event: { key: string }) => {
     const currentIndex = buttonsRef.current.findIndex((button) => button === document.activeElement);
     if (event.key === 'm') {
+      const element = document.documentElement
+      if (element.requestFullscreen) {
+        element.requestFullscreen();
+      } 
       buttonsRef.current[currentIndex].click();
     } else if (event.key === 'j' && currentIndex > 0) {
       buttonsRef.current[currentIndex - 1].focus();
@@ -51,7 +55,7 @@ const Gigs = () => {
 
   return (
     <div onKeyDown={handleKeyDown} tabIndex={0}>
-      <h1 className="mb-5 font-fredericka text-5xl text-bj-white">Gigs</h1>
+      <h1 className="my-5 font-fredericka text-7xl text-bj-white">Gigs</h1>
       <ul className="boxShadow">
         {sortedGigs.map((gigFromList: TGig, index) => (
           <li key={gigFromList.id}>
@@ -78,7 +82,7 @@ const GigButton = forwardRef<HTMLButtonElement, TProps>(({ classes, text, onclic
   return (
     <button
       ref={ref}
-      className={`my-2 w-1/2 rounded-md border-none p-2 text-center text-3xl transition-colors duration-300 ease-in-out hover:ring-2 hover:ring-bj-red hover:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-bj-green-mid focus:ring-offset-2 ${classes}`}
+      className={`my-2 w-2/3 rounded-md border-none p-2 text-center text-7xl transition-colors duration-300 ease-in-out hover:ring-2 hover:ring-bj-red hover:ring-offset-2 focus:bg-bj-green-mid focus:text-bj-white focus:outline-none focus:ring-2 focus:ring-bj-green-dark focus:ring-offset-2 ${classes}`}
       onClick={onclick}
     >
       {text}
