@@ -6,6 +6,7 @@ import songs from '../../../data/songs.json';
 import { BREAK } from '../../const';
 import { TBreak, TGig, TRepertoireList, TSetlist, TSong } from '../../types';
 import { displayDate } from '../../utils';
+import {NavIndicator} from '..';
 
 // export const SetList: React.FC<TGig> = ({ location, date, setList }) => {
 const Setlist = () => {
@@ -37,51 +38,54 @@ const Setlist = () => {
   };
 
   return (
-    <div onKeyDown={handleKeyDown} tabIndex={0}>
-      <h1 className="my-5 font-fredericka text-7xl text-bj-white">Set List</h1>
-      {gig && (
-        <h3>
-          {displayDate(gig.dateTime)}, {gig.venue}, {gig.town}
-        </h3>
-      )}
+    <div>
+      <div onKeyDown={handleKeyDown} tabIndex={0}>
+        <h1 className="my-5 font-fredericka text-7xl text-bj-white">Set List</h1>
+        {gig && (
+          <h3>
+            {displayDate(gig.dateTime)}, {gig.venue}, {gig.town}
+          </h3>
+        )}
 
-      <ul>
-        {setlist.map((songId: number | TBreak, index) => {
-          if (songId === BREAK)
+        <ul>
+          {setlist.map((songId: number | TBreak, index) => {
+            if (songId === BREAK)
+              return (
+                <li key={index}>
+                  <SongButton
+                    ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
+                    classes="bg-bj-blue"
+                    onclick={() => Navigate(`/song/${index}`)}
+                    text="BREAK"
+                  />
+                </li>
+              );
+
+            const song: TSong | undefined = songs.find((song) => song.id === songId);
+            if (!song) {
+              return (
+                <li key={index}>
+                  <p className="text-bj-red">
+                    <em>SONG NOT FOUND!!</em>
+                  </p>
+                </li>
+              );
+            }
+
             return (
               <li key={index}>
                 <SongButton
                   ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
-                  classes="bg-bj-blue"
+                  classes=""
                   onclick={() => Navigate(`/song/${index}`)}
-                  text="BREAK"
+                  text={song.title}
                 />
               </li>
             );
-
-          const song: TSong | undefined = songs.find((song) => song.id === songId);
-          if (!song) {
-            return (
-              <li key={index}>
-                <p className="text-bj-red">
-                  <em>SONG NOT FOUND!!</em>
-                </p>
-              </li>
-            );
-          }
-
-          return (
-            <li key={index}>
-              <SongButton
-                ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
-                classes=""
-                onclick={() => Navigate(`/song/${index}`)}
-                text={song.title}
-              />
-            </li>
-          );
-        })}
-      </ul>
+          })}
+        </ul>
+      </div>
+      <NavIndicator leftShort="up" centreShort="play" rightShort="down" />
     </div>
   );
 };

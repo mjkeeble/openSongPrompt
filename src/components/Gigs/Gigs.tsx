@@ -1,6 +1,7 @@
 import { storeSetlist } from '@context/index';
 import { forwardRef, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { NavIndicator } from '..';
 import gigs from '../../../data/gigs.json';
 import { TGig } from '../../types';
 import { displayDate } from '../../utils';
@@ -36,10 +37,10 @@ const Gigs = () => {
   const handleKeyDown = (event: { key: string }) => {
     const currentIndex = buttonsRef.current.findIndex((button) => button === document.activeElement);
     if (event.key === 'm') {
-      const element = document.documentElement
+      const element = document.documentElement;
       if (element.requestFullscreen) {
         element.requestFullscreen();
-      } 
+      }
       buttonsRef.current[currentIndex].click();
     } else if (event.key === 'j' && currentIndex > 0) {
       buttonsRef.current[currentIndex - 1].focus();
@@ -54,20 +55,23 @@ const Gigs = () => {
   };
 
   return (
-    <div onKeyDown={handleKeyDown} tabIndex={0}>
-      <h1 className="my-5 font-fredericka text-7xl text-bj-white">Gigs</h1>
-      <ul className="boxShadow">
-        {sortedGigs.map((gigFromList: TGig, index) => (
-          <li key={gigFromList.id}>
-            <GigButton
-              ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
-              classes={`${getDateBasedStyling(gigFromList.dateTime)}`}
-              onclick={() => handleSelectGig(gigFromList)}
-              text={`${displayDate(gigFromList.dateTime)}, ${gigFromList.venue}, ${gigFromList.town}`}
-            />
-          </li>
-        ))}
-      </ul>
+    <div>
+      <div onKeyDown={handleKeyDown} tabIndex={0}>
+        <h1 className="my-5 font-fredericka text-7xl text-bj-white">Gigs</h1>
+        <ul className="boxShadow">
+          {sortedGigs.map((gigFromList: TGig, index) => (
+            <li key={gigFromList.id}>
+              <GigButton
+                ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
+                classes={`${getDateBasedStyling(gigFromList.dateTime)}`}
+                onclick={() => handleSelectGig(gigFromList)}
+                text={`${displayDate(gigFromList.dateTime)}, ${gigFromList.venue}, ${gigFromList.town}`}
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
+      <NavIndicator leftShort="up" centreShort="point" rightShort="down" />
     </div>
   );
 };

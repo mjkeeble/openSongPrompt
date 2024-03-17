@@ -1,6 +1,7 @@
 import { storeSetlist } from '@context/index';
 import { forwardRef, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { NavIndicator } from '..';
 import songs from '../../../data/songs.json';
 import { TRepertoireList, TSong } from '../../types';
 
@@ -35,38 +36,40 @@ const Repertoire = () => {
 
   const handleSelectSong = (id: number) => {
     let storageUpdateDebounce: NodeJS.Timeout | null = null;
-  
+
     console.log('storing to setlist', id);
     storeSetlist(['break', id]);
     if (storageUpdateDebounce) clearTimeout(storageUpdateDebounce);
     storageUpdateDebounce = setTimeout(() => {
       console.log('storing to setlist', id);
-     
+
       Navigate(`/song/1`);
     }, 1000);
-
   };
 
   return (
-    <div onKeyDown={handleKeyDown} tabIndex={0}>
-      <h1 className="my-5 font-fredericka text-7xl text-bj-white">Repertoire</h1>
-      <ul className="boxShadow">
-        {repertoireList.map((songId: number, index) => {
-          const song: TSong | undefined = songs.find((song) => song.id === songId);
-          if (!song) return null;
+    <div>
+      <div onKeyDown={handleKeyDown} tabIndex={0}>
+        <h1 className="my-5 font-fredericka text-7xl text-bj-white">Repertoire</h1>
+        <ul className="boxShadow">
+          {repertoireList.map((songId: number, index) => {
+            const song: TSong | undefined = songs.find((song) => song.id === songId);
+            if (!song) return null;
 
-          return (
-            <li>
-              <SongButton
-                ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
-                classes=""
-                onclick={() => handleSelectSong(song.id)}
-                text={song.title}
-              />
-            </li>
-          );
-        })}
-      </ul>
+            return (
+              <li>
+                <SongButton
+                  ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
+                  classes=""
+                  onclick={() => handleSelectSong(song.id)}
+                  text={song.title}
+                />
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+      <NavIndicator leftShort="up" centreShort="play" rightShort="down" />
     </div>
   );
 };
