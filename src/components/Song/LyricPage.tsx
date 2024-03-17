@@ -11,11 +11,6 @@ type TProps = {
 };
 
 const LyricPage: React.FC<TProps> = ({ song, currentPage, setCurrentPage, timerHalted }) => {
-  console.log('pages', song.pages.length);
-  console.log('currentPage -1', currentPage - 1);
-  
-
-  console.log(song.pages[currentPage - 1]);
 
   return (
     <div>
@@ -32,14 +27,16 @@ const LyricPage: React.FC<TProps> = ({ song, currentPage, setCurrentPage, timerH
       )}
 
       <div className="grid h-full w-full grid-cols-12 divide-x">
-        <div className="col-span-5 h-full p-4 pt-4">
-          <p className="mb-8 ml-6 text-left text-7xl font-semibold text-bj-green-light">
-            {song.pages[currentPage - 1].section}{' '}
-            <span className="text-3xl">
+        <div className="col-span-5 h-full p-4">
+          <div className="flex flex-row justify-between text-bj-green-light">
+            <p className="mb-8 ml-6 text-left text-7xl font-semibold">
+              {song.pages[currentPage - 1].section}{' '}
+            </p>
+            <p className="text-right text-6xl mr-4">
               {currentPage}/{song.pages.length}
-            </span>
-          </p>
-          <Chords chords={song.pages[currentPage - 1].chords} />
+            </p>
+          </div>
+        <Chords chords={song.pages[currentPage - 1].chords} />
         </div>
         <div className="col-span-7 h-full px-4">
           <Lyrics lyrics={song.pages[currentPage - 1].lyrics} />
