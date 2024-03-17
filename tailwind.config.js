@@ -15,7 +15,7 @@ export default {
       colors: {
         background: '#000000', // black background
         primary: '#00FF00', // green as the primary text color
-        chord: '#FFFFF', // white as the text color for highlighting
+      
         'red-title': '#FF0000', // red as an alternative text color
         transparent: 'transparent',
         'bj-white': '#faf7ff',

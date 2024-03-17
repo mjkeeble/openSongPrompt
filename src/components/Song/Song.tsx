@@ -31,10 +31,8 @@ const Song = () => {
   }, [onKeyDown, onKeyUp]);
 
   useEffect(() => {
-    if (setlistIndex > setlist.length) Navigate('/setlist/');
-    console.log('ACTION:', action);
-    
-    
+    if (setlistIndex >= setlist.length) Navigate('/repertoire/');
+
     HandleSongPageInteraction({
       action: action,
       resetAction,
@@ -51,7 +49,6 @@ const Song = () => {
   if (!setlistIndex || setlist[setlistIndex] === BREAK) return <Screensaver />;
 
   const song: TSong | undefined = songs.find((song: TSong) => song.id === setlist[setlistIndex]);
-
   if (!song) {
     return (
       <>

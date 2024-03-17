@@ -1,4 +1,4 @@
-import { Gigs, Setlist, Song } from '@components/index';
+import { Gigs, Setlist, Song, Repertoire } from '@components/index';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
@@ -10,6 +10,7 @@ function App() {
         <Route path="song/:id" element={<Song />} />
         <Route path="setlist/" element={<Setlist />} />
         <Route path="setlist/:id" element={<Setlist />} />
+        <Route path="repertoire/" element={<Repertoire />} />
       </Routes>
     </div>
   );

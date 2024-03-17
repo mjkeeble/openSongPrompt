@@ -36,3 +36,5 @@ export type TAction = {
 export type TBreak = 'break';
 
 export type TSetlist = (number | TBreak)[];
+
+export type TRepertoireList = number[];

@@ -8,7 +8,7 @@ export const deleteSetlist = () => {
   window.localStorage.removeItem('SETLIST');
 };
 
-export const getSetlist = (): TSetlist => {
+export const getSetlist = (): TSetlist  => {
   const setlist = window.localStorage.getItem('SETLIST');
   return setlist ? JSON.parse(setlist) : [];
 }
