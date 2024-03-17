@@ -1,25 +1,22 @@
-import { getSetlist } from '@context/index';
+import { storeSetlist } from '@context/index';
 import { forwardRef, useEffect, useRef } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import gigs from '../../../data/gigs.json';
+import { useNavigate } from 'react-router-dom';
 import songs from '../../../data/songs.json';
-import { BREAK } from '../../const';
-import { TBreak, TGig, TRepertoireList, TSetlist, TSong } from '../../types';
-import { displayDate } from '../../utils';
+import { TRepertoireList, TSong } from '../../types';
 
 // export const SetList: React.FC<TGig> = ({ location, date, setList }) => {
-const Setlist = () => {
-  const { id } = useParams();
+const Repertoire = () => {
   const Navigate = useNavigate();
   const buttonsRef = useRef<HTMLButtonElement[]>([]);
 
   // TODO: at the moment setlist is stored in local storage and
-  const gig: TGig | undefined = gigs.find((gigFromList: TGig) => gigFromList.id === id);
-  const setlist: TSetlist | TRepertoireList = gig
-    ? getSetlist()
-    : songs.sort((a: TSong, b: TSong) => a.title.localeCompare(b.title)).map((song: TSong) => song.id);
+
+  const repertoireList: TRepertoireList = songs
+    .sort((a: TSong, b: TSong) => a.title.localeCompare(b.title))
+    .map((song: TSong) => song.id);
 
   useEffect(() => {
+    storeSetlist([0]);
     if (buttonsRef.current[0]) {
       buttonsRef.current[0].focus();
     }
@@ -36,46 +33,34 @@ const Setlist = () => {
     }
   };
 
+  const handleSelectSong = (id: number) => {
+    let storageUpdateDebounce: NodeJS.Timeout | null = null;
+  
+    console.log('storing to setlist', id);
+    storeSetlist(['break', id]);
+    if (storageUpdateDebounce) clearTimeout(storageUpdateDebounce);
+    storageUpdateDebounce = setTimeout(() => {
+      console.log('storing to setlist', id);
+     
+      Navigate(`/song/1`);
+    }, 1000);
+
+  };
+
   return (
     <div onKeyDown={handleKeyDown} tabIndex={0}>
-      <h1 className="my-5 font-fredericka text-7xl text-bj-white">Set List</h1>
-      {gig && (
-        <h3>
-          {displayDate(gig.dateTime)}, {gig.venue}, {gig.town}
-        </h3>
-      )}
-
-      <ul>
-        {setlist.map((songId: number | TBreak, index) => {
-          if (songId === BREAK)
-            return (
-              <li key={index}>
-                <SongButton
-                  ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
-                  classes="bg-bj-blue"
-                  onclick={() => Navigate(`/song/${index}`)}
-                  text="BREAK"
-                />
-              </li>
-            );
-
+      <h1 className="my-5 font-fredericka text-7xl text-bj-white">Repertoire</h1>
+      <ul className="boxShadow">
+        {repertoireList.map((songId: number, index) => {
           const song: TSong | undefined = songs.find((song) => song.id === songId);
-          if (!song) {
-            return (
-              <li key={index}>
-                <p className="text-bj-red">
-                  <em>SONG NOT FOUND!!</em>
-                </p>
-              </li>
-            );
-          }
+          if (!song) return null;
 
           return (
-            <li key={index}>
+            <li>
               <SongButton
                 ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
                 classes=""
-                onclick={() => Navigate(`/song/${index}`)}
+                onclick={() => handleSelectSong(song.id)}
                 text={song.title}
               />
             </li>
@@ -103,4 +88,4 @@ const SongButton = forwardRef<HTMLButtonElement, TProps>(({ classes, text, oncli
     </button>
   );
 });
-export default Setlist;
+export default Repertoire;
