@@ -29,8 +29,8 @@ export const HandleSongPageInteraction: React.FC<TProps> = ({
   songPages,
   Navigate,
 }) => {
-  console.log('🚀 HandleSongPageInteraction  🚀');
 
+  // no action, ignore
   if (!action.keyPressed && !action.isLongPress) return null;
 
   // if action data is incomplete or pressed button is invalid, ignore
@@ -58,20 +58,28 @@ export const HandleSongPageInteraction: React.FC<TProps> = ({
       // go to next page in song
 
       setCurrentPage(currentPage + 1);
-      
     } else {
       // go to next song if at the end of this one
 
       setCurrentPage(0);
+      // go to next song or repertoire if at end of setlist
       Navigate(`/song/${currentSong + 1}`);
     }
     setTimerHalted(false);
     return null;
   }
 
+  // m short press
   if (action.keyPressed === 'm' && !action.isLongPress) {
     resetAction();
-    setTimerHalted(!timerHalted); 
+    // go to previous song
+    if (!currentPage) {
+      setTimerHalted(false);
+      Navigate(`/song/${Math.max(currentSong - 1, 0)}`);
+    } else {
+      // toggle freeze timer
+      setTimerHalted(!timerHalted);
+    }
     return null;
   }
 
@@ -79,6 +87,8 @@ export const HandleSongPageInteraction: React.FC<TProps> = ({
   if (action.keyPressed === 'm' && action.isLongPress) {
     resetAction();
     if (!currentPage) {
+      // go to setlist
+      // TODO: setlist id need correcting
       setTimerHalted(false);
       Navigate('/setlist/1');
     }
@@ -88,8 +98,8 @@ export const HandleSongPageInteraction: React.FC<TProps> = ({
   // k long press
   if (action.keyPressed === 'k' && action.isLongPress) {
     resetAction();
-    // navigate to next song
     setTimerHalted(false);
+    // go to next song or repertoire if at end of setlist
     Navigate(`/song/${currentSong + 1}`);
     return null;
   }
