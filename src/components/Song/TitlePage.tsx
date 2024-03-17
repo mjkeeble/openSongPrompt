@@ -12,9 +12,9 @@ const TitlePage: React.FC<TProps> = ({ title, songKey, setup, tempo, timeSignatu
   const currentTime = new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
 
   return (
-    <div className="flex h-screen w-full flex-col p-2">
-      <header className=" m-2 flex items-start justify-between text-6xl ">
-        <h1>{title}</h1>
+    <div className="flex h-screen w-full flex-col px-8 py-8">
+      <header className=" m-2 flex items-start justify-between text-4xl ">
+        <h1 className="text-left">{title}</h1>
         <h2>{currentTime}</h2>
       </header>
       <div className="flex h-full items-center justify-center">
