@@ -23,6 +23,7 @@
           "You’ve got me on the floor",
           "I’ve had my share of troubles",
           "But I ain’t been down here before",
+          "",
           "You used to say you loved me",
           "But now I don’t believe that that was true",
           "You’ve got me where you want me",
@@ -41,7 +42,8 @@
           "You’ve been spending all my money",
           "Now I haven’t got a dime",
           "I didn’t care one penny",
-          "'Cos I thought that you were mine",
+          "’Cos I thought that you were mine",
+          "",
           "Now I see through you",
           "And I don’t believe that that was ever true",
           "Now I’m sad and broke and lonely",
@@ -68,7 +70,7 @@
       {
         "section": "Verse 3",
         "chords": [
-          ["1 hit", "1 hit", "2 hits", "4 hits"],
+          ["G!", "G!", "G!_!_", "G!!!!"],
           ["C", "C", "G", "G"],
           ["D", "C", "G", "C"],
           [""],
@@ -80,6 +82,7 @@
           "You didn’t bring it back",
           "Now I’m mourning",
           "For my 1956 Cadillac",
+          "",
           "I’ve been walking so long",
           "I’ve got holes in both soles of my shoes (It’s true)",
           "",
@@ -93,7 +96,7 @@
   {
     "id": 2,
     "title": "I Remember You",
-    "writtenBy": ["Keb' Mo'"],
+    "writtenBy": ["Keb’ Mo’"],
     "gemaWerknummer": "22718367-001",
     "duration_minutes": 4,
     "duration_seconds": 45,
@@ -115,8 +118,9 @@
           "From Memphis, Tennessee",
           "My daddy was a hustler",
           "And a stranger to me",
+          "",
           "I don’t always know",
-          "What's the right thing to say",
+          "What’s the right thing to say",
           "But do I look familiar",
           "In any kind of way?"
         ],
@@ -132,12 +136,13 @@
         ],
         "lyrics": [
           "Well I remember you",
-          "Dancin' on the floor",
+          "Dancin’ on the floor",
           "I remember you",
-          "Walkin' out the door",
+          "Walkin’ out the door",
+          "",
           "You had a red dress on",
           "And some high heel shoes",
-          "You don't remember me",
+          "You don’t remember me",
           "But I remember you"
         ],
         "duration": 12
@@ -155,6 +160,7 @@
           "I had a beer",
           "I wondered what a woman like you",
           "Was doing way down here",
+          "",
           "You tore my heart apart",
           "The moment you left",
           "And Junior had a night",
@@ -173,12 +179,13 @@
         ],
         "lyrics": [
           "Well I remember you",
-          "Dancin' on the floor",
+          "Dancin’ on the floor",
           "I remember you",
-          "Walkin' out the door",
+          "Walkin’ out the door",
+          "",
           "You had a red dress on",
           "And some high heel shoes",
-          "You don't remember me",
+          "You don’t remember me",
           "But I remember you"
         ],
         "duration": 12
@@ -186,8 +193,10 @@
       {
         "section": "Bridge",
         "chords": [
-          ["A7sus4", "A7"], ["A7sus4", "A7"],
-          ["A7sus4", "A7"], ["A7sus4", "A7"]
+          ["A7sus4", "A7"],
+          ["A7sus4", "A7"],
+          ["A7sus4", "A7"],
+          ["A7sus4", "A7"]
         ],
         "lyrics": [
           "Well maybe I was just a number",
@@ -208,14 +217,16 @@
         ],
         "lyrics": [
           "Well I remember you",
-          "Dancin' on the floor",
+          "Dancin’ on the floor",
           "I remember you",
-          "Walkin' out the door",
+          "Walkin’ out the door",
+          "",
           "You had a red dress on",
           "And some high heel shoes",
-          "You don't remember me",
+          "You don’t remember me",
           "But I remember you",
-          "You don't remember me",
+
+          "You don’t remember me",
           "But I remember you"
         ],
         "duration": 16
@@ -252,12 +263,13 @@
           ["E7", "D7", "A7", ""]
         ],
         "lyrics": [
-          "I'm a cross cut saw",
-          "Just drag me 'cross your log",
-          "I'm a cross cut saw",
-          "Just drag me 'cross your log",
+          "I’m a cross cut saw",
+          "Just drag me ’cross your log",
+          "I’m a cross cut saw",
+          "Just drag me ’cross your log",
+          "",
           "I cut your wood so easy for you",
-          "You can't help but say 'Hot dog!'"
+          "You can’t help but say ’Hot dog!’"
         ],
         "duration": 12
       },
@@ -269,14 +281,15 @@
           ["E7", "D7", "A7", ""]
         ],
         "lyrics": [
-          "Some call me wood-choppin' Sam",
-          "Some call me wood-cuttin' Jim",
+          "Some call me wood-choppin’ Sam",
+          "Some call me wood-cuttin’ Jim",
           "Last girl I cut the wood for, you know",
           "She wants me back again",
-          "I'm a cross cut saw",
-          "Just drag me 'cross your log",
+          "",
+          "I’m a cross cut saw",
+          "Just drag me ’cross your log",
           "I cut your wood so easy for you",
-          "You can't help but say 'Hot dog!'"
+          "You can’t help but say ’Hot dog!’"
         ],
         "duration": 12
       },
@@ -288,12 +301,13 @@
           ["E7", "D7", "A7", ""]
         ],
         "lyrics": [
-          "I'm a cross cut saw",
-          "Just drag me 'cross your log",
-          "I'm a cross cut saw",
-          "Just drag me 'cross your log",
+          "I’m a cross cut saw",
+          "Just drag me ’cross your log",
+          "I’m a cross cut saw",
+          "Just drag me ’cross your log",
+          "",
           "I cut your wood so easy for you",
-          "You can't help but say 'Hot dog!'"
+          "You can’t help but say ’Hot dog!’"
         ],
         "duration": 12
       },
@@ -305,14 +319,15 @@
           ["E7", "D7", "A7", ""]
         ],
         "lyrics": [
-          "I've got a double-bladed axe",
+          "I’ve got a double-bladed axe",
           "That really cuts good",
-          "I'm a cross cut saw",
-          "Baby drag me 'cross your wood",
-          "I'm a cross cut saw",
-          "Just drag me 'cross your log",
+          "I’m a cross cut saw",
+          "Baby drag me ’cross your wood",
+          "",
+          "I’m a cross cut saw",
+          "Just drag me ’cross your log",
           "I cut your wood so easy for you",
-          "You can't help but say 'Hot dog!'"
+          "You can’t help but say ’Hot dog!’"
         ],
         "duration": 12
       },
@@ -324,12 +339,13 @@
           ["E7", "D7", "A7", ""]
         ],
         "lyrics": [
-          "I'm a cross cut saw",
-          "Just drag me 'cross your log",
-          "I'm a cross cut saw",
-          "Just drag me 'cross your log",
+          "I’m a cross cut saw",
+          "Just drag me ’cross your log",
+          "I’m a cross cut saw",
+          "Just drag me ’cross your log",
+          "",
           "I cut your wood so easy for you",
-          "You can't help but say 'Hot dog!'"
+          "You can’t help but say ’Hot dog!’"
         ],
         "duration": 12
       }
@@ -352,12 +368,13 @@
         "chords": [],
         "lyrics": [
           "Well, they call her Lady Luck, but that beauty is a beast",
-          "She gave me only famine, I'm still waiting for the feast",
-          "I'm getting nowhere",
+          "She gave me only famine, I’m still waiting for the feast",
+          "I’m getting nowhere",
           "And nowhere is a bad place to be",
+          "",
           "Try to help myself",
-          "I just don't have the knack",
-          "I'm taking one step forward",
+          "I just don’t have the knack",
+          "I’m taking one step forward",
           "And two steps back"
         ],
         "duration": 20
@@ -366,34 +383,36 @@
         "section": "Verse 2",
         "chords": [],
         "lyrics": [
-          "I can't pay the landlord, so I've got no place",
+          "I can’t pay the landlord, so I’ve got no place",
           "I want to be a winner, but someone fixed the race",
-          "I've gone to nothing",
+          "I’ve gone to nothing",
           "And nothing is a bad way to be",
-          "I'm down instead of up",
-          "I'm red instead of black",
-          "I'm taking one step forward",
+          "",
+          "I’m down instead of up",
+          "I’m red instead of black",
+          "I’m taking one step forward",
           "And two steps back"
         ],
         "duration": 16
       },
       {
-        "section": "Verse 2",
+        "section": "Verse 3",
         "chords": [],
         "lyrics": [
-          "I've got to check the dealer, that's all I can take",
-          "If I try to climb the ladder I'll get swallowed by a snake",
-          "I've got nothing",
-          "And nothing ain't enough for me",
+          "I’ve got to check the dealer, that’s all I can take",
+          "If I try to climb the ladder I’ll get swallowed by a snake",
+          "I’ve got nothing",
+          "And nothing ain’t enough for me",
+          "",
           "Got to take my lousy luck",
           "And drown it in a sack",
-          "I'm taking one step forward",
+          "I’m taking one step forward",
           "And two steps back"
         ],
         "duration": 16
       },
       {
-        "section": "Verse 2",
+        "section": "Bridge + outro",
         "chords": [],
         "lyrics": [
           "One step forward, two steps back",
@@ -442,13 +461,14 @@
         ],
         "lyrics": [
           "Help the poor",
-          "Won't you help poor me?",
+          "Won’t you help poor me?",
           "I need help from you, baby",
           "Need it desperately",
+          "",
           "I need you so much, I need your care",
           "Need all the loving, baby, you can spare",
           "Help the poor",
-          "Oh baby, won't you help poor me?"
+          "Oh baby, won’t you help poor me?"
         ],
         "duration": 16
       },
@@ -462,11 +482,12 @@
         ],
         "lyrics": [
           "Say you will",
-          "Say you'll help me on",
-          "I can't make it no longer",
+          "Say you’ll help me on",
+          "I can’t make it no longer",
           "In this world alone",
-          "Baby, I'm begging with tears in my eyes",
-          "For your love, don't you realize",
+          "",
+          "Baby, I’m begging with tears in my eyes",
+          "For your love, don’t you realize",
           "I need help",
           "Oh baby, help poor me"
         ],
@@ -481,8 +502,8 @@
         "lyrics": [
           "You are my inspiration",
           "Baby, that make me be a king",
-          "But if you don't come to my rescue",
-          "I couldn't ever be anything"
+          "But if you don’t come to my rescue",
+          "I couldn’t ever be anything"
         ],
         "duration": 8
       },
@@ -496,13 +517,14 @@
         ],
         "lyrics": [
           "Hey, help the poor",
-          "Won't you help poor me?",
-          "Have a heart, won't you baby?",
+          "Won’t you help poor me?",
+          "Have a heart, won’t you baby?",
           "Listen to my plea",
+          "",
           "Oh, I lost my courage till I found you",
-          "You've got what it takes, baby, to pull me through",
+          "You’ve got what it takes, baby, to pull me through",
           "Help the poor",
-          "Oh baby, won't you help poor me?"
+          "Oh baby, won’t you help poor me?"
         ],
         "duration": 16
       },
@@ -526,8 +548,8 @@
         "lyrics": [
           "You are my inspiration",
           "Baby, that make me be a king",
-          "But if you don't come to my rescue",
-          "I couldn't ever be anything"
+          "But if you don’t come to my rescue",
+          "I couldn’t ever be anything"
         ],
         "duration": 8
       },
@@ -541,13 +563,14 @@
         ],
         "lyrics": [
           "Hey, help the poor",
-          "Won't you help poor me?",
-          "Have a heart, won't you baby?",
+          "Won’t you help poor me?",
+          "Have a heart, won’t you baby?",
           "Listen to my plea",
+          "",
           "Oh, I lost my courage till I found you",
-          "You've got what it takes, baby, to pull me through",
+          "You’ve got what it takes, baby, to pull me through",
           "Help the poor",
-          "Oh baby, won't you help poor me?"
+          "Oh baby, won’t you help poor me?"
         ],
         "duration": 16
       }
@@ -555,7 +578,7 @@
   },
   {
     "id": 6,
-    "title": "Sho' Nuff I Do",
+    "title": "Sho’ Nuff I Do",
     "writtenBy": ["Elmore James"],
     "gemaWerknummer": "2129357-001",
     "duration_minutes": 2,
@@ -567,7 +590,7 @@
     "pages": [
       {
         "section": "Intro",
-        "chords": [["A  E7", "D7  E7", "A  D7", "A  E"]],
+        "chords": [["A_E7", "D7_E7", "A_D7", "A_E"]],
         "lyrics": [],
         "duration": 4
       },
@@ -575,15 +598,16 @@
         "section": "Verse 1",
         "chords": [
           ["A", "A7", "D7", "Dm7"],
-          ["A", "B7  E7", "A  D7", "A  E7"]
+          ["A", "B7_E7", "A_D7", "A_E7"]
         ],
         "lyrics": [
-          "Well I came home one mornin'",
+          "Well I came home one mornin’",
           "Found my baby gone",
           "You know I always",
           "Used to lived alone",
+          "",
           "I love her, oh yes I love her",
-          "Sho' Nuff I Do"
+          "Sho’ Nuff I Do"
         ],
         "duration": 8
       },
@@ -591,32 +615,33 @@
         "section": "Verse 2",
         "chords": [
           ["A", "A7", "D7", "Dm7"],
-          ["A", "B7  E7", "A  D7", "A  E7"]
+          ["A", "B7_E7", "A_D7", "A_E7"]
         ],
         "lyrics": [
           "First time I saw her",
           "On a Friday night",
           "I told her baby",
           "I told everything was alright",
+          "",
           "I love her, oh yes I love her",
-          "Sho' Nuff I Do"
+          "Sho’ Nuff I Do"
         ],
         "duration": 8
       },
       {
-        "section": "Verse 2",
+        "section": "Verse 3",
         "chords": [
           ["A", "A7", "D7", "Dm7"],
-          ["A", "B7  E7", "A  D7", "A  E7"]
+          ["A", "B7_E7", "A_D7", "A_E7"]
         ],
         "lyrics": [
-          "I saw her one mornin'",
-          "She was goin' round the street",
-          "She was shakin' hands",
+          "I saw her one mornin’",
+          "She was goin’ round the street",
+          "She was shakin’ hands",
           "With every man she meet",
-
+          "",
           "I love her, oh yes I love her",
-          "Sho' Nuff I Do"
+          "Sho’ Nuff I Do"
         ],
         "duration": 8
       },
@@ -624,26 +649,26 @@
         "section": "Solo",
         "chords": [
           ["A", "A7", "D7", "Dm7"],
-          ["A", "B7  E7", "A  D7", "A  E7"]
+          ["A", "B7_E7", "A_D7", "A_E7"]
         ],
-        "lyrics": [],
+        "lyrics": ["[SOLO x 2]"],
         "duration": 16
       },
       {
-        "section": "Verse 2",
+        "section": "Verse 4",
         "chords": [
           ["A", "A7", "D7", "Dm7"],
-          ["A", "B7  E7", "A  D7", "A  E7"]
+          ["A", "B7_E7", "A_D7", "A_E7"]
         ],
         "lyrics": [
           "I raise my hands",
           "And I raise the once again",
           "Please tell me, Baby",
           "Tell me that you understand",
-
+          "",
           "That I love you, oh yes I love you",
-          "Sho' Nuff I Do",
-          "Sho' Nuff I Do"
+          "Sho’ Nuff I Do",
+          "Sho’ Nuff I Do"
         ]
       }
     ]
@@ -682,8 +707,9 @@
           "The thrill is gone away",
           "The thrill is gone",
           "The thrill is gone away",
+          "",
           "You know you done me wrong, baby",
-          "And you'll be sorry someday"
+          "And you’ll be sorry someday"
         ],
         "duration": 12
       },
@@ -699,8 +725,9 @@
           "The thrill is gone away from me",
           "The thrill is gone",
           "The thrill is gone away from me",
-          "Although I'll still live on",
-          "But so lonely I'll be"
+          "",
+          "Although I’ll still live on",
+          "But so lonely I’ll be"
         ],
         "duration": 12
       },
@@ -726,7 +753,8 @@
           "The thrill is gone away for good",
           "The thrill is gone",
           "The thrill is gone away for good",
-          "Someday I know I'll be over it all, baby",
+          "",
+          "Someday I know I’ll be over it all, baby",
           "Just like I know a man should"
         ],
         "duration": 12
@@ -739,11 +767,12 @@
           ["G 7/9", "F# 7/9", "Bm", "-"]
         ],
         "lyrics": [
-          "Now I'm free",
-          "I'm free from your spell",
-          "Yes, I'm free, baby",
+          "Now I’m free",
+          "I’m free from your spell",
+          "Yes, I’m free, baby",
           "Free from your spell",
-          "And now that it's all over",
+          "",
+          "And now that it’s all over",
           "All I can do is wish you well"
         ],
         "duration": 12
@@ -761,7 +790,7 @@
   },
   {
     "id": 8,
-    "title": "Thinkin' 'Bout You",
+    "title": "Thinkin’ ’Bout You",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "31889317-001",
     "duration_minutes": 3,
@@ -776,10 +805,9 @@
         "chords": [
           ["E7", "A7", "E7", "-"],
           ["A7", "-", "E7", "-"],
-          ["B7", "A7", "E7", "B7"],
-          ["", "", "", ""]
+          ["B7", "A7", "E7", "B7"]
         ],
-        "lyrics": ["line 1", "line 2", "line 3", "line 4"],
+        "lyrics": [],
         "duration": 12
       },
       {
@@ -787,16 +815,15 @@
         "chords": [
           ["E7", "A7", "E7", "-"],
           ["A7", "-", "E7", "-"],
-          ["B7", "A7", "E7", "B7"],
-          ["", "", "", ""]
+          ["B7", "A7", "E7", "B7"]
         ],
         "lyrics": [
-          "I've thinking 'bout you, baby",
-          "Thinking 'bout you since you've been gone",
-          "I've been thinking 'bout you, baby",
-          "Thinking 'bout you now you're gone",
-          "When you were here I didn't think about you at all",
-          "Maybe that's what I did wrong"
+          "I’ve thinking ’bout you, baby",
+          "Thinking ’bout you since you’ve been gone",
+          "I’ve been thinking ’bout you, baby",
+          "Thinking ’bout you now you’re gone",
+          "When you were here I didn’t think about you at all",
+          "Maybe that’s what I did wrong"
         ],
         "duration": 12
       },
@@ -805,14 +832,13 @@
         "chords": [
           ["E7", "A7", "E7", "-"],
           ["A7", "-", "E7", "-"],
-          ["B7", "A7", "E7", "B7"],
-          ["", "", "", ""]
+          ["B7", "A7", "E7", "B7"]
         ],
         "lyrics": [
-          "I've been dreaming about you, baby",
+          "I’ve been dreaming about you, baby",
           "Dreaming you were by my side",
-          "I've been dreaming about you, baby",
-          "Dreaming you're still by my side",
+          "I’ve been dreaming about you, baby",
+          "Dreaming you’re still by my side",
           "Dreaming we were both still so happy",
           "And I was not the one who lied."
         ],
@@ -823,10 +849,9 @@
         "chords": [
           ["E7", "A7", "E7", "-"],
           ["A7", "-", "E7", "-"],
-          ["B7", "A7", "E7", "B7"],
-          ["", "", "", ""]
+          ["B7", "A7", "E7", "B7"]
         ],
-        "lyrics": [],
+        "lyrics": ["[SOLO]"],
         "duration": 12
       },
       {
@@ -834,16 +859,15 @@
         "chords": [
           ["E7", "A7", "E7", "-"],
           ["A7", "-", "E7", "-"],
-          ["B7", "A7", "E7", "B7"],
-          ["", "", "", ""]
+          ["B7", "A7", "E7", "B7"]
         ],
         "lyrics": [
-          "You been talking 'bout me, baby",
-          "Sayin' I did not treat you right",
-          "I heard you been talkin' 'bout me, baby",
-          "Sayin' I did not treat you right",
+          "You been talking ’bout me, baby",
+          "Sayin’ I did not treat you right",
+          "I heard you been talkin’ ’bout me, baby",
+          "Sayin’ I did not treat you right",
           "Now everyone turns their back on me",
-          "And my bed don't shake at night"
+          "And my bed don’t shake at night"
         ],
         "duration": 12
       },
@@ -852,23 +876,22 @@
         "chords": [
           ["E7", "A7", "E7", "-"],
           ["A7", "-", "E7", "-"],
-          ["B7", "A7", "E7", "B7"],
-          ["", "", "", ""]
+          ["B7", "A7", "E7", "B7"]
         ],
         "lyrics": [
           "Goodbye, pretty baby",
           "I know you been here and gone",
           "I said goodbye, pretty baby",
           "I know I did you wrong ",
-          "I'll be crying on my front porch",
-          "Bidin' time with jimmy-john"
+          "I’ll be crying on my front porch",
+          "Bidin’ time with jimmy-john"
         ]
       }
     ]
   },
   {
     "id": 9,
-    "title": "Rollin' Man",
+    "title": "Rollin’ Man",
     "writtenBy": ["Patrick Adams", "Peter Green"],
     "gemaWerknummer": "510859-001",
     "duration_minutes": 3,
@@ -896,8 +919,8 @@
           ["E7", "D7", "A7", ""]
         ],
         "lyrics": [
-          "Oh baby, don't you want a man like me?",
-          "I said baby, don't you want a man like me?",
+          "Oh baby, don’t you want a man like me?",
+          "I said baby, don’t you want a man like me?",
           "I could give you so much loving",
           "More than a woman ever seen"
         ],
@@ -914,7 +937,7 @@
           "Now come on baby, now we can make some love tonight",
           "I said baby, make some love tonight",
           "Well be rolling out the blankets",
-          "I'm going to make you feel alright"
+          "I’m going to make you feel alright"
         ],
         "duration": 12
       },
@@ -937,10 +960,10 @@
         ],
         "lyrics": [
           "I’m your rollin’ man",
-          "I've got all the love you need",
+          "I’ve got all the love you need",
           "Rollin man, ",
-          "I've got all the love you need",
-          "I've got so much loving",
+          "I’ve got all the love you need",
+          "I’ve got so much loving",
           "More than you ever going to see"
         ],
         "duration": 12
@@ -970,26 +993,26 @@
     "pages": [
       {
         "section": "Intro",
-        "chords": [["C  C7", "-", "-"]],
+        "chords": [["C_C7", "-", "-"]],
         "lyrics": [],
         "duration": 4
       },
       {
         "section": "Verse 1",
         "chords": [
-          ["C  C7", "-", "-"],
-          ["C  C7", "-", "-"],
-          ["F  F7", "-", "-"],
-          ["C  C7", "-", "-"],
+          ["C_C7", "-", "-"],
+          ["C_C7", "-", "-"],
+          ["F_F7", "-", "-"],
+          ["C_C7", "-", "-"],
           ["G7", "G7", "F7!", ""],
-          ["C  C7", "-", "-"]
+          ["C_C7", "-", "-"]
         ],
         "lyrics": [
           "Mustang Sally",
           "Guess you better slow Your Mustang down ",
           "Mustang Sally, my baby",
           "Guess you better slow Your Mustang down",
-          "You been runnin' all over town,",
+          "You been runnin’ all over town,",
           "Oh, I guess I have to put your flat feet on the ground"
         ],
         "duration": 24
@@ -997,31 +1020,31 @@
       {
         "section": "Chorus",
         "chords": [
-          ["C  C7", "-", "-"],
-          ["C  C7", "-", "-"],
-          ["F  F7", "-", "-"],
-          ["C  C7", "-", "-"],
+          ["C_C7", "-", "-"],
+          ["C_C7", "-", "-"],
+          ["F_F7", "-", "-"],
+          ["C_C7", "-", "-"],
           ["G7", "G7", "F7!", ""],
-          ["C  C7", "-", "-"]
+          ["C_C7", "-", "-"]
         ],
         "lyrics": [
           "All you wanna do is ride around Sally",
           "...",
           "",
           "One of these early mornings",
-          "I'm gonna be wipin' your weepin' eyes"
+          "I’m gonna be wipin’ your weepin’ eyes"
         ],
         "duration": 24
       },
       {
         "section": "Solo - Mark",
         "chords": [
-          ["C  C7", "-", "-"],
-          ["C  C7", "-", "-"],
-          ["F  F7", "-", "-"],
-          ["C  C7", "-", "-"],
+          ["C_C7", "-", "-"],
+          ["C_C7", "-", "-"],
+          ["F_F7", "-", "-"],
+          ["C_C7", "-", "-"],
           ["G7", "G7", "F7!", ""],
-          ["C  C7", "-", "-"]
+          ["C_C7", "-", "-"]
         ],
         "lyrics": [],
         "duration": 24
@@ -1029,12 +1052,12 @@
       {
         "section": "Verse 2",
         "chords": [
-          ["C  C7", "-", "-"],
-          ["C  C7", "-", "-"],
-          ["F  F7", "-", "-"],
-          ["C  C7", "-", "-"],
+          ["C_C7", "-", "-"],
+          ["C_C7", "-", "-"],
+          ["F_F7", "-", "-"],
+          ["C_C7", "-", "-"],
           ["G7", "G7", "F7!", ""],
-          ["C  C7", "-", "-"]
+          ["C_C7", "-", "-"]
         ],
         "lyrics": [
           "I bought you a brand-new Mustang",
@@ -1043,7 +1066,7 @@
           "Girl you won’t, you won’t, let me ride",
           "Mustang Sally, now baby",
           "Guess you better slow that Mustang down",
-          "You been runnin' all over town",
+          "You been runnin’ all over town",
           "I guess you have to put your flat feet on the ground"
         ],
         "duration": 24
@@ -1051,12 +1074,12 @@
       {
         "section": "Solo - Wolfgang",
         "chords": [
-          ["C  C7", "-", "-"],
-          ["C  C7", "-", "-"],
-          ["F  F7", "-", "-"],
-          ["C  C7", "-", "-"],
+          ["C_C7", "-", "-"],
+          ["C_C7", "-", "-"],
+          ["F_F7", "-", "-"],
+          ["C_C7", "-", "-"],
           ["G7", "G7", "F7!", ""],
-          ["C  C7", "-", "-"]
+          ["C_C7", "-", "-"]
         ],
         "lyrics": [],
         "duration": 24
@@ -1064,19 +1087,19 @@
       {
         "section": "Chorus",
         "chords": [
-          ["C  C7", "-", "-"],
-          ["C  C7", "-", "-"],
-          ["F  F7", "-", "-"],
-          ["C  C7", "-", "-"],
+          ["C_C7", "-", "-"],
+          ["C_C7", "-", "-"],
+          ["F_F7", "-", "-"],
+          ["C_C7", "-", "-"],
           ["G7", "G7", "F7!", ""],
-          ["C  C7", "-", "-"]
+          ["C_C7", "-", "-"]
         ],
         "lyrics": [
           "All you wanna do is ride around Sally",
           "...",
           "",
           "One of these early mornings",
-          "I'm gonna be wipin' your weepin' eyes"
+          "I’m gonna be wipin’ your weepin’ eyes"
         ]
       }
     ]
@@ -1106,12 +1129,12 @@
           ["Ab", "C", "Db", "Bbm"]
         ],
         "lyrics": [
-          "When I'm cold and shaking",
+          "When I’m cold and shaking",
           "Like a cat in the rain",
           "Will you give me shelter? ",
           "Will you soothe my pain?",
           "",
-          "When I'm down in the flood",
+          "When I’m down in the flood",
           "And I can sink or I can swim",
           "Will you pull me into the shore?",
           "Will you throw me a ring"
@@ -1123,14 +1146,15 @@
         "chords": [
           ["Ab", "C", "Db", "Bbm"],
           ["Ab", "C", "Db", "Bbm"],
-          ["-", ""]
+          ["Bbm", ""]
         ],
         "lyrics": [
           "Can l lean on you",
           "Can l lean on you",
           "Can l lean on you",
           "When life is hard?",
-          "Can l lean on yo",
+          "",
+          "Can l lean on you",
           "Can l lean on you",
           "Can l lean on you",
           "When life is hard?",
@@ -1147,8 +1171,8 @@
         "lyrics": [
           "When the debt collector",
           "Comes knocking at my door",
-          "When I ain't got nothing",
-          "But he's wanting more",
+          "When I ain’t got nothing",
+          "But he’s wanting more",
           " ",
           "When my only child",
           "Says I should not call her name",
@@ -1162,14 +1186,15 @@
         "chords": [
           ["Ab", "C", "Db", "Bbm"],
           ["Ab", "C", "Db", "Bbm"],
-          ["-", ""]
+          ["Bbm", ""]
         ],
         "lyrics": [
           "Can l lean on you",
           "Can l lean on you",
           "Can l lean on you",
           "When life is hard?",
-          "Can l lean on yo",
+          "",
+          "Can l lean on you",
           "Can l lean on you",
           "Can l lean on you",
           "When life is hard?",
@@ -1185,14 +1210,14 @@
         ],
         "lyrics": [
           "When the boss says",
-          "She don't need me no more",
+          "She don’t need me no more",
           "And sits at her gold-plated desk",
           "And she shows me the door",
           " ",
           "When my landlord",
           "Throws me out of my home",
           "Got no roof for my head",
-          "And I'm all alone"
+          "And I’m all alone"
         ],
         "duration": 8
       },
@@ -1201,14 +1226,14 @@
         "chords": [
           ["Ab", "C", "Db", "Bbm"],
           ["Ab", "C", "Db", "Bbm"],
-          ["-", ""]
+          ["Bbm", ""]
         ],
         "lyrics": [
           "Can l lean on you",
           "Can l lean on you",
           "Can l lean on you",
           "When life is hard?",
-          "Can l lean on yo",
+          "",
           "Can l lean on you",
           "Can l lean on you",
           "When life is hard?",
@@ -1248,11 +1273,13 @@
         ],
         "lyrics": [
           "You can lie to me, baby",
-          "Cause I'll sure as hell lie to you",
+          "Cause I’ll sure as hell lie to you",
+          "",
           "You can lie to me, baby",
-          "Cause I'll sure as hell lie to you ",
+          "Cause I’ll sure as hell lie to you ",
+          "",
           "Tell me anything you want",
-          "Just please don't tell me we're through"
+          "Just please don’t tell me we’re through"
         ],
         "duration": 12
       },
@@ -1264,31 +1291,35 @@
           ["E", "D", "A", "E"]
         ],
         "lyrics": [
-          "I don't need to know who ",
+          "I don’t need to know who ",
           "You were out with the other night",
+          "",
           "But if I was with another woman",
           "That would somehow kinda makes it alright",
-          "That ain't no reason not hold each other tight"
+          "",
+          "That ain’t no reason not hold each other tight"
         ],
         "duration": 12
       },
       {
         "section": "Bridge + solo",
         "chords": [
-          ["A/", "A//", "", "A//"],
-          ["", "D//", "", "A//"],
+          ["A!", "A!!", "", "A!!"],
+          ["", "D!!", "", "A!!"],
           ["E", "D", "A", "E"],
           ["A", "-", "-", "-"],
           ["D", "-", "A", "-"],
           ["E", "D", "A", "E"]
         ],
         "lyrics": [
-          "Don't tell me the truth",
+          "Don’t tell me the truth",
           "When you look in my eyes",
-          "Don't tell me the truth",
-          "'Cause I love your lies",
+          "",
+          "Don’t tell me the truth",
+          "’Cause I love your lies",
+          "",
           "Give me the fiction",
-          "It's reality I despise",
+          "It’s reality I despise",
           "",
           "[SOLO]"
         ],
@@ -1304,7 +1335,9 @@
         "lyrics": [
           "What you doing honey",
           "Coming here with all this proof",
+          "",
           "I never signed up for that kind of abuse",
+          "",
           "I think the time has come",
           "I gotta cut myself loose"
         ],
@@ -1319,11 +1352,14 @@
         ],
         "lyrics": [
           "You can lie to me, baby",
-          "Cause I'll sure as hell lie to you",
+          "Cause I’ll sure as hell lie to you",
+          "",
           "You can lie to me, baby",
-          "Cause I'll sure as hell lie to you ",
+          "Cause I’ll sure as hell lie to you ",
+          "",
           "Tell me anything you want",
-          "Just please don't tell me we're through",
+          "Just please don’t tell me we’re through",
+          "",
           "[OUTRO]"
         ]
       }
@@ -1362,6 +1398,7 @@
           "Mama, when you gonna take me home?",
           "I met a girl, and she stole my black cat bone",
           "",
+          "",
           "Oh Mama, how did I get here?",
           "I went looking for love and you know it cost me dear."
         ],
@@ -1377,7 +1414,7 @@
         "lyrics": [
           "Oh Mama, what can I do?",
 
-          "First she said she loved me and then she said we're through",
+          "First she said she loved me and then she said we’re through",
           "",
           "Mama! Mama! Mama! Mama!Mama! Mama! ...",
           "",
@@ -1387,7 +1424,7 @@
         ]
       },
       {
-        "section": "Verse 4 - 5",
+        "section": "Verse 4 ",
         "chords": [
           ["A7", "-", "-", "-"],
           ["D7", "-", "A7", "-"],
@@ -1395,15 +1432,26 @@
         ],
         "lyrics": [
           "Alle meine Entchen schwimmen auf dem See",
+          "Schwimmen auf dem See now Mama",
           "Schwimmen auf dem See",
-          "Köpfchen in das Wasser, Schwänzchen in die Höh’",
-          "",
-
+          "Köpfchen in das Wasser",
+          "Schwänzchen in die Höh’"
+        ],
+        "duration": 12
+      },
+      {
+        "section": "Verse 5",
+        "chords": [
+          ["A7", "-", "-", "-"],
+          ["D7", "-", "A7", "-"],
+          ["E7", "D7", "A7", "E7"]
+        ],
+        "lyrics": [
           "Oh Mama, when you gonna take me home?",
-          "My luck is fading, I don't want to be alone",
+          "My luck is fading, I don’t want to be alone",
           "",
           "[TURNAROUND]",
-          "My luck is fading, I don't want to be alone",
+          "My luck is fading, I don’t want to be alone",
           "My luck is fading, Mama please take me home"
         ]
       }
@@ -1429,7 +1477,8 @@
           "But a look like hers can be found from time to time",
           "Yeah, Olivia is taken",
           "But a look like hers can be found from time to time",
-          "I'm thinking something like Olivia is",
+          "",
+          "I’m thinking something like Olivia is",
           "What I need to find"
         ],
         "duration": 16
@@ -1442,11 +1491,12 @@
           ["D", "C", "G", "-"]
         ],
         "lyrics": [
-          "There's only one man in this world",
+          "There’s only one man in this world",
           "Who gets to sleep with her by his side",
-          "There's only one man in this world",
+          "There’s only one man in this world",
           "Who gets to sleep with her by his side",
-          "I'm thinking something like Olivia",
+          "",
+          "I’m thinking something like Olivia",
           "Could keep me through the night"
         ],
         "duration": 12
@@ -1461,12 +1511,13 @@
         "lyrics": [
           "[SOLO]",
           "",
-          "Now I'm not trying to steal",
+          "Now I’m not trying to steal",
           "No love away from no one man",
-          "Now I'm not trying to steal",
+          "Now I’m not trying to steal",
           "No love away from no one man",
+          "",
           "But if Olivia herself were at my door",
-          "I'd have to say, I'd let her in"
+          "I’d have to say, I’d let her in"
         ],
         "duration": 24
       },
@@ -1482,6 +1533,7 @@
           "Something like Olivia",
           "Something like Olivia",
           "Something like Olivia",
+          "",
           "I keep thinking something like Olivia",
           "Is what I need to find",
           "",
@@ -1509,18 +1561,19 @@
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"],
           [],
-          ["C/ C/", "C/ C/", "C/ C/", "C/ C/"],
+          ["C! C!", "C! C!", "C! C!", "C! C!"],
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"]
         ],
         "lyrics": [
           "Talked to my baby on the telephone, she said",
-          "Stop what you're doing and come on home",
-          "I can't hold on ...",
+          "Stop what you’re doing and come on home",
+          "I can’t hold on ...",
+          "",
           "",
           "She said, daddy you can run, walk or fly",
-          "You’re my baby and I love you ‘til I die",
-          "I can't hold on …"
+          "You’re my baby and I love you ’til I die",
+          "I can’t hold on …"
         ],
         "duration": 24
       },
@@ -1536,6 +1589,7 @@
           "Talked to my baby",
           "Talked to my baby",
           "Talked to my baby",
+          "",
           "I get a real good feeling",
           "Talking to you in the phone"
         ],
@@ -1548,20 +1602,21 @@
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"],
           [],
-          ["C/ C/", "C/ C/", "C/ C/", "C/ C/"],
+          ["C!_C!", "C!_C!", "C!_C!", "C!_C!"],
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"]
         ],
         "lyrics": [
           "[SOLO x 2]",
-          "",
           "Oh Daddy, you’re mighty fine",
           "You’re my baby you’re my lover, I hate to see you cry",
-          "I can't hold on …",
+          "I can’t hold on …",
           "",
-          "She said daddy, don't you worry, don't you cry",
-          "You know I love you baby, said you're my heart's desire",
-          "I can't hold on …"
+
+          "",
+          "She said daddy, don’t you worry, don’t you cry",
+          "You know I love you baby, said you’re my heart’s desire",
+          "I can’t hold on …"
         ],
         "duration": 48
       },
@@ -1577,6 +1632,7 @@
           "Talked to my baby",
           "Talked to my baby",
           "Talked to my baby",
+          "",
           "I get a real good feeling",
           "Talking to you in the phone",
           "",
@@ -1609,8 +1665,8 @@
     "pages": [
       {
         "section": "",
-        "chords": [ ],
-        "lyrics": [ ],
+        "chords": [],
+        "lyrics": [],
         "duration": 12
       }
     ]
@@ -1650,6 +1706,7 @@
           "You showed me the summer showers",
           "They were sweet and warm",
           " ",
+          " ",
           "You showed me colours",
           "Where there was just blue and grey",
           "Led me out of the darkness",
@@ -1665,12 +1722,13 @@
         ],
         "lyrics": [
           "You know I was drowning",
-          "'Til you pulled me back to the shore",
+          "’Til you pulled me back to the shore",
           "I felt your love for the first time",
           "And I needed more",
           " ",
+          " ",
           "I was cold, so cold",
-          "‘Til you put the fire in my heart",
+          "’Til you put the fire in my heart",
           "My race was ended",
           "Then you brought me back to the start"
         ],
@@ -1689,6 +1747,7 @@
           "Keep me warm in your love all the time",
           "",
           "[SOLO]",
+          "",
           "[ \u21D2 Footswitch ]"
         ]
       },
@@ -1703,6 +1762,7 @@
           "But you set it free",
           "You took my blues ",
           "And you made them harmony",
+          " ",
           " ",
           "I was hurting, hurting ",
           "Girl, you soothed my pain",
@@ -1749,10 +1809,11 @@
         ],
         "lyrics": [
           "Call the doctor, call him quick",
-          "I done got something 'bout to make me sick",
-          "I been kissin' in the dark",
-          "Yeah, kissin' in the dark",
-          "Kissin' in the dark, honey, that's my birthmark"
+          "I done got something ’bout to make me sick",
+          "",
+          "I been kissin’ in the dark",
+          "Yeah, kissin’ in the dark",
+          "Kissin’ in the dark, honey, that’s my birthmark"
         ],
         "duration": 24
       },
@@ -1764,11 +1825,12 @@
           ["G", "F", "C", "C"]
         ],
         "lyrics": [
-          "Well, I had a girlfriend from Alabam'",
+          "Well, I had a girlfriend from Alabam’",
           "She done put her pennies all in a jam",
-          "Kissin' in the dark",
-          "Yes, kissin' in the dark",
-          "Kissin' in the dark, honey, that's her birthmark"
+          "",
+          "Kissin’ in the dark",
+          "Yes, kissin’ in the dark",
+          "Kissin’ in the dark, honey, that’s her birthmark"
         ],
         "duration": 12
       },
@@ -1782,9 +1844,10 @@
         "lyrics": [
           "She had a date with a scrap, she met a hip cat",
           "And nobody knows where she end up at",
-          "She been kissin' in the dark",
-          "Yes, kissin' in the dark",
-          "She been kissin' in the dark, honey, that's her birthmark"
+          "",
+          "She been kissin’ in the dark",
+          "Yes, kissin’ in the dark",
+          "She been kissin’ in the dark, honey, that’s her birthmark"
         ],
         "duration": 12
       },
@@ -1796,28 +1859,48 @@
           ["G", "F", "C", "C"]
         ],
         "lyrics": [
-          "Be a good pal, just swappin' up a dime",
-          "You thinkin' about a man, throw it after mine",
-          "Kissin' in the dark",
-          "Kissin' in the dark",
-          "Kissin' in the dark, honey, that's my birthmark"
+          "Be a good pal, just swappin’ up a dime",
+          "You thinkin’ about a man, throw it after mine",
+          "",
+          "Kissin’ in the dark",
+          "Kissin’ in the dark",
+          "Kissin’ in the dark, honey, that’s my birthmark"
         ],
         "duration": 36
       },
       {
-        "section": "Verse 5 + outro",
+        "section": "Verse 5",
         "chords": [
           ["C", "-", "-", "-"],
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"]
         ],
         "lyrics": [
-          "Well, you'd better wake up, and try to get wise",
+          "Well, you’d better wake up, and try to get wise",
           "Get yourself hip to that old crazy jive",
-          "Kissin' in the dark",
-          "Kissin' in the dark",
-          "Kissin' in the dark, honey, that's my birthmark"
-        ]
+          "",
+          "Kissin’ in the dark",
+          "Kissin’ in the dark",
+          "Kissin’ in the dark, honey, that’s my birthmark"
+        ],
+        "duration": 12
+      },
+      {
+        "section": "Verse 6 + outro",
+        "chords": [
+          ["C", "-", "-", "-"],
+          ["F", "-", "C", "-"],
+          ["G", "F", "C", "C"]
+        ],
+        "lyrics": [
+          "She had a date with a scrap, she met a hip cat",
+          "And nobody knows where she end up at",
+          "",
+          "She been kissin’ in the dark",
+          "Yes, kissin’ in the dark",
+          "She been kissin’ in the dark, honey, that’s her birthmark"
+        ],
+        "duration": 12
       }
     ]
   },
@@ -1839,11 +1922,11 @@
         "lyrics": [
           "Hey Joe, where you going with that gun in your hand?",
           "Hey Joe, I said, where you going with that gun in your hand?",
-          "I'm going down to shoot my old lady",
+          "I’m going down to shoot my old lady",
           "You know, I caught her messing around with another man",
-          "I'm going down to shoot my old lady",
+          "I’m going down to shoot my old lady",
           "You know, I caught her messing around with another man",
-          "And that ain't too cool",
+          "And that ain’t too cool",
           "",
           "[\u21D2 FOOTSWITCH]"
         ]
@@ -1857,12 +1940,12 @@
           "Hey Joe, I heard you shot your lady down",
           "Shot her down in the ground, yeah",
           "Yeah. Yes, I did, I shot her",
-          "You know I caught her messin' round, messin' round town",
+          "You know I caught her messin’ round, messin’ round town",
           "Yes, I did, I shot her",
-          "You know I caught my old lady messin' 'round town",
+          "You know I caught my old lady messin’ ’round town",
           "And I gave her the gun. I shot her",
           "",
-          "[\u21D2 FOOTSWITCH]" 
+          "[\u21D2 FOOTSWITCH]"
         ]
       },
 
@@ -1876,9 +1959,9 @@
           "Shot her down in the ground, yeah",
           "Yeah",
           "Yes, I did, I shot her",
-          "You know I caught her messin' round, messin' round town",
+          "You know I caught her messin’ round, messin’ round town",
           "Yes, I did, I shot her",
-          "You know I caught my old lady messin' 'round town",
+          "You know I caught my old lady messin’ ’round town",
           "And I gave her the gun",
           "I shot her",
           "",
@@ -1908,14 +1991,14 @@
         "chords": [],
         "lyrics": [
           "Well, dig",
-          "I'm goin' way down south",
+          "I’m goin’ way down south",
           "Way down to Mexico way",
           "Alright",
-          "I'm goin' way down south",
+          "I’m goin’ way down south",
           "Way down where I can be free",
-          "Ain't no one gonna find me",
-          "Ain't no hangman gonna",
-          "He ain't gonna put a rope around me",
+          "Ain’t no one gonna find me",
+          "Ain’t no hangman gonna",
+          "He ain’t gonna put a rope around me",
           "You better believe right now",
           "I gotta go now",
           "",
@@ -1947,7 +2030,7 @@
           ["G", "-", "C", "-"],
           ["D", "C", "G", "D"],
           ["C", "-", "G", "G"],
-          ["C", "C", "D/", "C/"]
+          ["C", "C", "D!", "C!"]
         ],
         "lyrics": [],
         "duration": 8
@@ -1972,7 +2055,7 @@
           ["G", "-", "C", "-"],
           ["D", "C", "G", "D"],
           ["C", "-", "G", "G"],
-          ["C", "C", "D/", "C/"]
+          ["C", "C", "D!", "C!"]
         ],
         "lyrics": [
           "Drink it hot so it won’t never grow cold",
@@ -1986,13 +2069,13 @@
         "section": "Bridge",
         "chords": [
           ["C", "-", "G", "G"],
-          ["C", "C", "D/", "C/"]
+          ["C", "C", "D!", "C!"]
         ],
         "lyrics": [
-          "I don't need whiskey and I don't need tea",
+          "I don’t need whiskey and I don’t need tea",
           "Black coffee gives me everything I need",
           "It tastes so bitter but feels so sweet",
-          "Let me drink black coffee, I don't need to eat"
+          "Let me drink black coffee, I don’t need to eat"
         ],
         "duration": 8
       },
@@ -2028,13 +2111,14 @@
         "section": "Bridge",
         "chords": [
           ["C", "-", "G", "G"],
-          ["C", "C", "D/", "C/"]
+          ["C", "C", "D!", "C!"]
         ],
         "lyrics": [
-          "Black coffee, can't you smell the aroma",
-          "I could tell you but it's better if I show ya",
+          "Black coffee, can’t you smell the aroma",
+          "I could tell you but it’s better if I show ya",
           "Let me give one simple tip",
-          "Don't gulp it down, enjoy it sip by sip"
+          "Don’t gulp it down,",
+          "Enjoy it sip by sip"
         ],
         "duration": 8
       },
@@ -2044,7 +2128,7 @@
           ["G", "-", "C", "-"],
           ["D", "C", "G", "D"],
           ["C", "-", "G", "G"],
-          ["C", "C", "D/", "C/"]
+          ["C", "C", "D!", "C!"]
         ],
         "lyrics": [
           "[SOLO]",
@@ -2060,7 +2144,7 @@
         "section": "Outro",
         "chords": [
           ["G", "-", "C", "-"],
-          ["D", "C", "G/", ""]
+          ["D", "C", "G!", ""]
         ],
         "lyrics": ["Black coffee", "Black coffee", "Hey, stay back with that milk!"],
         "duration": 8
@@ -2082,20 +2166,20 @@
       {
         "section": "Intro + Verse 1",
         "chords": [
-          ["C", "G", "Am  F", "C"],
+          ["C", "G", "Am_F", "C"],
           [],
           ["C", "G", "Am", "F"],
           ["C", "G", "Am", "F"],
           ["C", "G", "Am", "F"],
-          ["C", "G", "Am  F", "C"]
+          ["C", "G", "Am_F", "C"]
         ],
         "lyrics": [
           "Freedom Train, oh Freedom Train",
-          "Won't you save this poor soul of mine?",
+          "Won’t you save this poor soul of mine?",
           "I swear I heard you whistle",
-          "Please don't you leave me behind",
+          "Please don’t you leave me behind",
           "",
-          "Won't you show me the Ohio",
+          "Won’t you show me the Ohio",
           "And the green hills beyond?",
           "Freedom Train, oh Freedom Train",
           "Please listen to my song"
@@ -2108,15 +2192,15 @@
           ["C", "G", "Am", "F"],
           ["C", "G", "Am", "F"],
           ["C", "G", "Am", "F"],
-          ["C", "G", "Am  F", "C"]
+          ["C", "G", "Am_F", "C"]
         ],
         "lyrics": [
           "Freedom Train, oh Freedom Train",
-          "Tell me it won't be long",
+          "Tell me it won’t be long",
           "How long must I wait now",
-          "Before it's time to move on?",
+          "Before it’s time to move on?",
           "",
-          "My husband/wife was sold to a trader",
+          "My wife was sold to a trader",
           "My son left his arm in the wheel",
           "Freedom Train, oh Freedom Train",
           "Please tell me salvation is real"
@@ -2125,25 +2209,27 @@
       },
       {
         "section": "Bridge 1",
-        "chords": [["Am", "Em", "F", "C"]],
+        "chords": [["Am", "Em", "F", "C"], ["..."]],
         "lyrics": [
           "I’m gonna ride that hidden railroad",
           "Far from where I was born",
-          "Won't you take me there? ",
-          "Won't you take me there? ",
+          "",
+          "Won’t you take me there? ",
+          "Won’t you take me there? ",
           "Into a brighter dawn"
         ],
         "duration": 8
       },
       {
         "section": "Bridge 2",
-        "chords": [["Am", "Em", "F", "C"]],
+        "chords": [["Am", "Em", "F", "C"], ["..."]],
         "lyrics": [
           "Away from these burning fields",
           "Away from pain and fear",
-          "Won't you take me there? ",
-          "Won't you take me there? ",
-          "I can't take another year"
+          "",
+          "Won’t you take me there? ",
+          "Won’t you take me there? ",
+          "I can’t face another year"
         ],
         "duration": 8
       },
@@ -2157,14 +2243,14 @@
         ],
         "lyrics": [
           "Freedom Train, oh Freedom Train",
-          "I've been praying to the Lord for so long",
+          "I’ve been praying to the Lord for so long",
           "To smile down in his mercy",
           "And forgive me for what I did wrong",
           "",
           "Well Moses parted the water",
           "And set his people free",
           "Now Freedom Train, oh Freedom Train",
-          "Won't you please do the same for me?"
+          "Won’t you please do the same for me?"
         ],
         "duration": 16
       },
@@ -2173,16 +2259,16 @@
         "chords": [
           ["C", "G", "Am", "F"],
           ["C", "G", "Am", "F"],
-          ["C", "G", "Am  F", "C"]
+          ["C", "G", "Am_F", "C"]
         ],
         "lyrics": [
           "Well Moses parted the water",
           "And set his people free",
           "Now Freedom Train, oh Freedom Train",
-          "Won't you please do the same for me?",
+          "Won’t you please do the same for me?",
           "",
           "Now Freedom Train, oh Freedom Train",
-          "Won't you please do the same for me?"
+          "Won’t you please do the same for me?"
         ]
       }
     ]
@@ -2198,23 +2284,22 @@
     "key": "Dm",
     "tempo": 136,
     "timeSignature": "4/4",
-    "setup": "Capo 5th fret",
+    "setup": "Capo 3rd fret",
     "pages": [
       {
         "section": "Intro + Verse 1",
         "chords": [
-          ["Am  C", "Am  C", "Am  C", "Am  C"],
-          [],
-          ["Am  C", "Am  C", "Am  C", "Am  C"],
-          ["F", "F  (G)", "Am  C", "Am  C"],
-          ["G", "G (F#)", "F/", ""],
-          ["Am  C", "Am  C", "Am  C", "Am  C"]
+          ["Am_C", "Am_C", "Am_C", "Am_C"],
+          ["F", "F_C(G)", "Am_C", "Am_C"],
+          ["G", "G_(F#)", "F!", ""],
+          ["Am_C", "Am_C", "Am_C", "Am_C"]
         ],
         "lyrics": [
           "\"Wash them dishes. Now mow the lawn\"",
-          "You've got me working since the break of dawn",
-          "It's hard you know",
-          "And there's something I've got to say to you ",
+          "You’ve got me working since the break of dawn",
+          "",
+          "It’s hard you know",
+          "And there’s something I’ve got to say to you ",
           "You know I love you woman ",
           "But I only get the blues with you"
         ],
@@ -2223,18 +2308,19 @@
       {
         "section": "Verse 2",
         "chords": [
-          ["Am  C", "Am  C", "Am  C", "Am  C"],
-          ["F", "F  (G)", "Am  C", "Am  C"],
-          ["G", "G (F#)", "F/", ""],
-          ["Am  C", "Am  C", "Am  C", "Am  C"]
+          ["Am_C", "Am_C", "Am_C", "Am_C"],
+          ["F", "F_C(G)", "Am_C", "Am_C"],
+          ["G", "G_(F#)", "F!", ""],
+          ["Am_C", "Am_C", "Am_C", "Am_C"]
         ],
         "lyrics": [
           "\"Watch that truck!\"",
-          "\"There's a kid on skates!\"",
+          "\"There’s a kid on skates!\"",
           "\"What gear are you in? \"",
           "\"BREAK!!\"",
+          "",
           "I’ve been driving thirty years",
-          "I don't need your back-seat driver views",
+          "I don’t need your back-seat driver views",
           "You know I love you woman ",
           "But I only get the blues with you"
         ],
@@ -2243,17 +2329,18 @@
       {
         "section": "Verse 3",
         "chords": [
-          ["Am  C", "Am  C", "Am  C", "Am  C"],
-          ["F", "F  (G)", "Am  C", "Am  C"],
-          ["G", "G (F#)", "F/", ""],
-          ["Am  C", "Am  C"]
+          ["Am_C", "Am_C", "Am_C", "Am_C"],
+          ["F", "F_C(G)", "Am_C", "Am_C"],
+          ["G", "G_(F#)", "F!", ""],
+          ["Am_C", "Am_C"]
         ],
         "lyrics": [
           "I married you in white,",
           "raised our children too",
           "Will you ever be proud of me ",
-          "Like I'm scared of you?",
-          "It‘s hard to think straight ",
+          "Like I’m scared of you?",
+          "",
+          "It’s hard to think straight ",
           "With all this passive agressive you use",
           "You know I love you woman ",
           "But I only get the blues with you"
@@ -2265,15 +2352,16 @@
         "chords": [
           ["C", "Em", "C", "Em"],
           ["C", "Em", "C", "Em7", "-"],
-          ["Am  C", "Am  C", "Am  C", "Am  C"]
+          ["Am_C", "Am_C", "Am_C", "Am_C"]
         ],
         "lyrics": [
-          "You're my yin and my yang",
+          "You’re my yin and my yang",
           "My pleasure, my pain",
           "My temptress and my torturer",
           "The girl I never tamed",
+          "",
           "I wanna tiger in my tank",
-          "But instead you're in my bed",
+          "But instead you’re in my bed",
           "Will you ever love",
           "And stop messing with my head?"
         ],
@@ -2282,17 +2370,18 @@
       {
         "section": "Verse 3",
         "chords": [
-          ["Am  C", "Am  C", "Am  C", "Am  C"],
-          ["F", "F  (G)", "Am  C", "Am  C"],
-          ["G", "G (F#)", "F/", ""],
-          ["Am  C", "Am  C"]
+          ["Am_C", "Am_C", "Am_C", "Am_C"],
+          ["F", "F_C(G)", "Am_C", "Am_C"],
+          ["G", "G_(F#)", "F!", ""],
+          ["Am_C", "Am_C"]
         ],
         "lyrics": [
           "You say you love me",
-          "But you don't know why",
+          "But you don’t know why",
           "You say we stand a chance",
-          "But you don't want to try",
-          "I don't get you girl",
+          "But you don’t want to try",
+          "",
+          "I don’t get you girl",
           "What is it that you want me to do? ",
           "You know I love you woman",
           "But I only get the blues with you"
@@ -2365,7 +2454,7 @@
           ["Dm", "-", "-", "-"],
           ["...", "-", "-", "-"],
 
-          ["F", "-", "E/", ""]
+          ["F", "-", "E!", ""]
         ],
         "lyrics": [
           "The sun beating warm",
@@ -2402,10 +2491,11 @@
           ["E", "-", "-", "-"]
         ],
         "lyrics": [
-          "Don't expect to live long",
+          "Don’t expect to live long",
           "On Poverty Road ",
           "Reaping the drought",
           "That my ancestors sowed",
+          "",
           "I lost the dice",
           "In a loaded game",
           "Every generation just the same",
@@ -2420,7 +2510,7 @@
           ["Dm", "-", "-", "-"],
           ["...", "-", "-", "-"],
 
-          ["F", "-", "E/", ""]
+          ["F", "-", "E!", ""]
         ],
         "lyrics": [
           "The sun beating warm",
@@ -2457,11 +2547,13 @@
           ["E", "B7", "E", "-"]
         ],
         "lyrics": [
-          "I'm gonna take my own advice and treat you right",
-          "I'm gonna take my own advice and treat you right",
+          "I’m gonna take my own advice and treat you right",
+          "I’m gonna take my own advice and treat you right",
+          "",
           "Gone are the days when I treated you mean",
-          "From now on I'm gonna treat you like a queen",
-          "I'm gonna take my own advice and treat you right"
+          "From now on I’m gonna treat you like a queen",
+          "",
+          "I’m gonna take my own advice and treat you right"
         ],
         "duration": 20
       },
@@ -2474,11 +2566,13 @@
           ["E", "B7", "E", "-"]
         ],
         "lyrics": [
-          "I'm gonna take my own advice and treat you good",
-          "I'm gonna treat you like a good man should",
+          "I’m gonna take my own advice and treat you good",
+          "I’m gonna treat you like a good man should",
+          "",
           "Now that I see that I treated you cruel",
-          "I'm gonna stop acting like that same stupid fool",
-          "I'm gonna take my own advice and treat you right"
+          "I’m gonna stop acting like that same stupid fool",
+          "",
+          "I’m gonna take my own advice and treat you right"
         ],
         "duration": 16
       },
@@ -2494,10 +2588,11 @@
           "How could I risk to make you go away",
           "Tell myself to do everything",
           "To make you want to stay",
-          "We've got to hold on to each other ",
+          "",
+          "We’ve got to hold on to each other ",
           "In the troubled times",
           "So please tell me honey",
-          "Tell me you're still mine."
+          "Tell me you’re still mine."
         ],
         "duration": 16
       },
@@ -2512,11 +2607,13 @@
           ["E", "B7", "E", "-"]
         ],
         "lyrics": [
-          "I'm gonna take my own advice and treat you fine",
-          "I'm gonna feed you caviar and the sweetest wine",
-          "I'm gonna   buy you things until I've got no money",
+          "I’m gonna take my own advice and treat you fine",
+          "I’m gonna feed you caviar and the sweetest wine",
+          "",
+          "I’m gonna buy you things until I’ve got no money",
           "From now on your life is purest milk and honey",
-          "I'm gonna take my own advice and treat you right"
+          "",
+          "I’m gonna take my own advice and treat you right"
         ]
       }
     ]
@@ -2544,7 +2641,7 @@
         "chords": [
           ["E", "A", "E", "-"],
           ["A", "-", "E", "E"],
-          ["B7/", "A/", "B7/", "A7/"],
+          ["B7!", "A!", "B7!", "A7!"],
           ["E", "B7", "E", "A"]
         ],
         "lyrics": [
@@ -2552,10 +2649,11 @@
           "There was a new lock on my door",
           "I came home last night",
           "There was a new lock on my door",
+          "",
           "You know it was one hell of a shock",
-          "My key wouldn't fit the goddam lock",
+          "My key wouldn’t fit the goddam lock",
           "A message from my baby said",
-          "Don't want you here no more"
+          "Don’t want you here no more"
         ],
         "duration": 16
       },
@@ -2564,13 +2662,14 @@
         "chords": [
           ["E", "A", "E", "-"],
           ["A", "-", "E", "E"],
-          ["B7/", "A/", "B7/", "A7/"],
+          ["B7!", "A!", "B7!", "A7!"],
           ["E", "B7", "E", "A"]
         ],
         "lyrics": [
           "I asked myself",
           "What have I done? ",
           "Lord knows I know she knows she was the only one",
+          "",
           "I loved her slow and I loved her good",
           "Did everything that a grown man should",
           "Now I asked myself",
@@ -2583,7 +2682,7 @@
         "chords": [
           ["E", "A", "E", "-"],
           ["A", "-", "E", "E"],
-          ["B7/", "A/", "B7/", "A7/"],
+          ["B7!", "A!", "B7!", "A7!"],
           ["E", "B7", "E", "A"]
         ],
         "lyrics": [
@@ -2591,6 +2690,7 @@
           "I did my 9 to 5",
           "I worked hard every day",
           "I did my 9 to 5",
+          "",
           "I worked my fingers to the bone",
           "Just to pay for our happy home",
           "But that weren’t enough",
@@ -2604,16 +2704,17 @@
           ["A", "-", "E", "-"],
           ["A", "-", "E", "-"],
           ["A", "-", "E", "-"],
-          ["A", "-", "C#7/", "B7/"]
+          ["A", "-", "C#7!", "B7!"]
         ],
         "lyrics": [
           "You know I tried to be that man",
           "I tried to keep her hand ",
           "I tried but that was not her plan",
           "I tried",
+          "",
           "I tried to be that man",
           "I tried to understand ",
-          "I tried but she didn't give a damn",
+          "I tried but she didn’t give a damn",
           "I tried tried"
         ],
         "duration": 16
@@ -2623,18 +2724,19 @@
         "chords": [
           ["A", "A", "E", "-"],
           ["A", "A7", "E", "E"],
-          ["B7/", "A/", "B7/", "A7/"],
+          ["B7!", "A!", "B7!", "A7!"],
           ["E", "B7", "E", "A"]
         ],
         "lyrics": [
-          "I worked hard",
-          "I did my 9 to 5",
-          "I worked hard every day",
-          "I did my 9 to 5",
-          "I worked my fingers to the bone",
-          "Just to pay for our happy home",
-          "But that weren’t enough",
-          "To keep our love alive"
+          "I saw her out",
+          "And she was with another man",
+          "I saw her out on the town",
+          "And she was with another man",
+          "",
+          "Back in the corner they were hugging and a-kissing",
+          "That’s the thing that I’ve been missing",
+          "And the wedding ring",
+          "Was missing from her hand"
         ],
         "duration": 16
       },
@@ -2644,7 +2746,7 @@
           ["A", "-", "E", "-"],
           ["A", "-", "E", "-"],
           ["A", "-", "E", "-"],
-          ["B7/", "A", "E/", ""]
+          ["B7!", "A!", "E!", ""]
         ],
         "lyrics": [
           "What have I done?",
@@ -2673,50 +2775,50 @@
       {
         "section": "Verse 1",
         "chords": [
-          ["Am Am9 ", "C D Am"],
+          ["Am_Am9 ", "C_D_Am"],
           ["Am "],
-          ["Am Am9", "C D Am"],
-          ["Am Am9", "C D Am"],
-          ["D Am", "D C Bm"],
-          ["D Am", "C D Am"],
+          ["Am_Am9 ", "C_D_Am"],
+          ["Am_Am9 ", "C_D_Am"],
+          ["D_Am", "D_C_Bm"],
+          ["D_Am", "C_D_Am"],
           ["Am"]
         ],
         "lyrics": [
           "My days, they are the highway kind",
           "They only come to leave",
-          "But the leavin' I don't mind",
-          "It's the comin' that I crave",
+          "But the leavin’ I don’t mind",
+          "It’s the comin’ that I crave",
           "Pour the sun upon the ground",
           "Stand to throw a shadow",
           "Watch it grow into a night",
-          "And fill the spinnin' sky"
+          "And fill the spinnin’ sky"
         ],
         "duration": 12
       },
       {
         "section": "Verse 2",
-        "chords": [["Am Am9", "C D Am"], ["Am Am9", "C D Am"], ["D Am", "D C Bm"], ["D Am", "C D Am"], ["Am"]],
+        "chords": [["Am_Am9 ", "C_D_Am"], ["Am_Am9 ", "C_D_Am"], ["D_Am", "D_C_Bm"], ["D_Am", "C_D_Am"], ["Am"]],
         "lyrics": [
           "Time among the pine trees",
           "It felt like breath of air",
           "Usually I just walk these streets",
           "And tell myself to care",
           "Sometimes I believe me",
-          "And sometimes I don't hear",
-          "Sometimes the shape I'm in",
-          "Won't let me go"
+          "And sometimes I don’t hear",
+          "Sometimes the shape I’m in",
+          "Won’t let me go"
         ],
         "duration": 9
       },
       {
         "section": "Verse 3",
-        "chords": [["Am Am9", "C D Am"], ["Am Am9", "C D Am"], ["D Am", "D C Bm"], ["D Am", "C D Am"], ["Am"]],
+        "chords": [["Am_Am9 ", "C_D_Am"], ["Am_Am9 ", "C_D_Am"], ["D_Am", "D_C_Bm"], ["D_Am", "C_D_Am"], ["Am"]],
         "lyrics": [
-          "Well, I don't know too much for true",
+          "Well, I don’t know too much for true",
           "But my heart knows how to pound",
           "My legs know how to love someone",
           "My voice knows how to sound",
-          "Shame that it's not enough",
+          "Shame that it’s not enough",
           "Shame that it is a shame",
           "Follow the circle down",
           "Where would you be?"
@@ -2725,14 +2827,14 @@
       },
       {
         "section": "Verse 4",
-        "chords": [["Am Am9", "C D Am"], ["Am Am9", "C D Am"], ["D Am", "D C Bm"], ["D Am", "C D Am"], ["Am"]],
+        "chords": [["Am_Am9 ", "C_D_Am"], ["Am_Am9 ", "C_D_Am"], ["D_Am", "D_C_Bm"], ["D_Am", "C_D_Am"], ["Am"]],
         "lyrics": [
-          "You're the only one I want now",
+          "You’re the only one I want now",
           "I never heard your name",
-          "Let's hope we meet some day",
-          "If we don't it's all the same",
-          "I'll meet the ones between us",
-          "And be thinkin' 'bout you",
+          "Let’s hope we meet some day",
+          "If we don’t it’s all the same",
+          "I’ll meet the ones between us",
+          "And be thinkin’ ’bout you",
           "And all the places I have seen",
           "And why you where not there"
         ]
@@ -2765,13 +2867,12 @@
         ],
         "lyrics": [
           "[INTRO]",
-          "",
-          "There's only ash and flames where the forests used to stand",
-          "Where there were fields of grain there's just dust and sand ",
+          "There’s only ash and flames where the forests used to stand",
+          "Where there were fields of grain there’s just dust and sand ",
           "Bare rocks where the glacier used to flow",
           "But we keep on driving down this blistered road.",
-          "Oh Lord! ",
-          "Oh Lord!",
+          "Oh Lord! Oh Lord!",
+
           "When are we gonna learn?"
         ],
         "duration": 22
@@ -2785,10 +2886,10 @@
           ["Am", "E7"]
         ],
         "lyrics": [
-          "The coral's dying at a record pace",
+          "The coral’s dying at a record pace",
           "Islands are drowning and lakes are laid to waste",
           "Oases drying in the desert sun",
-          "But it don‘t seem to interest anyone",
+          "But it don’t seem to interest anyone",
           "Oh Lord! ",
           "Oh Lord!",
           "When are we all gonna learn?"
@@ -2804,9 +2905,9 @@
           ["Am", "E7", "Am", "E7"]
         ],
         "lyrics": [
-          "You know it‘s frightning and it feels so hard",
+          "You know it’s frightning and it feels so hard",
           "We took Eden and made a junk yard",
-          "There's hardly time to turn this thing around",
+          "There’s hardly time to turn this thing around",
           "We need to wise up before all hope is drowned"
         ],
         "duration": 13
@@ -2820,10 +2921,10 @@
           ["Am", "E7", "..."]
         ],
         "lyrics": [
-          "Fish are starving 'cause all they can eat",
+          "Fish are starving ’cause all they can eat",
           "Is the plastic we thow at our feet",
           "The air is filled with chemical fumes",
-          "If the heat don‘t beat us our poisons will soon.",
+          "If the heat don’t beat us our poisons will soon.",
           "Oh Lord!",
           "Oh Lord!",
           "When are we all gonna learn?",
@@ -2835,7 +2936,7 @@
   },
   {
     "id": 28,
-    "title": "Look, Don't Touch",
+    "title": "Look, Don’t Touch",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "31889323-001",
     "duration_minutes": 2,
@@ -2853,8 +2954,8 @@
           "I decided to make her mine",
           "I took her for a drink, she had a gin with a twist",
           "And I leaned in just to give her a kiss",
-          "She said, ”Darling, don't be in such a rush.",
-          "You can look all you want, but don't touch!”"
+          "She said, ”Darling, don’t be in such a rush.",
+          "You can look all you want, but don’t touch!”"
         ],
         "duration": 14
       },
@@ -2863,12 +2964,12 @@
         "chords": [["E", "-", "-", "-"], [], ["E", "-", "-", "-"], ["A", "-", "E", "-"], ["B", "-", "E", "-"]],
         "lyrics": [
           "We went to the movies to see some romance",
-          "Then on to a nightclub 'cause she wanted to dance",
+          "Then on to a nightclub ’cause she wanted to dance",
           "I sidled up to her all subtle and slow",
           "But then she said that she wanted to go",
-          "That's when she showed me the gun in her clutch",
+          "That’s when she showed me the gun in her clutch",
           "And she warned me",
-          "“You can look, but don't touch!”"
+          "“You can look, but don’t touch!”"
         ],
         "duration": 14
       },
@@ -2879,10 +2980,10 @@
           ["A", "-", "B", "-"]
         ],
         "lyrics": [
-          "I can't see no reason for all this resistance",
+          "I can’t see no reason for all this resistance",
           "Why must I always keep my distance? ",
           "I know this girl is stringing me along",
-          "I don't think anything ever felt quite so wrong"
+          "I don’t think anything ever felt quite so wrong"
         ],
         "duration": 8
       },
@@ -2895,8 +2996,8 @@
           "I got on my knee by candlelight",
           "Yeah, I wanted to do everything just right",
           "She saw that rock and said,",
-          "“It's really too much!l",
-          "I said, ”I know, that's why you can look,",
+          "“It’s really too much!l",
+          "I said, ”I know, that’s why you can look,",
           "But don’t touch!”          "
         ]
       }
@@ -2927,7 +3028,7 @@
           "",
           "I’m going up, going down",
           "",
-          "You got me peepin', you got me hiding"
+          "You got me peepin’, you got me hiding"
         ]
       }
     ]
@@ -2966,9 +3067,119 @@
           "Lord, how happy could one man be",
           "If I ever get back my blue jean",
           "Lord, how happy could one man be",
-          "'Cause if I get back those blue jeans",
-          "You know, my baby be bringin' 'em home to me"
+          "’Cause if I get back those blue jeans",
+          "You know, my baby be bringin’ ’em home to me"
         ]
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Sly Dog Blues",
+    "writtenBy": ["Mark Keeble"],
+    "gemaWerknummer": "",
+    "duration_minutes": 2,
+    "duration_seconds": 25,
+    "lineup": "Band",
+    "key": "A",
+    "tempo": 131,
+    "timeSignature": "4/4",
+    "pages": [
+      {
+        "section": "Verse 1",
+        "chords": [
+          ["A!", "A!", "A!", "A!"],
+          ["A!", "A!", "A!", "A!"],
+          ["D7", "-", "A", "-"],
+          ["E9", "E#9_E9", "A", "E7"]
+        ],
+        "lyrics": [
+          "I got a sly dog",
+          "Sniffin' round my door",
+          "Eying up my woman",
+          "Beggin on the floor",
+          "He ain't got no leash",
+          "He completely wild",
+          "He drive my woman crazy",
+          "Like some feral child",
+          "I got a sly dog",
+          "But I don't know what for",
+          "I've got a sly dog",
+          "Sniffin' at my door"
+        ],
+        "duration": 16
+      },
+      {
+        "section": "Verse 2",
+        "chords": [
+          ["A!", "A!", "A!", "A!"],
+          ["A!", "A!", "A!", "A!"],
+          ["D7", "-", "A", "-"],
+          ["E9", "E#9_E9", "A", "E7"]
+        ],
+        "lyrics": [
+          "I got a cool cat",
+          "Strutting round my space",
+          "Acting like he owns the",
+          "Whole damn place",
+          "Rubs up against my leg",
+          "Purrs throughoutthe house",
+          "But that mangy creature",
+          "He can't even catch a mouse",
+          "I got a cool cat",
+          "But I don't know what for",
+          "And I've got a sly dog",
+          "Sniffin' at my door"
+        ],
+        "duration": 16
+      },
+      {
+        "section": "Verse 3 + solo",
+        "chords": [
+          ["A!", "A!", "A!", "A!"],
+          ["A!", "A!", "A!", "A!"],
+          ["D7", "-", "A", "-"],
+          ["E9", "E#9_E9", "A", "E7"]
+        ],
+        "lyrics": [
+          "I got a talking bird",
+          "Repeats everything I say",
+          "Squawks the F-word at me",
+          "Until I go away",
+          "My girl's folks came to visit",
+          "Didn't like what they heard",
+          "I lost my girl because of that",
+          "F-word bird",
+          "I got a talking chicken",
+          "But I don't know what for",
+          "And I've got a sly dog",
+          "Sniffin' at my door"
+        ],
+        "duration": 32
+      },
+      {
+        "section": "Verse 4",
+        "chords": [
+          ["A!", "A!", "A!", "A!"],
+          ["A!", "A!", "A!", "A!"],
+          ["D7", "-", "A", "-"],
+          ["E9", "E#9_E9", "A", "E7"]
+        ],
+        "lyrics": [
+          "I got a wild woman",
+          "I found her in a sack",
+          "I let her out and she just",
+          "Followed me back",
+          "She says she can't clean the dishes",
+          "And she won't sweep the floor",
+          "She just eats my food",
+          "An then she shouts for more",
+          "Yeah I got a wild woman",
+          "But I don't know what for",
+          "And I've got a sly dog",
+          "Sniffin' at my door"
+        ],
+        "duration": 16
       }
     ]
   }
