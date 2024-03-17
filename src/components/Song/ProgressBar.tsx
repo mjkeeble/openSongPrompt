@@ -59,7 +59,6 @@ const ProgressBar: React.FC<TProps> = ({
     setProgress(0);
   }, [currentPage]);
 
-  if (!duration) return null;
 
   // Adding a key prop to force reinitialization of the component when currentPage changes
   return (
