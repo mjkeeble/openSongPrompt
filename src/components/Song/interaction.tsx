@@ -29,7 +29,6 @@ export const HandleSongPageInteraction: React.FC<TProps> = ({
   songPages,
   Navigate,
 }) => {
-
   // no action, ignore
   if (!action.keyPressed && !action.isLongPress) return null;
 
@@ -46,6 +45,9 @@ export const HandleSongPageInteraction: React.FC<TProps> = ({
     // go to previous page in song
     if (currentPage > 0) {
       setCurrentPage(currentPage - 1);
+    } else {
+      // go to previous song if at the start of this one
+      Navigate(`/song/${Math.max(currentSong - 1, 0)}`);
     }
     setTimerHalted(false);
     return null;
@@ -75,7 +77,7 @@ export const HandleSongPageInteraction: React.FC<TProps> = ({
     // go to previous song
     if (!currentPage) {
       setTimerHalted(false);
-      Navigate(`/song/${Math.max(currentSong - 1, 0)}`);
+      // Navigate('/setlist/1');
     } else {
       // toggle freeze timer
       setTimerHalted(!timerHalted);
@@ -90,29 +92,30 @@ export const HandleSongPageInteraction: React.FC<TProps> = ({
       // go to setlist
       // TODO: setlist id need correcting
       setTimerHalted(false);
-      Navigate('/setlist/1');
+      // Navigate('/setlist/1');
     }
     return null;
   }
 
   // k long press
   if (action.keyPressed === 'k' && action.isLongPress) {
-    resetAction();
-    setTimerHalted(false);
-    // go to next song or repertoire if at end of setlist
-    Navigate(`/song/${currentSong + 1}`);
+    if (currentPage) {
+      resetAction();
+      setTimerHalted(false);
+      // go to next song or repertoire if at end of setlist
+      Navigate(`/song/${currentSong + 1}`);
+    } else {
+      Navigate('/setlist/1');
+    }
     return null;
   }
 
   // j long press
   if (action.keyPressed === 'j' && action.isLongPress) {
     resetAction();
-    if (!currentPage) {
-      // navigate to previous song if on the title page
-      Navigate(`/song/${currentSong - 1}`);
-    } else {
+    if (currentPage) {
       // navigate to start of current song if on a lyrics page
-      Navigate(`/song/${currentSong}`);
+      setCurrentPage(0);
     }
     setTimerHalted(false);
   }

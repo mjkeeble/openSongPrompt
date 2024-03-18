@@ -36,7 +36,10 @@ const LyricPage: React.FC<TProps> = ({ song, currentPage, setCurrentPage, timerH
               {currentPage}/{song.pages.length}
             </p>
           </div>
-        <Chords chords={song.pages[currentPage - 1].chords} />
+          <Chords chords={song.pages[currentPage - 1].chords}
+            isLastPage={currentPage === song.pages.length}
+            timerHalted={timerHalted}
+            hasTimer={!!song.pages[currentPage - 1].duration } />
         </div>
         <div className="col-span-7 h-full px-4">
           <Lyrics lyrics={song.pages[currentPage - 1].lyrics} />

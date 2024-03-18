@@ -1,3 +1,4 @@
+import { NavIndicator } from '..';
 import CountIn from './CountIn';
 
 type TProps = {
@@ -30,6 +31,10 @@ const TitlePage: React.FC<TProps> = ({ title, songKey, setup, tempo, timeSignatu
           </div>
         </div>
       </div>
+      <NavIndicator leftShort="backwardFast"
+        rightShort="play"
+        rightLong="eject"
+      />
     </div>
   );
 };

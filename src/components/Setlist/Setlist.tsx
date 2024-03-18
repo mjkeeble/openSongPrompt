@@ -85,7 +85,7 @@ const Setlist = () => {
           })}
         </ul>
       </div>
-      <NavIndicator leftShort="up" centreShort="play" rightShort="down" />
+      <NavIndicator leftShort="up" centreShort="point" rightShort="down" />
     </div>
   );
 };
