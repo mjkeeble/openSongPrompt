@@ -1,5 +1,5 @@
 import { storeSetlist } from '@context/index';
-import { forwardRef, useEffect, useRef } from 'react';
+import { forwardRef, useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { NavIndicator } from '..';
 import songs from '../../../data/songs.json';
@@ -9,6 +9,7 @@ import { TRepertoireList, TSong } from '../../types';
 const Repertoire = () => {
   const Navigate = useNavigate();
   const buttonsRef = useRef<HTMLButtonElement[]>([]);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   // TODO: at the moment setlist is stored in local storage and
 
@@ -23,14 +24,26 @@ const Repertoire = () => {
     }
   }, []);
 
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      setIsLoaded(true);
+    }, 1000);
+
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, []);
+
   const handleKeyDown = (event: { key: string }) => {
-    const currentIndex = buttonsRef.current.findIndex((button) => button === document.activeElement);
-    if (event.key === 'm') {
-      buttonsRef.current[currentIndex].click();
-    } else if (event.key === 'j' && currentIndex > 0) {
-      buttonsRef.current[currentIndex - 1].focus();
-    } else if (event.key === 'k' && currentIndex < buttonsRef.current.length - 1) {
-      buttonsRef.current[currentIndex + 1].focus();
+    if (isLoaded) {
+      const currentIndex = buttonsRef.current.findIndex((button) => button === document.activeElement);
+      if (event.key === 'm') {
+        buttonsRef.current[currentIndex].click();
+      } else if (event.key === 'j' && currentIndex > 0) {
+        buttonsRef.current[currentIndex - 1].focus();
+      } else if (event.key === 'k' && currentIndex < buttonsRef.current.length - 1) {
+        buttonsRef.current[currentIndex + 1].focus();
+      }
     }
   };
 

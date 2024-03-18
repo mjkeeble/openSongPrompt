@@ -1,18 +1,19 @@
 import { getSetlist } from '@context/index';
-import { forwardRef, useEffect, useRef } from 'react';
+import { forwardRef, useEffect, useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { NavIndicator } from '..';
 import gigs from '../../../data/gigs.json';
 import songs from '../../../data/songs.json';
 import { BREAK } from '../../const';
 import { TBreak, TGig, TRepertoireList, TSetlist, TSong } from '../../types';
 import { displayDate } from '../../utils';
-import {NavIndicator} from '..';
 
 // export const SetList: React.FC<TGig> = ({ location, date, setList }) => {
 const Setlist = () => {
   const { id } = useParams();
   const Navigate = useNavigate();
   const buttonsRef = useRef<HTMLButtonElement[]>([]);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   // TODO: at the moment setlist is stored in local storage and
   const gig: TGig | undefined = gigs.find((gigFromList: TGig) => gigFromList.id === id);
@@ -26,14 +27,26 @@ const Setlist = () => {
     }
   }, []);
 
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      setIsLoaded(true);
+    }, 1000);
+
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, []);
+
   const handleKeyDown = (event: { key: string }) => {
-    const currentIndex = buttonsRef.current.findIndex((button) => button === document.activeElement);
-    if (event.key === 'm') {
-      buttonsRef.current[currentIndex].click();
-    } else if (event.key === 'j' && currentIndex > 0) {
-      buttonsRef.current[currentIndex - 1].focus();
-    } else if (event.key === 'k' && currentIndex < buttonsRef.current.length - 1) {
-      buttonsRef.current[currentIndex + 1].focus();
+    if (isLoaded) {
+      const currentIndex = buttonsRef.current.findIndex((button) => button === document.activeElement);
+      if (event.key === 'm') {
+        buttonsRef.current[currentIndex].click();
+      } else if (event.key === 'j' && currentIndex > 0) {
+        buttonsRef.current[currentIndex - 1].focus();
+      } else if (event.key === 'k' && currentIndex < buttonsRef.current.length - 1) {
+        buttonsRef.current[currentIndex + 1].focus();
+      }
     }
   };
 
