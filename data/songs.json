@@ -63,14 +63,14 @@
           "I know that there’s no going back",
           "But you still matter to me",
           "",
-          "[SOLO}"
+          "[SOLO]"
         ],
         "duration": 20
       },
       {
         "section": "Verse 3",
         "chords": [
-          ["G!", "G!", "G!_!_", "G!!!!"],
+          ["G!", "G!", "G!_!_", "G!_!_!_!"],
           ["C", "C", "G", "G"],
           ["D", "C", "G", "C"],
           [""],
@@ -2146,8 +2146,7 @@
           ["G", "-", "C", "-"],
           ["D", "C", "G!", ""]
         ],
-        "lyrics": ["Black coffee", "Black coffee", "Hey, stay back with that milk!"],
-        "duration": 8
+        "lyrics": ["Black coffee", "Black coffee", "Hey, stay back with that milk!"]
       }
     ]
   },
