@@ -55,7 +55,7 @@ const Gigs = () => {
   };
 
   return (
-    <div>
+    <div className="overflow-y-hidden">
       <div onKeyDown={handleKeyDown} tabIndex={0}>
         <h1 className="my-5 font-fredericka text-7xl text-bj-white">Gigs</h1>
         <ul className="boxShadow">
@@ -86,7 +86,7 @@ const GigButton = forwardRef<HTMLButtonElement, TProps>(({ classes, text, onclic
   return (
     <button
       ref={ref}
-      className={`my-2 w-2/3 rounded-md border-none p-2 text-center text-7xl transition-colors duration-300 ease-in-out hover:ring-2 hover:ring-bj-red hover:ring-offset-2 focus:bg-bj-green-mid focus:text-bj-white focus:outline-none focus:ring-2 focus:ring-bj-green-dark focus:ring-offset-2 ${classes}`}
+      className={`my-2 px-6 w-2/3 rounded-full border-none p-2 text-center text-7xl transition-colors duration-300 ease-in-out hover:ring-2 hover:ring-bj-red hover:ring-offset-2 focus:bg-bj-green-mid focus:text-bj-white focus:outline-none focus:ring-2 focus:ring-bj-green-dark focus:ring-offset-2 ${classes}`}
       onClick={onclick}
     >
       {text}

@@ -1,5 +1,5 @@
 import { getSetlist } from '@context/index';
-import { forwardRef, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { NavIndicator } from '..';
 import gigs from '../../../data/gigs.json';
@@ -7,6 +7,7 @@ import songs from '../../../data/songs.json';
 import { BREAK } from '../../const';
 import { TBreak, TGig, TRepertoireList, TSetlist, TSong } from '../../types';
 import { displayDate } from '../../utils';
+import SetlistButton from './SetlistButton';
 
 // export const SetList: React.FC<TGig> = ({ location, date, setList }) => {
 const Setlist = () => {
@@ -65,7 +66,7 @@ const Setlist = () => {
             if (songId === BREAK)
               return (
                 <li key={index}>
-                  <SongButton
+                  <SetlistButton
                     ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
                     classes="bg-bj-blue"
                     onclick={() => Navigate(`/song/${index}`)}
@@ -87,7 +88,7 @@ const Setlist = () => {
 
             return (
               <li key={index}>
-                <SongButton
+                <SetlistButton
                   ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
                   classes=""
                   onclick={() => Navigate(`/song/${index}`)}
@@ -103,21 +104,4 @@ const Setlist = () => {
   );
 };
 
-type TProps = {
-  classes: string;
-  text: string;
-  onclick?: () => void;
-};
-
-const SongButton = forwardRef<HTMLButtonElement, TProps>(({ classes, text, onclick }, ref) => {
-  return (
-    <button
-      ref={ref}
-      className={`my-2 w-2/3 rounded-md border-none p-2 text-center text-7xl transition-colors duration-300 ease-in-out hover:ring-2 hover:ring-bj-red hover:ring-offset-2 focus:bg-bj-green-mid focus:text-bj-white focus:outline-none focus:ring-2 focus:ring-bj-green-dark focus:ring-offset-2 ${classes}`}
-      onClick={onclick}
-    >
-      {text}
-    </button>
-  );
-});
 export default Setlist;
