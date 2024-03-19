@@ -13,25 +13,26 @@ const Chords: React.FC<TProps> = ({ chords, isLastPage, timerHalted, hasTimer })
     if (hasTimer && timerHalted) return 'play';
     if (hasTimer) return 'pause';
   };
+  const barsPerLine = Math.round(Math.max(...chords.map((subArray) => subArray.length)));
+  const flattenedChords = chords.map((subArray) => {
+    const padding = Array(barsPerLine - subArray.length).fill(' ');
+    return [...subArray, ...padding];
+  }).flat();
 
   return (
-    <div className="w-full ">
-      <table className="w-full table-auto border-collapse p-2 text-7xl">
-        <tbody>
-          {chords.map((row, rowIndex) => (
-            <tr key={rowIndex}>
-              {row.map((cell, cellIndex) => (
-                <td key={cellIndex} className=" border border-solid border-slate-200 py-5 text-center">
-                  {cell.split(' ').map((chord, chordIndex) => (
-                    <span key={chordIndex}>{chord}</span>
-                  ))}
-                </td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      
+    <div className="w-full text-4xl">
+      <div style={{ display: 'grid', gridTemplateColumns: `repeat(${barsPerLine}, minmax(0, 1fr))` }}>
+        {flattenedChords.map((cell, cellIndex) => (
+          <div key={cellIndex} className="border border-solid border-slate-200 py-5 text-center">
+            {cell.split(' ').map((chord: string, chordIndex: React.Key | null | undefined) => (
+              <span className="text-6xl" key={chordIndex}>
+                {chord}
+              </span>
+            ))}
+          </div>
+        ))}
+      </div>
+
       <NavIndicator
         leftShort="backward"
         rightShort={isLastPage ? 'forwardStep' : 'play'}

@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   return (
-    <div id="App" className="h-full text-bj-white">
+    <div id="App" className="h-full text-bj-white overflow-y-hidden">
       <Routes>
         <Route path="/" element={<Gigs />} />
         <Route path="song/:id" element={<Song />} />
