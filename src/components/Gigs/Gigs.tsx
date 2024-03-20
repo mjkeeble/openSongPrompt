@@ -36,15 +36,15 @@ const Gigs = () => {
 
   const handleKeyDown = (event: { key: string }) => {
     const currentIndex = buttonsRef.current.findIndex((button) => button === document.activeElement);
-    if (event.key === 'm') {
+    if (event.key === 'i') {
       const element = document.documentElement;
       if (element.requestFullscreen) {
         element.requestFullscreen();
       }
       buttonsRef.current[currentIndex].click();
-    } else if (event.key === 'j' && currentIndex > 0) {
+    } else if (event.key === 'u' && currentIndex > 0) {
       buttonsRef.current[currentIndex - 1].focus();
-    } else if (event.key === 'k' && currentIndex < buttonsRef.current.length - 1) {
+    } else if (event.key === 'o' && currentIndex < buttonsRef.current.length - 1) {
       buttonsRef.current[currentIndex + 1].focus();
     }
   };
