@@ -70,7 +70,7 @@ const Repertoire = () => {
             if (!song) return null;
 
             return (
-              <li>
+              <li key={index}>
                 <SongButton
                   ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
                   classes=""
