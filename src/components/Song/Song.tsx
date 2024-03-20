@@ -16,9 +16,10 @@ const Song = () => {
 
   const { id } = useParams();
   const setlistIndex: number = parseInt(id!);
-  
+
   const [currentPage, setCurrentPage] = useState<number>(0);
   const [timerHalted, setTimerHalted] = useState<boolean>(false);
+  const song: TSong | undefined = songs.find((song: TSong) => song.id === setlist[setlistIndex]);
 
   useEffect(() => {
     const handleFootswitchInput = (event: KeyboardEvent) => {
@@ -26,29 +27,28 @@ const Song = () => {
         return null;
       }
       HandleFootswitch({
-        footswitchInput:event.key,
+        footswitchInput: event.key,
         currentSong: setlistIndex,
         totalSongs: setlist.length,
         currentPage,
         setCurrentPage,
-        hasTimer: !!song && !!song.pages[ currentPage ].duration,
+        hasTimer: !!song && !!song.pages[currentPage].duration,
         timerHalted,
         setTimerHalted,
         songPages: songs.find((song: TSong) => song.id === setlist[setlistIndex] || null)?.pages.length || 0,
         Navigate,
       });
-    }
-  
+    };
+
     document.addEventListener('keydown', handleFootswitchInput);
 
     return () => {
       document.removeEventListener('keydown', handleFootswitchInput);
     };
-  }, [currentPage, setlistIndex, timerHalted, setTimerHalted, Navigate, setlist]);
+  }, [currentPage, setlistIndex, timerHalted, setTimerHalted, Navigate, setlist, song]);
 
   if (!setlistIndex || setlist[setlistIndex] === BREAK) return <Screensaver />;
 
-  const song: TSong | undefined = songs.find((song: TSong) => song.id === setlist[setlistIndex]);
   if (!song) {
     return (
       <>
