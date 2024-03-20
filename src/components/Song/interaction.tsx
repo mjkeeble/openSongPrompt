@@ -1,124 +1,152 @@
 import { Dispatch, SetStateAction } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { TAction } from 'src/types';
+import { activeKeys } from 'src/const';
+import { TInput } from 'src/types';
 
 type TProps = {
-  action: TAction;
-  resetAction: () => void;
+  footswitchInput: TInput;
   currentSong: number;
+  totalSongs: number;
   currentPage: number;
   setCurrentPage: Dispatch<SetStateAction<number>>;
   songPages: number;
+  hasTimer: boolean;
   timerHalted: boolean;
   setTimerHalted: Dispatch<SetStateAction<boolean>>;
   Navigate: ReturnType<typeof useNavigate>;
 };
 
-const activeKeys = ['j', 'k', 'm'];
-
 // This component returns null. It is only responsible for handling user commands
 
-export const HandleSongPageInteraction: React.FC<TProps> = ({
-  action,
-  resetAction,
+export const HandleFootswitch: React.FC<TProps> = ({
+  footswitchInput,
+
   currentSong,
+  totalSongs,
   currentPage,
   setCurrentPage,
+  hasTimer,
   timerHalted,
   setTimerHalted,
   songPages,
   Navigate,
 }) => {
-  // no action, ignore
-  if (!action.keyPressed && !action.isLongPress) return null;
+  // TITLE PAGE
 
-  // if action data is incomplete or pressed button is invalid, ignore
-  if (!action.keyPressed || !activeKeys.includes(action.keyPressed)) {
-    resetAction();
-    return null;
-  }
+  if (footswitchInput && !activeKeys.includes(footswitchInput)) return null;
 
-  // j short press
-  if (action.keyPressed === 'j' && !action.isLongPress) {
-    resetAction();
+  const isLastSong = currentSong === totalSongs - 1;
+  const isLastPage = currentPage === songPages;
 
-    // go to previous page in song
-    if (currentPage > 0) {
-      setCurrentPage(currentPage - 1);
-    } else {
-      // go to previous song if at the start of this one
-      Navigate(`/song/${Math.max(currentSong - 1, 0)}`);
+  if (!currentPage) {
+    console.log('title page');
+    switch (footswitchInput) {
+      case activeKeys[0]:
+        // Handle left short press
+        // go to previous song
+        Navigate(`/song/${Math.max(currentSong - 1, 0)}`);
+        return null;
+      case activeKeys[1]:
+        // Handle centre short press
+        // TODO: add navigate back to setlist
+        return null;
+      case activeKeys[2]:
+        // Handle right short press
+        // go to next page
+        setCurrentPage(currentPage + 1);
+        return null;
+      case activeKeys[5]:
+        // Handle right long press
+        // go to next song or repertoire if at end of setlist
+        if (isLastSong) {
+          Navigate('/repertoire');
+        } else {
+          setCurrentPage(0);
+          Navigate(`/song/${currentSong + 1}`);
+        }
+        return null;
+      default:
+        return null;
     }
-    setTimerHalted(false);
-    return null;
   }
-
-  // k short press
-  if (action.keyPressed === 'k' && !action.isLongPress) {
-    resetAction();
-    if (currentPage < songPages) {
-      // go to next page in song
-
-      setCurrentPage(currentPage + 1);
-    } else {
-      // go to next song if at the end of this one
-
-      setCurrentPage(0);
-      // go to next song or repertoire if at end of setlist
-      Navigate(`/song/${currentSong + 1}`);
+  // LYRIC PAGE
+  if (!isLastPage && currentPage) {
+    console.log('lyric page');
+    switch (footswitchInput) {
+      case activeKeys[0]:
+        // Handle left short press
+        // go to previous page in song
+        setCurrentPage(currentPage - 1);
+        return null;
+      case activeKeys[1]:
+        // Handle centre short press
+        // toggle timer freeze
+        if (hasTimer) {
+          setTimerHalted(!timerHalted);
+        } else {
+          setTimerHalted(false);
+        }
+        return null;
+      case activeKeys[2]:
+        // Handle right short press
+        // go to next page in song
+        setCurrentPage(currentPage + 1);
+        return null;
+      case activeKeys[3]:
+        // Handle left long press
+        // go to start of song
+        setCurrentPage(0);
+        return null;
+      case activeKeys[5]:
+        // Handle right long press
+        // go to next song or repertoire if at end of setlist
+        if (isLastSong) {
+          Navigate('/repertoire');
+        } else {
+          setCurrentPage(0);
+          Navigate(`/song/${currentSong + 1}`);
+        }
+        return null;
+      default:
+        return null;
     }
-    setTimerHalted(false);
-    return null;
   }
+  // LAST PAGE
+  if (currentPage === songPages) {
+    console.log('last page');
+    switch (footswitchInput) {
+      case activeKeys[0]:
+        // Handle left short press
+        // go to previous page in song
+        setCurrentPage(currentPage - 1);
+        return null;
 
-  // m short press
-  if (action.keyPressed === 'm' && !action.isLongPress) {
-    resetAction();
-    // go to previous song
-    if (!currentPage) {
-      setTimerHalted(false);
-      // Navigate('/setlist/1');
-    } else {
-      // toggle freeze timer
-      setTimerHalted(!timerHalted);
+      case activeKeys[1]:
+        // Handle centre short press
+        // toggle timer freeze
+        if (hasTimer) {
+          setTimerHalted(!timerHalted);
+        } else {
+          setTimerHalted(false);
+        }
+        return null;
+      case activeKeys[2]:
+        // Handle right short press
+        // go to next song or repertoire if at end of setlist
+        if (isLastSong) {
+          Navigate('/repertoire');
+        } else {
+          setCurrentPage(0);
+          Navigate(`/song/${currentSong + 1}`);
+        }
+        return null;
+      case activeKeys[3]:
+        // Handle left long press
+        // go to start of song
+        setCurrentPage(0);
+        return null;
+      default:
+        return null;
     }
-    return null;
   }
-
-  //m long press
-  if (action.keyPressed === 'm' && action.isLongPress) {
-    resetAction();
-    if (!currentPage) {
-      // go to setlist
-      // TODO: setlist id need correcting
-      setTimerHalted(false);
-      // Navigate('/setlist/1');
-    }
-    return null;
-  }
-
-  // k long press
-  if (action.keyPressed === 'k' && action.isLongPress) {
-    if (currentPage) {
-      resetAction();
-      setTimerHalted(false);
-      // go to next song or repertoire if at end of setlist
-      Navigate(`/song/${currentSong + 1}`);
-    } else {
-      Navigate('/setlist/1');
-    }
-    return null;
-  }
-
-  // j long press
-  if (action.keyPressed === 'j' && action.isLongPress) {
-    resetAction();
-    if (currentPage) {
-      // navigate to start of current song if on a lyrics page
-      setCurrentPage(0);
-    }
-    setTimerHalted(false);
-  }
-
-  return null;
 };

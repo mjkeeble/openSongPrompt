@@ -35,10 +35,10 @@ const Chords: React.FC<TProps> = ({ chords, isLastPage, timerHalted, hasTimer })
 
       <NavIndicator
         leftShort="backward"
+        centreShort={progressIndicatorControlIcon()}
         rightShort={isLastPage ? 'forwardStep' : 'play'}
         leftLong="backwardStep"
-        rightLong="forwardStep"
-        centreShort={progressIndicatorControlIcon()}
+        rightLong={isLastPage ? undefined : "forwardStep"}
       />
     </div>
   );

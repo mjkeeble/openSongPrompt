@@ -7,13 +7,14 @@ type TProps = {
   setup: string | undefined;
   tempo: number;
   timeSignature: string;
+  isLastSong: boolean;
 };
 
 const TitlePage: React.FC<TProps> = ({ title, songKey, setup, tempo, timeSignature }) => {
   const currentTime = new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
 
   return (
-    <div className="flex h-screen w-full flex-col px-8 py-8 overflow-hidden">
+    <div className="flex h-screen w-full flex-col overflow-hidden px-8 py-8">
       <header className=" m-2 flex items-start justify-between text-4xl ">
         <h1 className="text-left">{title}</h1>
         <h2>{currentTime}</h2>
@@ -31,9 +32,12 @@ const TitlePage: React.FC<TProps> = ({ title, songKey, setup, tempo, timeSignatu
           </div>
         </div>
       </div>
-      <NavIndicator leftShort="backwardFast"
+      <NavIndicator
+        leftShort="backwardFast"
+        centreShort="eject"
         rightShort="play"
-        rightLong="eject"
+        rightLong={isLastSong ? ' forwardStep' : 'eject'}
+        // centreShort="eject"  // TODO: add navigate back to setlist
       />
     </div>
   );
