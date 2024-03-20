@@ -1,3 +1,5 @@
+import {activeKeys} from "./const";
+
 export type TGig = {
   id: string;
   venue: string;
@@ -38,3 +40,5 @@ export type TBreak = 'break';
 export type TSetlist = (number | TBreak)[];
 
 export type TRepertoireList = number[];
+
+export type TInput = (typeof activeKeys)[number] | null;
