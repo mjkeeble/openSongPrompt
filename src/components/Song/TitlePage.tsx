@@ -10,7 +10,7 @@ type TProps = {
   isLastSong: boolean;
 };
 
-const TitlePage: React.FC<TProps> = ({ title, songKey, setup, tempo, timeSignature }) => {
+const TitlePage: React.FC<TProps> = ({ title, songKey, setup, tempo, timeSignature, isLastSong }) => {
   const currentTime = new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
 
   return (
@@ -36,7 +36,7 @@ const TitlePage: React.FC<TProps> = ({ title, songKey, setup, tempo, timeSignatu
         leftShort="backwardFast"
         centreShort="eject"
         rightShort="play"
-        rightLong={isLastSong ? ' forwardStep' : 'eject'}
+        rightLong={isLastSong ? 'forwardStep' : 'eject'}
         // centreShort="eject"  // TODO: add navigate back to setlist
       />
     </div>
