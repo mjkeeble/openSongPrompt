@@ -21,6 +21,8 @@ const Song = () => {
   const [timerHalted, setTimerHalted] = useState<boolean>(false);
   const song: TSong | undefined = songs.find((song: TSong) => song.id === setlist[setlistIndex]);
 
+   
+  
   useEffect(() => {
     const handleFootswitchInput = (event: KeyboardEvent) => {
       if (activeKeys.includes(event.key)) {

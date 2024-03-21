@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { activeKeys } from 'src/const';
-import { TInput } from 'src/types';
+import { activeKeys } from '../../const';
+import { TInput } from '../../types';
 
 type TProps = {
   footswitchInput: TInput;
@@ -20,7 +20,6 @@ type TProps = {
 
 export const HandleFootswitch: React.FC<TProps> = ({
   footswitchInput,
-
   currentSong,
   totalSongs,
   currentPage,

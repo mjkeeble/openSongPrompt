@@ -17,9 +17,9 @@ void setup() {
 }
 
 void loop() {
-  checkButton(button2, 'j', 'u', &pressTime2);
-  checkButton(button4, 'k', 'i', &pressTime3); // Assuming 'o' for a long press of kButton
-  checkButton(button3, 'm', 'n', &pressTime4); // Assuming 'p' for a long press of mButton
+  checkButton(button2, 'u', 'j', &pressTime2); // left footswitch returns 'u' for short, 'j' for long press
+  checkButton(button3, 'i', 'k', &pressTime4); // centre footswitch returns 'i' for short, 'k' for long press
+  checkButton(button4, 'o', 'l', &pressTime3); // right footswitch returns 'o' for short, 'l' for long press
 }
 
 void checkButton(int buttonPin, char shortPressKey, char longPressKey, unsigned long *pressTime) {
@@ -41,5 +41,5 @@ void checkButton(int buttonPin, char shortPressKey, char longPressKey, unsigned 
       *pressTime = 0; // Reset press time
     }
   }
-  delay(50);
+  delay(20);
 }
