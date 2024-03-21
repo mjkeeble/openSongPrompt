@@ -1,0 +1,30 @@
+                     
+/* TEAM */
+            
+Name: Mark J. Keeble
+Role: Project creator and manager               
+Site: www.keeble.de
+email: mark@keeble.de
+github: https://github.com/mjkeeble                   
+Twitter: 
+
+Name: 
+Role: 
+Site: 
+email: 
+github: 
+Twitter: 
+
+Name: 
+Role: 
+Site: 
+email: 
+github: 
+Twitter: 
+
+Name: 
+Role: 
+Site: 
+email: 
+github: 
+Twitter: 
