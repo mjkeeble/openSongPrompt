@@ -1,5 +1,5 @@
 {
-  "name": "teleprompter",
+  "name": "songprompter",
   "private": true,
   "description": "Stage teleprompter application for musicians",
   "keywords": [
@@ -8,12 +8,13 @@
     "stage",
     "Stageprompter",
     "lyrics",
-    "lyrics display"
+    "lyrics display",
+    "songPrompter"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/mjkeeble/teleprompter",
-  "repository": "github:mjkeeble/teleprompter",
-  "bugs": "https://github.com/mjkeeble/teleprompter/issues",
+  "homepage": "https://github.com/mjkeeble/songprompter",
+  "repository": "github:mjkeeble/songprompter",
+  "bugs": "https://github.com/mjkeeble/songprompter/issues",
   "version": "0.0.1",
   "type": "module",
   "engines": {
