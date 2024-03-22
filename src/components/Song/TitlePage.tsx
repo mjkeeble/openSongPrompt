@@ -34,9 +34,9 @@ const TitlePage: React.FC<TProps> = ({ title, songKey, setup, tempo, timeSignatu
       </div>
       <NavIndicator
         leftShort="backwardFast"
-        centreShort="eject"
         rightShort="play"
-        rightLong={isLastSong ? 'forwardStep' : 'eject'}
+        centreLong="eject"
+        rightLong={isLastSong ? 'forwardStep' : undefined}
         // centreShort="eject"  // TODO: add navigate back to setlist
       />
     </div>

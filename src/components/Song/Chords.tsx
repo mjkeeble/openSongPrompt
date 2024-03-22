@@ -10,6 +10,7 @@ type TProps = {
 
 const Chords: React.FC<TProps> = ({ chords, isLastPage, timerHalted, hasTimer }) => {
   const progressIndicatorControlIcon = (): 'pause' | 'play' | undefined => {
+    if (isLastPage) return undefined;
     if (hasTimer && timerHalted) return 'play';
     if (hasTimer) return 'pause';
   };

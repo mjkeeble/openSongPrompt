@@ -5,7 +5,7 @@ import { NavIndicator } from '..';
 import gigs from '../../../data/gigs.json';
 import songs from '../../../data/songs.json';
 import { BREAK } from '../../const';
-import { TBreak, TGig, TRepertoireList, TSetlist, TSong } from '../../types';
+import { TBreak, TGig, TSetlist, TSong } from '../../types';
 import { displayDate } from '../../utils';
 import SetlistButton from './SetlistButton';
 
@@ -18,10 +18,8 @@ const Setlist = () => {
 
   // TODO: at the moment setlist is stored in local storage and
   const gig: TGig | undefined = gigs.find((gigFromList: TGig) => gigFromList.id === id);
-  const setlist: TSetlist | TRepertoireList = gig
-    ? getSetlist()
-    : songs.sort((a: TSong, b: TSong) => a.title.localeCompare(b.title)).map((song: TSong) => song.id);
-
+  const setlist: TSetlist =  getSetlist()
+  ;
   useEffect(() => {
     if (buttonsRef.current[0]) {
       buttonsRef.current[0].focus();

@@ -10,6 +10,7 @@ type TProps = {
   currentPage: number;
   setCurrentPage: Dispatch<SetStateAction<number>>;
   songPages: number;
+  showingScreensaver: boolean;
   hasTimer: boolean;
   timerHalted: boolean;
   setTimerHalted: Dispatch<SetStateAction<boolean>>;
@@ -18,7 +19,7 @@ type TProps = {
 
 // This component returns null. It is only responsible for handling user commands
 
-export const HandleFootswitch: React.FC<TProps> = ({
+export const ManageInteraction: React.FC<TProps> = ({
   footswitchInput,
   currentSong,
   totalSongs,
@@ -28,8 +29,10 @@ export const HandleFootswitch: React.FC<TProps> = ({
   timerHalted,
   setTimerHalted,
   songPages,
+  showingScreensaver,
   Navigate,
 }) => {
+
   // TITLE PAGE
 
   if (footswitchInput && !activeKeys.includes(footswitchInput)) return null;
@@ -37,6 +40,37 @@ export const HandleFootswitch: React.FC<TProps> = ({
   const isLastSong = currentSong === totalSongs - 1;
   const isLastPage = currentPage === songPages;
 
+  // BREAK
+  if (showingScreensaver) {
+    console.log('screensaver');
+    switch (footswitchInput) {
+      case activeKeys[0]:
+        // Handle left short press
+        // go to previous song
+        if (currentSong) {
+          Navigate(`/song/${Math.max(currentSong - 1, 0)}`);
+        }
+        return null;
+        case activeKeys[2]:
+          // Handle right short press
+          // go to next song or repertoire if at end of setlist
+          if (isLastSong) {
+            Navigate('/repertoire');
+          } else {
+          Navigate(`/song/${Math.min(currentSong + 1, totalSongs - 1)}`);
+        }
+        return null;
+        case activeKeys[4]:
+          // Handle left short press
+          // go to setlist
+          Navigate('/setlist/1');
+          return null;
+      default:
+        return null;
+    }
+  }
+
+  // TITLE PAGE
   if (!currentPage) {
     console.log('title page');
     switch (footswitchInput) {
@@ -45,14 +79,14 @@ export const HandleFootswitch: React.FC<TProps> = ({
         // go to previous song
         Navigate(`/song/${Math.max(currentSong - 1, 0)}`);
         return null;
-      case activeKeys[1]:
-        // Handle centre short press
-        // TODO: add navigate back to setlist
-        return null;
       case activeKeys[2]:
         // Handle right short press
         // go to next page
         setCurrentPage(currentPage + 1);
+        return null;
+      case activeKeys[4]:
+        // Handle centre long press
+        Navigate('/setlist/1');
         return null;
       case activeKeys[5]:
         // Handle right long press
@@ -110,7 +144,7 @@ export const HandleFootswitch: React.FC<TProps> = ({
         return null;
     }
   }
-  // LAST PAGE
+  // LAST LYRIC PAGE
   if (currentPage === songPages) {
     console.log('last page');
     switch (footswitchInput) {

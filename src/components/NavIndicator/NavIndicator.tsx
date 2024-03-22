@@ -10,6 +10,7 @@ import {
   faPause,
   faPlay,
   faUpLong,
+  faX
 } from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
@@ -23,7 +24,8 @@ type symbolKeys =
   | 'pause'
   | 'point'
   | 'play'
-  | 'up';
+  | 'up'
+  | 'x';
 
 type TProps = {
   leftLong?: symbolKeys;
@@ -45,6 +47,7 @@ const symbols: { [key: string]: IconDefinition } = {
   point: faHandPointer,
   play: faPlay,
   up: faUpLong,
+  x: faX,
 };
 
 const NavIndicator: React.FC<TProps> = ({ leftLong, leftShort, centreLong, centreShort, rightLong, rightShort }) => {

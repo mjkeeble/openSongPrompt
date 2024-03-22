@@ -8,7 +8,7 @@ import { BREAK, activeKeys } from '../../const.ts';
 import { TSong } from '../../types';
 import LyricPage from './LyricPage.tsx';
 import TitlePage from './TitlePage.tsx';
-import { HandleFootswitch } from './interaction';
+import { ManageInteraction } from './interaction';
 
 const Song = () => {
   const Navigate = useNavigate();
@@ -20,26 +20,25 @@ const Song = () => {
   const [currentPage, setCurrentPage] = useState<number>(0);
   const [timerHalted, setTimerHalted] = useState<boolean>(false);
   const song: TSong | undefined = songs.find((song: TSong) => song.id === setlist[setlistIndex]);
+  const duration = song?.pages[currentPage]?.duration || 0;
 
-   
-  
   useEffect(() => {
     const handleFootswitchInput = (event: KeyboardEvent) => {
       if (activeKeys.includes(event.key)) {
-        return null;
+        ManageInteraction({
+          showingScreensaver: setlist[setlistIndex] === BREAK,
+          footswitchInput: event.key,
+          currentSong: setlistIndex,
+          totalSongs: setlist.length,
+          currentPage,
+          setCurrentPage,
+          hasTimer: !!duration && !!song?.pages.length && currentPage < song?.pages.length,
+          timerHalted,
+          setTimerHalted,
+          songPages: songs.find((song: TSong) => song.id === setlist[setlistIndex] || null)?.pages.length || 0,
+          Navigate,
+        });
       }
-      HandleFootswitch({
-        footswitchInput: event.key,
-        currentSong: setlistIndex,
-        totalSongs: setlist.length,
-        currentPage,
-        setCurrentPage,
-        hasTimer: !!song && !!song.pages[currentPage].duration,
-        timerHalted,
-        setTimerHalted,
-        songPages: songs.find((song: TSong) => song.id === setlist[setlistIndex] || null)?.pages.length || 0,
-        Navigate,
-      });
     };
 
     document.addEventListener('keydown', handleFootswitchInput);
@@ -47,9 +46,11 @@ const Song = () => {
     return () => {
       document.removeEventListener('keydown', handleFootswitchInput);
     };
-  }, [currentPage, setlistIndex, timerHalted, setTimerHalted, Navigate, setlist, song]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentPage, setlistIndex, timerHalted]);
 
-  if (!setlistIndex || setlist[setlistIndex] === BREAK) return <Screensaver />;
+  if (!setlistIndex || setlist[setlistIndex] === BREAK)
+    return <Screensaver isStart={!setlistIndex} isLastSong={setlistIndex === setlist.length - 1} />;
 
   if (!song) {
     return (
@@ -59,6 +60,10 @@ const Song = () => {
       </>
     );
   }
+  console.log('🚀 ---------------------------------------🚀');
+  console.log('🚀 => Song => id:', id);
+  console.log('🚀 => Song => currentPage:', currentPage);
+  console.log('🚀 ---------------------------------------🚀');
 
   return (
     <div className="h-screen w-full">
