@@ -34,6 +34,8 @@ const Gigs = () => {
     }
   }, [sortedGigs]);
 
+  const endOfListRef = useRef<HTMLDivElement | null>(null);
+
   const handleKeyDown = (event: { key: string }) => {
     const currentIndex = buttonsRef.current.findIndex((button) => button === document.activeElement);
     if (event.key === 'i') {
@@ -44,8 +46,14 @@ const Gigs = () => {
       buttonsRef.current[currentIndex].click();
     } else if (event.key === 'u' && currentIndex > 0) {
       buttonsRef.current[currentIndex - 1].focus();
-    } else if (event.key === 'o' && currentIndex < buttonsRef.current.length - 1) {
-      buttonsRef.current[currentIndex + 1].focus();
+      buttonsRef.current[currentIndex - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else if (event.key === 'o') {
+      if (currentIndex < buttonsRef.current.length - 1) {
+        buttonsRef.current[currentIndex + 1].focus();
+        buttonsRef.current[currentIndex + 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else if (endOfListRef.current) {
+        endOfListRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
@@ -58,7 +66,7 @@ const Gigs = () => {
     <div className="overflow-y-hidden">
       <div onKeyDown={handleKeyDown} tabIndex={0}>
         <h1 className="my-5 font-fredericka text-7xl text-bj-white">Gigs</h1>
-        <ul className="boxShadow">
+        <ul className="mb-20 mt-8">
           {sortedGigs.map((gigFromList: TGig, index) => (
             <li key={gigFromList.id}>
               <GigButton
@@ -69,6 +77,7 @@ const Gigs = () => {
               />
             </li>
           ))}
+          <div ref={endOfListRef} />
         </ul>
       </div>
       <NavIndicator leftShort="up" centreShort="point" rightShort="down" />
@@ -86,7 +95,7 @@ const GigButton = forwardRef<HTMLButtonElement, TProps>(({ classes, text, onclic
   return (
     <button
       ref={ref}
-      className={`my-2 px-6 w-2/3 rounded-full border-none p-2 text-center text-7xl transition-colors duration-300 ease-in-out hover:ring-2 hover:ring-bj-red hover:ring-offset-2 focus:bg-bj-green-mid focus:text-bj-white focus:outline-none focus:ring-2 focus:ring-bj-green-dark focus:ring-offset-2 ${classes}`}
+      className={`my-2 w-2/3 rounded-full border-none p-2 px-6 text-center text-7xl transition-colors duration-300 ease-in-out focus:bg-bj-green-mid focus:text-bj-white focus:outline-none focus:ring-2 focus:ring-bj-green-dark focus:ring-offset-2 ${classes}`}
       onClick={onclick}
     >
       {text}

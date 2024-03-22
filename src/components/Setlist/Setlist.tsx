@@ -18,8 +18,7 @@ const Setlist = () => {
 
   // TODO: at the moment setlist is stored in local storage and
   const gig: TGig | undefined = gigs.find((gigFromList: TGig) => gigFromList.id === id);
-  const setlist: TSetlist =  getSetlist()
-  ;
+  const setlist: TSetlist = getSetlist();
   useEffect(() => {
     if (buttonsRef.current[0]) {
       buttonsRef.current[0].focus();
@@ -43,11 +42,19 @@ const Setlist = () => {
         buttonsRef.current[currentIndex].click();
       } else if (event.key === 'u' && currentIndex > 0) {
         buttonsRef.current[currentIndex - 1].focus();
-      } else if (event.key === 'o' && currentIndex < buttonsRef.current.length - 1) {
-        buttonsRef.current[currentIndex + 1].focus();
+        buttonsRef.current[currentIndex - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else if (event.key === 'o') {
+        if (currentIndex < buttonsRef.current.length - 1) {
+          buttonsRef.current[currentIndex + 1].focus();
+          buttonsRef.current[currentIndex + 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else if (endOfListRef.current) {
+          endOfListRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
       }
     }
   };
+
+  const endOfListRef = useRef<HTMLDivElement | null>(null);
 
   return (
     <div>
@@ -59,7 +66,7 @@ const Setlist = () => {
           </h3>
         )}
 
-        <ul>
+        <ul className="mt-8 mb-20">
           {setlist.map((songId: number | TBreak, index) => {
             if (songId === BREAK)
               return (
@@ -95,6 +102,8 @@ const Setlist = () => {
               </li>
             );
           })}
+
+          <div ref={endOfListRef} />
         </ul>
       </div>
       <NavIndicator leftShort="up" centreShort="point" rightShort="down" />
