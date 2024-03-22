@@ -70,7 +70,7 @@
       {
         "section": "Verse 3",
         "chords": [
-          ["G!", "G!", "G!_!_", "G!_!_!_!"],
+          ["G!", "G!", "G!   !   ", "G!   !   !   !"],
           ["C", "C", "G", "G"],
           ["D", "C", "G", "C"],
           [""],
@@ -590,7 +590,7 @@
     "pages": [
       {
         "section": "Intro",
-        "chords": [["A_E7", "D7_E7", "A_D7", "A_E"]],
+        "chords": [["A  E7", "D7  E7", "A  D7", "A  E"]],
         "lyrics": [],
         "duration": 4
       },
@@ -598,7 +598,7 @@
         "section": "Verse 1",
         "chords": [
           ["A", "A7", "D7", "Dm7"],
-          ["A", "B7_E7", "A_D7", "A_E7"]
+          ["A", "B7  E7", "A  D7", "A  E7"]
         ],
         "lyrics": [
           "Well I came home one mornin’",
@@ -615,7 +615,7 @@
         "section": "Verse 2",
         "chords": [
           ["A", "A7", "D7", "Dm7"],
-          ["A", "B7_E7", "A_D7", "A_E7"]
+          ["A", "B7  E7", "A  D7", "A  E7"]
         ],
         "lyrics": [
           "First time I saw her",
@@ -632,7 +632,7 @@
         "section": "Verse 3",
         "chords": [
           ["A", "A7", "D7", "Dm7"],
-          ["A", "B7_E7", "A_D7", "A_E7"]
+          ["A", "B7  E7", "A  D7", "A  E7"]
         ],
         "lyrics": [
           "I saw her one mornin’",
@@ -649,7 +649,7 @@
         "section": "Solo",
         "chords": [
           ["A", "A7", "D7", "Dm7"],
-          ["A", "B7_E7", "A_D7", "A_E7"]
+          ["A", "B7  E7", "A  D7", "A  E7"]
         ],
         "lyrics": ["[SOLO x 2]"],
         "duration": 16
@@ -658,7 +658,7 @@
         "section": "Verse 4",
         "chords": [
           ["A", "A7", "D7", "Dm7"],
-          ["A", "B7_E7", "A_D7", "A_E7"]
+          ["A", "B7  E7", "A  D7", "A  E7"]
         ],
         "lyrics": [
           "I raise my hands",
@@ -993,19 +993,19 @@
     "pages": [
       {
         "section": "Intro",
-        "chords": [["C_C7", "-", "-"]],
+        "chords": [["C  C7", "-", "-"]],
         "lyrics": [],
         "duration": 4
       },
       {
         "section": "Verse 1",
         "chords": [
-          ["C_C7", "-", "-"],
-          ["C_C7", "-", "-"],
-          ["F_F7", "-", "-"],
-          ["C_C7", "-", "-"],
+          ["C  C7", "-", "-"],
+          ["C  C7", "-", "-"],
+          ["F  F7", "-", "-"],
+          ["C  C7", "-", "-"],
           ["G7", "G7", "F7!", ""],
-          ["C_C7", "-", "-"]
+          ["C  C7", "-", "-"]
         ],
         "lyrics": [
           "Mustang Sally",
@@ -1020,12 +1020,12 @@
       {
         "section": "Chorus",
         "chords": [
-          ["C_C7", "-", "-"],
-          ["C_C7", "-", "-"],
-          ["F_F7", "-", "-"],
-          ["C_C7", "-", "-"],
+          ["C  C7", "-", "-"],
+          ["C  C7", "-", "-"],
+          ["F  F7", "-", "-"],
+          ["C  C7", "-", "-"],
           ["G7", "G7", "F7!", ""],
-          ["C_C7", "-", "-"]
+          ["C  C7", "-", "-"]
         ],
         "lyrics": [
           "All you wanna do is ride around Sally",
@@ -1039,12 +1039,12 @@
       {
         "section": "Solo - Mark",
         "chords": [
-          ["C_C7", "-", "-"],
-          ["C_C7", "-", "-"],
-          ["F_F7", "-", "-"],
-          ["C_C7", "-", "-"],
+          ["C  C7", "-", "-"],
+          ["C  C7", "-", "-"],
+          ["F  F7", "-", "-"],
+          ["C  C7", "-", "-"],
           ["G7", "G7", "F7!", ""],
-          ["C_C7", "-", "-"]
+          ["C  C7", "-", "-"]
         ],
         "lyrics": [],
         "duration": 24
@@ -1052,12 +1052,12 @@
       {
         "section": "Verse 2",
         "chords": [
-          ["C_C7", "-", "-"],
-          ["C_C7", "-", "-"],
-          ["F_F7", "-", "-"],
-          ["C_C7", "-", "-"],
+          ["C  C7", "-", "-"],
+          ["C  C7", "-", "-"],
+          ["F  F7", "-", "-"],
+          ["C  C7", "-", "-"],
           ["G7", "G7", "F7!", ""],
-          ["C_C7", "-", "-"]
+          ["C  C7", "-", "-"]
         ],
         "lyrics": [
           "I bought you a brand-new Mustang",
@@ -1074,12 +1074,12 @@
       {
         "section": "Solo - Wolfgang",
         "chords": [
-          ["C_C7", "-", "-"],
-          ["C_C7", "-", "-"],
-          ["F_F7", "-", "-"],
-          ["C_C7", "-", "-"],
+          ["C  C7", "-", "-"],
+          ["C  C7", "-", "-"],
+          ["F  F7", "-", "-"],
+          ["C  C7", "-", "-"],
           ["G7", "G7", "F7!", ""],
-          ["C_C7", "-", "-"]
+          ["C  C7", "-", "-"]
         ],
         "lyrics": [],
         "duration": 24
@@ -1087,12 +1087,12 @@
       {
         "section": "Chorus",
         "chords": [
-          ["C_C7", "-", "-"],
-          ["C_C7", "-", "-"],
-          ["F_F7", "-", "-"],
-          ["C_C7", "-", "-"],
+          ["C  C7", "-", "-"],
+          ["C  C7", "-", "-"],
+          ["F  F7", "-", "-"],
+          ["C  C7", "-", "-"],
           ["G7", "G7", "F7!", ""],
-          ["C_C7", "-", "-"]
+          ["C  C7", "-", "-"]
         ],
         "lyrics": [
           "All you wanna do is ride around Sally",
@@ -1561,7 +1561,7 @@
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"],
           [],
-          ["C! C!", "C! C!", "C! C!", "C! C!"],
+          ["C!   C!", "C!   C!", "C!   C!", "C!   C!"],
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"]
         ],
@@ -1602,7 +1602,7 @@
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"],
           [],
-          ["C!_C!", "C!_C!", "C!_C!", "C!_C!"],
+          ["C! C!", "C! C!", "C! C!", "C! C!"],
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"]
         ],
@@ -2165,12 +2165,12 @@
       {
         "section": "Intro + Verse 1",
         "chords": [
-          ["C", "G", "Am_F", "C"],
+          ["C", "G", "Am  F", "C"],
           [],
           ["C", "G", "Am", "F"],
           ["C", "G", "Am", "F"],
           ["C", "G", "Am", "F"],
-          ["C", "G", "Am_F", "C"]
+          ["C", "G", "Am  F", "C"]
         ],
         "lyrics": [
           "Freedom Train, oh Freedom Train",
@@ -2191,7 +2191,7 @@
           ["C", "G", "Am", "F"],
           ["C", "G", "Am", "F"],
           ["C", "G", "Am", "F"],
-          ["C", "G", "Am_F", "C"]
+          ["C", "G", "Am  F", "C"]
         ],
         "lyrics": [
           "Freedom Train, oh Freedom Train",
@@ -2258,7 +2258,7 @@
         "chords": [
           ["C", "G", "Am", "F"],
           ["C", "G", "Am", "F"],
-          ["C", "G", "Am_F", "C"]
+          ["C", "G", "Am  F", "C"]
         ],
         "lyrics": [
           "Well Moses parted the water",
@@ -2288,10 +2288,10 @@
       {
         "section": "Intro + Verse 1",
         "chords": [
-          ["Am_C", "Am_C", "Am_C", "Am_C"],
-          ["F", "F_C(G)", "Am_C", "Am_C"],
-          ["G", "G_(F#)", "F!", ""],
-          ["Am_C", "Am_C", "Am_C", "Am_C"]
+          ["Am  C", "Am  C", "Am  C", "Am  C"],
+          ["F", "F  C(G)", "Am  C", "Am  C"],
+          ["G", "G  (F#)", "F!", ""],
+          ["Am  C", "Am  C", "Am  C", "Am  C"]
         ],
         "lyrics": [
           "\"Wash them dishes. Now mow the lawn\"",
@@ -2307,10 +2307,10 @@
       {
         "section": "Verse 2",
         "chords": [
-          ["Am_C", "Am_C", "Am_C", "Am_C"],
-          ["F", "F_C(G)", "Am_C", "Am_C"],
-          ["G", "G_(F#)", "F!", ""],
-          ["Am_C", "Am_C", "Am_C", "Am_C"]
+          ["Am  C", "Am  C", "Am  C", "Am  C"],
+          ["F", "F  C(G)", "Am  C", "Am  C"],
+          ["G", "G  (F#)", "F!", ""],
+          ["Am  C", "Am  C", "Am  C", "Am  C"]
         ],
         "lyrics": [
           "\"Watch that truck!\"",
@@ -2328,10 +2328,10 @@
       {
         "section": "Verse 3",
         "chords": [
-          ["Am_C", "Am_C", "Am_C", "Am_C"],
-          ["F", "F_C(G)", "Am_C", "Am_C"],
-          ["G", "G_(F#)", "F!", "/"],
-          ["Am_C", "Am_C"]
+          ["Am  C", "Am  C", "Am  C", "Am  C"],
+          ["F", "F  C(G)", "Am  C", "Am  C"],
+          ["G", "G  (F#)", "F!", "/"],
+          ["Am  C", "Am  C"]
         ],
         "lyrics": [
           "I married you in white,",
@@ -2351,7 +2351,7 @@
         "chords": [
           ["C", "Em", "C", "Em"],
           ["C", "Em", "C", "Em7", "-"],
-          ["Am_C", "Am_C", "Am_C", "Am_C"]
+          ["Am  C", "Am  C", "Am  C", "Am  C"]
         ],
         "lyrics": [
           "You’re my yin and my yang",
@@ -2369,10 +2369,10 @@
       {
         "section": "Verse 3",
         "chords": [
-          ["Am_C", "Am_C", "Am_C", "Am_C"],
-          ["F", "F_C(G)", "Am_C", "Am_C"],
-          ["G", "G_(F#)", "F!", ""],
-          ["Am_C", "Am_C"]
+          ["Am  C", "Am  C", "Am  C", "Am  C"],
+          ["F", "F  C(G)", "Am  C", "Am  C"],
+          ["G", "G  (F#)", "F!", ""],
+          ["Am  C", "Am  C"]
         ],
         "lyrics": [
           "You say you love me",
@@ -2774,12 +2774,12 @@
       {
         "section": "Verse 1",
         "chords": [
-          ["Am_Am9 ", "C_D_Am"],
+          ["Am  Am9 ", "C  D  Am"],
           ["Am "],
-          ["Am_Am9 ", "C_D_Am"],
-          ["Am_Am9 ", "C_D_Am"],
-          ["D_Am", "D_C_Bm"],
-          ["D_Am", "C_D_Am"],
+          ["Am  Am9 ", "C  D  Am"],
+          ["Am  Am9 ", "C  D  Am"],
+          ["D  Am", "D  C  Bm"],
+          ["D  Am", "C  D  Am"],
           ["Am"]
         ],
         "lyrics": [
@@ -2796,7 +2796,7 @@
       },
       {
         "section": "Verse 2",
-        "chords": [["Am_Am9 ", "C_D_Am"], ["Am_Am9 ", "C_D_Am"], ["D_Am", "D_C_Bm"], ["D_Am", "C_D_Am"], ["Am"]],
+        "chords": [["Am  Am9 ", "C  D  Am"], ["Am  Am9 ", "C  D  Am"], ["D  Am", "D  C  Bm"], ["D  Am", "C  D  Am"], ["Am"]],
         "lyrics": [
           "Time among the pine trees",
           "It felt like breath of air",
@@ -2811,7 +2811,7 @@
       },
       {
         "section": "Verse 3",
-        "chords": [["Am_Am9 ", "C_D_Am"], ["Am_Am9 ", "C_D_Am"], ["D_Am", "D_C_Bm"], ["D_Am", "C_D_Am"], ["Am"]],
+        "chords": [["Am  Am9 ", "C  D  Am"], ["Am  Am9 ", "C  D  Am"], ["D  Am", "D  C  Bm"], ["D  Am", "C  D  Am"], ["Am"]],
         "lyrics": [
           "Well, I don’t know too much for true",
           "But my heart knows how to pound",
@@ -2826,7 +2826,7 @@
       },
       {
         "section": "Verse 4",
-        "chords": [["Am_Am9 ", "C_D_Am"], ["Am_Am9 ", "C_D_Am"], ["D_Am", "D_C_Bm"], ["D_Am", "C_D_Am"], ["Am"]],
+        "chords": [["Am  Am9 ", "C  D  Am"], ["Am  Am9 ", "C  D  Am"], ["D  Am", "D  C  Bm"], ["D  Am", "C  D  Am"], ["Am"]],
         "lyrics": [
           "You’re the only one I want now",
           "I never heard your name",
@@ -2898,8 +2898,8 @@
       {
         "section": "Bridge",
         "chords": [
-          ["Dm_Am", "Dm_Am", "Dm_Am", "E"],
-          ["Dm_Am", "Dm_Am", "Dm_Am", "E"],
+          ["Dm  Am", "Dm  Am", "Dm  Am", "E"],
+          ["Dm  Am", "Dm  Am", "Dm  Am", "E"],
           ["E7"],
           ["Am", "E7", "Am", "E7"]
         ],
@@ -3090,7 +3090,7 @@
           ["A!", "A!", "A!", "A!"],
           ["A!", "A!", "A!", "A!"],
           ["D7", "-", "A", "-"],
-          ["E9", "E#9_E9", "A", "E7"]
+          ["E9", "E#9  E9", "A", "E7"]
         ],
         "lyrics": [
           "I got a sly dog",
@@ -3114,7 +3114,7 @@
           ["A!", "A!", "A!", "A!"],
           ["A!", "A!", "A!", "A!"],
           ["D7", "-", "A", "-"],
-          ["E9", "E#9_E9", "A", "E7"]
+          ["E9", "E#9  E9", "A", "E7"]
         ],
         "lyrics": [
           "I got a cool cat",
@@ -3138,7 +3138,7 @@
           ["A!", "A!", "A!", "A!"],
           ["A!", "A!", "A!", "A!"],
           ["D7", "-", "A", "-"],
-          ["E9", "E#9_E9", "A", "E7"]
+          ["E9", "E#9  E9", "A", "E7"]
         ],
         "lyrics": [
           "I got a talking bird",
@@ -3162,7 +3162,7 @@
           ["A!", "A!", "A!", "A!"],
           ["A!", "A!", "A!", "A!"],
           ["D7", "-", "A", "-"],
-          ["E9", "E#9_E9", "A", "E7"]
+          ["E9", "E#9  E9", "A", "E7"]
         ],
         "lyrics": [
           "I got a wild woman",

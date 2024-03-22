@@ -15,21 +15,23 @@ const Chords: React.FC<TProps> = ({ chords, isLastPage, timerHalted, hasTimer })
     if (hasTimer) return 'pause';
   };
   const barsPerLine = Math.round(Math.max(...chords.map((subArray) => subArray.length)));
-  const flattenedChords = chords.map((subArray) => {
-    const padding = Array(barsPerLine - subArray.length).fill(' ');
-    return [...subArray, ...padding];
-  }).flat();
+  const flattenedChords = chords
+    .map((subArray) => {
+      const padding = Array(barsPerLine - subArray.length).fill(' ');
+      return [...subArray, ...padding];
+    })
+    .flat();
 
   return (
     <div className="w-full text-4xl">
       <div style={{ display: 'grid', gridTemplateColumns: `repeat(${barsPerLine}, minmax(0, 1fr))` }}>
-        {flattenedChords.map((cell, cellIndex) => (
+        {flattenedChords.map((bar, cellIndex) => (
           <div key={cellIndex} className="border border-solid border-slate-200 py-5 text-center">
-            {cell.split(' ').map((chord: string, chordIndex: React.Key | null | undefined) => (
-              <span className="text-6xl" key={chordIndex}>
-                {chord}
+           
+              <span className="whitespace-pre text-6xl">
+                {bar}
               </span>
-            ))}
+            
           </div>
         ))}
       </div>
@@ -39,7 +41,7 @@ const Chords: React.FC<TProps> = ({ chords, isLastPage, timerHalted, hasTimer })
         centreShort={progressIndicatorControlIcon()}
         rightShort={isLastPage ? 'forwardStep' : 'play'}
         leftLong="backwardStep"
-        rightLong={isLastPage ? undefined : "forwardStep"}
+        rightLong={isLastPage ? undefined : 'forwardStep'}
       />
     </div>
   );
