@@ -23,12 +23,12 @@ const Chords: React.FC<TProps> = ({ chords, isLastPage, timerHalted, hasTimer })
     .flat();
 
   return (
-    <div className="w-full text-4xl">
+    <div className="w-full">
       <div style={{ display: 'grid', gridTemplateColumns: `repeat(${barsPerLine}, minmax(0, 1fr))` }}>
         {flattenedChords.map((bar, cellIndex) => (
           <div key={cellIndex} className="border border-solid border-slate-200 py-5 text-center">
            
-              <span className="whitespace-pre text-6xl">
+              <span className="whitespace-pre text-5xl font-semibold">
                 {bar}
               </span>
             

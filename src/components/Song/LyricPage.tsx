@@ -13,7 +13,7 @@ type TProps = {
 const LyricPage: React.FC<TProps> = ({ song, currentPage, setCurrentPage, timerHalted }) => {
 
   return (
-    <div>
+    <div className='flex flex-col h-screen'>
       {!!song.pages[currentPage - 1] && !!song.tempo && !!song.timeSignature && (
         <ProgressBar
           tempo={song.tempo}
@@ -26,13 +26,13 @@ const LyricPage: React.FC<TProps> = ({ song, currentPage, setCurrentPage, timerH
         />
       )}
 
-      <div className="grid h-full w-full grid-cols-12 divide-x">
+      <div className="flex-1 grid h-full w-full grid-cols-12 divide-x">
         <div className="col-span-5 h-full p-4">
           <div className="flex flex-row justify-between text-bj-green-light">
-            <p className="mb-8 ml-6 text-left text-7xl font-semibold">
+            <p className="mb-8 ml-6 text-left text-5xl font-semibold">
               {song.pages[currentPage - 1].section}{' '}
             </p>
-            <p className="text-right text-6xl mr-4">
+            <p className="text-right text-5xl mr-4">
               {currentPage}/{song.pages.length}
             </p>
           </div>
