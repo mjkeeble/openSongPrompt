@@ -10,9 +10,9 @@ const Demo = () => {
         </div>
       </div>
       <div className="col-span-2 flex h-screen flex-col items-start  justify-center">
-        <h1 className="w-full pb-10 text-center">Welcome to Songprompter</h1>
+        <h1 className="w-full pb-10 text-center">Welcome to the songPrompter demo!</h1>
         <p className="text-2xl">songPrompter is designed to be operated with a footswitch.</p>
-        <p className="text-2xl">Use the following keys to emulate the footswitch actions this demo:</p>
+        <p className="text-2xl">Use the following keys to emulate the footswitch actions in this demo:</p>
         <div className="grid-row grid w-full grid-cols-4 grid-rows-3 text-3xl">
           <div className="col-span-1 pb-4 pt-4"></div>
           <div className="col-span-1 pb-4 pt-4">Left switch</div>
@@ -33,7 +33,7 @@ const Demo = () => {
         <div className="flex w-full flex-row justify-center">
           <button
             className="mt-36 w-60 rounded-lg bg-bj-green-light p-4 text-5xl font-semibold text-black"
-            onClick={() => Navigate('/')}
+            onClick={() => Navigate('/gigs/')}
           >
             Start
           </button>

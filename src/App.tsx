@@ -6,8 +6,8 @@ function App() {
   return (
     <div id="App" className="h-full cursor-none overflow-y-hidden text-bj-white">
       <Routes>
-        <Route path="/" element={<Gigs />} />
-        <Route path="demo/" element={<Demo />} />
+        <Route path="/" element={<Demo />} />
+        <Route path="gigs/" element={<Gigs />} />
         <Route path="song/:id" element={<Song />} />
         <Route path="setlist/" element={<Setlist />} />
         <Route path="setlist/:id" element={<Setlist />} />
