@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Screensaver } from '..';
 import songs from '../../../data/songs.json';
-import { BREAK, activeKeys } from '../../const.ts';
+import { ACTIVEKEYS, BREAK } from '../../const.ts';
 import { TSong } from '../../types';
 import LyricPage from './LyricPage.tsx';
 import TitlePage from './TitlePage.tsx';
@@ -24,7 +24,7 @@ const Song = () => {
 
   useEffect(() => {
     const handleFootswitchInput = (event: KeyboardEvent) => {
-      if (activeKeys.includes(event.key)) {
+      if (ACTIVEKEYS.includes(event.key)) {
         ManageInteraction({
           showingScreensaver: setlist[setlistIndex] === BREAK,
           footswitchInput: event.key,
@@ -46,7 +46,7 @@ const Song = () => {
     return () => {
       document.removeEventListener('keydown', handleFootswitchInput);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentPage, setlistIndex, timerHalted]);
 
   if (!setlistIndex || setlist[setlistIndex] === BREAK)
