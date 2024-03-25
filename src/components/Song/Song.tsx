@@ -60,11 +60,6 @@ const Song = () => {
       </>
     );
   }
-  console.log('🚀 ---------------------------------------🚀');
-  console.log('🚀 => Song => id:', id);
-  console.log('🚀 => Song => currentPage:', currentPage);
-  console.log('🚀 ---------------------------------------🚀');
-
   return (
     <div className="h-screen w-full">
       {!currentPage ? (
