@@ -1,8 +1,8 @@
- # Contributing to songPrompter
+ # Contributing to openSongPrompt
 
  **This document is in draft**
 
-Welcome to SongPrompter!
+Welcome to openSongPrompt!
 
 👍🎉 First off, thanks for taking the time to contribute! 🎉👍
 

@@ -13,9 +13,9 @@
     "openSongPrompt"
   ],
   "license": "MIT",
-  "homepage": "https://mjkeeble.github.io/songprompter",
-  "repository": "github:mjkeeble/songprompter",
-  "bugs": "https://github.com/mjkeeble/songprompter/issues",
+  "homepage": "https://mjkeeble.github.io/opensongprompt",
+  "repository": "github:mjkeeble/opensongprompt",
+  "bugs": "https://github.com/mjkeeble/opensongprompt/issues",
   "version": "0.0.1",
   "type": "module",
   "engines": {

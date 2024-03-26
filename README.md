@@ -1,8 +1,8 @@
 <img src='public/songPrompter_logo_transparent.png'
-alt='songPrompter'
+alt='openSongPrompt'
 style='width: 65%; margin-bottom: 4rem;' />
 
-**songPrompter** is a stage teleprompter app specifically for gigging musicians. No need to worry about forgetting chords or lyrics, no messing around with music stands, sheaves of paper or tablet mounts - it's all there on the screen in front of you.
+**openSongPrompt** is a stage teleprompter app specifically for gigging musicians. No need to worry about forgetting chords or lyrics, no messing around with music stands, sheaves of paper or tablet mounts - it's all there on the screen in front of you.
 
 Currently the app is written to run as a local web app, but it is my plan to convert it to a cross-platform app once the initial development phase is complete. Data is stored locally in JSON files and the whole app runs on the local machine - no risk of things falling apart mid-concert because of a dodgy internet connection
 
