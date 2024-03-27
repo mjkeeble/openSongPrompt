@@ -1,25 +1,25 @@
 #include <Keyboard.h>
 
-const int button2 = 2;
-const int button3 = 3;
-const int button4 = 4;
-unsigned long pressTime2 = 0;
-unsigned long pressTime3 = 0;
-unsigned long pressTime4 = 0;
+const int centreSwitch = 14;
+const int leftSwitch = 15;
+const int rightSwitch = 16;
+unsigned long pressTimeLeft = 0;
+unsigned long pressTimeCentre = 0;
+unsigned long pressTimeRight = 0;
 
-const unsigned long longPressThreshold = 1000; // Threshold for long press
-
+const unsigned long longPressThreshold = 400; // Threshold for long press
+ujikol
 void setup() {
-  pinMode(button2, INPUT_PULLUP);
-  pinMode(button3, INPUT_PULLUP);
-  pinMode(button4, INPUT_PULLUP);
+  pinMode(centreSwitch, INPUT_PULLUP);
+  pinMode(leftSwitch, INPUT_PULLUP);
+  pinMode(rightSwitch, INPUT_PULLUP);
   Keyboard.begin();
 }
 
 void loop() {
-  checkButton(button2, 'u', 'j', &pressTime2); // left footswitch returns 'u' for short, 'j' for long press
-  checkButton(button3, 'i', 'k', &pressTime4); // centre footswitch returns 'i' for short, 'k' for long press
-  checkButton(button4, 'o', 'l', &pressTime3); // right footswitch returns 'o' for short, 'l' for long press
+  checkButton(leftSwitch, 'u', 'j', &pressTimeLeft); // left footswitch returns 'u' for short, 'j' for long press
+  checkButton(centreSwitch, 'i', 'k', &pressTimeCentre); // centre footswitch returns 'i' for short, 'k' for long press
+  checkButton(rightSwitch, 'o', 'l', &pressTimeRight); // right footswitch returns 'o' for short, 'l' for long press
 }
 
 void checkButton(int buttonPin, char shortPressKey, char longPressKey, unsigned long *pressTime) {
