@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 type TProps = {
   lyrics: string[];
@@ -6,6 +6,43 @@ type TProps = {
 
 // Usage:
 const Lyrics: React.FC<TProps> = ({ lyrics }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [fontSize, setFontSize] = useState<number>(100); // Initial font size
+  const [containerReady, setContainerReady] = useState<boolean>(false); // State to track if container is ready
+  const [isResizingText, setIsResizingText] = useState<boolean>(true);
+
+  useEffect(() => {
+    setFontSize(100);
+    setIsResizingText(true);
+  }, [lyrics]);
+
+  useEffect(() => {
+    // This effect runs after the initial render
+    setContainerReady(true); // Set containerReady to true after initial render
+  }, []);
+
+  useEffect(() => {
+    // This effect runs whenever fontSize changes
+    if (containerReady && containerRef.current) {
+      console.log('🚀 --------------------------------------------------------------🚀');
+      console.log('🚀 => useEffect => containerRef.current:', containerRef.current);
+      console.log('🚀 => useEffect => containerReady:', containerReady);
+      console.log('🚀 --------------------------------------------------🚀');
+      // Check if container is ready and ref is not null
+      const container = containerRef.current;
+      const hasOverflow = container.scrollHeight > container.clientHeight;
+      console.log('🚀 => useEffect => container.scrollHeight:', container.scrollHeight);
+      console.log('🚀 => useEffect => container.clientHeight:', container.clientHeight);
+      console.log('🚀 ------------------------------------------------------------------🚀');
+      if (hasOverflow && fontSize > 20) {
+        // Reduce font size and recheck
+        setFontSize((prevSize) => prevSize - 1);
+      } else {
+        setIsResizingText(false);
+      }
+    }
+  }, [fontSize, containerReady, lyrics]); // Re-run effect when fontSize or containerReady changes
+
   // Regular expression pattern to match "[" at the beginning and "]" at the end of the string
   const regex = /^\[.*\]$/;
 
@@ -15,11 +52,14 @@ const Lyrics: React.FC<TProps> = ({ lyrics }) => {
   if (!lyrics.length) return <NoLyricsMessage />;
 
   return (
-    <div>
+    <div ref={containerRef} className="overflow -y-auto max-h-full">
+      {' '}
+      {/* Assign ref to the container div */}
       {lyrics.map((line, index) => (
         <p
           key={index}
-          className={`${isComment(line) ? 'text-bj-green-light' : 'text-inherit'} min-h-8 pl-12 text-left -indent-12 text-lyric font-semibold leading-tight`}
+          className={`${isResizingText ? 'text-transparent' : (isComment(line) ? 'text-bj-green-light' : 'text-inherit')} min-h-8 pl-12 text-left -indent-12 font-semibold leading-tight`}
+          style={{ fontSize }}
         >
           {isComment(line) ? line.substring(1, line.length - 1) : line}
         </p>
@@ -30,7 +70,7 @@ const Lyrics: React.FC<TProps> = ({ lyrics }) => {
 
 const NoLyricsMessage = () => {
   return (
-    <div className="grid h-full w-full items-center justify-center">
+    <div className="grid w-full items-center justify-center">
       <p className="text-lyric font-semibold text-bj-green-light">No lyrics here!</p>
     </div>
   );
