@@ -294,22 +294,14 @@
         "duration": 12
       },
       {
-        "section": "Chorus",
+        "section": "Solo",
         "chords": [
           ["A7", "-", "-", "-"],
           ["D7", "-", "A7", "-"],
           ["E7", "D7", "A7", "/"]
         ],
-        "lyrics": [
-          "I’m a cross cut saw",
-          "Just drag me ’cross your log",
-          "I’m a cross cut saw",
-          "Just drag me ’cross your log",
-          "",
-          "I cut your wood so easy for you",
-          "You can’t help but say ’Hot dog!’"
-        ],
-        "duration": 12
+        "lyrics": ["[SOLO x2]"],
+        "duration": 24
       },
       {
         "section": "Verse 2",
@@ -322,7 +314,7 @@
           "I’ve got a double-bladed axe",
           "That really cuts good",
           "I’m a cross cut saw",
-          "Baby drag me ’cross your wood",
+          "Baby bury me in your wood",
           "",
           "I’m a cross cut saw",
           "Just drag me ’cross your log",
@@ -348,6 +340,15 @@
           "You can’t help but say ’Hot dog!’"
         ],
         "duration": 12
+      },
+      {
+        "section": "Outro",
+        "chords": [
+          ["A7", "-", "-", "-"],
+          ["D7", "-", "A7", "-"],
+          ["E7", "D7", "A7", "/"]
+        ],
+        "lyrics": ["[SOLO x2 => STOP!]"]
       }
     ]
   },
@@ -406,7 +407,9 @@
           "",
           "Got to take my lousy luck",
           "And drown it in a sack",
-          "I’m taking one step forward",
+          "I’m taking",
+          "[! BREAK]",
+          "one step forward",
           "And two steps back"
         ],
         "duration": 16
@@ -536,7 +539,7 @@
           ["Dm", "-", "Gm", "-"],
           ["Dm", "A7", "Dm", "/"]
         ],
-        "lyrics": [],
+        "lyrics": ["SOLO x2"],
         "duration": 32
       },
       {
@@ -554,7 +557,7 @@
         "duration": 8
       },
       {
-        "section": "Verse 3",
+        "section": "Verse 4",
         "chords": [
           ["Dm", "-", "-", "-"],
           ["Dm", "-", "A7", "-"],
@@ -573,6 +576,16 @@
           "Oh baby, won’t you help poor me?"
         ],
         "duration": 16
+      },
+      {
+        "section": "Solo",
+        "chords": [
+          ["Dm", "-", "-", "-"],
+          ["Dm", "-", "A7", "-"],
+          ["Dm", "-", "Gm", "-"],
+          ["Dm", "A7", "Dm", "/"]
+        ],
+        "lyrics": ["SOLO x1"]
       }
     ]
   },
@@ -703,6 +716,7 @@
           ["G 7/9", "F# 7/9", "Bm", "-"]
         ],
         "lyrics": [
+          "[Thesa sings:]",
           "The thrill is gone",
           "The thrill is gone away",
           "The thrill is gone",
@@ -721,6 +735,7 @@
           ["G 7/9", "F# 7/9", "Bm", "-"]
         ],
         "lyrics": [
+          "[Mark sings:]",
           "The thrill is gone",
           "The thrill is gone away from me",
           "The thrill is gone",
@@ -738,8 +753,8 @@
           ["Em", "-", "Bm", "-"],
           ["G 7/9", "F# 7/9", "Bm", "-"]
         ],
-        "lyrics": [],
-        "duration": 12
+        "lyrics": ["[ SOLO x2]"],
+        "duration": 24
       },
       {
         "section": "Verse 3",
@@ -749,6 +764,7 @@
           ["G 7/9", "F# 7/9", "Bm", "-"]
         ],
         "lyrics": [
+          "[Thesa sings:]",
           "The thrill is gone",
           "The thrill is gone away for good",
           "The thrill is gone",
@@ -767,6 +783,7 @@
           ["G 7/9", "F# 7/9", "Bm", "-"]
         ],
         "lyrics": [
+          "[Mark sings:]",
           "Now I’m free",
           "I’m free from your spell",
           "Yes, I’m free, baby",
@@ -784,7 +801,7 @@
           ["Em", "-", "Bm", "-"],
           ["G 7/9", "F# 7/9", "Bm", "-"]
         ],
-        "lyrics": []
+        "lyrics": ["[SOLO x 1]"]
       }
     ]
   },
@@ -851,7 +868,7 @@
           ["A7", "-", "E7", "-"],
           ["B7", "A7", "E7", "B7"]
         ],
-        "lyrics": ["[SOLO]"],
+        "lyrics": ["[SOLO x 2]"],
         "duration": 12
       },
       {
@@ -872,20 +889,25 @@
         "duration": 12
       },
       {
-        "section": "Verse 4",
+        "section": "Outro",
         "chords": [
           ["E7", "A7", "E7", "-"],
           ["A7", "-", "E7", "-"],
           ["B7", "A7", "E7", "B7"]
         ],
         "lyrics": [
-          "Goodbye, pretty baby",
-          "I know you been here and gone",
-          "I said goodbye, pretty baby",
-          "I know I did you wrong ",
-          "I’ll be crying on my front porch",
-          "Bidin’ time with jimmy-john"
+          "[SOLO x1]"
         ]
+      },
+      {
+        "section": "Solo",
+        "chords": [
+          ["E7", "A7", "E7", "-"],
+          ["A7", "-", "E7", "-"],
+          ["B7", "A7", "E7", "B7"]
+        ],
+        "lyrics": ["[SOLO x 2]"],
+        "duration": 12
       }
     ]
   },
@@ -942,13 +964,13 @@
         "duration": 12
       },
       {
-        "section": "Thema + solo (2)",
+        "section": "Solo - Mark",
         "chords": [
           ["A7", "-", "-", "-"],
           ["D7", "-", "A7", "-"],
           ["E7", "D7", "A7", "/"]
         ],
-        "lyrics": [],
+        "lyrics": ["[SOLO x 1]"],
         "duration": 36
       },
       {
@@ -975,7 +997,7 @@
           ["D7", "-", "A7", "-"],
           ["E7", "D7", "A7", "/"]
         ],
-        "lyrics": ["[Thema]", "","ONE, TWO, THREE, FOUR", "","[Shuffle solo x 2]", "[Thema]"]
+        "lyrics": ["[Thema]", "", "ONE, TWO, THREE, FOUR", "", "[Shuffle solo x 2 (Wolfgang)]", "[Thema => STOP!]"]
       }
     ]
   },
@@ -1046,7 +1068,7 @@
           ["G7", "G7", "F7!", ""],
           ["C  C7", "-", "-"]
         ],
-        "lyrics": [],
+        "lyrics": ["[Solo x 1]"],
         "duration": 24
       },
       {
@@ -1081,7 +1103,7 @@
           ["G7", "G7", "F7!", ""],
           ["C  C7", "-", "-"]
         ],
-        "lyrics": [],
+        "lyrics": ["[ SOLO x2]"],
         "duration": 24
       },
       {
@@ -1099,7 +1121,9 @@
           "...",
           "",
           "One of these early mornings",
-          "I’m gonna be wipin’ your weepin’ eyes"
+          "I’m gonna be wipin’ your weepin’ eyes",
+          "",
+          "Those weeping eyes"
         ]
       }
     ]
@@ -1238,7 +1262,13 @@
           "Can l lean on you",
           "When life is hard?",
           "Oh, and life is hard"
-        ]
+        ],
+        "duration": 6
+      },
+      {
+        "section": "Outro",
+        "chords": [["Ab", "C", "Db", "Bbm"]],
+        "lyrics": ["[4x]", "Can l lean on you..."]
       }
     ]
   },
@@ -1344,7 +1374,7 @@
         "duration": 12
       },
       {
-        "section": "Verse 4 + outro",
+        "section": "Verse 4",
         "chords": [
           ["A", "-", "-", "-"],
           ["D", "-", "A", "-"],
@@ -1358,10 +1388,20 @@
           "Cause I’ll sure as hell lie to you ",
           "",
           "Tell me anything you want",
-          "Just please don’t tell me we’re through",
-          "",
-          "[OUTRO]"
+          "Just please don’t tell me we’re through"
         ]
+      },
+      {
+        "section": "Outro",
+        "chords": [
+          ["A", "-", "-", "-"],
+          ["D", "-", "A", "-"],
+          ["E", "D", "A", "A"],
+          [],
+          ["E", "D", "A", "A"],
+          ["E", "D", "A", "A"]
+        ],
+        "lyrics": ["[SOLO x 2]", "[TURNAROUND x 2]"]
       }
     ]
   },
@@ -1453,7 +1493,17 @@
           "[TURNAROUND]",
           "My luck is fading, I don’t want to be alone",
           "My luck is fading, Mama please take me home"
-        ]
+        ],
+        "duration": 12
+      },
+      {
+        "section": "Bridge / Outro",
+        "chords": [
+          ["A7", "-", "-", "-"],
+          ["D7", "-", "A7", "-"],
+          ["E7", "D7", "A7", "E7"]
+        ],
+        "lyrics": ["Mama! Mama! Mama! Mama!Mama! Mama! ...", "", "[MK signals end...]", "Mama, plese take me home"]
       }
     ]
   },
@@ -1509,7 +1559,7 @@
           ["D", "C", "G", "-"]
         ],
         "lyrics": [
-          "[SOLO]",
+          "[SOLO x 2]",
           "",
           "Now I’m not trying to steal",
           "No love away from no one man",
@@ -1537,7 +1587,8 @@
           "I keep thinking something like Olivia",
           "Is what I need to find",
           "",
-          "[ x 2 ]"
+          "[ x 2 ]",
+          "[STOP at end of 2nd time]"
         ]
       }
     ]
@@ -1852,7 +1903,17 @@
         "duration": 12
       },
       {
-        "section": " Solo (2) + Verse 4",
+        "section": " Solo",
+        "chords": [
+          ["C", "-", "-", "-"],
+          ["F", "-", "C", "-"],
+          ["G", "F", "C", "C"]
+        ],
+        "lyrics": ["[SOLO x 2]"],
+        "duration": 24
+      },
+      {
+        "section": "Verse 4",
         "chords": [
           ["C", "-", "-", "-"],
           ["F", "-", "C", "-"],
@@ -1866,7 +1927,7 @@
           "Kissin’ in the dark",
           "Kissin’ in the dark, honey, that’s my birthmark"
         ],
-        "duration": 36
+        "duration": 12
       },
       {
         "section": "Verse 5",
@@ -1901,6 +1962,15 @@
           "She been kissin’ in the dark, honey, that’s her birthmark"
         ],
         "duration": 12
+      },
+      {
+        "section": " Outro",
+        "chords": [
+          ["C", "-", "-", "-"],
+          ["F", "-", "C", "-"],
+          ["G", "F", "C", "C"]
+        ],
+        "lyrics": ["[SOLO x 1 => STOP!]"]
       }
     ]
   },
@@ -1989,12 +2059,7 @@
       {
         "section": "Verse 4",
         "chords": [],
-        "lyrics": [
-          "Well, dig",
-          "I’m goin’ way down south",
-          "Way down to Mexico way",
-          "Alright"
-        ]
+        "lyrics": ["Well, dig", "I’m goin’ way down south", "Way down to Mexico way", "Alright"]
       },
       {
         "section": "Outro",
@@ -2787,7 +2852,13 @@
       },
       {
         "section": "Verse 2",
-        "chords": [["Am  Am9 ", "C  D  Am"], ["Am  Am9 ", "C  D  Am"], ["D  Am", "D  C  Bm"], ["D  Am", "C  D  Am"], ["Am"]],
+        "chords": [
+          ["Am  Am9 ", "C  D  Am"],
+          ["Am  Am9 ", "C  D  Am"],
+          ["D  Am", "D  C  Bm"],
+          ["D  Am", "C  D  Am"],
+          ["Am"]
+        ],
         "lyrics": [
           "Time among the pine trees",
           "It felt like breath of air",
@@ -2802,7 +2873,13 @@
       },
       {
         "section": "Verse 3",
-        "chords": [["Am  Am9 ", "C  D  Am"], ["Am  Am9 ", "C  D  Am"], ["D  Am", "D  C  Bm"], ["D  Am", "C  D  Am"], ["Am"]],
+        "chords": [
+          ["Am  Am9 ", "C  D  Am"],
+          ["Am  Am9 ", "C  D  Am"],
+          ["D  Am", "D  C  Bm"],
+          ["D  Am", "C  D  Am"],
+          ["Am"]
+        ],
         "lyrics": [
           "Well, I don’t know too much for true",
           "But my heart knows how to pound",
@@ -2817,7 +2894,13 @@
       },
       {
         "section": "Verse 4",
-        "chords": [["Am  Am9 ", "C  D  Am"], ["Am  Am9 ", "C  D  Am"], ["D  Am", "D  C  Bm"], ["D  Am", "C  D  Am"], ["Am"]],
+        "chords": [
+          ["Am  Am9 ", "C  D  Am"],
+          ["Am  Am9 ", "C  D  Am"],
+          ["D  Am", "D  C  Bm"],
+          ["D  Am", "C  D  Am"],
+          ["Am"]
+        ],
         "lyrics": [
           "You’re the only one I want now",
           "I never heard your name",
@@ -3014,11 +3097,12 @@
           "",
           "You got me running, you got me hiding",
           "",
-          "[SOLO]",
+          "[SOLO x 2]",
           "",
           "I’m going up, going down",
           "",
-          "You got me peepin’, you got me hiding"
+          "You got me peepin’, you got me hiding",
+          "[BREAK * bass outro on last verse]"
         ]
       }
     ]

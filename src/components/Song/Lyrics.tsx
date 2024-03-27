@@ -10,30 +10,23 @@ const Lyrics: React.FC<TProps> = ({ lyrics }) => {
   const [fontSize, setFontSize] = useState<number>(100); // Initial font size
   const [containerReady, setContainerReady] = useState<boolean>(false); // State to track if container is ready
   const [isResizingText, setIsResizingText] = useState<boolean>(true);
-
+  
   useEffect(() => {
     setFontSize(100);
     setIsResizingText(true);
   }, [lyrics]);
-
+  
   useEffect(() => {
     // This effect runs after the initial render
     setContainerReady(true); // Set containerReady to true after initial render
   }, []);
-
+  
   useEffect(() => {
     // This effect runs whenever fontSize changes
     if (containerReady && containerRef.current) {
-      console.log('🚀 --------------------------------------------------------------🚀');
-      console.log('🚀 => useEffect => containerRef.current:', containerRef.current);
-      console.log('🚀 => useEffect => containerReady:', containerReady);
-      console.log('🚀 --------------------------------------------------🚀');
       // Check if container is ready and ref is not null
       const container = containerRef.current;
       const hasOverflow = container.scrollHeight > container.clientHeight;
-      console.log('🚀 => useEffect => container.scrollHeight:', container.scrollHeight);
-      console.log('🚀 => useEffect => container.clientHeight:', container.clientHeight);
-      console.log('🚀 ------------------------------------------------------------------🚀');
       if (hasOverflow && fontSize > 20) {
         // Reduce font size and recheck
         setFontSize((prevSize) => prevSize - 1);
@@ -42,13 +35,16 @@ const Lyrics: React.FC<TProps> = ({ lyrics }) => {
       }
     }
   }, [fontSize, containerReady, lyrics]); // Re-run effect when fontSize or containerReady changes
-
+  
   // Regular expression pattern to match "[" at the beginning and "]" at the end of the string
   const regex = /^\[.*\]$/;
-
+  
   const isComment = (str: string): boolean => {
     return regex.test(str);
   };
+  console.log("🚀 -------------------------------------🚀");
+  console.log("🚀 => isResizingText:", isResizingText);
+  console.log("🚀 -------------------------------------🚀");
   if (!lyrics.length) return <NoLyricsMessage />;
 
   return (
@@ -58,7 +54,7 @@ const Lyrics: React.FC<TProps> = ({ lyrics }) => {
       {lyrics.map((line, index) => (
         <p
           key={index}
-          className={`${isResizingText ? 'text-transparent' : (isComment(line) ? 'text-bj-green-light' : 'text-inherit')} min-h-8 pl-12 text-left -indent-12 font-semibold leading-tight`}
+          className={`${isResizingText ? 'text-transparent' : (isComment(line) ? 'text-amber-500' : 'text-inherit')} min-h-8 pl-12 text-left -indent-12 font-semibold leading-tight`}
           style={{ fontSize }}
         >
           {isComment(line) ? line.substring(1, line.length - 1) : line}
