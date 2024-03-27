@@ -42,9 +42,6 @@ const Lyrics: React.FC<TProps> = ({ lyrics }) => {
   const isComment = (str: string): boolean => {
     return regex.test(str);
   };
-  console.log("🚀 -------------------------------------🚀");
-  console.log("🚀 => isResizingText:", isResizingText);
-  console.log("🚀 -------------------------------------🚀");
   if (!lyrics.length) return <NoLyricsMessage />;
 
   return (

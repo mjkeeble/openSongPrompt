@@ -61,7 +61,7 @@ const Song = () => {
     );
   }
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
       {!currentPage ? (
         <TitlePage
           title={song.title}
