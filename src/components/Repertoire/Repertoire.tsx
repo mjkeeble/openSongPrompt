@@ -5,7 +5,6 @@ import { NavIndicator } from '..';
 import songs from '../../../data/songs.json';
 import { TRepertoireList, TSong } from '../../types';
 
-// export const SetList: React.FC<TGig> = ({ location, date, setList }) => {
 const Repertoire = () => {
   const Navigate = useNavigate();
   const buttonsRef = useRef<HTMLButtonElement[]>([]);
