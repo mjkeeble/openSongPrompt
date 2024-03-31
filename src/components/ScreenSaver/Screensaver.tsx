@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { NavIndicator } from '..';
 
 type TProps = {
@@ -5,17 +6,37 @@ type TProps = {
   isLastSong: boolean;
 };
 
+type TImage = {
+  src: string;
+  alt: string;
+  text: string;
+};
+
 const Screensaver: React.FC<TProps> = ({ isStart, isLastSong }) => {
-  
+  const images: TImage[] = [
+    { src: '/blues-jab-logo.png', alt: 'Blues Jab', text: 'www.bluesjab.de' },
+    { src: '/osp_logo.svg', alt: 'openSongPrompt. Your songs. On stage. No worries', text: '' },
+  ];
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentImage((currentImage + 1) % images.length);
+    }, 10000); // 10 seconds
+
+    return () => clearInterval(intervalId);
+  }, [currentImage, images.length]);
+
   return (
     <div>
       <div className="flex h-screen flex-col items-center justify-center">
         <div className="w-1/3">
-          <img className="my-60 drop-shadow-logo" src="/blues-jab-logo.png" alt="Blues Jab" />
+          <img className="my-60 drop-shadow-logo" src={images[currentImage].src} alt={images[currentImage].alt} />
           {/* <div className="w-3/5">
           <img src="/songPrompter_logo_transparent_white.png" alt="openSongPrompt. Your songs. On stage. No worries" /> */}
         </div>
-        <h1 className="text-9xl">www.bluesjab.de</h1>
+        <h1 className="text-9xl">{images[currentImage].text}</h1>
       </div>
 
       <NavIndicator
