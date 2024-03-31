@@ -2074,9 +2074,7 @@
         "section": "Intro",
         "chords": [
           ["G", "-", "C", "-"],
-          ["D", "C", "G", "D"],
-          ["C", "-", "G", "G"],
-          ["C", "C", "D!", "C!"]
+          ["D", "C", "G", "D"]
         ],
         "lyrics": [],
         "duration": 8
@@ -2335,6 +2333,8 @@
         "section": "Intro + Verse 1",
         "chords": [
           ["Am  C", "Am  C", "Am  C", "Am  C"],
+          [""],
+          ["Am  C", "Am  C", "Am  C", "Am  C"],
           ["F", "F  C(G)", "Am  C", "Am  C"],
           ["G", "G  (F#)", "F!", ""],
           ["Am  C", "Am  C", "Am  C", "Am  C"]
@@ -2355,7 +2355,7 @@
         "chords": [
           ["Am  C", "Am  C", "Am  C", "Am  C"],
           ["F", "F  C(G)", "Am  C", "Am  C"],
-          ["G", "G  (F#)", "F!", ""],
+          ["G", "G  (F#)", "F!", "/"],
           ["Am  C", "Am  C", "Am  C", "Am  C"]
         ],
         "lyrics": [
