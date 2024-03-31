@@ -20,8 +20,12 @@ const ProgressBar: React.FC<TProps> = ({
   finalPage,
 }) => {
   const [progress, setProgress] = useState(0);
-
+  
   const adjustedDuration = currentPage === 1 ? (duration ? duration - 1 : 0) : duration ? duration : 0;
+  console.log("🚀 -----------------------------------------🚀");
+  console.log("🚀 => currentPage:", currentPage);
+  console.log("🚀 => adjustedDuration:", adjustedDuration);
+  console.log("🚀 -----------------------------------------🚀");
   const barLength: number = ['3/4', '6/8'].includes(timeSignature) ? 3 : 4;
   const pageDurationMs: number = (60000 / tempo) * adjustedDuration * barLength;
 

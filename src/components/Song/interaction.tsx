@@ -144,7 +144,7 @@ export const ManageInteraction: React.FC<TProps> = ({
     }
   }
   // LAST LYRIC PAGE
-  if (currentPage === songPages) {
+  if (isLastPage) {
     console.log('last page');
     switch (footswitchInput) {
       case ACTIVEKEYS[0]:
