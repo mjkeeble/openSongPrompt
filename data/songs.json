@@ -544,7 +544,7 @@
           ["Dm", "-", "Gm", "-"],
           ["Dm", "A7", "Dm", "/"]
         ],
-        "lyrics": ["SOLO x2"],
+        "lyrics": ["[SOLO x2]"],
         "duration": 32
       },
       {
@@ -590,7 +590,7 @@
           ["Dm", "-", "Gm", "-"],
           ["Dm", "A7", "Dm", "/"]
         ],
-        "lyrics": ["SOLO x1 => STOP on 1/17"]
+        "lyrics": ["[SOLO x1 => STOP on 1/17]"]
       }
     ]
   },
@@ -1496,11 +1496,7 @@
         ],
         "lyrics": [
           "Oh Mama, when you gonna take me home?",
-          "My luck is fading, I don’t want to be alone",
-          "",
-          "[TURNAROUND]",
-          "My luck is fading, I don’t want to be alone",
-          "My luck is fading, Mama please take me home"
+          "My luck is fading, I don’t want to be alone"
         ],
         "duration": 12
       },
