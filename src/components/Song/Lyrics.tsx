@@ -37,10 +37,11 @@ const Lyrics: React.FC<TProps> = ({ lyrics }) => {
   }, [fontSize, containerReady, lyrics]); // Re-run effect when fontSize or containerReady changes
   
   // Regular expression pattern to match "[" at the beginning and "]" at the end of the string
-  const regex = /^\[.*\]$/;
+  const regexForComment = /^\[.*\]$/;
+
   
   const isComment = (str: string): boolean => {
-    return regex.test(str);
+    return regexForComment.test(str);
   };
   if (!lyrics.length) return <NoLyricsMessage />;
 
