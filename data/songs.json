@@ -84,12 +84,12 @@
           "For my 1956 Cadillac",
           "",
           "I’ve been walking so long",
-          "I’ve got holes in both soles of my shoes (It’s true)",
-          "",
+          "I’ve got holes in both soles of my shoes",
+          "(It’s true)",
           "Now I’m a long way from home",
-          "And all that I can do is sing the blues"
-        ],
-        "duration": 20
+          "And all that I can do is sing the blues",
+          "[Turnaround, break, stop on 1/13]"
+        ]
       }
     ]
   },
@@ -230,6 +230,11 @@
           "But I remember you"
         ],
         "duration": 16
+      },
+      {
+        "section": "Outro",
+        "chords": [[" Vamp on Dm7"]],
+        "lyrics": ["[Ad lib over vamp]", "", "[MK signal end]"]
       }
     ]
   },
@@ -348,7 +353,7 @@
           ["D7", "-", "A7", "-"],
           ["E7", "D7", "A7", "/"]
         ],
-        "lyrics": ["[SOLO x2 => STOP!]"]
+        "lyrics": ["[SOLO x2 => STOP on 1/13]"]
       }
     ]
   },
@@ -578,14 +583,14 @@
         "duration": 16
       },
       {
-        "section": "Solo",
+        "section": "Solo / outro",
         "chords": [
           ["Dm", "-", "-", "-"],
           ["Dm", "-", "A7", "-"],
           ["Dm", "-", "Gm", "-"],
           ["Dm", "A7", "Dm", "/"]
         ],
-        "lyrics": ["SOLO x1"]
+        "lyrics": ["SOLO x1 => STOP on 1/17"]
       }
     ]
   },
@@ -801,7 +806,7 @@
           ["Em", "-", "Bm", "-"],
           ["G 7/9", "F# 7/9", "Bm", "-"]
         ],
-        "lyrics": ["[SOLO x 1]"]
+        "lyrics": ["[SOLO x 2]", "[Stop 1/13]"]
       }
     ]
   },
@@ -889,13 +894,30 @@
         "duration": 12
       },
       {
+        "section": "Verse 4",
+        "chords": [
+          ["E7", "A7", "E7", "-"],
+          ["A7", "-", "E7", "-"],
+          ["B7", "A7", "E7", "B7"]
+        ],
+        "lyrics": [
+          "Goodbye pretty baby",
+          "I know that you’ve been here and gone",
+          "Goodbye pretty baby",
+          "I know that I’ve done you wrong",
+          "Now I’ll be sitting on my front porch",
+          "Bidin’ time with Jimmy John"
+        ],
+        "duration": 12
+      },
+      {
         "section": "Outro",
         "chords": [
           ["E7", "A7", "E7", "-"],
           ["A7", "-", "E7", "-"],
           ["B7", "A7", "E7", "B7"]
         ],
-        "lyrics": ["[SOLO x1]"]
+        "lyrics": ["[SOLO x2]", "[BASS OUTRO on 2nd SOLO]"]
       }
     ]
   },
@@ -1291,10 +1313,10 @@
         ],
         "lyrics": [
           "You can lie to me, baby",
-          "Cause I’ll sure as hell lie to you",
+          "’Cause I’ll sure as hell lie to you",
           "",
           "You can lie to me, baby",
-          "Cause I’ll sure as hell lie to you ",
+          "’Cause I’ll sure as hell lie to you ",
           "",
           "Tell me anything you want",
           "Just please don’t tell me we’re through"
@@ -1339,7 +1361,7 @@
           "Give me the fiction",
           "It’s reality I despise",
           "",
-          "[SOLO]"
+          "[SOLO x 1]"
         ],
         "duration": 24
       },
@@ -1369,12 +1391,10 @@
           ["E", "D", "A", "E"]
         ],
         "lyrics": [
-          "You can lie to me, baby",
-          "Cause I’ll sure as hell lie to you",
-          "",
-          "You can lie to me, baby",
-          "Cause I’ll sure as hell lie to you ",
-          "",
+          "Lie to me, baby",
+          "’Cause I’ll sure as hell lie to you",
+          "Yeah, lie to me, baby",
+          "’Cause I’ll sure as hell lie to you ",
           "Tell me anything you want",
           "Just please don’t tell me we’re through"
         ]
@@ -1491,7 +1511,14 @@
           ["D7", "-", "A7", "-"],
           ["E7", "D7", "A7", "E7"]
         ],
-        "lyrics": ["Mama! Mama! Mama! Mama!Mama! Mama! ...", "", "[MK signals end...]", "Mama, plese take me home"]
+        "lyrics": [
+          "Mama! Mama! Mama! Mama!Mama! Mama! ...",
+          "",
+          "[MK signals end...]",
+          "[BREAK on 1/10 =>]",
+          "Mama, please take me home",
+          "[BASS OUTRO 11-12]"
+        ]
       }
     ]
   },
@@ -1576,7 +1603,7 @@
           "Is what I need to find",
           "",
           "[ x 2 ]",
-          "[STOP at end of 2nd time]"
+          "[STOP on 1/13 of 2nd bridge]"
         ]
       }
     ]
@@ -1686,7 +1713,7 @@
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"]
         ],
-        "lyrics": ["[SOLO x 2]", "I get a real good feeling", "Talking to you in the phone"]
+        "lyrics": ["[SOLO x 2]", "[MK signal end]", "I get a real good feeling", "Talking to you in the phone"]
       }
     ]
   },
@@ -1734,44 +1761,56 @@
         "duration": 12
       },
       {
-        "section": "Verse 1 - 2",
-        "chords": [
-          ["G", "Am", "Am", "G"],
-          ["G", "Am", "Am", "G"]
-        ],
+        "section": "Verse 1",
+        "chords": [["G", "Am", "Am", "G"]],
         "lyrics": [
           "All that I knew",
           "Was the lash of the storm",
           "You showed me the summer showers",
           "They were sweet and warm",
           " ",
-          " ",
+          "You showed me colours..."
+        ],
+        "duration": 4
+      },
+      {
+        "section": "Verse 2",
+        "chords": [["G", "Am", "Am", "G"]],
+        "lyrics": [
           "You showed me colours",
           "Where there was just blue and grey",
           "Led me out of the darkness",
-          "Into bright blessed day"
+          "Into bright blessed day",
+          "",
+          "You know I was drowning..."
         ],
-        "duration": 8
+        "duration": 4
       },
       {
-        "section": "Verse 3 - 4",
-        "chords": [
-          ["G", "Am", "Am", "G"],
-          ["G", "Am", "Am", "G"]
-        ],
+        "section": "Verse 3",
+        "chords": [["G", "Am", "Am", "G"]],
         "lyrics": [
           "You know I was drowning",
           "’Til you pulled me back to the shore",
           "I felt your love for the first time",
           "And I needed more",
           " ",
-          " ",
+          "I was cold, so cold..."
+        ],
+        "duration": 4
+      },
+      {
+        "section": "Verse 3 - 4",
+        "chords": [["G", "Am", "Am", "G"]],
+        "lyrics": [
           "I was cold, so cold",
           "’Til you put the fire in my heart",
           "My race was ended",
-          "Then you brought me back to the start"
+          "Then you brought me back to the start",
+          "",
+          "I was born..."
         ],
-        "duration": 8
+        "duration": 4
       },
       {
         "section": "Chorus + solo",
@@ -1792,24 +1831,30 @@
       },
       {
         "section": "Verse 5 - 6",
-        "chords": [
-          ["G", "Am", "Am", "G"],
-          ["G", "Am", "Am", "G"]
-        ],
+        "chords": [["G", "Am", "Am", "G"]],
         "lyrics": [
           "My song was silenced",
           "But you set it free",
           "You took my blues ",
           "And you made them harmony",
           " ",
-          " ",
+          "I was hurting..."
+        ],
+        "duration": 4
+      },
+      {
+        "section": "Verse 5 - 6",
+        "chords": [["G", "Am", "Am", "G"]],
+        "lyrics": [
           "I was hurting, hurting ",
           "Girl, you soothed my pain",
           "I let myself fall",
           "And you caught me",
-          "Again and again and again and again"
+          "Again and again and again and again",
+          "",
+          "I was born..."
         ],
-        "duration": 8
+        "duration": 4
       },
       {
         "section": "Chorus + outro",
@@ -1835,7 +1880,7 @@
     "duration_minutes": 3,
     "duration_seconds": 15,
     "lineup": "Band + guest",
-    "key": "C",
+    "key": "C ?",
     "tempo": 140,
     "timeSignature": "4/4",
     "pages": [
@@ -1947,18 +1992,10 @@
           "",
           "She been kissin’ in the dark",
           "Yes, kissin’ in the dark",
-          "She been kissin’ in the dark, honey, that’s her birthmark"
-        ],
-        "duration": 12
-      },
-      {
-        "section": " Outro",
-        "chords": [
-          ["C", "-", "-", "-"],
-          ["F", "-", "C", "-"],
-          ["G", "F", "C", "C"]
-        ],
-        "lyrics": ["[SOLO x 1 => STOP!]"]
+          "She been kissin’ in the dark, honey, that’s her birthmark",
+          "",
+          "[Bass outro bars 11-12]"
+        ]
       }
     ]
   },
@@ -2011,25 +2048,6 @@
         "section": "Verse 3",
         "chords": [],
         "lyrics": [
-          "Hey Joe, I heard you shot your mama down",
-          "You shot her down now",
-          "Hey Joe, I heard you shot your lady down",
-          "Shot her down in the ground, yeah",
-          "Yeah",
-          "Yes, I did, I shot her",
-          "You know I caught her messin’ round, messin’ round town",
-          "Yes, I did, I shot her",
-          "You know I caught my old lady messin’ ’round town",
-          "And I gave her the gun",
-          "I shot her",
-          "",
-          "[\u21D2 FOOTSWITCH]"
-        ]
-      },
-      {
-        "section": "Verse 4",
-        "chords": [],
-        "lyrics": [
           "Alright",
           "Shoot her one more time again, baby",
           "Yeah",
@@ -2047,7 +2065,18 @@
       {
         "section": "Verse 4",
         "chords": [],
-        "lyrics": ["Well, dig", "I’m goin’ way down south", "Way down to Mexico way", "Alright"]
+        "lyrics": [
+          "Well, dig",
+          "I’m goin’ way down south",
+          "Way down to Mexico way",
+          "I'm goin' way down south",
+          "Way down where I can be free",
+          "Ain't no one gonna find me",
+          "Ain't no hangman gonna",
+          "He ain't gonna put a rope around me",
+          "You better believe right now",
+          "I gotta go now"
+        ]
       },
       {
         "section": "Outro",
@@ -3090,7 +3119,8 @@
           "I’m going up, going down",
           "",
           "You got me peepin’, you got me hiding",
-          "[BREAK * bass outro on last verse]"
+          "[BREAK on 1/10 =>]",
+          "[BASS OUTRO 11-12]"
         ]
       }
     ]
