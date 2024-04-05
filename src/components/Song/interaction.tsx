@@ -182,6 +182,11 @@ export const ManageInteraction: React.FC<TProps> = ({
         // go to start of song
         setCurrentPage(0);
         return null;
+      case ACTIVEKEYS[4]:
+        // Handle centre long press
+        // reload page
+        window.location.reload();
+        return null;
       default:
         return null;
     }
