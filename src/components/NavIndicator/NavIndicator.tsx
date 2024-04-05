@@ -1,5 +1,6 @@
 import {
   IconDefinition,
+  faArrowRotateRight,
   faBackwardFast,
   faBackwardStep,
   faDownLong,
@@ -24,6 +25,7 @@ type symbolKeys =
   | 'pause'
   | 'point'
   | 'play'
+  | 'reload'
   | 'up'
   | 'x';
 
@@ -46,6 +48,7 @@ const symbols: { [key: string]: IconDefinition } = {
   pause: faPause,
   point: faHandPointer,
   play: faPlay,
+  reload: faArrowRotateRight,
   up: faUpLong,
   x: faX,
 };

@@ -27,11 +27,7 @@ const Chords: React.FC<TProps> = ({ chords, isLastPage, timerHalted, hasTimer })
       <div style={{ display: 'grid', gridTemplateColumns: `repeat(${barsPerLine}, minmax(0, 1fr))` }}>
         {flattenedChords.map((bar, cellIndex) => (
           <div key={cellIndex} className="border border-solid border-slate-200 py-5 text-center">
-           
-              <span className="whitespace-pre text-5xl font-semibold">
-                {bar}
-              </span>
-            
+            <span className="whitespace-pre text-5xl font-semibold">{bar}</span>
           </div>
         ))}
       </div>
@@ -41,6 +37,7 @@ const Chords: React.FC<TProps> = ({ chords, isLastPage, timerHalted, hasTimer })
         centreShort={progressIndicatorControlIcon()}
         rightShort={isLastPage ? 'forwardStep' : 'play'}
         leftLong="backwardStep"
+        centreLong="reload"
         rightLong={isLastPage ? undefined : 'forwardStep'}
       />
     </div>
