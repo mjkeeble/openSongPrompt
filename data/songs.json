@@ -392,9 +392,8 @@
           "Got to take my lousy luck",
           "And drown it in a sack",
           "I’m taking",
-          "[! BREAK]",
-          "one step forward",
-          "And two steps back"
+          "[BREAK]",
+          "one step forward and two steps back"
         ]
       },
       {
@@ -402,14 +401,12 @@
         "chords": [],
         "lyrics": [
           "One step forward, two steps back",
-          "One step forward, two steps back",
-          "One step forward, two steps back",
-          "One step forward, two steps back",
+          "[x4]",
+          "",
           "[ SOLO]",
+          "",
           "One step forward, two steps back",
-          "One step forward, two steps back",
-          "One step forward, two steps back",
-          "One step forward, two steps back"
+          "[x4]"
         ]
       }
     ]
@@ -1494,10 +1491,10 @@
           ["G", "F", "C", "C"]
         ],
         "lyrics": [
-          "Talked to my baby (Talk to me ...)",
-          "Talked to my baby",
-          "Talked to my baby",
-          "Talked to my baby",
+          "Talk to me baby (Talk to me ...)",
+          "Talk to me baby",
+          "Talk to me baby",
+          "Talk to me baby",
           "",
           "I get a real good feeling",
           "Talking to you in the phone"
@@ -1546,10 +1543,10 @@
           ["G", "F", "C", "C"]
         ],
         "lyrics": [
-          "Talked to my baby (Talk to me ...)",
-          "Talked to my baby",
-          "Talked to my baby",
-          "Talked to my baby",
+          "Talk to me baby (Talk to me ...)",
+          "Talk to me baby",
+          "Talk to me baby",
+          "Talk to me baby",
           "",
           "I get a real good feeling",
           "Talking to you in the phone",
@@ -2029,26 +2026,11 @@
           "It tastes so bitter but feels so sweet",
           "Let me drink black coffee, I don’t need to eat",
           "",
-          "When I feel the light of the climbing sun..."
-        ],
-        "duration": 8
-      },
-      {
-        "section": "Verse 3",
-        "chords": [
-          ["G", "-", "C", "-"],
-          ["D", "C", "G", "D"]
-        ],
-        "lyrics": [
-          "When I feel the light of the climbing sun",
-          "Taste that black coffee on the tip of my tongue",
-          "I fell a charge rushing through my brain",
-          "Can’t wait to fill my cup again",
-          "",
           "In the morning she’s as fresh as can be..."
         ],
         "duration": 8
       },
+      
       {
         "section": "Verse 4",
         "chords": [
@@ -2296,7 +2278,7 @@
         "section": "Bridge",
         "chords": [
           ["C", "Em", "C", "Em"],
-          ["C", "Em", "C", "E7", "-"],
+          ["C", "Em", "C", "E7"], ["-"],
           ["Am  C", "Am  C", "Am  C", "Am  C"]
         ],
         "lyrics": [
