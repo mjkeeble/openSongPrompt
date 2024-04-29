@@ -8,6 +8,15 @@ type TProps = {
   hasTimer: boolean;
 };
 
+const flattenChords = (chords: string[][], barsPerLine: number): string[] => {
+  return chords
+    .map((subArray) => {
+      const padding = Array(barsPerLine - subArray.length).fill(' ');
+      return [...subArray, ...padding];
+    })
+    .flat();
+}
+
 const Chords: React.FC<TProps> = ({ chords, isLastPage, timerHalted, hasTimer }) => {
   const progressIndicatorControlIcon = (): 'pause' | 'play' | undefined => {
     if (isLastPage) return undefined;
@@ -15,12 +24,8 @@ const Chords: React.FC<TProps> = ({ chords, isLastPage, timerHalted, hasTimer })
     if (hasTimer) return 'pause';
   };
   const barsPerLine = Math.round(Math.max(...chords.map((subArray) => subArray.length)));
-  const flattenedChords = chords
-    .map((subArray) => {
-      const padding = Array(barsPerLine - subArray.length).fill(' ');
-      return [...subArray, ...padding];
-    })
-    .flat();
+  const flattenedChords = flattenChords(chords, barsPerLine)
+
 
   return (
     <div className="w-full">
