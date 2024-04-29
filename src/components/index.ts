@@ -5,3 +5,4 @@ export * from './Repertoire';
 export * from './Screensaver';
 export * from './Setlist';
 export * from './Song';
+export * from './SongListButton';

@@ -1,4 +1,4 @@
-import {forwardRef} from "react";
+import { forwardRef } from 'react';
 
 type TProps = {
   classes?: string;
@@ -6,7 +6,7 @@ type TProps = {
   onclick?: () => void;
 };
 
-const SetlistButton = forwardRef<HTMLButtonElement, TProps>(({ classes, text, onclick }, ref) => {
+const SongListButton = forwardRef<HTMLButtonElement, TProps>(({ classes, text, onclick }, ref) => {
   return (
     <button
       ref={ref}
@@ -18,4 +18,4 @@ const SetlistButton = forwardRef<HTMLButtonElement, TProps>(({ classes, text, on
   );
 });
 
-export default SetlistButton;
+export default SongListButton;

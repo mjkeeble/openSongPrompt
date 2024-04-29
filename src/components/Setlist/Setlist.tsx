@@ -7,7 +7,7 @@ import songs from '../../../data/songs.json';
 import { BREAK } from '../../const';
 import { TBreak, TGig, TSetlist, TSong } from '../../types';
 import { displayDate } from '../../utils';
-import SetlistButton from './SetlistButton';
+import {SongListButton} from '..';
 
 // export const SetList: React.FC<TGig> = ({ location, date, setList }) => {
 const Setlist = () => {
@@ -71,7 +71,7 @@ const Setlist = () => {
             if (songId === BREAK)
               return (
                 <li key={index}>
-                  <SetlistButton
+                  <SongListButton
                     ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
                     classes="bg-bj-blue"
                     onclick={() => Navigate(`/song/${index}`)}
@@ -93,7 +93,7 @@ const Setlist = () => {
 
             return (
               <li key={index}>
-                <SetlistButton
+                <SongListButton
                   ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
                   classes=""
                   onclick={() => Navigate(`/song/${index}`)}
