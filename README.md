@@ -1,6 +1,6 @@
-<img src='public/songPrompter_logo_transparent.png'
+<img src='public/osp_logo.svg'
 alt='openSongPrompt'
-style='width: 65%; margin-bottom: 4rem;' />
+style='width: 30%; margin-bottom: 4rem;' />
 
 **openSongPrompt** is a stage teleprompter app specifically for gigging musicians. No need to worry about forgetting chords or lyrics, no messing around with music stands, sheaves of paper or tablet mounts - it's all there on the screen in front of you.
 
@@ -27,7 +27,7 @@ As I said, this was written for personal use and the formating is optimised for 
 
 ## Navigation
 
-Navigation options are shown on the screen. They can be activated by a short click or a click-and-hold of the left, middle, or right footswitch (mapped to the 'j', 'm' and 'k' keys respectively)
+Navigation options are shown on the screen. In my setup I have a footswitch controlled by an [ arduino ](url:'https://github.com/mjkeeble/openSongPrompt/blob/main/footswitch/footswitch.ino') with three momentary switches that can be pressed or pressed and held. For keyboard navigation these are mapped to the 'u', 'i' and 'o' keys for a short press and 'j', 'k' and 'l' keys for press-and-hold. They can be activated by a short click or a click-and-hold of the left, middle, or right footswitch (mapped to the 'j', 'm' and 'k' keys respectively)
 
      TODO: add detailed navigation information here.
 
@@ -40,7 +40,7 @@ Data is stored in JSON files in the `data` folder. There is one file for gigs, a
 The following future improvements are envisaged:
 
 1. Add tests
-1. Add global and song-level config options for screen orientation, font sizes, screen split ration (chords/lyrics), dark and light mode.
+1. Add global and song-level config options for screen orientation, font sizes, screen split ratios (chords/lyrics), dark and light mode.
 1. Add chord diagram display option
 1. Add theatre mode for text only
 1. Add song/gig imports (e.g.from USB)
@@ -48,9 +48,10 @@ The following future improvements are envisaged:
 1. Add setlist creator to backend service
 1. Add band-member configuration for multiple displays.
 1. Network displays for coordination (maybe?)
-1. Create a cross-platform app version alongside the web app to allow it to run on a tablet or smartphone
+1. Create a cross-platform app version alongside the web app to allow it to run on a tablet or smartphone (consider Electron or React Native)
 1. Add an opening splash page when initially loading, include key contributors
-1. Add pdf display option
+1. Upload and display user's logo
+1. Add pdf display option?
 
 ## Contributing to this project
 
