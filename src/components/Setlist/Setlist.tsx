@@ -1,13 +1,12 @@
 import { getSetlist } from '@context/index';
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { NavIndicator } from '..';
+import { NavIndicator, SongListButton } from '..';
 import gigs from '../../../data/gigs.json';
 import songs from '../../../data/songs.json';
 import { BREAK } from '../../const';
 import { TBreak, TGig, TSetlist, TSong } from '../../types';
 import { displayDate } from '../../utils';
-import {SongListButton} from '..';
 
 // export const SetList: React.FC<TGig> = ({ location, date, setList }) => {
 const Setlist = () => {
@@ -60,13 +59,13 @@ const Setlist = () => {
     <div>
       <div onKeyDown={handleKeyDown} tabIndex={0}>
         <h1 className="my-5 font-fredericka text-7xl text-bj-white">Set List</h1>
-        {gig && (
+        {gig ? (
           <h3>
             {displayDate(gig.dateTime)}, {gig.venue}, {gig.town}
           </h3>
-        )}
+        ) : null}
 
-        <ul className="mt-8 mb-20">
+        <ul className="mb-20 mt-8">
           {setlist.map((songId: number | TBreak, index) => {
             if (songId === BREAK)
               return (

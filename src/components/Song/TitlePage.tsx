@@ -21,12 +21,12 @@ const TitlePage: React.FC<TProps> = ({ title, songKey, setup, tempo, timeSignatu
       </header>
       <div className="flex h-full items-center justify-center">
         <div className="w-full text-center text-lyric">
-          {songKey && <p>Key: {songKey}</p>}
-          {setup && (
+          {songKey ? <p>Key: {songKey}</p> : null}
+          {setup ? (
             <div className="flex h-full w-full items-center justify-center">
               <p className="text-lyric">{setup}</p>
             </div>
-          )}
+          ) : null}
           <div>
             <CountIn tempo={tempo} timeSignature={timeSignature} />
           </div>

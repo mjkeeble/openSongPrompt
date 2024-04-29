@@ -11,9 +11,9 @@ import {
   faPause,
   faPlay,
   faUpLong,
-  faX
+  faX,
 } from '@fortawesome/free-solid-svg-icons';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 type symbolKeys =
   | 'backward'
@@ -58,18 +58,21 @@ const NavIndicator: React.FC<TProps> = ({ leftLong, leftShort, centreLong, centr
   const showLong = leftLong || centreLong || rightLong;
   const rows = (showLong ? 1 : 0) + (showShort ? 1 : 0);
 
-  if (!rows) return (<></>);
+  if (!rows) return <></>;
 
   return (
     <div
-      className={`fixed bottom-0 left-0 m-1 grid w-96 grid-cols-4 bg-black grid-rows-${rows} rounded-lg border bokrder-2 pt-4 text-5xl`}
+      className={`fixed bottom-0 left-0 m-1 grid w-96 grid-cols-4 bg-black grid-rows-${rows} bokrder-2 rounded-lg border pt-4 text-5xl`}
     >
-      <p className="mb-2 pl-2 pt-1 text-left text-4xl font-semibold text-bj-blue-light">{showShort && 'Short'}</p>
+      <p className="mb-2 pl-2 pt-1 text-left text-4xl font-semibold text-bj-blue-light">{showShort ? 'Short' : ''}</p>
 
       <div>
         {showShort ? (
-          <FontAwesomeIcon className=" text-center text-bj-blue-light" icon={leftShort ? symbols[leftShort] : faMinus}
-            rotation={leftShort === 'backward' ? 180 : undefined} />
+          <FontAwesomeIcon
+            className=" text-center text-bj-blue-light"
+            icon={leftShort ? symbols[leftShort] : faMinus}
+            rotation={leftShort === 'backward' ? 180 : undefined}
+          />
         ) : (
           <></>
         )}
@@ -95,31 +98,33 @@ const NavIndicator: React.FC<TProps> = ({ leftLong, leftShort, centreLong, centr
           <></>
         )}
       </div>
-      {showLong && <p className="mb-0 mt-2 pl-2 pt-1 text-left text-4xl font-semibold text-bj-green-light">Long</p>}
-      {showLong && (
+      {showLong ? (
+        <p className="mb-0 mt-2 pl-2 pt-1 text-left text-4xl font-semibold text-bj-green-light">Long</p>
+      ) : null}
+      {showLong ? (
         <div>
           <FontAwesomeIcon
             className="mt-2 text-center text-bj-green-light"
             icon={leftLong ? symbols[leftLong] : faMinus}
           />
         </div>
-      )}
-      {showLong && (
+      ) : null}
+      {showLong ? (
         <div>
           <FontAwesomeIcon
             className="mt-2 text-center text-bj-green-light"
             icon={centreLong ? symbols[centreLong] : faMinus}
           />
         </div>
-      )}
-      {showLong && (
+      ) : null}
+      {showLong ? (
         <div>
           <FontAwesomeIcon
             className="mt-2 text-center text-bj-green-light"
             icon={rightLong ? symbols[rightLong] : faMinus}
           />
         </div>
-      )}
+      ) : null}
     </div>
   );
 };
