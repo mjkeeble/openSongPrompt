@@ -70,7 +70,7 @@
       {
         "section": "Verse 3",
         "chords": [
-          ["G!", "G!", "G!   !   ", "G!   !   !   !"],
+          ["G!", "G!", "G!-!-", "G!!!!"],
           ["C", "C", "G", "G"],
           ["D", "C", "G", "C"],
           [""],
@@ -566,12 +566,7 @@
     "pages": [
       {
         "section": " Intro + Verse 1",
-        "chords": [
-          ["A  E7", "D7  E7", "A  D7", "A  E"],
-          [],
-          ["A", "A7", "D7", "Dm7"],
-          ["A", "B7  E7", "A  D7", "A  E7"]
-        ],
+        "chords": [["A  E7", "D7  E7", "A  D7", "A  E"], [], ["A", "A7", "D7", "Dm7"], ["A", "Bm7 E7", "A D7", "A E7"]],
         "lyrics": [
           "Well I came home one mornin’",
           "Found my baby gone",
@@ -587,7 +582,7 @@
         "section": "Verse 2",
         "chords": [
           ["A", "A7", "D7", "Dm7"],
-          ["A", "B7  E7", "A  D7", "A  E7"]
+          ["A", "Bm7 E7", "A D7", "A E7"]
         ],
         "lyrics": [
           "First time I saw her",
@@ -604,7 +599,7 @@
         "section": "Verse 3",
         "chords": [
           ["A", "A7", "D7", "Dm7"],
-          ["A", "B7  E7", "A  D7", "A  E7"]
+          ["A", "Bm7 E7", "A D7", "A E7"]
         ],
         "lyrics": [
           "I saw her one mornin’",
@@ -621,9 +616,10 @@
         "section": "Solo + Verse 4",
         "chords": [
           ["A", "A7", "D7", "Dm7"],
-          ["A", "B7  E7", "A  D7", "A  E7"]
+          ["A", "Bm7 E7", "A D7", "A E7"]
         ],
         "lyrics": [
+          "[SOLO x2]",
           "I raise my hands",
           "And I raise the once again",
           "Please tell me, Baby",
@@ -1185,7 +1181,7 @@
           "You were out with the other night",
           "",
           "But if I was with another woman",
-          "That would somehow kinda makes it alright",
+          "That would somehow kinda make it alright",
           "",
           "That ain’t no reason not hold each other tight"
         ],
@@ -1194,8 +1190,8 @@
       {
         "section": "Bridge",
         "chords": [
-          ["A!", "A!!", "/", "A!!"],
-          ["/", "D!!", "/", "A!!"],
+          ["A!", "A!!--", "/", "A!!--"],
+          ["/", "D!!--", "/", "A!!--"],
           ["E", "D", "A", "E"]
         ],
         "lyrics": [
@@ -1478,13 +1474,13 @@
         ],
         "lyrics": [
           "She said, daddy you can run, walk or fly",
-          "You’re my baby and I love you ’til I die",
+          "You’re my baby and I love you until the day I die",
           "I can’t hold on …"
         ],
         "duration": 24
       },
       {
-        "section": "Interaction",
+        "section": "Chorus",
         "chords": [
           ["C", "-", "-", "-"],
           ["F", "-", "C", "-"],
@@ -1811,12 +1807,12 @@
           ["G", "F", "C", "C"]
         ],
         "lyrics": [
-          "Be a good pal, just swappin’ up a dime",
-          "You thinkin’ about a man, throw it after mine",
+          "She had a date with a scrap, she met a hip cat",
+          "And nobody knows where she end up at",
           "",
-          "Kissin’ in the dark",
-          "Kissin’ in the dark",
-          "Kissin’ in the dark, honey, that’s my birthmark"
+          "She been kissin’ in the dark",
+          "Yes, kissin’ in the dark",
+          "She been kissin’ in the dark, honey, that’s her birthmark"
         ],
         "duration": 12
       },
@@ -1828,8 +1824,8 @@
           ["G", "F", "C", "C"]
         ],
         "lyrics": [
-          "Well, you’d better wake up, and try to get wise",
-          "Get yourself hip to that old crazy jive",
+          "Be a good pal, just swappin’ up a dime",
+          "You thinkin’ about a man, throw it after mine",
           "",
           "Kissin’ in the dark",
           "Kissin’ in the dark",
@@ -1845,12 +1841,12 @@
           ["G", "F", "C", "C"]
         ],
         "lyrics": [
-          "She had a date with a scrap, she met a hip cat",
-          "And nobody knows where she end up at",
+          "Well, you’d better wake up, and try to get wise",
+          "Get yourself hip to that old crazy jive",
           "",
-          "She been kissin’ in the dark",
-          "Yes, kissin’ in the dark",
-          "She been kissin’ in the dark, honey, that’s her birthmark",
+          "Kissin’ in the dark",
+          "Kissin’ in the dark",
+          "Kissin’ in the dark, honey, that’s my birthmark",
           "",
           "[Bass outro bars 11-12]"
         ]
@@ -3017,7 +3013,7 @@
     "duration_seconds": 25,
     "lineup": "Band",
     "key": "A",
-    "tempo": 131,
+    "tempo": 95,
     "timeSignature": "4/4",
     "pages": [
       {
@@ -3026,7 +3022,7 @@
           ["A!", "A!", "A!", "A!"],
           ["A!", "A!", "A!", "A!"],
           ["D7", "-", "A", "-"],
-          ["E9", "E#9  E9", "A", "E7"]
+          ["E", "D", "A", "E"]
         ],
         "lyrics": [
           "I got a sly dog",
@@ -3045,12 +3041,12 @@
         "duration": 16
       },
       {
-        "section": "Verse 2",
+        "section": "Verse 2 + solo",
         "chords": [
           ["A!", "A!", "A!", "A!"],
           ["A!", "A!", "A!", "A!"],
-          ["D7", "-", "A", "-"],
-          ["E9", "E#9  E9", "A", "E7"]
+          ["D", "-", "A", "-"],
+          ["E", "D", "A", "E"]
         ],
         "lyrics": [
           "I got a cool cat",
@@ -3058,7 +3054,7 @@
           "Acting like he owns the",
           "Whole damn place",
           "Rubs up against my leg",
-          "Purrs throughoutthe house",
+          "Purrs throughout the house",
           "But that mangy creature",
           "He can't even catch a mouse",
           "I got a cool cat",
@@ -3069,12 +3065,22 @@
         "duration": 16
       },
       {
-        "section": "Verse 3 + solo",
+        "section": "Solo",
+        "chords": [
+          ["A", "A", "A", "A"],
+          ["D", "-", "A", "-"],
+          ["E", "D", "A", "E"]
+        ],
+        "lyrics": ["[SOLO]"],
+        "duration": 12
+      },
+      {
+        "section": "Verse 3",
         "chords": [
           ["A!", "A!", "A!", "A!"],
           ["A!", "A!", "A!", "A!"],
-          ["D7", "-", "A", "-"],
-          ["E9", "E#9  E9", "A", "E7"]
+          ["D", "-", "A", "-"],
+          ["E", "D", "A", "E"]
         ],
         "lyrics": [
           "I got a talking bird",
@@ -3087,18 +3093,18 @@
           "F-word bird",
           "I got a talking chicken",
           "But I don't know what for",
-          "And I've got a sly dog",
+          "Gonna feed it to that sly dog",
           "Sniffin' at my door"
         ],
-        "duration": 32
+        "duration": 16
       },
       {
         "section": "Verse 4",
         "chords": [
           ["A!", "A!", "A!", "A!"],
           ["A!", "A!", "A!", "A!"],
-          ["D7", "-", "A", "-"],
-          ["E9", "E#9  E9", "A", "E7"]
+          ["D", "-", "A", "-"],
+          ["E", "D", "A", "E"]
         ],
         "lyrics": [
           "I got a wild woman",
@@ -3114,6 +3120,15 @@
           "And I've got a sly dog",
           "Sniffin' at my door"
         ]
+      },
+      {
+        "section": "Outro",
+        "chords": [
+          ["A", "A", "A", "A"],
+          ["D", "-", "A", "-"],
+          ["E", "D", "A", "E"]
+        ],
+        "lyrics": []
       }
     ]
   }
