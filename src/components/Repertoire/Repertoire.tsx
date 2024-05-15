@@ -3,13 +3,14 @@ import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { NavIndicator, SongListButton } from '..';
 import songs from '../../../data/songs.json';
+import { footswitch } from '../../const';
 import { TRepertoireList, TSong } from '../../types';
 
 const Repertoire = () => {
   const Navigate = useNavigate();
   const buttonsRef = useRef<HTMLButtonElement[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
-  console.log('buttonsRef', buttonsRef)
+  console.log('buttonsRef', buttonsRef);
 
   // TODO: at the moment setlist is stored in local storage and
 
@@ -39,14 +40,15 @@ const Repertoire = () => {
   const handleKeyDown = (event: { key: string }) => {
     if (isLoaded) {
       const currentIndex = buttonsRef.current.findIndex((button) => button === document.activeElement);
-      if (event.key === 'i') {
+      if (event.key === footswitch.centreShort) {
         buttonsRef.current[currentIndex].click();
-      } else if (event.key === 'u' && currentIndex > 0) {
+      } else if (event.key === footswitch.leftShort && currentIndex > 0) {
         buttonsRef.current[currentIndex - 1].focus();
         buttonsRef.current[currentIndex - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } else if (event.key === 'u' && currentIndex === 0) {
+      } else if (event.key === footswitch.leftShort && currentIndex === 0) {
         buttonsRef.current[repertoireList.length - 1].focus();
-        buttonsRef.current[repertoireList.length - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });} else if (event.key === 'o') {
+        buttonsRef.current[repertoireList.length - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else if (event.key === footswitch.rightShort) {
         if (currentIndex < buttonsRef.current.length - 1) {
           buttonsRef.current[currentIndex + 1].focus();
           buttonsRef.current[currentIndex + 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -77,7 +79,7 @@ const Repertoire = () => {
     <div>
       <div onKeyDown={handleKeyDown} tabIndex={0}>
         <h1 className="my-5 font-fredericka text-7xl text-bj-white">Repertoire</h1>
-        <ul className="mt-8 mb-20">
+        <ul className="mb-20 mt-8">
           {repertoireList.map((songId: number, index) => {
             const song: TSong | undefined = songs.find((song) => song.id === songId);
             if (!song) return null;

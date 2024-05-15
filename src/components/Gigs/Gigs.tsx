@@ -3,6 +3,7 @@ import { forwardRef, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { NavIndicator } from '..';
 import gigs from '../../../data/gigs.json';
+import { footswitch } from '../../const';
 import { TGig } from '../../types';
 import { displayDate } from '../../utils';
 import { consolidateSetlist, getDateBasedStyling } from './utils';
@@ -38,16 +39,16 @@ const Gigs = () => {
 
   const handleKeyDown = (event: { key: string }) => {
     const currentIndex = buttonsRef.current.findIndex((button) => button === document.activeElement);
-    if (event.key === 'i') {
+    if (event.key === footswitch.centreShort) {
       const element = document.documentElement;
       if (element.requestFullscreen) {
         element.requestFullscreen();
       }
       buttonsRef.current[currentIndex].click();
-    } else if (event.key === 'u' && currentIndex > 0) {
+    } else if (event.key === footswitch.leftShort && currentIndex > 0) {
       buttonsRef.current[currentIndex - 1].focus();
       buttonsRef.current[currentIndex - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
-    } else if (event.key === 'o') {
+    } else if (event.key === footswitch.rightShort) {
       if (currentIndex < buttonsRef.current.length - 1) {
         buttonsRef.current[currentIndex + 1].focus();
         buttonsRef.current[currentIndex + 1].scrollIntoView({ behavior: 'smooth', block: 'center' });

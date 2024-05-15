@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ACTIVEKEYS } from '../../const';
+import { ACTIVEKEYS, footswitch } from '../../const';
 import { TInput } from '../../types';
 
 type TProps = {
@@ -43,14 +43,14 @@ export const ManageInteraction: React.FC<TProps> = ({
   if (showingScreensaver) {
     console.log('screensaver');
     switch (footswitchInput) {
-      case ACTIVEKEYS[0]:
+      case footswitch.leftShort:
         // Handle left short press
         // go to previous song
         if (currentSong) {
           Navigate(`/song/${Math.max(currentSong - 1, 0)}`);
         }
         return null;
-      case ACTIVEKEYS[2]:
+      case footswitch.rightShort:
         // Handle right short press
         // go to next song or repertoire if at end of setlist
         if (isLastSong) {
@@ -59,7 +59,7 @@ export const ManageInteraction: React.FC<TProps> = ({
           Navigate(`/song/${Math.min(currentSong + 1, totalSongs - 1)}`);
         }
         return null;
-      case ACTIVEKEYS[4]:
+      case footswitch.centreLong:
         // Handle left short press
         // go to setlist
         Navigate('/setlist/1');
@@ -73,21 +73,21 @@ export const ManageInteraction: React.FC<TProps> = ({
   if (!currentPage) {
     console.log('title page');
     switch (footswitchInput) {
-      case ACTIVEKEYS[0]:
+      case footswitch.leftShort:
         // Handle left short press
         // go to previous song
         Navigate(`/song/${Math.max(currentSong - 1, 0)}`);
         return null;
-      case ACTIVEKEYS[2]:
+      case footswitch.rightShort:
         // Handle right short press
         // go to next page
         setCurrentPage(currentPage + 1);
         return null;
-      case ACTIVEKEYS[4]:
+      case footswitch.centreLong:
         // Handle centre long press
         Navigate('/setlist/1');
         return null;
-      case ACTIVEKEYS[5]:
+      case footswitch.rightLong:
         // Handle right long press
         // go to next song or repertoire if at end of setlist
         if (isLastSong) {
@@ -105,12 +105,12 @@ export const ManageInteraction: React.FC<TProps> = ({
   if (!isLastPage && currentPage) {
     console.log('lyric page');
     switch (footswitchInput) {
-      case ACTIVEKEYS[0]:
+      case footswitch.leftShort:
         // Handle left short press
         // go to previous page in song
         setCurrentPage(currentPage - 1);
         return null;
-      case ACTIVEKEYS[1]:
+      case footswitch.centreShort:
         // Handle centre short press
         // toggle timer freeze
         if (hasTimer) {
@@ -119,22 +119,22 @@ export const ManageInteraction: React.FC<TProps> = ({
           setTimerHalted(false);
         }
         return null;
-      case ACTIVEKEYS[2]:
+      case footswitch.rightShort:
         // Handle right short press
         // go to next page in song
         setCurrentPage(currentPage + 1);
         return null;
-      case ACTIVEKEYS[3]:
+      case footswitch.leftLong:
         // Handle left long press
         // go to start of song
         setCurrentPage(0);
         return null;
-      case ACTIVEKEYS[4]:
+      case footswitch.centreLong:
         // Handle centre long press
         // reload page
-        window.location.reload()
+        window.location.reload();
         return null;
-      case ACTIVEKEYS[5]:
+      case footswitch.rightLong:
         // Handle right long press
         // go to next song or repertoire if at end of setlist
         if (isLastSong) {
@@ -152,13 +152,13 @@ export const ManageInteraction: React.FC<TProps> = ({
   if (isLastPage) {
     console.log('last page');
     switch (footswitchInput) {
-      case ACTIVEKEYS[0]:
+      case footswitch.leftShort:
         // Handle left short press
         // go to previous page in song
         setCurrentPage(currentPage - 1);
         return null;
 
-      case ACTIVEKEYS[1]:
+      case footswitch.centreShort:
         // Handle centre short press
         // toggle timer freeze
         if (hasTimer) {
@@ -167,7 +167,7 @@ export const ManageInteraction: React.FC<TProps> = ({
           setTimerHalted(false);
         }
         return null;
-      case ACTIVEKEYS[2]:
+      case footswitch.rightShort:
         // Handle right short press
         // go to next song or repertoire if at end of setlist
         if (isLastSong) {
@@ -177,12 +177,12 @@ export const ManageInteraction: React.FC<TProps> = ({
           Navigate(`/song/${currentSong + 1}`);
         }
         return null;
-      case ACTIVEKEYS[3]:
+      case footswitch.leftLong:
         // Handle left long press
         // go to start of song
         setCurrentPage(0);
         return null;
-      case ACTIVEKEYS[4]:
+      case footswitch.centreLong:
         // Handle centre long press
         // reload page
         window.location.reload();

@@ -2,6 +2,15 @@ export const BREAK = 'break';
 
 export const ACTIVEKEYS = ['u', 'i', 'o', 'j', 'k', 'l'];
 
+export const footswitch = {
+  leftShort: 'u',
+  centreShort: 'i',
+  rightShort: 'o',
+  leftLong: 'j',
+  centreLong: 'k',
+  rightLong: 'l',
+};
+
 export const CHORDS_FIRST = 'chords-first';
 export const CHORDS_INLINE = 'chords-inline';
 export const CHORDS_ONLY = 'chords-only';

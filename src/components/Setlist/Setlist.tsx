@@ -4,7 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { NavIndicator, SongListButton } from '..';
 import gigs from '../../../data/gigs.json';
 import songs from '../../../data/songs.json';
-import { BREAK } from '../../const';
+import { BREAK, footswitch } from '../../const';
 import { TBreak, TGig, TSetlist, TSong } from '../../types';
 import { displayDate } from '../../utils';
 
@@ -37,12 +37,12 @@ const Setlist = () => {
   const handleKeyDown = (event: { key: string }) => {
     if (isLoaded) {
       const currentIndex = buttonsRef.current.findIndex((button) => button === document.activeElement);
-      if (event.key === 'i') {
+      if (event.key === footswitch.centreShort) {
         buttonsRef.current[currentIndex].click();
-      } else if (event.key === 'u' && currentIndex > 0) {
+      } else if (event.key === footswitch.leftShort && currentIndex > 0) {
         buttonsRef.current[currentIndex - 1].focus();
         buttonsRef.current[currentIndex - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } else if (event.key === 'o') {
+      } else if (event.key === footswitch.rightShort) {
         if (currentIndex < buttonsRef.current.length - 1) {
           buttonsRef.current[currentIndex + 1].focus();
           buttonsRef.current[currentIndex + 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
