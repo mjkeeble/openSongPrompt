@@ -59,7 +59,7 @@ const NavIndicator: React.FC<TProps> = ({ leftLong, leftShort, centreLong, centr
   const rows = (showLong ? 1 : 0) + (showShort ? 1 : 0);
 
   if (!rows) return <></>;
-
+// TODO: refactor this to simplify the ternaries
   return (
     <div
       className={`fixed bottom-0 left-0 m-1 grid w-96 grid-cols-4 bg-black grid-rows-${rows} bokrder-2 rounded-lg border pt-4 text-5xl`}

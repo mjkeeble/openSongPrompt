@@ -1,5 +1,5 @@
 import { storeSetlist } from '@context/index';
-import { forwardRef, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { NavIndicator, SongListButton } from '..';
 import songs from '../../../data/songs.json';
@@ -9,6 +9,7 @@ const Repertoire = () => {
   const Navigate = useNavigate();
   const buttonsRef = useRef<HTMLButtonElement[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
+  console.log('buttonsRef', buttonsRef)
 
   // TODO: at the moment setlist is stored in local storage and
 
@@ -43,10 +44,15 @@ const Repertoire = () => {
       } else if (event.key === 'u' && currentIndex > 0) {
         buttonsRef.current[currentIndex - 1].focus();
         buttonsRef.current[currentIndex - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } else if (event.key === 'o') {
+      } else if (event.key === 'u' && currentIndex === 0) {
+        buttonsRef.current[repertoireList.length - 1].focus();
+        buttonsRef.current[repertoireList.length - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });} else if (event.key === 'o') {
         if (currentIndex < buttonsRef.current.length - 1) {
           buttonsRef.current[currentIndex + 1].focus();
           buttonsRef.current[currentIndex + 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else if (currentIndex === buttonsRef.current.length - 1) {
+          buttonsRef.current[0].focus();
+          buttonsRef.current[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else if (endOfListRef.current) {
           endOfListRef.current.scrollIntoView({ behavior: 'smooth' });
         }
