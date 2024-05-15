@@ -1,8 +1,8 @@
 #include <Keyboard.h>
 
 const int centreSwitch = 14;
-const int leftSwitch = 15;
-const int rightSwitch = 16;
+const int leftSwitch = 16;
+const int rightSwitch = 15;
 unsigned long pressTimeLeft = 0;
 unsigned long pressTimeCentre = 0;
 unsigned long pressTimeRight = 0;
