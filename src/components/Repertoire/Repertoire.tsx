@@ -90,7 +90,8 @@ const Repertoire = () => {
                   ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
                   classes=""
                   onclick={() => handleSelectSong(song.id)}
-                  text={song.title}
+                  title={song.title}
+                  version={song.version}
                 />
               </li>
             );

@@ -74,7 +74,7 @@ const Setlist = () => {
                     ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
                     classes="bg-bj-blue"
                     onclick={() => Navigate(`/song/${index}`)}
-                    text="BREAK"
+                    title="BREAK"
                   />
                 </li>
               );
@@ -96,7 +96,8 @@ const Setlist = () => {
                   ref={(el: HTMLButtonElement) => (buttonsRef.current[index] = el)}
                   classes=""
                   onclick={() => Navigate(`/song/${index}`)}
-                  text={song.title}
+                  title={song.title}
+                  version={song.version}
                 />
               </li>
             );

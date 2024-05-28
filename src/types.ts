@@ -11,6 +11,7 @@ export type TGig = {
 export type TSong = {
   id: number;
   title: string;
+  version?: string;
   writtenBy: string[];
   gemaWerknummer?: string;
   duration_minutes: number;

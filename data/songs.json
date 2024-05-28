@@ -354,41 +354,43 @@
         "section": "Verse 1",
         "chords": [],
         "lyrics": [
-          "Well, they call her Lady Luck, but that beauty is a beast",
-          "She gave me only famine, I’m still waiting for the feast",
+          "Well, they call her Lady Luck ...",
+          "She gave me only famine ...",
+          "",
           "I’m getting nowhere",
           "And nowhere is a bad place to be",
           "",
-          "Try to help myself",
-          "I just don’t have the knack",
-          "I’m taking one step forward",
-          "And two steps back"
+          "Try to help myself ..."
         ]
       },
       {
         "section": "Verse 2",
         "chords": [],
         "lyrics": [
-          "I can’t pay the landlord, so I’ve got no place",
-          "I want to be a winner, but someone fixed the race",
+          "I can’t pay the landlord ...",
+          "I wanna be a winner ...",
+          "",
           "I’ve gone to nothing",
           "And nothing is a bad way to be",
           "",
-          "I’m down instead of up",
-          "I’m red instead of black",
-          "I’m taking one step forward",
-          "And two steps back"
+          "I’m down instead of up ..."
         ]
       },
       {
         "section": "Verse 3",
         "chords": [],
         "lyrics": [
-          "I’ve got to check the dealer, that’s all I can take",
-          "If I try to climb the ladder I’ll get swallowed by a snake",
-          "I’ve got nothing",
-          "And nothing ain’t enough for me",
+          "I’ve got to check the dealer...",
+          "If I try to climb the ladder ...",
           "",
+          "I’ve got nothing",
+          "And nothing ain’t enough for me"
+        ]
+      },
+      {
+        "section": "Verse 3 (part 2)",
+        "chords": [],
+        "lyrics": [
           "Got to take my lousy luck",
           "And drown it in a sack",
           "I’m taking",
@@ -1195,11 +1197,11 @@
           ["E", "D", "A", "E"]
         ],
         "lyrics": [
-          "Don’t tell me the truth",
-          "When you look in my eyes",
+          "Don’t tell me the truth!",
+          "When I look in your eyes!",
           "",
-          "Don’t tell me the truth",
-          "’Cause I love your lies",
+          "Don’t tell me the truth!",
+          "’Cause I love your lies!",
           "",
           "Give me the fiction",
           "It’s reality I despise"
@@ -1260,6 +1262,7 @@
   {
     "id": 13,
     "title": "Mama (Kindergarten Blues)",
+    "version": "Second bridge at end",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "31889331-001",
     "duration_minutes": 5,
@@ -1454,7 +1457,7 @@
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"],
           [],
-          ["C!   C!", "C!   C!", "C!   C!", "C!   C!"],
+          ["C!", "C!", "C!", "C!"],
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"]
         ],
@@ -1468,7 +1471,7 @@
       {
         "section": "Verse 2",
         "chords": [
-          ["C!   C!", "C!   C!", "C!   C!", "C!   C!"],
+          ["C!", "C!", "C!", "C!"],
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"]
         ],
@@ -1504,7 +1507,7 @@
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"],
           [],
-          ["C! C!", "C! C!", "C! C!", "C! C!"],
+          ["C!", "C!", "C!", "C!"],
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"]
         ],
@@ -1519,7 +1522,7 @@
       {
         "section": "Verse 4",
         "chords": [
-          ["C! C!", "C! C!", "C! C!", "C! C!"],
+          ["C!", "C!", "C!", "C!"],
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"]
         ],
@@ -3129,6 +3132,89 @@
           ["E", "D", "A", "E"]
         ],
         "lyrics": []
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Mama (Kindergarten Blues)",
+    "version": "No bridge at end",
+    "writtenBy": ["Mark Keeble"],
+    "gemaWerknummer": "31889331-001",
+    "duration_minutes": 5,
+    "duration_seconds": 0,
+    "lineup": "Band",
+    "key": "A",
+    "tempo": 115,
+    "timeSignature": "4/4",
+    "pages": [
+      {
+        "section": "Intro + Verse 1 - 2",
+        "chords": [
+          ["A7", "-", "-", "-"],
+          ["D7", "-", "A7", "-"],
+          ["E7", "D7", "A7", "E7"]
+        ],
+        "lyrics": [
+          "Mama, when you gonna take me home?",
+          "I met a girl, and she stole my black cat bone",
+          "",
+          "",
+          "Oh Mama, how did I get here?",
+          "I went looking for love and you know it cost me dear."
+        ],
+        "duration": 36
+      },
+      {
+        "section": "Verse 3 + bridge",
+        "chords": [
+          ["A7", "-", "-", "-"],
+          ["D7", "-", "A7", "-"],
+          ["E7", "D7", "A7", "E7"]
+        ],
+        "lyrics": [
+          "Oh Mama, what can I do?",
+
+          "First she said she loved me and then she said we’re through",
+          "",
+          "Mama! Mama! Mama! Mama!Mama! Mama! ...",
+          "",
+          "[SOLO]",
+          "",
+          "[ \u21D2 Footswitch ]"
+        ]
+      },
+      {
+        "section": "Verse 4 ",
+        "chords": [
+          ["A7", "-", "-", "-"],
+          ["D7", "-", "A7", "-"],
+          ["E7", "D7", "A7", "E7"]
+        ],
+        "lyrics": [
+          "Alle meine Entchen schwimmen auf dem See",
+          "Schwimmen auf dem See now Mama",
+          "Schwimmen auf dem See",
+          "Köpfchen in das Wasser",
+          "Schwänzchen in die Höh’"
+        ],
+        "duration": 12
+      },
+      {
+        "section": "Verse 5",
+        "chords": [
+          ["A7", "-", "-", "-"],
+          ["D7", "-", "A7", "-"],
+          ["E7", "D7", "A7", "E7"]
+        ],
+        "lyrics": [
+          "Oh Mama, when you gonna take me home?",
+          "My luck is fading, Mama",
+          "[BREAK on 10 \u21D2]",
+          "please take me home",
+          "[BASS OUTRO 11-12]"
+        ]
+        
       }
     ]
   }
