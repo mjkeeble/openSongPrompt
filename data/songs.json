@@ -259,9 +259,8 @@
         ],
         "lyrics": [
           "I’m a cross cut saw",
-          "Just drag me ’cross your log",
-          "I’m a cross cut saw",
-          "Just drag me ’cross your log",
+          "Just drag me ’cross your log (x2)",
+
           "",
           "I cut your wood so easy for you",
           "You can’t help but say ’Hot dog!’"
@@ -318,9 +317,7 @@
         ],
         "lyrics": [
           "I’m a cross cut saw",
-          "Just drag me ’cross your log",
-          "I’m a cross cut saw",
-          "Just drag me ’cross your log",
+          "Just drag me ’cross your log (x2)",
           "",
           "I cut your wood so easy for you",
           "You can’t help but say ’Hot dog!’"
@@ -401,15 +398,7 @@
       {
         "section": "Bridge + outro",
         "chords": [],
-        "lyrics": [
-          "One step forward, two steps back",
-          "[x4]",
-          "",
-          "[ SOLO]",
-          "",
-          "One step forward, two steps back",
-          "[x4]"
-        ]
+        "lyrics": ["One step forward, two steps back (x4)", "", "[ SOLO]", "", "One step forward, two steps back (x4)"]
       }
     ]
   },
@@ -654,11 +643,8 @@
           ["G 7/9", "F# 7/9", "Bm", "-"]
         ],
         "lyrics": [
-          "[Thesa sings:]",
           "The thrill is gone",
-          "The thrill is gone away",
-          "The thrill is gone",
-          "The thrill is gone away",
+          "The thrill is gone away (x2)",
           "",
           "You know you done me wrong, baby",
           "And you’ll be sorry someday"
@@ -673,11 +659,8 @@
           ["G 7/9", "F# 7/9", "Bm", "-"]
         ],
         "lyrics": [
-          "[Mark sings:]",
           "The thrill is gone",
-          "The thrill is gone away from me",
-          "The thrill is gone",
-          "The thrill is gone away from me",
+          "The thrill is gone away from me (x2)",
           "",
           "Although I’ll still live on",
           "But so lonely I’ll be"
@@ -693,11 +676,9 @@
         ],
         "lyrics": [
           "[ SOLO x2]",
-          "[Thesa sings:]",
+          "",
           "The thrill is gone",
-          "The thrill is gone away for good",
-          "The thrill is gone",
-          "The thrill is gone away for good",
+          "The thrill is gone away for good (x2)",
           "",
           "Someday I know I’ll be over it all, baby",
           "Just like I know a man should"
@@ -712,11 +693,8 @@
           ["G 7/9", "F# 7/9", "Bm", "-"]
         ],
         "lyrics": [
-          "[Mark sings:]",
           "Now I’m free",
-          "I’m free from your spell",
-          "Yes, I’m free, baby",
-          "Free from your spell",
+          "I’m free from your spell (x2)",
           "",
           "And now that it’s all over",
           "All I can do is wish you well"
@@ -755,9 +733,8 @@
         ],
         "lyrics": [
           "I’ve thinking ’bout you, baby",
-          "Thinking ’bout you since you’ve been gone",
-          "I’ve been thinking ’bout you, baby",
-          "Thinking ’bout you now you’re gone",
+          "Thinking ’bout you since you’ve been gone (x2)",
+          "",
           "When you were here I didn’t think about you at all",
           "Maybe that’s what I did wrong"
         ],
@@ -772,9 +749,8 @@
         ],
         "lyrics": [
           "I’ve been dreaming about you, baby",
-          "Dreaming you were by my side",
-          "I’ve been dreaming about you, baby",
-          "Dreaming you’re still by my side",
+          "Dreaming you were by my side (x2)",
+          "",
           "Dreaming we were both still so happy",
           "And I was not the one who lied."
         ],
@@ -790,9 +766,8 @@
         "lyrics": [
           "[SOLO x 2]",
           "You been talking ’bout me, baby",
-          "Sayin’ I did not treat you right",
-          "I heard you been talkin’ ’bout me, baby",
-          "Sayin’ I did not treat you right",
+          "Sayin’ I did not treat you right (x2)",
+          "",
           "Now everyone turns their back on me",
           "And my bed don’t shake at night"
         ],
@@ -810,6 +785,7 @@
           "I know that you’ve been here and gone",
           "Goodbye pretty baby",
           "I know that I’ve done you wrong",
+          "",
           "Now I’ll be sitting on my front porch",
           "Bidin’ time with Jimmy John"
         ],
@@ -863,6 +839,7 @@
         "lyrics": [
           "Now come on baby, now we can make some love tonight",
           "I said baby, make some love tonight",
+          "",
           "Well be rolling out the blankets",
           "I’m going to make you feel alright"
         ],
@@ -877,9 +854,8 @@
         ],
         "lyrics": [
           "I’m your rollin’ man",
-          "I’ve got all the love you need",
-          "Rollin man, ",
-          "I’ve got all the love you need",
+          "I’ve got all the love you need (x2)",
+          "",
           "I’ve got so much loving",
           "More than you ever going to see"
         ],
@@ -1041,14 +1017,10 @@
           ["Bbm", "/"]
         ],
         "lyrics": [
-          "Can l lean on you",
-          "Can l lean on you",
-          "Can l lean on you",
+          "Can l lean on you ...",
           "When life is hard?",
           "",
-          "Can l lean on you",
-          "Can l lean on you",
-          "Can l lean on you",
+          "Can l lean on you ...",
           "When life is hard?",
           "Oh, and life is hard"
         ],
@@ -1081,14 +1053,10 @@
           ["Bbm", "/"]
         ],
         "lyrics": [
-          "Can l lean on you",
-          "Can l lean on you",
-          "Can l lean on you",
+          "Can l lean on you ...",
           "When life is hard?",
           "",
-          "Can l lean on you",
-          "Can l lean on you",
-          "Can l lean on you",
+          "Can l lean on you ...",
           "When life is hard?",
           "Oh, and life is hard"
         ],
@@ -1121,13 +1089,10 @@
           ["Bbm", "/"]
         ],
         "lyrics": [
-          "Can l lean on you",
-          "Can l lean on you",
-          "Can l lean on you",
+          "Can l lean on you ...",
           "When life is hard?",
           "",
-          "Can l lean on you",
-          "Can l lean on you",
+          "Can l lean on you ...",
           "When life is hard?",
           "Oh, and life is hard"
         ],
@@ -1161,10 +1126,8 @@
         ],
         "lyrics": [
           "You can lie to me, baby",
-          "’Cause I’ll sure as hell lie to you",
-          "",
-          "You can lie to me, baby",
-          "’Cause I’ll sure as hell lie to you ",
+          "’Cause I’ll sure as hell lie to you (x2)",
+
           "",
           "Tell me anything you want",
           "Just please don’t tell me we’re through"
@@ -1179,7 +1142,7 @@
           ["E", "D", "A", "E"]
         ],
         "lyrics": [
-          "I don’t need to know who ",
+          "I don’t need to know who",
           "You were out with the other night",
           "",
           "But if I was with another woman",
@@ -1237,9 +1200,8 @@
         ],
         "lyrics": [
           "Lie to me, baby",
-          "’Cause I’ll sure as hell lie to you",
-          "Yeah, lie to me, baby",
-          "’Cause I’ll sure as hell lie to you ",
+          "’Cause I’ll sure as hell lie to you (x2)",
+          "",
           "Tell me anything you want",
           "Just please don’t tell me we’re through"
         ],
@@ -1369,9 +1331,7 @@
         "chords": [["G", "-", "-", "-"], [], ["G", "-", "-", "-"], ["C", "-", "G", "-"], ["D", "C", "G", "-"]],
         "lyrics": [
           "Well, Olivia is taken",
-          "But a look like hers can be found from time to time",
-          "Yeah, Olivia is taken",
-          "But a look like hers can be found from time to time",
+          "But a look like hers can be found from time to time (x2))",
           "",
           "I’m thinking something like Olivia is",
           "What I need to find"
@@ -1387,9 +1347,8 @@
         ],
         "lyrics": [
           "There’s only one man in this world",
-          "Who gets to sleep with her by his side",
-          "There’s only one man in this world",
-          "Who gets to sleep with her by his side",
+          "Who gets to sleep with her by his side (x2))",
+
           "",
           "I’m thinking something like Olivia",
           "Could keep me through the night"
@@ -1407,9 +1366,8 @@
           "[SOLO x 2]",
           "",
           "Now I’m not trying to steal",
-          "No love away from no one man",
-          "Now I’m not trying to steal",
-          "No love away from no one man",
+          "No love away from no one man (x2))",
+
           "",
           "But if Olivia herself were at my door",
           "I’d have to say, I’d let her in"
@@ -1424,10 +1382,7 @@
           ["D", "C", "G", "-"]
         ],
         "lyrics": [
-          "Something like Olivia",
-          "Something like Olivia",
-          "Something like Olivia",
-          "Something like Olivia",
+          "Something like Olivia (x4)",
           "",
           "I keep thinking something like Olivia",
           "Is what I need to find",
@@ -1871,13 +1826,7 @@
       {
         "section": "Intro + Verse 1",
         "chords": [],
-        "lyrics": [
-          "Hey Joe, where you going with that gun in your hand?",
-          "Hey Joe, I said, where you going with that gun in your hand?",
-
-          "",
-          "[\u21D2 FOOTSWITCH]"
-        ]
+        "lyrics": ["Hey Joe, where you going with that gun in your hand?", "(x2)", "", "[\u21D2 FOOTSWITCH]"]
       },
       {
         "section": " Verse 1",
@@ -1885,8 +1834,8 @@
         "lyrics": [
           "I’m going down to shoot my old lady",
           "You know, I caught her messing around with another man",
-          "I’m going down to shoot my old lady",
-          "You know, I caught her messing around with another man",
+          "(x2)",
+          "",
           "And that ain’t too cool",
           "",
           "[\u21D2 FOOTSWITCH]"
@@ -1898,6 +1847,7 @@
         "lyrics": [
           "Hey Joe, I heard you shot your mama down",
           "You shot her down now",
+          "",
           "Hey Joe, I heard you shot your lady down",
           "Shot her down in the ground, yeah",
           "",
@@ -1910,8 +1860,8 @@
         "lyrics": [
           "Yeah. Yes, I did, I shot her",
           "You know I caught her messin’ round, messin’ round town",
-          "Yes, I did, I shot her",
-          "You know I caught my old lady messin’ ’round town",
+          "(x2)",
+          "",
           "And I gave her the gun. I shot her",
           "",
           "[\u21D2 FOOTSWITCH]"
@@ -1933,14 +1883,7 @@
       {
         "section": "Verse 3",
         "chords": [],
-        "lyrics": [
-          "Hey, Joe",
-          "Where you gonna run to now? Where you gonna run to?",
-          "Hey Joe, I said",
-          "Where you gonna run to now? Where you, where you gonna go?",
-          "",
-          "[\u21D2 FOOTSWITCH]"
-        ]
+        "lyrics": ["Hey, Joe", "Where you gonna run to now? Where you gonna run to?", "(x2)", "", "[\u21D2 FOOTSWITCH]"]
       },
       {
         "section": "Verse 4",
@@ -2460,8 +2403,7 @@
           ["E", "B7", "E", "-"]
         ],
         "lyrics": [
-          "I’m gonna take my own advice and treat you right",
-          "I’m gonna take my own advice and treat you right",
+          "I’m gonna take my own advice and treat you right (x2)",
           "",
           "Gone are the days when I treated you mean",
           "From now on I’m gonna treat you like a queen",
@@ -2481,6 +2423,7 @@
         "lyrics": [
           "I’m gonna take my own advice and treat you good",
           "I’m gonna treat you like a good man should",
+          "",
           "Now that I see that I treated you cruel",
           "I’m gonna stop acting like that same stupid fool",
           "I’m gonna take my own advice and treat you right",
@@ -2556,8 +2499,8 @@
         "lyrics": [
           "I came home last night",
           "There was a new lock on my door",
-          "I came home last night",
-          "There was a new lock on my door",
+          "(x2)",
+
           "",
           "You know it was one hell of a shock",
           "My key wouldn’t fit the goddam lock",
@@ -2596,9 +2539,7 @@
         ],
         "lyrics": [
           "I worked hard",
-          "I did my 9 to 5",
-          "I worked hard every day",
-          "I did my 9 to 5",
+          "I did my 9 to 5 (x2)",
           "",
           "I worked my fingers to the bone",
           "Just to pay for our happy home",
@@ -2657,15 +2598,7 @@
           ["A", "-", "E", "-"],
           ["B7!", "A!", "E!", "/"]
         ],
-        "lyrics": [
-          "What have I done?",
-          "What have I done?",
-          "What have I done?",
-          "What have I done?",
-          "What have I done?",
-          "Oh, what have I done?",
-          "Lord knows I know she knows she was the only one"
-        ]
+        "lyrics": ["What have I done? (x6)", "Lord knows I know she knows she was the only one"]
       }
     ]
   },
@@ -3156,11 +3089,11 @@
           ["E7", "D7", "A7", "E7"]
         ],
         "lyrics": [
-          "Mama, when you gonna take me home?",
+          "Mama, when you gonna take me home? (x2)",
           "I met a girl, and she stole my black cat bone",
           "",
           "",
-          "Oh Mama, how did I get here?",
+          "Oh Mama, how did I get here? (x2)",
           "I went looking for love and you know it cost me dear."
         ],
         "duration": 36
@@ -3173,8 +3106,7 @@
           ["E7", "D7", "A7", "E7"]
         ],
         "lyrics": [
-          "Oh Mama, what can I do?",
-
+          "Oh Mama, what can I do? (2)",
           "First she said she loved me and then she said we’re through",
           "",
           "Mama! Mama! Mama! Mama!Mama! Mama! ...",
@@ -3214,7 +3146,6 @@
           "please take me home",
           "[BASS OUTRO 11-12]"
         ]
-        
       }
     ]
   }
