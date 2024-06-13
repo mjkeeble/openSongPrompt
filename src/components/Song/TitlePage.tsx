@@ -27,9 +27,7 @@ const TitlePage: React.FC<TProps> = ({ title, songKey, setup, tempo, timeSignatu
               <p className="text-lyric">{setup}</p>
             </div>
           ) : null}
-          <div>
-            <CountIn tempo={tempo} timeSignature={timeSignature} />
-          </div>
+          <div>{tempo && timeSignature ? <CountIn tempo={tempo} timeSignature={timeSignature} /> : null}</div>
         </div>
       </div>
       <NavIndicator
