@@ -8,7 +8,7 @@ unsigned long pressTimeCentre = 0;
 unsigned long pressTimeRight = 0;
 
 const unsigned long longPressThreshold = 400; // Threshold for long press
-ujikol
+
 void setup() {
   pinMode(centreSwitch, INPUT_PULLUP);
   pinMode(leftSwitch, INPUT_PULLUP);
