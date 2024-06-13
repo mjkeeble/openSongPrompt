@@ -14,7 +14,7 @@ type TImage = {
 
 const Screensaver: React.FC<TProps> = ({ isStart, isLastSong }) => {
   const images: TImage[] = [
-    { src: '/blues-jab-logo.png', alt: 'Blues Jab', text: 'www.bluesjab.de' }
+    { src: '/BluesPrompter_logo_new4.png', alt: 'BluePrompter', text: '' },
     // { src: '/osp_logo.svg', alt: 'openSongPrompt. Your songs. On stage. No worries', text: '' },
   ];
 
@@ -31,7 +31,7 @@ const Screensaver: React.FC<TProps> = ({ isStart, isLastSong }) => {
   return (
     <div>
       <div className="flex h-screen flex-col items-center justify-center">
-        <div className="w-1/3">
+        <div className="w-2/3">
           <img className="my-60 drop-shadow-logo" src={images[currentImage].src} alt={images[currentImage].alt} />
           {/* <div className="w-3/5">
           <img src="/songPrompter_logo_transparent_white.png" alt="openSongPrompt. Your songs. On stage. No worries" /> */}
