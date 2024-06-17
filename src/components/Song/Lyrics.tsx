@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import config from 'data/config.json';
+import config from '../../../data/config.json';
 import {MAX_LYRIC_FONT_SIZE} from '../../const';
 import { TConfig } from 'src/types';
 
