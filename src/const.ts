@@ -29,3 +29,9 @@ export const TEXT_XL = 'text-xl';
 export const TEXT_2XL = 'text-2xl';
 
 export const TEXT_SIZES = [TEXT_SM, TEXT_MD, TEXT_LG, TEXT_XL, TEXT_2XL];
+
+export const MAX_LYRIC_FONT_SIZE = {
+  '100': { size: 100, reductionIncrement: 1 },
+  '150': { size: 150, reductionIncrement: 2 },
+  '250': { size: 250, reductionIncrement: 3 },
+};

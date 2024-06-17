@@ -53,6 +53,7 @@ export type TConfig = {
   lyricPageMode?: TMode; // display mode for lyrics page
   lyricPaneSize?: TLyricPaneSize; // portion of screen for lyrics (x/12)
   orientation?: string; // screen orientation
-  chordSize?: (typeof TEXT_SIZES)[number]; // size of chord text
-  lyricSize?: (typeof TEXT_SIZES)[number]; // size of lyric text
+  chordSize?: typeof TEXT_SIZES[number]; // size of chord text
+  lyricMinFontSize: number; // min size of lyric text
+  lyricMaxFontSize: '100' | '150' | '250'; // max size of lyric text
 };

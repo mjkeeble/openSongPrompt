@@ -1,4 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, {useEffect, useRef, useState} from 'react';
+import config from 'data/config.json';
+import {MAX_LYRIC_FONT_SIZE} from '../../const';
+import { TConfig } from 'src/types';
 
 type TProps = {
   lyrics: string[];
@@ -6,15 +9,16 @@ type TProps = {
 
 // Usage:
 const Lyrics: React.FC<TProps> = ({ lyrics }) => {
+  const { lyricMinFontSize, lyricMaxFontSize} = config as TConfig;
   const containerRef = useRef<HTMLDivElement>(null);
-  const [fontSize, setFontSize] = useState<number>(100); // Initial font size
+  const [fontSize, setFontSize] = useState<number>(MAX_LYRIC_FONT_SIZE[lyricMaxFontSize].size); // Initial font size
   const [containerReady, setContainerReady] = useState<boolean>(false); // State to track if container is ready
   const [isResizingText, setIsResizingText] = useState<boolean>(true);
   
   useEffect(() => {
-    setFontSize(100);
+    setFontSize(MAX_LYRIC_FONT_SIZE[lyricMaxFontSize].size);
     setIsResizingText(true);
-  }, [lyrics]);
+  }, [lyrics, lyricMaxFontSize]);
   
   useEffect(() => {
     // This effect runs after the initial render
@@ -27,21 +31,21 @@ const Lyrics: React.FC<TProps> = ({ lyrics }) => {
       // Check if container is ready and ref is not null
       const container = containerRef.current;
       const hasOverflow = container.scrollHeight > container.clientHeight;
-      if (hasOverflow && fontSize > 20) {
+      if (hasOverflow && fontSize > lyricMinFontSize) {
         // Reduce font size and recheck
-        setFontSize((prevSize) => prevSize - 1);
+        setFontSize((prevSize) => prevSize - MAX_LYRIC_FONT_SIZE[lyricMaxFontSize].reductionIncrement);
       } else {
         setIsResizingText(false);
       }
     }
-  }, [fontSize, containerReady, lyrics]); // Re-run effect when fontSize or containerReady changes
+  }, [fontSize, containerReady, lyrics,lyricMinFontSize ,lyricMaxFontSize]); // Re-run effect when fontSize or containerReady changes
   
   // Regular expression pattern to match "[" at the beginning and "]" at the end of the string
-  const regexForComment = /^\[.*\]$/;
+  const regexToIdentifyComment = /^\[.*\]$/;
 
   
   const isComment = (str: string): boolean => {
-    return regexForComment.test(str);
+    return regexToIdentifyComment.test(str);
   };
   if (!lyrics.length) return <NoLyricsMessage />;
 
