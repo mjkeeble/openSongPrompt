@@ -10,7 +10,6 @@ const Repertoire = () => {
   const Navigate = useNavigate();
   const buttonsRef = useRef<HTMLButtonElement[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
-  console.log('buttonsRef', buttonsRef);
 
   // TODO: at the moment setlist is stored in local storage and
 
@@ -39,6 +38,7 @@ const Repertoire = () => {
 
   const handleKeyDown = (event: { key: string }) => {
     if (isLoaded) {
+      // TODO: refactor with switch
       const currentIndex = buttonsRef.current.findIndex((button) => button === document.activeElement);
       if (event.key === footswitch.centreShort) {
         buttonsRef.current[currentIndex].click();
@@ -57,6 +57,15 @@ const Repertoire = () => {
           buttonsRef.current[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else if (endOfListRef.current) {
           endOfListRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else if (event.key === footswitch.leftLong) {
+        console.log('j');
+
+        if (document.exitFullscreen) {
+          console.log("🚀 ----------------------------------------------------------------------🚀");
+          console.log("🚀 => handleKeyDown => document.exitFullscreen:", document.exitFullscreen);
+          console.log("🚀 ----------------------------------------------------------------------🚀");
+          document.exitFullscreen();
         }
       }
     }
@@ -99,7 +108,7 @@ const Repertoire = () => {
           <div ref={endOfListRef} />
         </ul>
       </div>
-      <NavIndicator leftShort="up" centreShort="point" rightShort="down" />
+      <NavIndicator leftShort="up" centreShort="point" rightShort="down" leftLong="compress" />
     </div>
   );
 };

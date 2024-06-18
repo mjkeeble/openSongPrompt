@@ -78,6 +78,14 @@ const Gigs = () => {
               />
             </li>
           ))}
+          <li key="repertoire">
+            <GigButton
+              ref={(el: HTMLButtonElement) => (buttonsRef.current[sortedGigs.length] = el)}
+              classes="bg-bj-blue-dark text-bj-blue-light"
+              onclick={() => Navigate(`/repertoire/`)}
+              text="Repertoire"
+            />
+          </li>
           <div ref={endOfListRef} />
         </ul>
       </div>

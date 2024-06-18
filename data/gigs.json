@@ -24,12 +24,13 @@
     "venue": "Regenbogen Camp (Jans Kurs)",
     "town": "Göhren",
     "dateTime": "2024-06-14T19:00:00+02:00",
-<<<<<<< Updated upstream
-    "setlist": [
-      ["36", "35", "33", "34", "37"]
-    ]
-=======
-    "setlist": [["35", "36", "33", "34", "37"]]
->>>>>>> Stashed changes
+    "setlist": [["36", "35", "33", "34", "37"]]
+  },
+  {
+    "id": "0",
+    "venue": "Probe",
+    "town": "Potsdam",
+    "dateTime": "2022-09-01T19:00:00+02:00",
+    "setlist": []
   }
 ]
