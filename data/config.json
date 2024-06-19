@@ -1,8 +1,8 @@
 {
   "lyricPageMode": "chords-first",
-  "lyricPaneSize": 5,
+  "chordPaneSize": 5,
   "lyricMinFontSize": 20,
   "lyricMaxFontSize": "250",
   "orientation": "landscape",
-  "chordSize": "text-lg"
+  "chordFontSize": "text-7xl"
 }

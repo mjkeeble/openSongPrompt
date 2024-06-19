@@ -10,6 +10,7 @@
     "key": "G",
     "tempo": 131,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Verse 1",
@@ -104,6 +105,7 @@
     "key": "C",
     "tempo": 105,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1",
@@ -249,6 +251,7 @@
     "key": "A",
     "tempo": 129,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Chorus",
@@ -346,6 +349,7 @@
     "key": "Am",
     "tempo": 73,
     "timeSignature": "4-4",
+    "config": {},
     "pages": [
       {
         "section": "Verse 1",
@@ -413,6 +417,7 @@
     "key": "Dm",
     "tempo": 110,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1",
@@ -554,6 +559,7 @@
     "key": "A",
     "tempo": 75,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": " Intro + Verse 1",
@@ -634,6 +640,7 @@
     "key": "Bm",
     "tempo": 95,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1",
@@ -723,6 +730,7 @@
     "key": "E",
     "tempo": 130,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1",
@@ -813,6 +821,7 @@
     "key": "A",
     "tempo": 140,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Thema + Verse 1",
@@ -883,6 +892,7 @@
     "tempo": 120,
     "timeSignature": "4/4",
     "lineup": "Band",
+    "config": {},
     "pages": [
       {
         "section": "Verse 1",
@@ -992,6 +1002,7 @@
     "key": "Ab",
     "tempo": 55,
     "timeSignature": "12/8",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1 - 2",
@@ -1116,6 +1127,7 @@
     "key": "A",
     "tempo": 145,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1",
@@ -1233,6 +1245,7 @@
     "key": "A",
     "tempo": 115,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1 - 2",
@@ -1321,10 +1334,11 @@
     "gemaWerknummer": "12696097-001",
     "duration_minutes": 3,
     "duration_seconds": 0,
-    "lineup": "Band + guest",
+    "lineup": "Band",
     "key": "G",
     "tempo": 99,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1",
@@ -1404,6 +1418,7 @@
     "key": "C",
     "tempo": 128,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1",
@@ -1537,6 +1552,7 @@
     "key": "D",
     "tempo": 178,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "",
@@ -1557,6 +1573,7 @@
     "key": "G",
     "tempo": 56,
     "timeSignature": "12/8",
+    "config": {},
     "pages": [
       {
         "section": "Intro + chorus",
@@ -1691,10 +1708,11 @@
     "gemaWerknummer": "2676917-001",
     "duration_minutes": 3,
     "duration_seconds": 15,
-    "lineup": "Band + guest",
+    "lineup": "Band",
     "key": "C ?",
     "tempo": 140,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1",
@@ -1822,6 +1840,7 @@
     "key": "A",
     "tempo": 85,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1",
@@ -1921,6 +1940,7 @@
     "key": "G",
     "tempo": 130,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1",
@@ -2045,6 +2065,7 @@
     "key": "C",
     "tempo": 65,
     "timeSignature": "12/8",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1",
@@ -2152,6 +2173,7 @@
     "tempo": 136,
     "timeSignature": "4/4",
     "setup": "Capo 3rd fret",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1",
@@ -2265,6 +2287,7 @@
     "key": "A",
     "tempo": 155,
     "timeSignature": "3/4",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1",
@@ -2391,6 +2414,7 @@
     "key": "E",
     "tempo": 140,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1",
@@ -2485,6 +2509,7 @@
     "key": "E",
     "tempo": 128,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1",
@@ -2613,6 +2638,7 @@
     "key": "Em",
     "tempo": 52,
     "timeSignature": "12/8",
+    "config": {},
     "pages": [
       {
         "section": "Verse 1",
@@ -2713,6 +2739,7 @@
     "tempo": 120,
     "timeSignature": "4/4",
     "setup": "Capo 3rd fret",
+    "config": {},
     "pages": [
       {
         "section": "Verse 1",
@@ -2804,6 +2831,7 @@
     "key": "E",
     "tempo": 80,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Verse 1",
@@ -2879,6 +2907,7 @@
     "key": "E",
     "tempo": 133,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "",
@@ -2911,6 +2940,7 @@
     "key": "Bm",
     "tempo": 131,
     "timeSignature": "3/4",
+    "config": {},
     "pages": [
       {
         "section": "Verse 1",
@@ -2951,6 +2981,7 @@
     "key": "A",
     "tempo": 95,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Verse 1",
@@ -3080,6 +3111,7 @@
     "key": "A",
     "tempo": 115,
     "timeSignature": "4/4",
+    "config": {},
     "pages": [
       {
         "section": "Intro + Verse 1 - 2",
@@ -3155,6 +3187,8 @@
     "writtenBy": ["Bob Geddins"],
     "gemaWerknummer": "",
     "key": "",
+    "lineup": "Band",
+    "config": {},
     "pages": [
       {
         "section": "Verse 1",
@@ -3223,8 +3257,9 @@
     "title": "The Music's Hot",
     "writtenBy": ["J. Moore, R. Hayes"],
     "gemaWerknummer": "",
-    "lineup": "",
+    "lineup": "Band",
 
+    "config": {},
     "pages": [
       {
         "section": "Verse 1",
@@ -3317,9 +3352,10 @@
     "id": 35,
     "title": "Going Up The Country",
     "writtenBy": [""],
-    "gemaWerknummer": "",
+    "gemaWerknummer": "Band + guest",
     "lineup": "",
 
+    "config": {},
     "pages": [
       {
         "section": "Verse 1",
@@ -3446,8 +3482,9 @@
     "title": "Fortunate Son",
     "writtenBy": [""],
     "gemaWerknummer": "",
-    "lineup": "",
+    "lineup": "Band",
 
+    "config": {},
     "pages": [
       {
         "section": "Verse 1",
@@ -3492,9 +3529,7 @@
       {
         "section": "Solo",
         "chords": [],
-        "lyrics": [
-          "[SOLO]"
-        ]
+        "lyrics": ["[SOLO]"]
       },
       {
         "section": "Verse 3",
@@ -3534,8 +3569,9 @@
     "title": "Tush",
     "writtenBy": [""],
     "gemaWerknummer": "",
-    "lineup": "",
+    "lineup": "Band",
 
+    "config": {},
     "pages": [
       {
         "section": "Verse 1",

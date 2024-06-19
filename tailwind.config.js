@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  safelist: [
+    {
+      pattern: /col-span-(\d+)/,
+    },
+  ],
   theme: {
     extend: {
       boxShadow: {
@@ -15,7 +20,7 @@ export default {
       colors: {
         background: '#000000', // black background
         primary: '#00FF00', // green as the primary text color
-      
+
         'red-title': '#FF0000', // red as an alternative text color
         transparent: 'transparent',
         'bj-white': '#faf7ff',
@@ -34,7 +39,6 @@ export default {
           '0 0 35px rgba(255, 255, 255, 1)',
           '0 0 70px rgba(255, 255, 255, 1)',
           '0 0 150px rgba(255, 255, 255, 1)',
-
         ],
       },
       fontFamily: {

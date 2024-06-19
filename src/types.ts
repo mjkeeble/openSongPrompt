@@ -11,18 +11,18 @@ export type TGig = {
 export type TSong = {
   id: number;
   title: string;
-  version?: string;
   writtenBy: string[];
   gemaWerknummer?: string;
-  duration_minutes: number;
-  duration_seconds: number;
+  duration_minutes?: number;
+  duration_seconds?: number;
   lineup: string;
   key?: string;
-  tempo: number;
-  timeSignature: string;
+  tempo?: number;
+  timeSignature?: string;
   setup?: string;
   config?: TConfig;
   pages: TLyricPage[];
+  version?: string;
 };
 
 type TLyricPage = {
@@ -51,9 +51,24 @@ type TLyricPaneSize = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 
 export type TConfig = {
   lyricPageMode?: TMode; // display mode for lyrics page
-  lyricPaneSize?: TLyricPaneSize; // portion of screen for lyrics (x/12)
+  chordPaneSize?: TLyricPaneSize; // portion of screen for lyrics (x/12)
   orientation?: string; // screen orientation
-  chordSize?: typeof TEXT_SIZES[number]; // size of chord text
+  chordFontSize?: (typeof TEXT_SIZES)[number]; // size of chord text
   lyricMinFontSize: number; // min size of lyric text
   lyricMaxFontSize: '100' | '150' | '250'; // max size of lyric text
 };
+
+export type symbolKeys =
+  | 'backward'
+  | 'backwardFast'
+  | 'backwardStep'
+  | 'down'
+  | 'forward'
+  | 'forwardFast'
+  | 'forwardStep'
+  | 'pause'
+  | 'point'
+  | 'play'
+  | 'stop'
+  | 'up'
+  | undefined;

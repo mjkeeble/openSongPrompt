@@ -1,26 +1,16 @@
-type symbolKeys =
-  | 'backward'
-  | 'backwardFast'
-  | 'backwardStep'
-  | 'down'
-  | 'forward'
-  | 'forwardFast'
-  | 'forwardStep'
-  | 'pause'
-  | 'point'
-  | 'play'
-  | 'stop'
-  | 'up'
-  | undefined;
+import config from '../../../data/config.json';
 
-export const leftShortCommand: symbolKeys = 'up'
+export const getScreenSplit = (
+  screenSplitSettingForSong: number | undefined,
+  pageHasChords: boolean,
+  pageHasLyrics: boolean,
+): number => {
+  if (!pageHasChords && !pageHasLyrics) {
+    return screenSplitSettingForSong || Number(config.chordPaneSize);
+  }
+  if (!pageHasChords) return 0;
 
-export const centreShortCommand: symbolKeys = 'point';
+  if (!pageHasLyrics) return 12;
 
-export const rightShortCommand: symbolKeys = 'down';
-
-export const leftLongCommand: symbolKeys = 'backwardFast';
-
-export const centreLongCommand: symbolKeys = 'up';
-
-export const rightLongCommand: symbolKeys = 'up';
+  return Number(screenSplitSettingForSong || config.chordPaneSize || 6);
+};
