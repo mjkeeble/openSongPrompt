@@ -4,8 +4,10 @@
     "title": "All That I Can Do Is Sing The Blues",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "31889321-001",
-    "duration_minutes": 2,
-    "duration_seconds": 0,
+    "duration": {
+      "minutes": 2,
+      "seconds": 0
+    },
     "lineup": "Band",
     "key": "G",
     "tempo": 131,
@@ -99,8 +101,10 @@
     "title": "I Remember You",
     "writtenBy": ["Keb’ Mo’"],
     "gemaWerknummer": "22718367-001",
-    "duration_minutes": 4,
-    "duration_seconds": 45,
+    "duration": {
+      "minutes": 4,
+      "seconds": 45
+    },
     "lineup": "Band",
     "key": "C",
     "tempo": 105,
@@ -243,10 +247,12 @@
   {
     "id": 3,
     "title": "Crosscut Saw",
-    "writtenBy": ["Traditional"],
+    "writtenBy": ["Trad."],
     "gemaWerknummer": "",
-    "duration_minutes": 3,
-    "duration_seconds": 0,
+    "duration": {
+      "minutes": 3,
+      "seconds": 0
+    },
     "lineup": "Band",
     "key": "A",
     "tempo": 129,
@@ -343,8 +349,10 @@
     "title": "One Step Forward",
     "writtenBy": ["Dave Bronze"],
     "gemaWerknummer": "3248336-001",
-    "duration_minutes": 5,
-    "duration_seconds": 15,
+    "duration": {
+      "minutes": 5,
+      "seconds": 15
+    },
     "lineup": "Band",
     "key": "Am",
     "tempo": 73,
@@ -411,8 +419,10 @@
     "title": "Help The Poor",
     "writtenBy": ["Charles Singleton"],
     "gemaWerknummer": "814675-001",
-    "duration_minutes": 4,
-    "duration_seconds": 15,
+    "duration": {
+      "minutes": 4,
+      "seconds": 15
+    },
     "lineup": "Band",
     "key": "Dm",
     "tempo": 110,
@@ -553,8 +563,10 @@
     "title": "Sho’ Nuff I Do",
     "writtenBy": ["Elmore James"],
     "gemaWerknummer": "2129357-001",
-    "duration_minutes": 2,
-    "duration_seconds": 40,
+    "duration": {
+      "minutes": 2,
+      "seconds": 40
+    },
     "lineup": "Band",
     "key": "A",
     "tempo": 75,
@@ -634,8 +646,10 @@
     "title": "The Thrill Is Gone",
     "writtenBy": ["Rick Darnell", "Roy Hawkins"],
     "gemaWerknummer": "532048-001",
-    "duration_minutes": 3,
-    "duration_seconds": 50,
+    "duration": {
+      "minutes": 3,
+      "seconds": 50
+    },
     "lineup": "Band",
     "key": "Bm",
     "tempo": 95,
@@ -724,8 +738,10 @@
     "title": "Thinkin’ ’Bout You",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "31889317-001",
-    "duration_minutes": 3,
-    "duration_seconds": 30,
+    "duration": {
+      "minutes": 3,
+      "seconds": 30
+    },
     "lineup": "Band",
     "key": "E",
     "tempo": 130,
@@ -815,8 +831,10 @@
     "title": "Rollin’ Man",
     "writtenBy": ["Patrick Adams", "Peter Green"],
     "gemaWerknummer": "510859-001",
-    "duration_minutes": 3,
-    "duration_seconds": 30,
+    "duration": {
+      "minutes": 3,
+      "seconds": 30
+    },
     "lineup": "Band",
     "key": "A",
     "tempo": 140,
@@ -886,8 +904,10 @@
     "title": "Mustang Sally",
     "writtenBy": ["Mack Rice"],
     "gemaWerknummer": "749289-001",
-    "duration_minutes": 6,
-    "duration_seconds": 0,
+    "duration": {
+      "minutes": 6,
+      "seconds": 0
+    },
     "key": "C",
     "tempo": 120,
     "timeSignature": "4/4",
@@ -996,8 +1016,10 @@
     "title": "Can I Lean On You",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "32939344-001",
-    "duration_minutes": 5,
-    "duration_seconds": 10,
+    "duration": {
+      "minutes": 5,
+      "seconds": 10
+    },
     "lineup": "Band",
     "key": "Ab",
     "tempo": 55,
@@ -1121,8 +1143,10 @@
     "title": "Lie To Me",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "33774111-001",
-    "duration_minutes": 3,
-    "duration_seconds": 30,
+    "duration": {
+      "minutes": 3,
+      "seconds": 30
+    },
     "lineup": "Band",
     "key": "A",
     "tempo": 145,
@@ -1239,8 +1263,10 @@
     "version": "Second bridge at end",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "31889331-001",
-    "duration_minutes": 5,
-    "duration_seconds": 0,
+    "duration": {
+      "minutes": 5,
+      "seconds": 0
+    },
     "lineup": "Band",
     "key": "A",
     "tempo": 115,
@@ -1332,8 +1358,10 @@
     "title": "Something Like Olivia",
     "writtenBy": ["John Mayer"],
     "gemaWerknummer": "12696097-001",
-    "duration_minutes": 3,
-    "duration_seconds": 0,
+    "duration": {
+      "minutes": 3,
+      "seconds": 0
+    },
     "lineup": "Band",
     "key": "G",
     "tempo": 99,
@@ -1412,8 +1440,10 @@
     "title": "Talk To Me Baby",
     "writtenBy": ["Elmore James"],
     "gemaWerknummer": "564260-001",
-    "duration_minutes": 4,
-    "duration_seconds": 15,
+    "duration": {
+      "minutes": 4,
+      "seconds": 15
+    },
     "lineup": "Band",
     "key": "C",
     "tempo": 128,
@@ -1546,8 +1576,10 @@
     "title": "The Sky Is Crying",
     "writtenBy": ["Elmore James"],
     "gemaWerknummer": "9718711-001",
-    "duration_minutes": 2,
-    "duration_seconds": 45,
+    "duration": {
+      "minutes": 2,
+      "seconds": 45
+    },
     "lineup": "Band",
     "key": "D",
     "tempo": 178,
@@ -1567,8 +1599,10 @@
     "title": "Salvation Hymn",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "28368152-004",
-    "duration_minutes": 3,
-    "duration_seconds": 30,
+    "duration": {
+      "minutes": 3,
+      "seconds": 30
+    },
     "lineup": "Band",
     "key": "G",
     "tempo": 56,
@@ -1706,8 +1740,10 @@
     "title": "Kissing In The Dark",
     "writtenBy": ["Ernest Lawlers"],
     "gemaWerknummer": "2676917-001",
-    "duration_minutes": 3,
-    "duration_seconds": 15,
+    "duration": {
+      "minutes": 3,
+      "seconds": 15
+    },
     "lineup": "Band",
     "key": "C ?",
     "tempo": 140,
@@ -1834,8 +1870,10 @@
     "title": "Hey Joe",
     "writtenBy": ["Billy Roberts"],
     "gemaWerknummer": "754810-001",
-    "duration_minutes": 3,
-    "duration_seconds": 30,
+    "duration": {
+      "minutes": 3,
+      "seconds": 30
+    },
     "lineup": "Band",
     "key": "A",
     "tempo": 85,
@@ -1934,8 +1972,10 @@
     "title": "Black Coffee",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "33774118-001",
-    "duration_minutes": 2,
-    "duration_seconds": 25,
+    "duration": {
+      "minutes": 2,
+      "seconds": 25
+    },
     "lineup": "Mark (acoustic)",
     "key": "G",
     "tempo": 130,
@@ -2059,8 +2099,10 @@
     "title": "Freedom Train",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "35984804-001",
-    "duration_minutes": 5,
-    "duration_seconds": 0,
+    "duration": {
+      "minutes": 5,
+      "seconds": 0
+    },
     "lineup": "Mark (acoustic)",
     "key": "C",
     "tempo": 65,
@@ -2166,8 +2208,10 @@
     "title": "I Only Get The Blues With You",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "28368011-001",
-    "duration_minutes": 3,
-    "duration_seconds": 0,
+    "duration": {
+      "minutes": 3,
+      "seconds": 0
+    },
     "lineup": "Mark (acoustic)",
     "key": "Dm",
     "tempo": 136,
@@ -2281,8 +2325,10 @@
     "title": "On Poverty Road",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "35984800-001",
-    "duration_minutes": 3,
-    "duration_seconds": 0,
+    "duration": {
+      "minutes": 3,
+      "seconds": 0
+    },
     "lineup": "Mark (acoustic)",
     "key": "A",
     "tempo": 155,
@@ -2408,8 +2454,10 @@
     "title": "Treat You Right",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "28368018-001",
-    "duration_minutes": 2,
-    "duration_seconds": 30,
+    "duration": {
+      "minutes": 2,
+      "seconds": 30
+    },
     "lineup": "Mark (acoustic)",
     "key": "E",
     "tempo": 140,
@@ -2503,8 +2551,10 @@
     "title": "What Have I Done",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "28368009-001",
-    "duration_minutes": 3,
-    "duration_seconds": 0,
+    "duration": {
+      "minutes": 3,
+      "seconds": 0
+    },
     "lineup": "Mark (acoustic)",
     "key": "E",
     "tempo": 128,
@@ -2632,8 +2682,10 @@
     "title": "Highway Kind",
     "writtenBy": ["Townes Van Zandt"],
     "gemaWerknummer": "   ",
-    "duration_minutes": 2,
-    "duration_seconds": 50,
+    "duration": {
+      "minutes": 2,
+      "seconds": 50
+    },
     "lineup": "Mark (electric)",
     "key": "Em",
     "tempo": 52,
@@ -2732,8 +2784,10 @@
     "title": "When Are We Gonna Learn",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "31889319-001",
-    "duration_minutes": 2,
-    "duration_seconds": 30,
+    "duration": {
+      "minutes": 2,
+      "seconds": 30
+    },
     "lineup": "Mark (acoustic)",
     "key": "Cm",
     "tempo": 120,
@@ -2825,8 +2879,10 @@
     "title": "Look, Don’t Touch",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "31889323-001",
-    "duration_minutes": 2,
-    "duration_seconds": 45,
+    "duration": {
+      "minutes": 2,
+      "seconds": 45
+    },
     "lineup": "Mark (electric)",
     "key": "E",
     "tempo": 80,
@@ -2901,8 +2957,10 @@
     "title": "Baby What You Want Me To Do",
     "writtenBy": ["Jimmy Reed"],
     "gemaWerknummer": "912087-001",
-    "duration_minutes": 2,
-    "duration_seconds": 45,
+    "duration": {
+      "minutes": 2,
+      "seconds": 45
+    },
     "lineup": "Band + guest",
     "key": "E",
     "tempo": 133,
@@ -2934,8 +2992,10 @@
     "title": "Blue Jeans Blues",
     "writtenBy": ["Billy Gibbons", "Dusty Hill", "Frank Beard"],
     "gemaWerknummer": "1060733-001",
-    "duration_minutes": 2,
-    "duration_seconds": 25,
+    "duration": {
+      "minutes": 2,
+      "seconds": 25
+    },
     "lineup": "Band",
     "key": "Bm",
     "tempo": 131,
@@ -2975,8 +3035,10 @@
     "title": "Sly Dog Blues",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "",
-    "duration_minutes": 2,
-    "duration_seconds": 25,
+    "duration": {
+      "minutes": 2,
+      "seconds": 25
+    },
     "lineup": "Band",
     "key": "A",
     "tempo": 95,
@@ -3105,8 +3167,10 @@
     "version": "No bridge at end",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "31889331-001",
-    "duration_minutes": 5,
-    "duration_seconds": 0,
+    "duration": {
+      "minutes": 5,
+      "seconds": 0
+    },
     "lineup": "Band",
     "key": "A",
     "tempo": 115,
@@ -3255,7 +3319,7 @@
   {
     "id": 34,
     "title": "The Music's Hot",
-    "writtenBy": ["J. Moore, R. Hayes"],
+    "writtenBy": ["J. Moore", "R. Hayes"],
     "gemaWerknummer": "",
     "lineup": "Band",
 
@@ -3351,7 +3415,7 @@
   {
     "id": 35,
     "title": "Going Up The Country",
-    "writtenBy": [""],
+    "writtenBy": [],
     "gemaWerknummer": "Band + guest",
     "lineup": "",
 
@@ -3480,7 +3544,7 @@
   {
     "id": 36,
     "title": "Fortunate Son",
-    "writtenBy": [""],
+    "writtenBy": [],
     "gemaWerknummer": "",
     "lineup": "Band",
 
@@ -3567,10 +3631,9 @@
   {
     "id": 37,
     "title": "Tush",
-    "writtenBy": [""],
+    "writtenBy": [],
     "gemaWerknummer": "",
     "lineup": "Band",
-
     "config": {},
     "pages": [
       {

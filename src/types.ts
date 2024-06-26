@@ -13,6 +13,10 @@ export type TSong = {
   title: string;
   writtenBy: string[];
   gemaWerknummer?: string;
+  duration?: {
+    minutes: number;
+    seconds: number;
+  };
   duration_minutes?: number;
   duration_seconds?: number;
   lineup: string;
@@ -20,7 +24,7 @@ export type TSong = {
   tempo?: number;
   timeSignature?: string;
   setup?: string;
-  config?: TConfig;
+  config?: TSongConfig;
   pages: TLyricPage[];
   version?: string;
 };
@@ -52,10 +56,15 @@ type TLyricPaneSize = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 export type TConfig = {
   lyricPageMode?: TMode; // display mode for lyrics page
   chordPaneSize?: TLyricPaneSize; // portion of screen for lyrics (x/12)
-  orientation?: string; // screen orientation
+  portrait: boolean; // screen orientation
   chordFontSize?: (typeof TEXT_SIZES)[number]; // size of chord text
   lyricMinFontSize: number; // min size of lyric text
   lyricMaxFontSize: '100' | '150' | '250'; // max size of lyric text
+};
+
+export type TSongConfig = {
+  lyricPageMode?: TMode; // display mode for lyrics page
+  chordPaneSize?: TLyricPaneSize; // portion of screen for lyrics (x/12)
 };
 
 export type symbolKeys =
