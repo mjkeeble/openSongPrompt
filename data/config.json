@@ -3,6 +3,6 @@
   "chordPaneSize": 5,
   "lyricMinFontSize": 20,
   "lyricMaxFontSize": "250",
-  "orientation": "landscape",
+  "portrait": false,
   "chordFontSize": "text-7xl"
 }
