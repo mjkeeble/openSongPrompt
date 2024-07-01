@@ -1,3 +1,5 @@
+const gemaRegex = '^\\d{1,8}-\\d{3}$'
+
 export const hasMatchingBrackets = (str: string): boolean => {
   let depth = 0;
   for (let i = 0; i < str.length; i++) {
@@ -19,3 +21,11 @@ export const displayDate = (date: string): string => {
     year: 'numeric',
   });
 };
+
+export const validateGemaWerknummer = (gemaWerknummer: string): boolean => {
+  return new RegExp(gemaRegex).test(gemaWerknummer);
+};
+
+export const validateDuration = (minutes: number, seconds: number): boolean => {
+  return minutes >= 0 && seconds >= 0 && seconds < 60;
+}
