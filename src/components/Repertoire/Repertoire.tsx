@@ -108,7 +108,7 @@ const Repertoire = () => {
           <div ref={endOfListRef} />
         </ul>
       </div>
-      <NavIndicator leftShort="up" centreShort="point" rightShort="down" leftLong="compress" />
+      <NavIndicator leftShort="up" centreShort="point" rightShort="down" />
     </div>
   );
 };
