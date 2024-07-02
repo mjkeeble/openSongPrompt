@@ -1,5 +1,5 @@
 import { BREAK } from '../../const';
-import { TBreak, TGig, TSetlist } from '../../types';
+import { TGig, TSetlist } from '../../types';
 
 export const getDateBasedStyling = (date: string): string => {
   const gigDate = new Date(date).setHours(0, 0, 0, 0);
@@ -12,5 +12,5 @@ export const getDateBasedStyling = (date: string): string => {
 
 export const consolidateSetlist = (gig: TGig | undefined): TSetlist => {
   if (!gig) return [];
-  return gig.setlist.flatMap((subArray) => [BREAK as TBreak, ...subArray.map(Number)]).concat([BREAK as TBreak]);
+  return gig.setlist.flatMap((subArray) => [BREAK, ...subArray.map(String)]).concat([BREAK]);
 };
