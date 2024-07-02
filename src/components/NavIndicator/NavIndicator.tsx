@@ -59,68 +59,50 @@ const NavIndicator: React.FC<TProps> = ({ leftLong, leftShort, centreLong, centr
   const rows = (showLong ? 1 : 0) + (showShort ? 1 : 0);
 
   if (!rows) return <></>;
-// TODO: refactor this to simplify the ternaries
+  // TODO: refactor this to simplify the ternaries
   return (
-    <div
-      className={`fixed bottom-0 left-0 m-1 grid w-96 grid-cols-4 bg-black grid-rows-${rows} bokrder-2 rounded-lg border pt-4 text-5xl`}
-    >
-      <p className="mb-2 pl-2 pt-1 text-left text-4xl font-semibold text-bj-blue-light">{showShort ? 'Short' : ''}</p>
+    <div className={`fixed bottom-0 left-0 m-1 rounded-lg border-2 bg-black pt-1 text-3xl`}>
+      {/* <p className="mb-2 pl-2 pt-1 text-left text-4xl font-semibold text-bj-blue-light">{showShort ? 'Short' : ''}</p> */}
 
-      <div>
-        {showShort ? (
+      {showShort ? (
+        <div className="grid grid-cols-3 mt-1">
           <FontAwesomeIcon
-            className=" text-center text-bj-blue-light"
+            className="mx-3 text-center text-bj-blue-light"
             icon={leftShort ? symbols[leftShort] : faMinus}
             rotation={leftShort === 'backward' ? 180 : undefined}
           />
-        ) : (
-          <></>
-        )}
-      </div>
 
-      <div>
-        {showShort ? (
           <FontAwesomeIcon
-            className=" text-center text-bj-blue-light"
+            className="mx-3 text-center text-bj-blue-light"
             icon={centreShort ? symbols[centreShort] : faMinus}
           />
-        ) : (
-          <></>
-        )}
-      </div>
-      <div>
-        {showShort ? (
+
           <FontAwesomeIcon
-            className=" text-center text-bj-blue-light"
+            className="mx-3 text-center text-bj-blue-light"
             icon={rightShort ? symbols[rightShort] : faMinus}
           />
-        ) : (
-          <></>
-        )}
-      </div>
-      {showLong ? (
+        </div>
+      ) : (
+        null
+      )}
+
+      {/* {showLong ? (
         <p className="mb-0 mt-2 pl-2 pt-1 text-left text-4xl font-semibold text-bj-green-light">Long</p>
-      ) : null}
+      ) : null} */}
       {showLong ? (
-        <div>
+        <div className="grid grid-cols-3 mb-2">
           <FontAwesomeIcon
-            className="mt-2 text-center text-bj-green-light"
+            className="mx-3 mt-2 text-center text-bj-green-light"
             icon={leftLong ? symbols[leftLong] : faMinus}
           />
-        </div>
-      ) : null}
-      {showLong ? (
-        <div>
+
           <FontAwesomeIcon
-            className="mt-2 text-center text-bj-green-light"
+            className="mx-3 mt-2 text-center text-bj-green-light"
             icon={centreLong ? symbols[centreLong] : faMinus}
           />
-        </div>
-      ) : null}
-      {showLong ? (
-        <div>
+
           <FontAwesomeIcon
-            className="mt-2 text-center text-bj-green-light"
+            className="mx-3 mt-2 text-center text-bj-green-light"
             icon={rightLong ? symbols[rightLong] : faMinus}
           />
         </div>
