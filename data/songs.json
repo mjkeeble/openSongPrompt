@@ -1,6 +1,6 @@
 [
   {
-    "id": "aac321ba-cd41-48a0-b2f2-f65c18120f6e",
+    "id": 1,
     "title": "All That I Can Do Is Sing The Blues",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "31889321-001",
@@ -97,7 +97,7 @@
     ]
   },
   {
-    "id": "b376d5f8-5802-4aae-a4ad-a28011f43aef",
+    "id": 2,
     "title": "I Remember You",
     "writtenBy": ["Keb’ Mo’"],
     "gemaWerknummer": "22718367-001",
@@ -245,7 +245,7 @@
     ]
   },
   {
-    "id": "b7161f25-697a-485c-9607-8e77aeb62674",
+    "id": 3,
     "title": "Crosscut Saw",
     "writtenBy": ["Trad."],
     "gemaWerknummer": "",
@@ -345,7 +345,7 @@
     ]
   },
   {
-    "id": "248c3d07-6c9d-4199-8b28-ced76f541fc5",
+    "id": 4,
     "title": "One Step Forward",
     "writtenBy": ["Dave Bronze"],
     "gemaWerknummer": "3248336-001",
@@ -415,7 +415,7 @@
     ]
   },
   {
-    "id": "11004f39-a66e-4fa3-a629-ecf3224d3218",
+    "id": 5,
     "title": "Help The Poor",
     "writtenBy": ["Charles Singleton"],
     "gemaWerknummer": "814675-001",
@@ -559,7 +559,7 @@
     ]
   },
   {
-    "id": "4a20fca4-85f0-44a5-9628-78027876e083",
+    "id": 6,
     "title": "Sho’ Nuff I Do",
     "writtenBy": ["Elmore James"],
     "gemaWerknummer": "2129357-001",
@@ -642,7 +642,7 @@
     ]
   },
   {
-    "id": "eba73d2e-e489-49e4-8901-1b04a2278a68",
+    "id": 7,
     "title": "The Thrill Is Gone",
     "writtenBy": ["Rick Darnell", "Roy Hawkins"],
     "gemaWerknummer": "532048-001",
@@ -734,7 +734,7 @@
     ]
   },
   {
-    "id": "ee1a66a4-46f3-435f-a9c4-0e6979d18e99",
+    "id": 8,
     "title": "Thinkin’ ’Bout You",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "31889317-001",
@@ -827,7 +827,7 @@
     ]
   },
   {
-    "id": "912707cb-8b93-4fd0-8c63-1860060b5e58",
+    "id": 9,
     "title": "Rollin’ Man",
     "writtenBy": ["Patrick Adams", "Peter Green"],
     "gemaWerknummer": "510859-001",
@@ -900,7 +900,7 @@
     ]
   },
   {
-    "id": "667b9db7-d529-4ccb-8251-37ba02e0b3c1",
+    "id": 10,
     "title": "Mustang Sally",
     "writtenBy": ["Mack Rice"],
     "gemaWerknummer": "749289-001",
@@ -1012,7 +1012,7 @@
     ]
   },
   {
-    "id": "8910ddee-f91a-431a-97c1-b2b566d8151d",
+    "id": 11,
     "title": "Can I Lean On You",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "32939344-001",
@@ -1139,7 +1139,7 @@
     ]
   },
   {
-    "id": "b382dbd5-d9cd-45e8-bc8a-392b265616fd",
+    "id": 12,
     "title": "Lie To Me",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "33774111-001",
@@ -1258,7 +1258,7 @@
     ]
   },
   {
-    "id": "c2eb506c-4596-4ab0-9c81-e2924e279291",
+    "id": 13,
     "title": "Mama (Kindergarten Blues)",
     "version": "Second bridge at end",
     "writtenBy": ["Mark Keeble"],
@@ -1354,7 +1354,7 @@
     ]
   },
   {
-    "id": "2c33ae2f-3eac-41a9-a8ec-1dfcc84204c0",
+    "id": 14,
     "title": "Something Like Olivia",
     "writtenBy": ["John Mayer"],
     "gemaWerknummer": "12696097-001",
@@ -1436,7 +1436,7 @@
     ]
   },
   {
-    "id": "8a70c8f3-ac02-4e83-a320-6c5f18dc4785",
+    "id": 15,
     "title": "Talk To Me Baby",
     "writtenBy": ["Elmore James"],
     "gemaWerknummer": "564260-001",
@@ -1572,7 +1572,7 @@
     ]
   },
   {
-    "id": "23bf8c55-8b4a-4878-a3dc-4dd7b4ae5973",
+    "id": 16,
     "title": "The Sky Is Crying",
     "writtenBy": ["Elmore James"],
     "gemaWerknummer": "9718711-001",
@@ -1595,7 +1595,7 @@
     ]
   },
   {
-    "id": "a1615e3e-6726-494b-8081-160c4e099da7",
+    "id": 17,
     "title": "Salvation Hymn",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "28368152-004",
@@ -1736,7 +1736,7 @@
     ]
   },
   {
-    "id": "b915e1ab-3b45-4aff-9f05-914b441cd2d1",
+    "id": 18,
     "title": "Kissing In The Dark",
     "writtenBy": ["Ernest Lawlers"],
     "gemaWerknummer": "2676917-001",
@@ -1866,7 +1866,7 @@
     ]
   },
   {
-    "id": "687853d7-2a6f-4ba4-b309-7941e4323a65",
+    "id": 19,
     "title": "Hey Joe",
     "writtenBy": ["Billy Roberts"],
     "gemaWerknummer": "754810-001",
@@ -1968,7 +1968,7 @@
     ]
   },
   {
-    "id": "5fc7ad6a-2b0a-4c84-bb14-cc41cc0d8119",
+    "id": 20,
     "title": "Black Coffee",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "33774118-001",
@@ -2095,7 +2095,7 @@
     ]
   },
   {
-    "id": "9b9d20dd-3444-45de-a54e-2e82e336e195",
+    "id": 21,
     "title": "Freedom Train",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "35984804-001",
@@ -2204,7 +2204,7 @@
     ]
   },
   {
-    "id": "4abdaa7b-f365-4b70-8799-0756663e9a91",
+    "id": 22,
     "title": "I Only Get The Blues With You",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "28368011-001",
@@ -2321,7 +2321,7 @@
     ]
   },
   {
-    "id": "41921150-ce23-4240-87e2-097e1ff95548",
+    "id": 23,
     "title": "On Poverty Road",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "35984800-001",
@@ -2450,7 +2450,7 @@
     ]
   },
   {
-    "id": "18873914-bb22-4b9c-9a9c-9e23c887e049",
+    "id": 24,
     "title": "Treat You Right",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "28368018-001",
@@ -2547,7 +2547,7 @@
     ]
   },
   {
-    "id": "76e7fe4a-3a26-45c1-93d7-217ddbdf8341",
+    "id": 25,
     "title": "What Have I Done",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "28368009-001",
@@ -2678,7 +2678,7 @@
     ]
   },
   {
-    "id": "df6ac4bf-b4b4-4a4b-bd6b-3464782d2f70",
+    "id": 26,
     "title": "Highway Kind",
     "writtenBy": ["Townes Van Zandt"],
     "gemaWerknummer": "   ",
@@ -2780,7 +2780,7 @@
     ]
   },
   {
-    "id": "4b2aa1de-d957-484c-8eaa-13dc8239aed9",
+    "id": 27,
     "title": "When Are We Gonna Learn",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "31889319-001",
@@ -2875,7 +2875,7 @@
     ]
   },
   {
-    "id": "aa902a60-16d7-46f2-8c9b-dd8101effd91",
+    "id": 28,
     "title": "Look, Don’t Touch",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "31889323-001",
@@ -2953,7 +2953,7 @@
     ]
   },
   {
-    "id": "6a67fe3e-954e-4bc6-ac71-51f4fc7cbf38",
+    "id": 29,
     "title": "Baby What You Want Me To Do",
     "writtenBy": ["Jimmy Reed"],
     "gemaWerknummer": "912087-001",
@@ -2988,7 +2988,7 @@
     ]
   },
   {
-    "id": "23340473-968b-4c01-8117-f9e8d236c864",
+    "id": 30,
     "title": "Blue Jeans Blues",
     "writtenBy": ["Billy Gibbons", "Dusty Hill", "Frank Beard"],
     "gemaWerknummer": "1060733-001",
@@ -3031,7 +3031,7 @@
     ]
   },
   {
-    "id": "e942dba0-6287-456c-9323-d02969848762",
+    "id": 31,
     "title": "Sly Dog Blues",
     "writtenBy": ["Mark Keeble"],
     "gemaWerknummer": "",
@@ -3162,7 +3162,7 @@
     ]
   },
   {
-    "id": "de4b8578-161a-4a27-85ba-671e478305d3",
+    "id": 32,
     "title": "Mama (Kindergarten Blues)",
     "version": "No bridge at end",
     "writtenBy": ["Mark Keeble"],
@@ -3246,7 +3246,7 @@
     ]
   },
   {
-    "id": "6cab3a11-ed59-4854-8f21-d012ecd34dbf",
+    "id": 33,
     "title": "Tin Pan Alley",
     "writtenBy": ["Bob Geddins"],
     "gemaWerknummer": "",
@@ -3317,7 +3317,7 @@
     ]
   },
   {
-    "id": "73523f6e-e502-4e2f-a255-3bb602d00ea2",
+    "id": 34,
     "title": "The Music's Hot",
     "writtenBy": ["J. Moore", "R. Hayes"],
     "gemaWerknummer": "",
@@ -3413,7 +3413,7 @@
     ]
   },
   {
-    "id": "cd7f1a35-1458-42ab-9e4e-9bf5bb8ffc0b",
+    "id": 35,
     "title": "Going Up The Country",
     "writtenBy": [],
     "gemaWerknummer": "Band + guest",
@@ -3542,7 +3542,7 @@
     ]
   },
   {
-    "id": "75cf9106-671d-415f-bee0-d3252483a11e",
+    "id": 36,
     "title": "Fortunate Son",
     "writtenBy": [],
     "gemaWerknummer": "",
@@ -3629,7 +3629,7 @@
     ]
   },
   {
-    "id": "5743f828-8514-4f2c-95c0-3c8a9e821373",
+    "id": 37,
     "title": "Tush",
     "writtenBy": [],
     "gemaWerknummer": "",

@@ -5,8 +5,8 @@ type TProps = {
   title: string;
   songKey: string | undefined;
   setup: string | undefined;
-  tempo: number;
-  timeSignature: string;
+  tempo: number | undefined;
+  timeSignature: string | undefined;
   isLastSong: boolean;
 };
 

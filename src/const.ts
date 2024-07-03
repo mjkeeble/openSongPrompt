@@ -1,4 +1,4 @@
-export const BREAK = 'break';
+export const BREAK = 'BREAK';
 
 export const ACTIVEKEYS = ['u', 'i', 'o', 'j', 'k', 'l'];
 
@@ -11,13 +11,12 @@ export const footswitch = {
   rightLong: 'l',
 };
 
-export const CHORDS_FIRST = 'chords-first';
-export const CHORDS_INLINE = 'chords-inline';
-export const CHORDS_ONLY = 'chords-only';
-export const LYRICS_FIRST = 'lyrics-first';
-export const LYRICS_ONLY = 'lyrics-only';
+export const CHORDS_FIRST = 'CHORDS-FIRST';
+export const CHORDS_INLINE = 'CHORDS-INLINE';
+export const LYRICS_FIRST = 'LYRICS-FIRST';
 
-export const LYRIC_PAGE_MODES = [CHORDS_FIRST, CHORDS_INLINE, CHORDS_ONLY, LYRICS_FIRST, LYRICS_ONLY];
+// TODO: add inline chords to modes
+export const LYRIC_PAGE_MODES = [CHORDS_FIRST, LYRICS_FIRST];
 
 export const ORIENTATION_LANDSCAPE = 'landscape';
 export const ORIENTATION_PORTRAIT = 'portrait';

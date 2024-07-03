@@ -65,7 +65,7 @@ const Song = () => {
       {!currentPage ? (
         <TitlePage
           title={song.title}
-          songKey={song.key}
+          songKey={song.scale}
           setup={song.setup}
           tempo={song.tempo}
           timeSignature={song.timeSignature}
