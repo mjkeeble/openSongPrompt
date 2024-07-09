@@ -3595,7 +3595,8 @@
     "pages": [
       {
         "section": "Intro",
-        "chords": ["A", "A", "A", "A"]
+        "chords": ["A", "A", "A", "A"],
+        "lyrics": ["[INTRO]"]
       },
       {
         "section": "Verse 1",
