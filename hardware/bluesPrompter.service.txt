@@ -4,9 +4,10 @@ After=network.target
 
 [Service]
 Type=simple
-User=pi
+User=mark
+Environment=DISPLAY=:0
 ExecStartPre=/usr/bin/xinit
-ExecStart=/bin/bash -c 'cd /home/pi/Projects/openSongPrompt && npm run dev'
+ExecStart=/bin/bash -c 'cd /home/mark/Projects/openSongPrompt && npm run dev'
 ExecStartPost=/usr/bin/firefox http://localhost:5173
 
 [Install]
