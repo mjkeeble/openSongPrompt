@@ -5,7 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { Screensaver } from '..';
 import songs from '../../../data/songs.json';
 import { ACTIVEKEYS, BREAK } from '../../const.ts';
-import { TSong } from '../../types';
+import { TSong, TSongWithDuration } from '../../types';
 import LyricPage from './LyricPage.tsx';
 import TitlePage from './TitlePage.tsx';
 import { ManageInteraction } from './interaction';
@@ -19,7 +19,9 @@ const Song = () => {
 
   const [currentPage, setCurrentPage] = useState<number>(0);
   const [timerHalted, setTimerHalted] = useState<boolean>(false);
-  const song: TSong | undefined = songs.find((song: TSong) => song.id === setlist[setlistIndex]);
+  const song: TSong | TSongWithDuration | undefined = songs.find(
+    (song: TSong | TSongWithDuration) => song.id === setlist[setlistIndex],
+  );
   const duration = song?.pages[currentPage - 1]?.duration || 0;
 
   useEffect(() => {
@@ -35,7 +37,9 @@ const Song = () => {
           hasTimer: !!duration && !!song?.pages.length && currentPage < song?.pages.length,
           timerHalted,
           setTimerHalted,
-          songPages: songs.find((song: TSong) => song.id === setlist[setlistIndex] || null)?.pages.length || 0,
+          songPages:
+            songs.find((song: TSong | TSongWithDuration) => song.id === setlist[setlistIndex] || null)?.pages.length ||
+            0,
           Navigate,
         });
       }
@@ -65,7 +69,7 @@ const Song = () => {
       {!currentPage ? (
         <TitlePage
           title={song.title}
-          songKey={song.scale}
+          scale={song.scale}
           setup={song.setup}
           tempo={song.tempo}
           timeSignature={song.timeSignature}

@@ -33,7 +33,7 @@ const Chords: React.FC<TProps> = ({ chords, isLastPage, timerHalted, hasTimer })
       <div style={{ display: 'grid', gridTemplateColumns: `repeat(${barsPerLine}, minmax(0, 1fr))` }}>
         {flattenedChords.map((bar, cellIndex) => (
           <div key={cellIndex} className="border border-solid border-slate-200 py-5 text-center">
-            <span className={`whitespace-pre ${config.chordFontSize} font-semibold`}>{bar}</span>
+            <span className={`whitespace-pre text-${config.chordFontSize} font-semibold`}>{bar}</span>
           </div>
         ))}
       </div>

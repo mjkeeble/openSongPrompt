@@ -3,14 +3,14 @@ import CountIn from './CountIn';
 
 type TProps = {
   title: string;
-  songKey: string | undefined;
+  scale: string | undefined;
   setup: string | undefined;
   tempo: number | undefined;
   timeSignature: string | undefined;
   isLastSong: boolean;
 };
 
-const TitlePage: React.FC<TProps> = ({ title, songKey, setup, tempo, timeSignature, isLastSong }) => {
+const TitlePage: React.FC<TProps> = ({ title, scale: scale, setup, tempo, timeSignature, isLastSong }) => {
   const currentTime = new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
 
   return (
@@ -21,7 +21,7 @@ const TitlePage: React.FC<TProps> = ({ title, songKey, setup, tempo, timeSignatu
       </header>
       <div className="flex h-full items-center justify-center">
         <div className="w-full text-center text-lyric">
-          {songKey ? <p>Key: {songKey}</p> : null}
+          {scale ? <p>Key: {scale}</p> : null}
           {setup ? (
             <div className="flex h-full w-full items-center justify-center">
               <p className="text-lyric">{setup}</p>
