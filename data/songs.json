@@ -1893,6 +1893,7 @@
     "scale": "G",
     "tempo": 130,
     "timeSignature": "4/4",
+    "configChordPaneSize": 2,
     "pages": [
       {
         "section": "Intro + Verse 1",
