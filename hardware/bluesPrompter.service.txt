@@ -5,10 +5,9 @@ After=network.target
 [Service]
 Type=simple
 User=mark
-Environment=DISPLAY=:0
-ExecStartPre=/usr/bin/xinit
-ExecStart=/bin/bash -c 'cd /home/mark/Projects/openSongPrompt && npm run dev'
-ExecStartPost=/usr/bin/firefox http://localhost:5173
+ExecStartPre=/[userName]/bin/xinit
+ExecStart=/bin/bash -c 'cd /home/[userName]/Projects/openSongPrompt && npm run dev'
+ExecStartPost=/[userName]/bin/firefox http://localhost:5173
 
 [Install]
 WantedBy=default.target
