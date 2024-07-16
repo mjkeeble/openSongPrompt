@@ -34,10 +34,10 @@ const LyricPage: React.FC<TProps> = ({ song, currentPage, setCurrentPage, timerH
 
       <div className="grid flex-1 grid-cols-10 divide-x overflow-y-auto">
         <div className={`col-span-${screenSplit} p-4`}>
-          <div className="flex flex-row justify-between text-bj-green-light">
-            <p className="mb-8 ml-6 text-left text-5xl font-semibold">{song.pages[currentPage - 1].section} </p>
+          <div className="text-bj-green-light">
+            <p className="text-left text-5xl font-semibold">{song.pages[currentPage - 1].section} </p>
 
-            <p className="mr-4 text-right text-5xl">
+            <p className="text-left text-2xl">
               {currentPage}/{song.pages.length}
             </p>
           </div>
