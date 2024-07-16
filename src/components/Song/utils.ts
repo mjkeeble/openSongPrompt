@@ -8,9 +8,9 @@ export const getScreenSplit = (
   if (!pageHasChords && !pageHasLyrics) {
     return screenSplitSettingForSong || Number(config.chordPaneSize);
   }
-  if (!pageHasChords) return 0;
+  if (!pageHasChords) return 1;
 
-  if (!pageHasLyrics) return 12;
+  if (!pageHasLyrics) return 10;
 
   return Number(screenSplitSettingForSong || config.chordPaneSize || 6);
 };
