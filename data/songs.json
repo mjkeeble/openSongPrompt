@@ -3533,8 +3533,8 @@
       {
         "section": "Verse 1",
         "chords": [
-          ["Am", "Dm", "Am Am/G#", "Am/G Am/F#"],
-          ["Dm", "Dm", "Am Am/G#", "Am/G Am/F#"],
+          ["Am", "Dm", "Am", "Am"],
+          ["Am", "Dm", "Am", "Am"],
           ["Fmaj7", "Dm", "Am Dm", "Am E7"]
         ],
         "lyrics": [
@@ -3550,8 +3550,8 @@
       {
         "section": "Verse 2",
         "chords": [
-          ["Am", "Dm", "Am Am/G#", "Am/G Am/F#"],
-          ["Dm", "Dm", "Am Am/G#", "Am/G Am/F#"],
+          ["Am", "Dm", "Am", "Am"],
+          ["Am", "Dm", "Am", "Am"],
           ["Fmaj7", "Dm", "Am Dm", "Am E7"]
         ],
         "lyrics": [
@@ -3566,8 +3566,8 @@
       {
         "section": "Verse 3",
         "chords": [
-          ["Am", "Dm", "Am Am/G#", "Am/G Am/F#"],
-          ["Dm", "Dm", "Am Am/G#", "Am/G Am/F#"],
+          ["Am", "Dm", "Am", "Am"],
+          ["Am", "Dm", "Am", "Am"],
           ["Fmaj7", "Dm", "Am Dm", "Am E7"]
         ],
         "lyrics": [
@@ -3582,8 +3582,8 @@
       {
         "section": "Verse 3",
         "chords": [
-          ["Am", "Dm", "Am Am/G#", "Am/G Am/F#"],
-          ["Dm", "Dm", "Am Am/G#", "Am/G Am/F#"],
+          ["Am", "Dm", "Am", "Am"],
+          ["Am", "Dm", "Am", "Am"],
           ["Fmaj7", "Dm", "Am Dm", "Am E7"]
         ],
         "lyrics": [
@@ -3605,6 +3605,7 @@
     "scale": "A",
     "tempo": 128,
     "timeSignature": "4/4",
+    "configChordPaneSize": 3,
     "pages": [
       {
         "section": "Intro",
