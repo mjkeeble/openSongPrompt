@@ -245,7 +245,7 @@
     "scale": "A",
     "tempo": 129,
     "timeSignature": "4/4",
-    "configChordPaneSize":3,
+    "configChordPaneSize": 3,
     "pages": [
       {
         "section": "Intro + Chorus",
@@ -3609,7 +3609,8 @@
     "pages": [
       {
         "section": "Intro",
-        "chords": ["A", "A", "A", "A"]
+        "chords": [["A", "A", "A", "A"]],
+        "lyrics": [""]
       },
       {
         "section": "Verse 1",
