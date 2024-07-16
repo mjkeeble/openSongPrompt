@@ -23,6 +23,7 @@ Open a new file for editing:
     ExecStartPost=/usr/bin/firefox http://localhost:1234
 
     [Install]
+
     WantedBy=default.target
 ```
 

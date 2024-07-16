@@ -2,7 +2,7 @@
   "lyricPageMode": "CHORDS-FIRST",
   "chordPaneSize": 4,
   "lyricMinFontSize": 20,
-  "lyricMaxFontSize": "250",
+  "lyricMaxFontSize": "100",
   "portrait": false,
-  "chordFontSize": "7xl"
+  "chordFontSize": "5xl"
 }
