@@ -17,7 +17,8 @@ const LyricPage: React.FC<TProps> = ({ song, currentPage, setCurrentPage, timerH
     !!song.pages[currentPage - 1].chords.length,
     !!song.pages[currentPage - 1].lyrics.length,
   );
-  console.clear()
+  console.log(`${song.title} page ${currentPage - 1}`)
+
 
   return (
     <div className="flex h-screen flex-col overflow-y-hidden">
