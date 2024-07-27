@@ -7,6 +7,7 @@
     "lineup": "Band",
     "scale": "G",
     "tempo": 131,
+    "notes": "test notes",
     "timeSignature": "4/4",
     "configChordPaneSize": 3,
     "pages": [
@@ -3394,7 +3395,7 @@
   {
     "id": 36,
     "title": "Fortunate Son",
-    "writtenBy ": [],
+    "writtenBy": [],
     "gemaWerknummer": "",
     "lineup": "Band",
 
