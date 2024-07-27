@@ -24,6 +24,7 @@ export type TSong = {
   pages: TLyricPage[];
   notes?: string;
 };
+
 export type TSongWithDuration = TSong & {
   durationMinutes: number;
   durationSeconds: number;
@@ -51,7 +52,7 @@ export type TInput = (typeof ACTIVEKEYS)[number] | null;
 
 export type TMode = (typeof LYRIC_PAGE_MODES)[number];
 
-type TChordPaneSize = 3 | 4 | 5 | 6 | 7;
+export type TChordPaneSize = 3 | 4 | 5 | 6 | 7;
 
 export type TConfig = {
   lyricPageMode?: TMode; // display mode for lyrics page

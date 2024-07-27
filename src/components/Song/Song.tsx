@@ -19,9 +19,7 @@ const Song = () => {
 
   const [currentPage, setCurrentPage] = useState<number>(0);
   const [timerHalted, setTimerHalted] = useState<boolean>(false);
-  const song: TSong | TSongWithDuration | undefined = songs.find(
-    (song: TSong | TSongWithDuration) => song.id === setlist[setlistIndex],
-  );
+  const song: TSong | undefined = songs.find((song: TSong) => song.id === setlist[setlistIndex]);
   const duration = song?.pages[currentPage - 1]?.duration || 0;
 
   useEffect(() => {
@@ -72,6 +70,7 @@ const Song = () => {
           scale={song.scale}
           setup={song.setup}
           tempo={song.tempo}
+          notes={song.notes}
           timeSignature={song.timeSignature}
           isLastSong={setlistIndex === setlist.length - 1}
         />
