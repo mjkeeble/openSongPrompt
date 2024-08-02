@@ -21,7 +21,11 @@ const Lyrics: React.FC<TProps> = ({ lyrics }) => {
 
   useEffect(() => {
     console.log({ isResizingText });
-  });
+  }, [isResizingText]);
+
+  useEffect(() => {
+    console.log({ containerReady }); 
+  }, [containerReady]);
 
   useEffect(() => {
     setFontSize(MAX_LYRIC_FONT_SIZE[lyricMaxFontSize].size);
