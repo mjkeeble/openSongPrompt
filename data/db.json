@@ -3662,15 +3662,15 @@
     {
       "id": 38,
       "title": "Loan Me A Dime",
-      "writtenBy": ["William R Royce Scaggs"],
+      "writtenBy": ["Fenton Robinson"],
       "gemaWerknummer": "770987-001",
       "lineup": "Band",
       "pages": [
         {
           "section": "Verse 1",
           "chords": [
-            ["Am", "Dm", "Am Am/G#", "Am/G Am/F#"],
-            ["Dm", "Dm", "Am Am/G#", "Am/G Am/F#"],
+            ["Am", "Dm", "Am", "Am"],
+            ["Dm", "Dm", "Am", "Am"],
             ["Fmaj7", "Dm", "Am Dm", "Am E7"]
           ],
           "lyrics": [
@@ -3686,8 +3686,8 @@
         {
           "section": "Verse 2",
           "chords": [
-            ["Am", "Dm", "Am Am/G#", "Am/G Am/F#"],
-            ["Dm", "Dm", "Am Am/G#", "Am/G Am/F#"],
+            ["Am", "Dm", "Am", "Am"],
+            ["Dm", "Dm", "Am", "Am"],
             ["Fmaj7", "Dm", "Am Dm", "Am E7"]
           ],
           "lyrics": [
@@ -3702,8 +3702,8 @@
         {
           "section": "Verse 3",
           "chords": [
-            ["Am", "Dm", "Am Am/G#", "Am/G Am/F#"],
-            ["Dm", "Dm", "Am Am/G#", "Am/G Am/F#"],
+            ["Am", "Dm", "Am", "Am"],
+            ["Dm", "Dm", "Am", "Am"],
             ["Fmaj7", "Dm", "Am Dm", "Am E7"]
           ],
           "lyrics": [
@@ -3716,10 +3716,10 @@
           ]
         },
         {
-          "section": "Verse 3",
+          "section": "Verse 4",
           "chords": [
-            ["Am", "Dm", "Am Am/G#", "Am/G Am/F#"],
-            ["Dm", "Dm", "Am Am/G#", "Am/G Am/F#"],
+            ["Am", "Dm", "Am", "Am"],
+            ["Dm", "Dm", "Am", "Am"],
             ["Fmaj7", "Dm", "Am Dm", "Am E7"]
           ],
           "lyrics": [
@@ -3983,7 +3983,7 @@
     },
     {
       "id": 42,
-      "title": "Personal Jesus",
+      "title": "Personal Jesus (unfinished)",
       "writtenBy": ["Martin L. Gore"],
       "gemaWerknummer": "GEMA",
       "setup": "Capo 2rd fret",
