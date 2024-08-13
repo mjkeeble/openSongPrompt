@@ -3610,7 +3610,8 @@
     "pages": [
       {
         "section": "Intro",
-        "chords": ["A", "A", "A", "A"]
+        "chords": ["A", "A", "A", "A"],
+        "lyrics": []
       },
       {
         "section": "Verse 1",
