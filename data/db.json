@@ -3781,12 +3781,10 @@
           "lyrics": [
             "I got a river of worries",
             "A mountain of hell",
-            "Lord, I wish I had a",
-            "Soul to sell",
+            "Lord, I wish I had soul to sell",
             "Siren's howlin'",
             "Flashin' red",
-            "All night long",
-            "Goin' outta my head"
+            "All night long goin' outta my head"
           ],
           "duration": 8
         },
@@ -3980,6 +3978,143 @@
           "section": "Chorus",
           "chords": [["D", "C", "G", "D"]],
           "lyrics": ["Can't you see", "Oh, can't you see", "What that woman", "Been doin' to me"]
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Personal Jesus",
+      "writtenBy": ["Martin L. Gore"],
+      "gemaWerknummer": "GEMA",
+      "setup": "Capo 2rd fret",
+      "timeSignature": "4/4",
+      "key": "F#m",
+      "lineup": "Band",
+      "pages": [
+        {
+          "section": "Intro",
+          "chords": [
+            ["Em", "-", "-", "-"],
+            ["Em", "-", "-", "-"]
+          ],
+          "lyrics": ["Reach out and touch faith"]
+        },
+        {
+          "section": "Chorus",
+          "chords": [
+            ["Em", "-", "-", "-"],
+            ["Em", "-", "A", "G5 F#5"],
+            [],
+            ["Em", "-", "-", "-"],
+            ["Em", "-", "A", "G5 F#5"],
+            [],
+            ["Em", "-", "-", "-"]
+          ],
+          "lyrics": [
+            "Your own personal Jesus",
+            "Someone to hear your prayers",
+            "Someone who cares",
+            "",
+            "Your own personal Jesus",
+            "Someone to hear your prayers",
+            "Someone who's there"
+          ]
+        },
+        {
+          "section": "Verse 1",
+          "chords": [
+            ["Em", "-", "G5", "D5"],
+            ["Am", "B5 D5", "Em", "-"]
+          ],
+          "lyrics": [
+            "Feeling unknown",
+            "And you're all alone",
+            "Flesh and bone",
+            "By the telephone",
+            "Lift up the receiver",
+            "I'll make you a believer"
+          ]
+        },
+        {
+          "section": "Verse 2",
+          "chords": [
+            ["Em", "-", "G5", "D5"],
+            ["Am", "B5 D5", "Em", "-"]
+          ],
+          "lyrics": [
+            "Take second best",
+            "Put me to the test",
+            "Things on your chest",
+            "You need to confess",
+            "I will deliver",
+            "You know I'm a forgiver"
+          ]
+        },
+        {
+          "section": "Pre-Chorus",
+          "chords": [
+            ["F#m", "Fm", "Em", "-"],
+            ["F#m", "Fm", "Em", "-"]
+          ],
+          "lyrics": ["Reach out and touch faith", "Reach out and touch faith"]
+        },
+        {
+          "section": "Chorus",
+          "chords": [
+            ["Em", "-", "-", "-"],
+            ["Em", "-", "A", "G F#"],
+            [],
+            ["Em", "-", "-", "-"],
+            ["Em", "-", "A", "G5"],
+            ["F#5", "C5"],
+            ["n.c.", "-", "-", "-"],
+            ["Em", "-", "-", "-"]
+          ],
+          "lyrics": [
+            "Your own personal Jesus",
+            "Someone to hear your prayers",
+            "Someone who cares",
+            "",
+            "Your own personal Jesus",
+            "Someone to hear your prayers",
+            "Someone who's there"
+          ]
+        },
+        {
+          "section": "Verse 1",
+          "chords": [
+            ["Em", "-", "G5", "D5"],
+            ["Am", "B5 D5", "Em", "-"],
+            ["Am", "B5 D5", "Em", "-"]
+          ],
+          "lyrics": [
+            "Feeling unknown",
+            "And you're all alone",
+            "Flesh and bone",
+            "By the telephone",
+            "Lift up the receiver",
+            "I'll make you a believer",
+            "I will deliver",
+            "You know I'm a forgiver"
+          ]
+        },
+        {
+          "section": "Pre-Chorus",
+          "chords": [
+            ["F#m", "Fm", "Em", "-"],
+            ["F#m", "Fm", "Em", "-"]
+          ],
+          "lyrics": ["Reach out and touch faith", "Reach out and touch faith"]
+        },
+        {
+          "section": "Verse 3",
+          "chords": [
+            ["Em", "G", "Em", "G"],
+            ["Em", "G", "Em", "G"],
+            ["Em", "G", "Em", "G"],
+            ["Em", "G", "Em", "G"]
+          ],
+          "lyrics": ["Reach out and touch faith", "Your own personal Jesus", "Someone to hear your prayers", "Someone"]
         }
       ]
     }

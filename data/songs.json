@@ -1247,7 +1247,7 @@
 
           "First she said she loved me and then she said we’re through",
           "",
-          "Mama! Mama! Mama! Mama!Mama! Mama! ...",
+          "Mama! Mama! Mama! Mama! Mama! Mama! ...",
           "",
           "[SOLO]",
           "",
@@ -3528,7 +3528,7 @@
   {
     "id": 38,
     "title": "Loan Me A Dime",
-    "writtenBy": ["William R Royce Scaggs"],
+    "writtenBy": ["Fenton Robinson"],
     "gemaWerknummer": "770987-001",
     "lineup": "Band",
     "pages": [
@@ -3536,7 +3536,7 @@
         "section": "Verse 1",
         "chords": [
           ["Am", "Dm", "Am", "Am"],
-          ["Am", "Dm", "Am", "Am"],
+          ["Dm", "Dm", "Am", "Am"],
           ["Fmaj7", "Dm", "Am Dm", "Am E7"]
         ],
         "lyrics": [
@@ -3553,7 +3553,7 @@
         "section": "Verse 2",
         "chords": [
           ["Am", "Dm", "Am", "Am"],
-          ["Am", "Dm", "Am", "Am"],
+          ["Dm", "Dm", "Am", "Am"],
           ["Fmaj7", "Dm", "Am Dm", "Am E7"]
         ],
         "lyrics": [
@@ -3569,7 +3569,7 @@
         "section": "Verse 3",
         "chords": [
           ["Am", "Dm", "Am", "Am"],
-          ["Am", "Dm", "Am", "Am"],
+          ["Dm", "Dm", "Am", "Am"],
           ["Fmaj7", "Dm", "Am Dm", "Am E7"]
         ],
         "lyrics": [
@@ -3582,10 +3582,10 @@
         ]
       },
       {
-        "section": "Verse 3",
+        "section": "Verse 4",
         "chords": [
           ["Am", "Dm", "Am", "Am"],
-          ["Am", "Dm", "Am", "Am"],
+          ["Dm", "Dm", "Am", "Am"],
           ["Fmaj7", "Dm", "Am Dm", "Am E7"]
         ],
         "lyrics": [
@@ -3607,12 +3607,10 @@
     "scale": "A",
     "tempo": 128,
     "timeSignature": "4/4",
-    "configChordPaneSize": 3,
     "pages": [
       {
         "section": "Intro",
-        "chords": [["A", "A", "A", "A"]],
-        "lyrics": [""]
+        "chords": ["A", "A", "A", "A"]
       },
       {
         "section": "Verse 1",
@@ -3649,12 +3647,10 @@
         "lyrics": [
           "I got a river of worries",
           "A mountain of hell",
-          "Lord, I wish I had a",
-          "Soul to sell",
+          "Lord, I wish I had soul to sell",
           "Siren's howlin'",
           "Flashin' red",
-          "All night long",
-          "Goin' outta my head"
+          "All night long goin' outta my head"
         ],
         "duration": 8
       },
@@ -3702,6 +3698,289 @@
           ["E", "E", "A", "A"]
         ],
         "lyrics": ["[Ad lib over vamp]"]
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Get It While You Can",
+    "writtenBy": ["Dan Auerbach", "John Prine", "Pat McLaughlin"],
+    "gemaWerknummer": "",
+    "lineup": "Band",
+    "pages": [
+      {
+        "section": "Intro",
+        "chords": [
+          ["A", "A", "A", "A"],
+          ["A", "A", "A", "A"],
+          ["A", "A", "A", "A"]
+        ],
+        "lyrics": []
+      },
+      {
+        "section": "Verse 1",
+        "chords": [["A", "A", "A", "A7"], ["D7", "D7", "A", "A"], ["E7", "E7", "A!  D7!", "E7! A"], ["A"]],
+        "lyrics": [
+          "Trying to love this woman",
+          "It's going to break my back",
+          "If working for a living don't",
+          "Give me a heart attack",
+          "You gotta take it when you can get it",
+          "Get it while you can",
+          "Wrap it up in Bacon",
+          "Sizzle it in a pan",
+          "Now it may have not come in a mailbox",
+          "It might have taken a moving van",
+          "But you should take it when you get it",
+          "And get it while you can"
+        ]
+      },
+      {
+        "section": "Verse 2",
+        "chords": [
+          ["A", "A", "A", "A7"],
+          ["D7", "D7", "A", "A"],
+          ["E7", "E7", "A!  D7!", "E7! A"]
+        ],
+        "lyrics": [
+          "Now I did not know the dealer",
+          "But I sure did know his daughter",
+          "And if I hadn't chased her y'all",
+          "I never would have caught her",
+          "you gotta take it when you get it",
+          "And get it while you can",
+          "Wrap it up in Bacon",
+          "Sizzle it in a pan",
+          "Now it may have not come in a mailbox",
+          "It might have taken a moving van",
+          "But you should take it when you get it",
+          "And get it while you can"
+        ]
+      },
+      {
+        "section": "Bridge",
+        "chords": [["F#m", "A", "F#m", "E"]],
+        "lyrics": []
+      },
+      {
+        "section": "Verse 3",
+        "chords": [
+          ["A", "A", "A", "A7"],
+          ["D7", "D7", "A", "A"],
+          ["E7", "E7", "A!  D7!", "E7! A"],
+          ["A!  D7!", "E7! A"]
+        ],
+        "lyrics": [
+          "She had a disposition",
+          "Just like Gunga Din",
+          "And every time I'd be going out",
+          "She'd be going in",
+          "you gotta take it when you get it",
+          "And get it while you can",
+          "Wrap it up in Bacon",
+          "Sizzle it in a pan",
+          "Now it may have not come in a mailbox",
+          "It might have taken a moving van",
+          "But you should take it when you get it",
+          "And get it while you can",
+          "you should take it when you get it",
+          "And get it while you can"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Can't You See",
+    "writtenBy": ["Toy Caldwell"],
+    "gemaWerknummer": "",
+    "lineup": "Band",
+    "pages": [
+      {
+        "section": "Verse 1",
+        "chords": [["D", "C", "G", "D"]],
+        "lyrics": [
+          "Gonna take a freight train",
+          "Down at the station, Lord",
+          "I don't care where it goes",
+          "Gonna climb a mountain",
+          "The highest mountain, Lord",
+          "Gonna jump off, nobody gonna know"
+        ]
+      },
+      {
+        "section": "Chorus",
+        "chords": [["D", "C", "G", "D"]],
+        "lyrics": ["Can't you see", "Oh, can't you see", "What that woman", "Been doin' to me"]
+      },
+      {
+        "section": "Verse 2",
+        "chords": [["D", "C", "G", "D"]],
+        "lyrics": [
+          "I'm gonna find me",
+          "A hole in the wall",
+          "I'm gonna crawl inside and die",
+          "Cause my lady",
+          "Now a mean old woman",
+          "Lord, never told me goodbye"
+        ]
+      },
+      {
+        "section": "Chorus",
+        "chords": [["D", "C", "G", "D"]],
+        "lyrics": ["Can't you see", "Oh, can't you see", "What that woman", "Been doin' to me"]
+      },
+      {
+        "section": "Verse 3",
+        "chords": [["D", "C", "G", "D"]],
+        "lyrics": [
+          "I've gone to buy a ticket now, as far as I can",
+          "Ain't a-never coming back",
+          "Ride me a southbound, all the way to Georgia now",
+          "'Til the train, it run out of track"
+        ]
+      },
+      {
+        "section": "Chorus",
+        "chords": [["D", "C", "G", "D"]],
+        "lyrics": ["Can't you see", "Oh, can't you see", "What that woman", "Been doin' to me"]
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Personal Jesus (unfinished)",
+    "writtenBy": ["Martin L. Gore"],
+    "gemaWerknummer": "GEMA",
+    "setup": "Capo 2rd fret",
+    "timeSignature": "4/4",
+    "key": "F#m",
+    "lineup": "Band",
+    "pages": [
+      {
+        "section": "Intro",
+        "chords": [
+          ["Em", "-", "-", "-"],
+          ["Em", "-", "-", "-"]
+        ],
+        "lyrics": ["Reach out and touch faith"]
+      },
+      {
+        "section": "Chorus",
+        "chords": [
+          ["Em", "-", "-", "-"],
+          ["Em", "-", "A", "G5 F#5"],
+          [],
+          ["Em", "-", "-", "-"],
+          ["Em", "-", "A", "G5 F#5"],
+          [],
+          ["Em", "-", "-", "-"]
+        ],
+        "lyrics": [
+          "Your own personal Jesus",
+          "Someone to hear your prayers",
+          "Someone who cares",
+          "",
+          "Your own personal Jesus",
+          "Someone to hear your prayers",
+          "Someone who's there"
+        ]
+      },
+      {
+        "section": "Verse 1",
+        "chords": [
+          ["Em", "-", "G5", "D5"],
+          ["Am", "B5 D5", "Em", "-"]
+        ],
+        "lyrics": [
+          "Feeling unknown",
+          "And you're all alone",
+          "Flesh and bone",
+          "By the telephone",
+          "Lift up the receiver",
+          "I'll make you a believer"
+        ]
+      },
+      {
+        "section": "Verse 2",
+        "chords": [
+          ["Em", "-", "G5", "D5"],
+          ["Am", "B5 D5", "Em", "-"]
+        ],
+        "lyrics": [
+          "Take second best",
+          "Put me to the test",
+          "Things on your chest",
+          "You need to confess",
+          "I will deliver",
+          "You know I'm a forgiver"
+        ]
+      },
+      {
+        "section": "Pre-Chorus",
+        "chords": [
+          ["F#m", "Fm", "Em", "-"],
+          ["F#m", "Fm", "Em", "-"]
+        ],
+        "lyrics": ["Reach out and touch faith", "Reach out and touch faith"]
+      },
+      {
+        "section": "Chorus",
+        "chords": [
+          ["Em", "-", "-", "-"],
+          ["Em", "-", "A", "G F#"],
+          [],
+          ["Em", "-", "-", "-"],
+          ["Em", "-", "A", "G5"],
+          ["F#5", "C5"],
+          ["n.c.", "-", "-", "-"],
+          ["Em", "-", "-", "-"]
+        ],
+        "lyrics": [
+          "Your own personal Jesus",
+          "Someone to hear your prayers",
+          "Someone who cares",
+          "",
+          "Your own personal Jesus",
+          "Someone to hear your prayers",
+          "Someone who's there"
+        ]
+      },
+      {
+        "section": "Verse 1",
+        "chords": [
+          ["Em", "-", "G5", "D5"],
+          ["Am", "B5 D5", "Em", "-"],
+          ["Am", "B5 D5", "Em", "-"]
+        ],
+        "lyrics": [
+          "Feeling unknown",
+          "And you're all alone",
+          "Flesh and bone",
+          "By the telephone",
+          "Lift up the receiver",
+          "I'll make you a believer",
+          "I will deliver",
+          "You know I'm a forgiver"
+        ]
+      },
+      {
+        "section": "Pre-Chorus",
+        "chords": [
+          ["F#m", "Fm", "Em", "-"],
+          ["F#m", "Fm", "Em", "-"]
+        ],
+        "lyrics": ["Reach out and touch faith", "Reach out and touch faith"]
+      },
+      {
+        "section": "Verse 3",
+        "chords": [
+          ["Em", "G", "Em", "G"],
+          ["Em", "G", "Em", "G"],
+          ["Em", "G", "Em", "G"],
+          ["Em", "G", "Em", "G"]
+        ],
+        "lyrics": ["Reach out and touch faith", "Your own personal Jesus", "Someone to hear your prayers", "Someone"]
       }
     ]
   }
