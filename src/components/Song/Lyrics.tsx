@@ -47,7 +47,7 @@ const Lyrics: React.FC<TProps> = ({ lyrics }) => {
         console.log(`Resize complete - ${fontSize} px`);
       }
     }
-  }, [fontSize, containerReady, lyrics, lyricMinFontSize, lyricMaxFontSize]); // Re-run effect when fontSize or containerReady changes
+  }, [fontSize, containerReady, isResizingText, lyrics, lyricMinFontSize, lyricMaxFontSize]); // Re-run effect when fontSize or containerReady changes
 
   // Regular expression pattern to match "[" at the beginning and "]" at the end of the string
   const regexToIdentifyComment = /^\[.*\]$/;
