@@ -548,10 +548,11 @@
     "scale": "A",
     "tempo": 75,
     "timeSignature": "4/4",
+    "configChordPaneSize": 3,
     "pages": [
       {
         "section": " Intro + Verse 1",
-        "chords": [["A  E7", "D7  E7", "A  D7", "A  E"], [], ["A", "A7", "D7", "Dm7"], ["A", "Bm7 E7", "A D7", "A E7"]],
+        "chords": [["A  E7", "D7  E7", "A  D7", "A  E"], [], ["A", "A7", "D7", "Dm7"], ["A", "B7 E7", "A D7", "A E7"]],
         "lyrics": [
           "Well I came home one mornin’",
           "Found my baby gone",
@@ -567,7 +568,7 @@
         "section": "Verse 2",
         "chords": [
           ["A", "A7", "D7", "Dm7"],
-          ["A", "Bm7 E7", "A D7", "A E7"]
+          ["A", "B7 E7", "A D7", "A E7"]
         ],
         "lyrics": [
           "First time I saw her",
@@ -584,7 +585,7 @@
         "section": "Verse 3",
         "chords": [
           ["A", "A7", "D7", "Dm7"],
-          ["A", "Bm7 E7", "A D7", "A E7"]
+          ["A", "B7 E7", "A D7", "A E7"]
         ],
         "lyrics": [
           "I saw her one mornin’",
@@ -601,7 +602,7 @@
         "section": "Solo + Verse 4",
         "chords": [
           ["A", "A7", "D7", "Dm7"],
-          ["A", "Bm7 E7", "A D7", "A E7"]
+          ["A", "B7 E7", "A D7", "A E7"]
         ],
         "lyrics": [
           "[SOLO x2]",
@@ -759,7 +760,7 @@
           "You been talking ’bout me, baby",
           "Sayin’ I did not treat you right (x2)",
           "",
-          "Now everyone turns their back on me",
+          "Now folks avoid me on the street",
           "And my bed don’t shake at night"
         ],
         "duration": 36
@@ -1217,6 +1218,7 @@
     "scale": "A",
     "tempo": 115,
     "timeSignature": "4/4",
+    "configChordPaneSize": 2,
     "pages": [
       {
         "section": "Intro + Verse 1 - 2",
@@ -2903,6 +2905,7 @@
     "scale": "A",
     "tempo": 95,
     "timeSignature": "4/4",
+    "configChordPaneSize": 2,
     "pages": [
       {
         "section": "Verse 1",
@@ -3607,6 +3610,7 @@
     "scale": "A",
     "tempo": 128,
     "timeSignature": "4/4",
+    "configChordPaneSize": 2,
     "pages": [
       {
         "section": "Intro",
@@ -3796,6 +3800,7 @@
     "writtenBy": ["Toy Caldwell"],
     "gemaWerknummer": "",
     "lineup": "Band",
+    "configChordPaneSize": 3,
     "pages": [
       {
         "section": "Verse 1",
