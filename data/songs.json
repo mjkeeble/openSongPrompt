@@ -345,7 +345,7 @@
     "pages": [
       {
         "section": "Verse 1",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Well, they call her Lady Luck ...",
           "She gave me only famine ...",
@@ -358,7 +358,7 @@
       },
       {
         "section": "Verse 2",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "I can’t pay the landlord ...",
           "I wanna be a winner ...",
@@ -371,7 +371,7 @@
       },
       {
         "section": "Verse 3",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "I’ve got to check the dealer...",
           "If I try to climb the ladder ...",
@@ -382,7 +382,7 @@
       },
       {
         "section": "Verse 3 (part 2)",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Got to take my lousy luck",
           "And drown it in a sack",
@@ -393,7 +393,7 @@
       },
       {
         "section": "Bridge + outro",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": ["One step forward, two steps back (x4)", "", "[ SOLO]", "", "One step forward, two steps back (x4)"]
       }
     ]
@@ -494,7 +494,7 @@
           ["Dm", "-", "A7", "-"],
           ["Dm", "-", "Gm", "-"],
           ["Dm", "A7", "Dm", "/"],
-          [],
+          [""],
           ["Gm", "-", "Dm", "-"],
           ["Gm", "-", "A7", "-"]
         ],
@@ -877,7 +877,7 @@
         "section": "Verse 1",
         "chords": [
           ["C", "-", "-", "-"],
-          [],
+          [""],
           ["C", "-", "-", "-"],
           ["C", "-", "-", "-"],
           ["F", "-", "-", "-"],
@@ -1200,7 +1200,7 @@
           ["A", "-", "-", "-"],
           ["D", "-", "A", "-"],
           ["E", "D", "A", "A"],
-          [],
+          [""],
           ["E", "D", "A", "A"],
           ["E", "D", "A", "A"]
         ],
@@ -1394,7 +1394,7 @@
           ["C", "-", "-", "-"],
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"],
-          [],
+          [""],
           ["C!", "C!", "C!", "C!"],
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"]
@@ -1444,7 +1444,7 @@
           ["C", "-", "-", "-"],
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"],
-          [],
+          [""],
           ["C!", "C!", "C!", "C!"],
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"]
@@ -1521,7 +1521,7 @@
     "pages": [
       {
         "section": "",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [],
         "duration": 12
       }
@@ -1802,12 +1802,12 @@
     "pages": [
       {
         "section": "Intro + Verse 1",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": ["Hey Joe, where you going with that gun in your hand?", "(x2)", "", "[\u21D2 FOOTSWITCH]"]
       },
       {
         "section": " Verse 1",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "I’m going down to shoot my old lady",
           "You know, I caught her messing around with another man",
@@ -1820,7 +1820,7 @@
       },
       {
         "section": "Verse 2",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Hey Joe, I heard you shot your mama down",
           "You shot her down now",
@@ -1833,7 +1833,7 @@
       },
       {
         "section": "Verse 2",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Yeah. Yes, I did, I shot her",
           "You know I caught her messin’ round, messin’ round town",
@@ -1846,7 +1846,7 @@
       },
       {
         "section": "Verse 3",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Alright",
           "Shoot her one more time again, baby",
@@ -1859,12 +1859,12 @@
       },
       {
         "section": "Verse 3",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": ["Hey, Joe", "Where you gonna run to now? Where you gonna run to?", "(x2)", "", "[\u21D2 FOOTSWITCH]"]
       },
       {
         "section": "Verse 4",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Well, dig",
           "I’m goin’ way down south",
@@ -1882,7 +1882,7 @@
       },
       {
         "section": "Outro",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": ["Hey, Joe", "You better run on down", "Goodbye, everybody, ow", "Hey, hey, Joe"]
       }
     ]
@@ -2024,7 +2024,7 @@
         "section": "Intro + Verse 1",
         "chords": [
           ["C", "G", "Am  F", "C"],
-          [],
+          [""],
           ["C", "G", "Am", "F"],
           ["C", "G", "Am", "F"],
           ["C", "G", "Am", "F"],
@@ -2097,7 +2097,7 @@
           ["C", "G", "Am", "F"],
           ["C", "G", "Am", "F"],
           ["C", "G", "Am", "F"],
-          [],
+          [""],
           ["C", "G", "Am  F", "C"]
         ],
         "lyrics": [
@@ -2290,7 +2290,6 @@
           ["A", "-", "-", "-"],
           ["Dm", "-", "-", "-"],
           ["...", "-", "-", "-"],
-
           ["F", "-", "E!", "/"]
         ],
         "lyrics": [
@@ -2335,7 +2334,6 @@
           ["A", "-", "-", "-"],
           ["Dm", "-", "-", "-"],
           ["...", "-", "-", "-"],
-
           ["F", "-", "E!", "/"]
         ],
         "lyrics": [
@@ -2364,7 +2362,7 @@
         "section": "Intro + Verse 1",
         "chords": [
           ["E", "-", "-", "-"],
-          [],
+          [""],
           ["E", "B7", "E", "-"],
           ["E", "B7", "E", "-"],
           ["E", "B7", "A", "E"],
@@ -2424,7 +2422,7 @@
         "section": "Verse 3",
         "chords": [
           ["E", "-", "-", "-"],
-          [],
+          [""],
           ["E", "B7", "E", "-"],
           ["A", "B7", "E", "-"],
           ["E", "B7", "A", "E"],
@@ -2456,7 +2454,7 @@
         "section": "Intro + Verse 1",
         "chords": [
           ["E", "A", "E", "-"],
-          [],
+          [""],
           ["E", "A", "E", "-"],
           ["A", "-", "E", "E"],
           ["B7!", "A!", "B7!", "A7!"],
@@ -2681,7 +2679,7 @@
         "chords": [
           ["Am", "E7", "Am", "E7"],
           ["Am", "E7", "Am", "E7"],
-          [],
+          [""],
           ["Am", "E7", "Am", "E7"],
           ["Am", "E7", "Am", "E7"],
           ["Am", "E7", "Am", "E7"],
@@ -2840,7 +2838,7 @@
     "pages": [
       {
         "section": "",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "I’m going up, going down",
 
@@ -2870,7 +2868,7 @@
     "pages": [
       {
         "section": "Verse 1",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "I done ran into my baby",
           "And finally found my old blue jean",
@@ -2884,7 +2882,7 @@
       },
       {
         "section": "Verse 2",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "If I ever get back my blue jeans",
           "Lord, how happy could one man be",
@@ -3113,7 +3111,7 @@
     "pages": [
       {
         "section": "Verse 1",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Went down to Tin Pan Alley",
           "See what was goin' on",
@@ -3123,7 +3121,7 @@
       },
       {
         "section": "Chorus",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Hey hey hey hey",
           "Alley's the roughest place I've ever been",
@@ -3133,7 +3131,7 @@
       },
       {
         "section": "Verse 2",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "I heard a woman scream",
           "Yeah and I peeped through the door",
@@ -3143,7 +3141,7 @@
       },
       {
         "section": "Chorus",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Hey hey hey hey",
           "Alley's the roughest place I've ever been",
@@ -3153,7 +3151,7 @@
       },
       {
         "section": "Verse 3",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "I heard a pistol shoot",
           "Yeah and it was a .44",
@@ -3163,7 +3161,7 @@
       },
       {
         "section": "Chorus",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Hey hey hey hey",
           "Alley's the roughest place I've ever been",
@@ -3183,7 +3181,7 @@
     "pages": [
       {
         "section": "Verse 1",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "I got a-one foot in the grave",
           "I gave a great big shout",
@@ -3195,7 +3193,7 @@
       },
       {
         "section": "Chorus",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "He said son, where you going",
           "Where the music's hot",
@@ -3210,7 +3208,7 @@
       },
       {
         "section": "Verse 2",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "He said 'Keep your long hair here on Earth",
           "All you're gonna need is six foot of dirt",
@@ -3222,7 +3220,7 @@
       },
       {
         "section": "Chorus",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Well son, where you going",
           "Where the music's hot",
@@ -3237,12 +3235,12 @@
       },
       {
         "section": "Solo",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": ["[SOLO]"]
       },
       {
         "section": "Verse 2",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "I said, 'Wait a minute there",
           "I led a good life'",
@@ -3253,7 +3251,7 @@
       },
       {
         "section": "Chorus + outro",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Well son, where you going",
           "Where the music's hot",
@@ -3278,7 +3276,7 @@
     "pages": [
       {
         "section": "Verse 1",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "I'm going up the country,",
           "Babe don't you wanna go",
@@ -3290,7 +3288,7 @@
       },
       {
         "section": "Verse 2",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "I'm going I'm going",
           "Where the water tastes like wine",
@@ -3303,7 +3301,7 @@
       },
       {
         "section": "Verse 3",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Gonna leave this city,",
           "Got to get away",
@@ -3316,7 +3314,7 @@
       },
       {
         "section": "Bridge",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Now baby, pack your leaving trunk",
           "You know we've got to leave today",
@@ -3327,7 +3325,7 @@
       },
       {
         "section": "Bridge",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "No use of me running",
           "Or screaming and crying",
@@ -3337,7 +3335,7 @@
       },
       {
         "section": "Verse 4",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "I'm going up the country,",
           "Babe don't you wanna go",
@@ -3349,7 +3347,7 @@
       },
       {
         "section": "Verse 5",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "I'm going I'm going",
           "Where the water tastes like wine",
@@ -3362,7 +3360,7 @@
       },
       {
         "section": "Verse 6",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Gonna leave this city,",
           "Got to get away",
@@ -3375,7 +3373,7 @@
       },
       {
         "section": "Bridge",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Now baby, pack your leaving trunk",
           "You know we've got to leave today",
@@ -3386,7 +3384,7 @@
       },
       {
         "section": "Bridge",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "No use of me running",
           "Or screaming and crying",
@@ -3406,7 +3404,7 @@
     "pages": [
       {
         "section": "Verse 1",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Some folks are born made to wave the flag",
           "Hoo, they're red, white and blue",
@@ -3416,7 +3414,7 @@
       },
       {
         "section": "Chorus",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "It ain't me, it ain't me",
           "I ain't no senator's son, son",
@@ -3426,7 +3424,7 @@
       },
       {
         "section": "Verse 2",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Some folks are born silver spoon in hand",
           "Lord, don't they help themselves, Lord?",
@@ -3436,7 +3434,7 @@
       },
       {
         "section": "Chorus",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "It ain't me, it ain't me",
           "I ain't no millionaire's son, no, no",
@@ -3446,12 +3444,12 @@
       },
       {
         "section": "Solo",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": ["[SOLO]"]
       },
       {
         "section": "Verse 3",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Yeah-yeah, some folks inherit star-spangled eyes",
           "Hoo, they send you down to war, Lord",
@@ -3461,7 +3459,7 @@
       },
       {
         "section": "Chorus",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "It ain't me, it ain't me",
           "I ain't no military son, Lord",
@@ -3471,7 +3469,7 @@
       },
       {
         "section": "Outro",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "It ain't me, it ain't me",
           "I ain't no furtunate one, no, no, no",
@@ -3491,7 +3489,7 @@
     "pages": [
       {
         "section": "Verse 1",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "I been up, I been down",
           "Take my word, my way around",
@@ -3504,7 +3502,7 @@
 
       {
         "section": "Verse 2",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "I been bad, I been good",
           "Dallas, Texas, Hollywood",
@@ -3516,7 +3514,7 @@
       },
       {
         "section": "Verse 3",
-        "chords": [],
+        "chords": [[""]],
         "lyrics": [
           "Take me back, way back home",
           "Not by myself, not alone",
@@ -3876,10 +3874,10 @@
         "chords": [
           ["Em", "-", "-", "-"],
           ["Em", "-", "A", "G5 F#5"],
-          [],
+          [""],
           ["Em", "-", "-", "-"],
           ["Em", "-", "A", "G5 F#5"],
-          [],
+          [""],
           ["Em", "-", "-", "-"]
         ],
         "lyrics": [
@@ -3935,7 +3933,7 @@
         "chords": [
           ["Em", "-", "-", "-"],
           ["Em", "-", "A", "G F#"],
-          [],
+          [""],
           ["Em", "-", "-", "-"],
           ["Em", "-", "A", "G5"],
           ["F#5", "C5"],
