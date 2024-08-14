@@ -16,18 +16,6 @@ const Lyrics: React.FC<TProps> = ({ lyrics }) => {
   const [isResizingText, setIsResizingText] = useState<boolean>(true);
 
   useEffect(() => {
-    console.log({ fontSize });
-  }, [fontSize]);
-
-  useEffect(() => {
-    console.log({ isResizingText });
-  }, [isResizingText]);
-
-  useEffect(() => {
-    console.log({ containerReady }); 
-  }, [containerReady]);
-
-  useEffect(() => {
     setFontSize(MAX_LYRIC_FONT_SIZE[lyricMaxFontSize].size);
     setIsResizingText(true);
   }, [lyrics, lyricMaxFontSize]);
@@ -48,7 +36,6 @@ const Lyrics: React.FC<TProps> = ({ lyrics }) => {
         setFontSize((prevSize) => prevSize - MAX_LYRIC_FONT_SIZE[lyricMaxFontSize].reductionIncrement);
       } else {
         setIsResizingText(false);
-        console.log(`Resize complete - ${fontSize} px`);
       }
     }
   }, [fontSize, containerReady, isResizingText, lyrics, lyricMinFontSize, lyricMaxFontSize]); // Re-run effect when fontSize or containerReady changes
