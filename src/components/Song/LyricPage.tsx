@@ -19,13 +19,17 @@ const LyricPage: React.FC<TProps> = ({ song, currentPage, setCurrentPage, timerH
     return <div>Error: Page data not found</div>;
   }
 
+  const pageHasChords: boolean = !!currentPageData.chords[0][0].length;
+
   const screenSplit = getScreenSplit(
     song.configChordPaneSize,
-    !!currentPageData.chords.length,
+    pageHasChords,
     !!currentPageData.lyrics.length,
   );
 
-  const pageHasChords: boolean = !!currentPageData.chords[0]?.length;
+  console.log("🚀 -----------------------------------🚀");
+  console.log("🚀 => pageHasChords:", pageHasChords);
+  console.log("🚀 -----------------------------------🚀");
 
   return (
     <div className="flex h-screen flex-col overflow-y-hidden">

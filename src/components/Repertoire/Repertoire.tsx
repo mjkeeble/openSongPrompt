@@ -4,18 +4,18 @@ import { useNavigate } from 'react-router-dom';
 import { NavIndicator, SongListButton } from '..';
 import songs from '../../../data/songs.json';
 import { footswitch } from '../../const';
-import { TRepertoireList, TSong } from '../../types';
+import { TSong } from '../../types';
 
 const Repertoire = () => {
-  const Navigate = useNavigate();
+  const navigate = useNavigate();
   const buttonsRef = useRef<HTMLButtonElement[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
 
   // TODO: at the moment setlist is stored in local storage and
 
-  const repertoireList: TRepertoireList = songs
-    .sort((a: TSong, b: TSong) => a.title.localeCompare(b.title))
-    .map((song: TSong) => song.id);
+  const repertoireList: TSong[] = songs
+    .sort((a, b) => a.title.localeCompare(b.title));
+  const songIds: number[] = songs.map((song: TSong) => song.id);
 
   useEffect(() => {
     storeSetlist([0]);
@@ -59,12 +59,8 @@ const Repertoire = () => {
           endOfListRef.current.scrollIntoView({ behavior: 'smooth' });
         }
       } else if (event.key === footswitch.leftLong) {
-        console.log('j');
 
         if (document.exitFullscreen) {
-          console.log("🚀 ----------------------------------------------------------------------🚀");
-          console.log("🚀 => handleKeyDown => document.exitFullscreen:", document.exitFullscreen);
-          console.log("🚀 ----------------------------------------------------------------------🚀");
           document.exitFullscreen();
         }
       }
@@ -75,12 +71,12 @@ const Repertoire = () => {
     let storageUpdateDebounce: NodeJS.Timeout | null = null;
 
     console.log('storing to setlist', id);
-    storeSetlist(['break', id]);
+    storeSetlist(['BREAK', id]);
     if (storageUpdateDebounce) clearTimeout(storageUpdateDebounce);
     storageUpdateDebounce = setTimeout(() => {
       console.log('storing to setlist', id);
 
-      Navigate(`/song/1`);
+      navigate(`/song/1`);
     }, 1000);
   };
 
@@ -89,7 +85,7 @@ const Repertoire = () => {
       <div onKeyDown={handleKeyDown} tabIndex={0}>
         <h1 className="my-5 font-fredericka text-7xl text-bj-white">Repertoire</h1>
         <ul className="mb-20 mt-8">
-          {repertoireList.map((songId: number, index) => {
+          {songIds.map((songId: number, index) => {
             const song: TSong | undefined = songs.find((song) => song.id === songId);
             if (!song) return null;
 

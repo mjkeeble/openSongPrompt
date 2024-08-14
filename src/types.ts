@@ -46,7 +46,6 @@ export type TBreak = typeof BREAK;
 
 export type TSetlist = (number | TBreak)[];
 
-export type TRepertoireList = string[];
 
 export type TInput = (typeof ACTIVEKEYS)[number] | null;
 
