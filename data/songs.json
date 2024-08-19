@@ -7,7 +7,6 @@
     "lineup": "Band",
     "scale": "G",
     "tempo": 131,
-    "notes": "test notes",
     "timeSignature": "4/4",
     "configChordPaneSize": 3,
     "pages": [
@@ -246,6 +245,7 @@
     "scale": "A",
     "tempo": 129,
     "timeSignature": "4/4",
+    "notes": "Outro :SOLO x2 \u21D2 STOP on 1/13",
     "configChordPaneSize": 3,
     "pages": [
       {
@@ -344,8 +344,16 @@
     "timeSignature": "4-4",
     "pages": [
       {
-        "section": "Verse 1",
-        "chords": [[""]],
+        "section": "Intro & Verse 1",
+        "chords": [
+          ["Am7", "-", "-", "-"],
+          [""],
+          ["Am7", "-", "-", "-"],
+          ["Dm7", "-", "Am7", "-"],
+          ["Bm7", "C  D", "Am7", "-"],
+          [""],
+          ["Am7", "-", "-", "-"]
+        ],
         "lyrics": [
           "Well, they call her Lady Luck ...",
           "She gave me only famine ...",
@@ -358,7 +366,15 @@
       },
       {
         "section": "Verse 2",
-        "chords": [[""]],
+        "chords": [
+          ["Am7", "-", "-", "-"],
+          [""],
+          ["Am7", "-", "-", "-"],
+          ["Dm7", "-", "Am7", "-"],
+          ["Bm7", "C  D", "Am7", "-"],
+          [""],
+          ["Am7", "-", "-", "-"]
+        ],
         "lyrics": [
           "I can’t pay the landlord ...",
           "I wanna be a winner ...",
@@ -370,8 +386,22 @@
         ]
       },
       {
+        "section": "Solo",
+        "chords": [
+          ["Am7", "-", "-", "-"],
+          ["Dm7", "-", "Am7", "-"],
+          ["Bm7", "C  D", "Am7", "-"],
+          [""],
+          ["Am7", "-", "-", "-"]
+        ],
+        "lyrics": ["[SOLO x2]"]
+      },
+      {
         "section": "Verse 3",
-        "chords": [[""]],
+        "chords": [
+          ["Am7", "-", "-", "-"],
+          ["Dm7", "-", "Am7", "-"]
+        ],
         "lyrics": [
           "I’ve got to check the dealer...",
           "If I try to climb the ladder ...",
@@ -382,7 +412,7 @@
       },
       {
         "section": "Verse 3 (part 2)",
-        "chords": [[""]],
+        "chords": [["Bm7", "C  D", "Am7!", "/"]],
         "lyrics": [
           "Got to take my lousy luck",
           "And drown it in a sack",
@@ -393,7 +423,7 @@
       },
       {
         "section": "Bridge + outro",
-        "chords": [[""]],
+        "chords": [["Am7"]],
         "lyrics": ["One step forward, two steps back (x4)", "", "[ SOLO]", "", "One step forward, two steps back (x4)"]
       }
     ]
@@ -407,6 +437,7 @@
     "scale": "Dm",
     "tempo": 110,
     "timeSignature": "4/4",
+    "notes": "Outro: SOLO x1 \u21D2 STOP on 1/17",
     "configChordPaneSize": 3,
 
     "pages": [
@@ -627,6 +658,7 @@
     "scale": "Bm",
     "tempo": 95,
     "timeSignature": "4/4",
+    "notes": "Outro: SOLO x 2 \u21D2 STOP on 1/13",
     "pages": [
       {
         "section": "Intro + Verse 1",
@@ -714,6 +746,7 @@
     "scale": "E",
     "tempo": 130,
     "timeSignature": "4/4",
+    "notes": "Outro: SOLO x2 \u21D2 BASS OUTRO on 2nd SOLO",
     "configChordPaneSize": 3,
     "pages": [
       {
@@ -1101,6 +1134,7 @@
     "lineup": "Band",
     "scale": "A",
     "tempo": 145,
+    "notes": "Outro: SOLO x 2 \u21D2 TURNAROUND x 2",
     "timeSignature": "4/4",
     "configChordPaneSize": 3,
     "pages": [
@@ -1218,6 +1252,7 @@
     "scale": "A",
     "tempo": 115,
     "timeSignature": "4/4",
+    "notes": "Outro: Break on 1/10 with bass outro",
     "configChordPaneSize": 2,
     "pages": [
       {
@@ -1308,6 +1343,7 @@
     "lineup": "Band",
     "scale": "G",
     "tempo": 99,
+    "notes": "Stop on 1/13 of 2nd bridge",
     "timeSignature": "4/4",
     "configChordPaneSize": 3,
     "pages": [
@@ -1386,6 +1422,7 @@
     "scale": "C",
     "tempo": 128,
     "timeSignature": "4/4",
+    "notes": "Outro: Solo x2",
     "configChordPaneSize": 3,
     "pages": [
       {
@@ -1499,13 +1536,7 @@
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"]
         ],
-        "lyrics": [
-          "[SOLO x 2]",
-          "[Abschied, danke schön]",
-          "[MK signal end]",
-          "I get a real good feeling",
-          "Talking to you in the phone"
-        ]
+        "lyrics": ["[SOLO x 2]"]
       }
     ]
   },
@@ -1673,6 +1704,7 @@
     "scale": "A",
     "tempo": 140,
     "timeSignature": "4/4",
+    "notes": "Outro: Break and bass outro bars over last verse",
     "configChordPaneSize": 2,
     "pages": [
       {
@@ -1771,7 +1803,7 @@
         "duration": 12
       },
       {
-        "section": "Verse 6 + outro",
+        "section": "Verse 6",
         "chords": [
           ["C", "-", "-", "-"],
           ["F", "-", "C", "-"],
@@ -2834,11 +2866,15 @@
     "lineup": "Band + guest",
     "scale": "E",
     "tempo": 133,
+    "notes": "Outro: Break on 1/10 \u21D2 bass outro",
     "timeSignature": "4/4",
     "pages": [
       {
         "section": "",
-        "chords": [[""]],
+        "chords": [
+          ["E", "-", "-", "-"],
+          ["A", "-", "E", "-"],
+          ["B", "A", "E", "-"]],
         "lyrics": [
           "I’m going up, going down",
 
@@ -2903,6 +2939,7 @@
     "scale": "A",
     "tempo": 95,
     "timeSignature": "4/4",
+    "notes": "Outro: Solo x2",
     "configChordPaneSize": 2,
     "pages": [
       {
@@ -3017,7 +3054,7 @@
           ["D", "-", "A", "-"],
           ["E", "D", "A", "E"]
         ],
-        "lyrics": []
+        "lyrics": ["[SOLO x 2]"]
       }
     ]
   },
@@ -3031,6 +3068,7 @@
     "scale": "A",
     "tempo": 115,
     "timeSignature": "4/4",
+    "notes": "Outro: Break on 10 \u21D2 bass outro in last verse",
     "configChordPaneSize": 2,
     "pages": [
       {
@@ -3608,6 +3646,7 @@
     "scale": "A",
     "tempo": 128,
     "timeSignature": "4/4",
+    "notes": "Outro: Ad lib over vamp on A",
     "configChordPaneSize": 2,
     "pages": [
       {
@@ -3710,6 +3749,7 @@
     "writtenBy": ["Dan Auerbach", "John Prine", "Pat McLaughlin"],
     "gemaWerknummer": "",
     "lineup": "Band",
+    "notes": "Outro: Repeat last line",
     "pages": [
       {
         "section": "Intro",
