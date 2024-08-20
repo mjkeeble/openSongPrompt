@@ -746,7 +746,7 @@
     "scale": "E",
     "tempo": 130,
     "timeSignature": "4/4",
-    "notes": "Outro: SOLO x2 \u21D2 BASS OUTRO on 2nd SOLO",
+    "notes": "Outro: SOLO x1 with break on 1/11",
     "configChordPaneSize": 3,
     "pages": [
       {
@@ -823,7 +823,7 @@
           ["A7", "-", "E7", "-"],
           ["B7", "A7", "E7", "B7"]
         ],
-        "lyrics": ["[SOLO x2]", "[BASS OUTRO on 2nd SOLO]"]
+        "lyrics": ["[SOLO x1]", "[BREAK on 2nd SOLO]"]
       }
     ]
   },
@@ -1422,7 +1422,7 @@
     "scale": "C",
     "tempo": 128,
     "timeSignature": "4/4",
-    "notes": "Outro: Solo x2",
+    "notes": "Outro: Solo x1, stop on 11",
     "configChordPaneSize": 3,
     "pages": [
       {
@@ -1536,7 +1536,7 @@
           ["F", "-", "C", "-"],
           ["G", "F", "C", "C"]
         ],
-        "lyrics": ["[SOLO x 2]"]
+        "lyrics": ["[SOLO x1, stop on 11]"]
       }
     ]
   },
@@ -2874,7 +2874,8 @@
         "chords": [
           ["E", "-", "-", "-"],
           ["A", "-", "E", "-"],
-          ["B", "A", "E", "-"]],
+          ["B", "A", "E", "-"]
+        ],
         "lyrics": [
           "I’m going up, going down",
 
@@ -2939,7 +2940,7 @@
     "scale": "A",
     "tempo": 95,
     "timeSignature": "4/4",
-    "notes": "Outro: Solo x2",
+    "notes": "Outro: Solo x2, stop on 11",
     "configChordPaneSize": 2,
     "pages": [
       {
@@ -2997,8 +2998,8 @@
           ["D", "-", "A", "-"],
           ["E", "D", "A", "E"]
         ],
-        "lyrics": ["[SOLO]"],
-        "duration": 12
+        "lyrics": ["[SOLO x2]"],
+        "duration": 24
       },
       {
         "section": "Verse 3",
@@ -3054,7 +3055,7 @@
           ["D", "-", "A", "-"],
           ["E", "D", "A", "E"]
         ],
-        "lyrics": ["[SOLO x 2]"]
+        "lyrics": ["[SOLO x1, STOP on 11]"]
       }
     ]
   },
@@ -3574,9 +3575,9 @@
       {
         "section": "Verse 1",
         "chords": [
-          ["Am", "Dm", "Am", "Am"],
-          ["Dm", "Dm", "Am", "Am"],
-          ["Fmaj7", "Dm", "Am Dm", "Am E7"]
+          ["Gm", "Cm", "Gm", "Gm"],
+          ["Cm", "Cm", "Gm", "Gm"],
+          ["D#maj7", "Cm", "Gm Cm", "Gm D7"]
         ],
         "lyrics": [
           "Somebody loan me a dime",
@@ -3591,9 +3592,9 @@
       {
         "section": "Verse 2",
         "chords": [
-          ["Am", "Dm", "Am", "Am"],
-          ["Dm", "Dm", "Am", "Am"],
-          ["Fmaj7", "Dm", "Am Dm", "Am E7"]
+          ["Gm", "Cm", "Gm", "Gm"],
+          ["Cm", "Cm", "Gm", "Gm"],
+          ["D#maj7", "Cm", "Gm Cm", "Gm D7"]
         ],
         "lyrics": [
           "I know she's a good girl",
@@ -3605,11 +3606,20 @@
         ]
       },
       {
+        "section": " Solo",
+        "chords": [
+          ["Gm", "Cm", "Gm", "Gm"],
+          ["Cm", "Cm", "Gm", "Gm"],
+          ["D#maj7", "Cm", "Gm Cm", "Gm D7"]
+        ],
+        "lyrics": ["[SOLO x3]", "[BREAKS on 1st 4 bars]"]
+      },
+      {
         "section": "Verse 3",
         "chords": [
-          ["Am", "Dm", "Am", "Am"],
-          ["Dm", "Dm", "Am", "Am"],
-          ["Fmaj7", "Dm", "Am Dm", "Am E7"]
+          ["Gm", "Cm", "Gm", "Gm"],
+          ["Cm", "Cm", "Gm", "Gm"],
+          ["D#maj7", "Cm", "Gm Cm", "Gm D7"]
         ],
         "lyrics": [
           "Oh, she's a good girl",
@@ -3623,9 +3633,9 @@
       {
         "section": "Verse 4",
         "chords": [
-          ["Am", "Dm", "Am", "Am"],
-          ["Dm", "Dm", "Am", "Am"],
-          ["Fmaj7", "Dm", "Am Dm", "Am E7"]
+          ["Gm", "Cm", "Gm", "Gm"],
+          ["Cm", "Cm", "Gm", "Gm"],
+          ["D#maj7", "Cm", "Gm Cm", "Gm D7"]
         ],
         "lyrics": [
           "Now I cry, I just cry",
@@ -3633,7 +3643,9 @@
           "You know I cry, I just cry",
           "Just like a baby all night long",
           "Somebody better loan me that dime",
-          "I need my baby, I need my baby here at home (ooh yeah)"
+          "I need my baby, I need my baby here at home (ooh yeah)",
+          "",
+          "[Rhythm change]"
         ]
       }
     ]
