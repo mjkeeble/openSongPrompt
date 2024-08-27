@@ -342,6 +342,7 @@
     "scale": "Am",
     "tempo": 73,
     "timeSignature": "4-4",
+    "configChordPaneSize": 3,
     "pages": [
       {
         "section": "Intro & Verse 1",

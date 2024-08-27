@@ -28,7 +28,7 @@ const TitlePage: React.FC<TProps> = ({ title, scale: scale, setup, tempo, notes,
               <p className="text-lyric">{setup}</p>
             </div>
           ) : null}
-          {notes ? <p className="text-bj-green-light text-4xl">{notes}</p> : null}
+          {notes ? <p className="text-bj-green-light text-7xl">{notes}</p> : null}
           <div>{tempo && timeSignature ? <CountIn tempo={tempo} timeSignature={timeSignature} /> : null}</div>
         </div>
       </div>

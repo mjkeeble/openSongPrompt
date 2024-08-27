@@ -11,7 +11,7 @@ const PageTitle:React.FC<TProps> = ({currentPage, pageHasChords, title, totalPag
     <div className={`flex ${pageHasChords ? "flex-col flex-start" : "flex-row justify-between w-1/2"} text-bj-green-light  font-semibold text-left`}>
       <p className="text-5xl">{title}</p>
 
-      <p className="text-3xl">
+      <p className="text-4xl">
         {currentPage}/{totalPages}
       </p>
     </div>
