@@ -2892,9 +2892,7 @@
         "section": "Verse 1",
         "chords": [
           ["A!", "A!", "A!", "A!"],
-          ["A!", "A!", "A!", "A!"],
-          ["D7", "-", "A", "-"],
-          ["E", "D", "A", "E"]
+          ["A!", "A!", "A!", "A!"]
         ],
         "lyrics": [
           "I got a sly dog",
@@ -2904,21 +2902,22 @@
           "He ain't got no leash",
           "He completely wild",
           "He drive my woman crazy",
-          "Like some feral child",
-          "I got a sly dog",
-          "But I don't know what for",
-          "I've got a sly dog",
-          "Sniffin' at my door"
-        ],
-        "duration": 16
+          "Like some feral child"
+        ]
       },
       {
-        "section": "Verse 2 + solo",
+        "section": "Verse 1",
+        "chords": [
+          ["D7", "-", "A", "-"],
+          ["E", "D", "A", "E"]
+        ],
+        "lyrics": ["I got a sly dog", "But I don't know what for", "I've got a sly dog", "Sniffin' at my door"]
+      },
+      {
+        "section": "Verse 2",
         "chords": [
           ["A!", "A!", "A!", "A!"],
-          ["A!", "A!", "A!", "A!"],
-          ["D", "-", "A", "-"],
-          ["E", "D", "A", "E"]
+          ["A!", "A!", "A!", "A!"]
         ],
         "lyrics": [
           "I got a cool cat",
@@ -2928,13 +2927,16 @@
           "Rubs up against my leg",
           "Purrs throughout the house",
           "But that mangy creature",
-          "He can't even catch a mouse",
-          "I got a cool cat",
-          "But I don't know what for",
-          "And I've got a sly dog",
-          "Sniffin' at my door"
+          "He can't even catch a mouse"
+        ]
+      },
+      {
+        "section": "Verse 2",
+        "chords": [
+          ["D", "-", "A", "-"],
+          ["E", "D", "A", "E"]
         ],
-        "duration": 16
+        "lyrics": ["I got a cool cat", "But I don't know what for", "And I've got a sly dog", "Sniffin' at my door"]
       },
       {
         "section": "Solo",
@@ -2943,16 +2945,13 @@
           ["D", "-", "A", "-"],
           ["E", "D", "A", "E"]
         ],
-        "lyrics": ["[SOLO x2]"],
-        "duration": 24
+        "lyrics": ["[SOLO x2]"]
       },
       {
         "section": "Verse 3",
         "chords": [
           ["A!", "A!", "A!", "A!"],
-          ["A!", "A!", "A!", "A!"],
-          ["D", "-", "A", "-"],
-          ["E", "D", "A", "E"]
+          ["A!", "A!", "A!", "A!"]
         ],
         "lyrics": [
           "I got a talking bird",
@@ -2962,21 +2961,27 @@
           "My girl's folks came to visit",
           "Didn't like what they heard",
           "I lost my girl because of that",
-          "F-word bird",
+          "F-word bird"
+        ]
+      },
+      {
+        "section": "Verse 3",
+        "chords": [
+          ["D", "-", "A", "-"],
+          ["E", "D", "A", "E"]
+        ],
+        "lyrics": [
           "I got a talking chicken",
           "But I don't know what for",
           "Gonna feed it to that sly dog",
           "Sniffin' at my door"
-        ],
-        "duration": 16
+        ]
       },
       {
         "section": "Verse 4",
         "chords": [
           ["A!", "A!", "A!", "A!"],
-          ["A!", "A!", "A!", "A!"],
-          ["D", "-", "A", "-"],
-          ["E", "D", "A", "E"]
+          ["A!", "A!", "A!", "A!"]
         ],
         "lyrics": [
           "I got a wild woman",
@@ -2986,7 +2991,16 @@
           "She says she can't clean the dishes",
           "And she won't sweep the floor",
           "She just eats my food",
-          "An then she shouts for more",
+          "An then she shouts for more"
+        ]
+      },
+      {
+        "section": "Verse 4",
+        "chords": [
+          ["D", "-", "A", "-"],
+          ["E", "D", "A", "E"]
+        ],
+        "lyrics": [
           "Yeah I got a wild woman",
           "But I don't know what for",
           "And I've got a sly dog",
@@ -3557,6 +3571,58 @@
           ["Em", "G", "Em", "G"]
         ],
         "lyrics": ["Reach out and touch faith", "Your own personal Jesus", "Someone to hear your prayers", "Someone"]
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Tenneessee Whiskey",
+    "writtenBy": ["Charles Singleton"],
+    "gemaWerknummer": "GEMA",
+    "lineup": "Band",
+    "scale": "A",
+    "tempo": 90,
+    "timeSignature": "4/4",
+    "pages": [
+      {
+        "section": "Verse 1",
+        "chords": [["A", "Bm", "Bm", "A"]],
+        "lyrics": [
+          "Used to spend my nights out in a barroom",
+          "Liquor was the only love I've known",
+          "But you rescued me from reachin' for the bottom",
+          "And brought me back from being too far gone"
+        ]
+      },
+      {
+        "section": "Chorus",
+        "chords": [["A", "Bm", "Bm", "A"]],
+        "lyrics": [
+          "And you're as smooth as Tennessee whiskey",
+          "You're as sweet as strawberry wine",
+          "You're as warm as a glass of brandy",
+          "And honey, I stay stoned on your love all the time"
+        ]
+      },
+      {
+        "section": "Verse 2",
+        "chords": [["A", "Bm", "Bm", "A"]],
+        "lyrics": [
+          "I've looked for love in all the same old places",
+          "Found the bottom of the bottles always dry",
+          "But when you poured out your heart I didn't waste it,",
+          "'Cause there's nothing like your love to get me high"
+        ]
+      },
+      {
+        "section": "Chorus",
+        "chords": [["A", "Bm", "Bm", "A"]],
+        "lyrics": [
+          "And you're as smooth as Tennessee whiskey",
+          "You're as sweet as strawberry wine",
+          "You're as warm as a glass of brandy",
+          "And honey, I stay stoned on your love all the time"
+        ]
       }
     ]
   }
