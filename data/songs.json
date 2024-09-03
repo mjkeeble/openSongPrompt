@@ -239,8 +239,8 @@
   {
     "id": 3,
     "title": "Crosscut Saw",
-    "writtenBy": ["Trad."],
-    "gemaWerknummer": "",
+    "writtenBy": ["R.G. Ford"],
+    "gemaWerknummer": "1586943-003",
     "lineup": "Band",
     "scale": "A",
     "tempo": 129,
@@ -2585,7 +2585,7 @@
     "id": 26,
     "title": "Highway Kind",
     "writtenBy": ["Townes Van Zandt"],
-    "gemaWerknummer": "   ",
+    "gemaWerknummer": "4053410-001",
     "lineup": "Mark (electric)",
     "scale": "Em",
     "tempo": 52,
@@ -3188,6 +3188,7 @@
     "id": 39,
     "title": "Full Moon, Half Crazy",
     "writtenBy": ["Jeffrey Schroedl"],
+    "gemaWerknummer": "",
     "lineup": "Band",
     "scale": "A",
     "tempo": 128,
@@ -3293,7 +3294,7 @@
     "id": 40,
     "title": "Get It While You Can",
     "writtenBy": ["Dan Auerbach", "John Prine", "Pat McLaughlin"],
-    "gemaWerknummer": "",
+    "gemaWerknummer": "20250654-001",
     "lineup": "Band",
     "notes": "Outro: Repeat last line",
     "pages": [
@@ -3382,7 +3383,7 @@
     "id": 41,
     "title": "Can't You See",
     "writtenBy": ["Toy Caldwell"],
-    "gemaWerknummer": "",
+    "gemaWerknummer": "393111-001",
     "lineup": "Band",
     "configChordPaneSize": 3,
     "pages": [
@@ -3441,7 +3442,7 @@
     "id": 42,
     "title": "Personal Jesus (unfinished)",
     "writtenBy": ["Martin L. Gore"],
-    "gemaWerknummer": "GEMA",
+    "gemaWerknummer": "2437114-001",
     "setup": "Capo 2rd fret",
     "timeSignature": "4/4",
     "key": "F#m",
@@ -3577,12 +3578,13 @@
   {
     "id": 43,
     "title": "Tenneessee Whiskey",
-    "writtenBy": ["Charles Singleton"],
-    "gemaWerknummer": "GEMA",
+    "writtenBy": ["Dean Dillon", "Linda Ann Hargrove"],
+    "gemaWerknummer": "1259926-001",
     "lineup": "Band",
     "scale": "A",
     "tempo": 90,
     "timeSignature": "4/4",
+    "configChordPaneSize": 3,
     "pages": [
       {
         "section": "Verse 1",
@@ -3617,6 +3619,96 @@
       {
         "section": "Chorus",
         "chords": [["A", "Bm", "Bm", "A"]],
+        "lyrics": [
+          "And you're as smooth as Tennessee whiskey",
+          "You're as sweet as strawberry wine",
+          "You're as warm as a glass of brandy",
+          "And honey, I stay stoned on your love all the time"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "title": "Tenneessee Whiskey / Salvation Hymn",
+    "writtenBy": ["Dean Dillon", "Linda Ann Hargrove", "Mark Keeble"],
+    "gemaWerknummer": "1259926-001 / 28368152-004",
+    "lineup": "Band",
+    "scale": "G",
+    "timeSignature": "12/8",
+    "configChordPaneSize": 3,
+    "pages": [
+      {
+        "section": "Verse 1",
+        "chords": [["G", "Am", "Am", "G"]],
+        "lyrics": [
+          "Used to spend my nights out in a barroom",
+          "Liquor was the only love I've known",
+          "But you rescued me from reachin' for the bottom",
+          "And brought me back from being too far gone"
+        ]
+      },
+      {
+        "section": "Pre-chorus",
+        "chords": [["G", "Am", "Am", "G"]],
+        "lyrics": [
+          "I was born on the wrong side of the line",
+          "Never thought that a girl like you would be mine",
+          "Life was hard, trouble was troubling me",
+          "Keep me warm in your love all the time"
+        ]
+      },
+      {
+        "section": "Chorus",
+        "chords": [["G", "Am", "Am", "G"]],
+        "lyrics": [
+          "And you're as smooth as Tennessee whiskey",
+          "You're as sweet as strawberry wine",
+          "You're as warm as a glass of brandy",
+          "And honey, I stay stoned on your love all the time"
+        ]
+      },
+      {
+        "section": "Solo",
+        "chords": [["G", "Am", "Am", "G"]],
+        "lyrics": ["[SOLO]"]
+      },
+      {
+        "section": "Verse 2",
+        "chords": [["A", "Bm", "Bm", "A"]],
+        "lyrics": [
+          "I've looked for love in all the same old places",
+          "Found the bottom of the bottles always dry",
+          "But when you poured out your heart I didn't waste it,",
+          "'Cause there's nothing like your love to get me high"
+        ]
+      },
+      {
+        "section": "Verse 3",
+        "chords": [["G", "Am", "Am", "G"]],
+        "lyrics": [
+          "[SOLO]",
+          "My song was silenced, you set it free",
+          "You took my blues and you made them harmony",
+          "I was hurting, hurting ",
+          "Girl, you soothed my pain",
+          "I let myself fall and you caught me",
+          "Again and again and again and again"
+        ]
+      },
+      {
+        "section": "Pre-chorus",
+        "chords": [["G", "Am", "Am", "G"]],
+        "lyrics": [
+          "I was born on the wrong side of the line",
+          "Never thought that a girl like you would be mine",
+          "Life was hard, trouble was troubling me",
+          "Keep me warm in your love all the time"
+        ]
+      },
+      {
+        "section": "Chorus",
+        "chords": [["G", "Am", "Am", "G"]],
         "lyrics": [
           "And you're as smooth as Tennessee whiskey",
           "You're as sweet as strawberry wine",
