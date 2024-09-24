@@ -53,10 +53,17 @@
     },
     {
       "id": "9360032f-81f3-4f8f-ae6a-cbb0fbc3ecf8",
-      "venue": "Villa Feodora",
-      "town": "Potsdam",
-      "dateTime": "2022-09-26T19:00:00+02:00",
-      "setlist": [[1]]
+      "venue": "Kulturscheune",
+      "town": "Rangsdorf",
+      "dateTime": "2024-09-28T19:30:00+02:00",
+      "setlist": [[1, 11, 12, 32, 4, 31, 14, 9], [8]]
+    },
+    {
+      "id": "9360032f-81f3-4f8f-ae6a-cbb0fbc3ecf7",
+      "venue": "Kulturscheune (alternative)",
+      "town": "Rangsdorf",
+      "dateTime": "2024-09-28T19:30:00+02:00",
+      "setlist": [[1, 11, 12, 32, 4, 31, 41, 9], [8]]
     }
   ],
   "songs": [
