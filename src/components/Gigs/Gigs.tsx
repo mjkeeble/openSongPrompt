@@ -1,11 +1,10 @@
-import { storeSetlist } from '@context/index';
 import { forwardRef, useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { NavIndicator } from '..';
 import { footswitch } from '../../const';
 import { TGig } from '../../types';
 import { displayDate } from '../../utils';
-import { consolidateSetlist, getDateBasedStyling } from './utils';
+import { fetchGigs, getDateBasedStyling } from './utils';
 
 const Gigs = () => {
   const Navigate = useNavigate();
@@ -13,16 +12,6 @@ const Gigs = () => {
   const [gigs, setGigs] = useState<TGig[]>([]);
 
   useEffect(() => {
-    const fetchGigs = async (): Promise<TGig[] | null> => {
-      try {
-        const response: TGig[] = await (await fetch('http://localhost:3000/gigs')).json();
-        return response;
-      } catch (error) {
-        console.error('Error fetching gigs', error);
-        return null;
-      }
-    };
-
     const getAndSetGigs = async () => {
       const gigs = await fetchGigs();
       if (gigs) {
@@ -78,8 +67,7 @@ const Gigs = () => {
     }
   };
 
-  const handleSelectGig = (gig: TGig): void => {
-    storeSetlist(consolidateSetlist(gig));
+  const handleSelectGig = (gig: TGig) => {
     Navigate(`/setList/${gig.id}`);
   };
 
