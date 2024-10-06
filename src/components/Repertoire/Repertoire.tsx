@@ -1,46 +1,44 @@
-import { storeSetlist } from '@context/index';
+import { useSetlist } from '@context/index';
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { NavIndicator, SongListButton } from '..';
 import { TSong } from '../../types';
 
 import { footswitch } from '../../const';
+import { fetchSongs } from './utils';
 
 const Repertoire = () => {
   const navigate = useNavigate();
+  const { setSetlist } = useSetlist();
   const buttonsRef = useRef<HTMLButtonElement[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
   const [repertoireList, setRepertoireList] = useState<TSong[]>([]);
 
   useEffect(() => {
-    console.log('Getting songs');
-    const fetchSongs = async (): Promise<TSong[] | null> => {
-      try {
-        const response: TSong[] = await (await fetch('http://localhost:3000/songs')).json();
-        return response;
-      } catch (error) {
-        console.error('Error fetching songs', error);
-        return null;
-      }
-    };
-
     const getAndSetSongs = async () => {
       const songList = await fetchSongs();
       if (songList) {
-        setRepertoireList(songList.sort((a, b) => a.title.localeCompare(b.title)));
+        setRepertoireList(songList.sort((a, b) => {
+          const titleComparison = a.title.localeCompare(b.title);
+          if (titleComparison !== 0) {
+            return titleComparison;
+          }
+          return (a.version ?? '').localeCompare(b.version ?? '');
+        }));
       }
-    };
-    getAndSetSongs();
+    }
+
+      getAndSetSongs();
   }, []);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+  }, [repertoireList]);
+
   useEffect(() => {
     const timerId = setTimeout(() => {
       setIsLoaded(true);
-      console.log('Storing setlist');
-      storeSetlist([0]);
+      setSetlist([]);
       if (buttonsRef.current[0]) {
-        console.log('setting focus');
         buttonsRef.current[0].focus();
       }
     }, 1000);
@@ -48,40 +46,45 @@ const Repertoire = () => {
     return () => {
       clearTimeout(timerId);
     };
-  }, []);
+  }, [setSetlist]);
 
   const endOfListRef = useRef<HTMLDivElement | null>(null);
-  console.log('🚀 --------------------------------------------------------------🚀');
-  console.log('🚀 => handleKeyDown => buttonsRef.current:', buttonsRef.current);
-  console.log('🚀 --------------------------------------------------------------🚀');
 
   const handleKeyDown = (event: { key: string }) => {
-    console.log('Keypress detected', event.key);
     if (isLoaded) {
       // TODO: refactor with switch
       const currentIndex = buttonsRef.current.findIndex((button) => button === document.activeElement);
-      if (event.key === footswitch.centreShort) {
-        buttonsRef.current[currentIndex].click();
-      } else if (event.key === footswitch.leftShort && currentIndex > 0) {
+      switch (event.key) {
+        case footswitch.centreShort:
+          buttonsRef.current[currentIndex].click();
+          break;
+        case footswitch.leftShort:
+          if (currentIndex > 0) {
         buttonsRef.current[currentIndex - 1].focus();
         buttonsRef.current[currentIndex - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } else if (event.key === footswitch.leftShort && currentIndex === 0) {
+          } else {
         buttonsRef.current[repertoireList.length - 1].focus();
         buttonsRef.current[repertoireList.length - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } else if (event.key === footswitch.rightShort) {
-        if (currentIndex < buttonsRef.current.length - 1) {
-          buttonsRef.current[currentIndex + 1].focus();
-          buttonsRef.current[currentIndex + 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
-        } else if (currentIndex === buttonsRef.current.length - 1) {
-          buttonsRef.current[0].focus();
-          buttonsRef.current[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
-        } else if (endOfListRef.current) {
-          endOfListRef.current.scrollIntoView({ behavior: 'smooth' });
-        }
-      } else if (event.key === footswitch.leftLong) {
-        if (document.exitFullscreen) {
-          document.exitFullscreen();
-        }
+          }
+          break;
+        case footswitch.rightShort:
+          if (currentIndex < buttonsRef.current.length - 1) {
+        buttonsRef.current[currentIndex + 1].focus();
+        buttonsRef.current[currentIndex + 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
+          } else if (currentIndex === buttonsRef.current.length - 1) {
+        buttonsRef.current[0].focus();
+        buttonsRef.current[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+          } else if (endOfListRef.current) {
+        endOfListRef.current.scrollIntoView({ behavior: 'smooth' });
+          }
+          break;
+        case footswitch.leftLong:
+          if (document.exitFullscreen) {
+        document.exitFullscreen();
+          }
+          break;
+        default:
+          break;
       }
     }
   };
@@ -89,12 +92,10 @@ const Repertoire = () => {
   const handleSelectSong = (id: number) => {
     let storageUpdateDebounce: NodeJS.Timeout | null = null;
 
-    console.log('storing to setlist', Number(id));
-    storeSetlist(['BREAK', Number(id)]);
+    
+    setSetlist([Number(id)]);
     if (storageUpdateDebounce) clearTimeout(storageUpdateDebounce);
     storageUpdateDebounce = setTimeout(() => {
-      console.log('storing to setlist', Number(id));
-
       navigate(`/song/1`);
     }, 1000);
   };
