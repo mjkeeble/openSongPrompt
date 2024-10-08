@@ -1,9 +1,6 @@
 import { TGig, TSong } from 'src/types';
 
 export const fetchGig = async (id: string): Promise<TGig | null> => {
-  console.log('🚀 -------------------------🚀');
-  console.log('🚀 => fetchGig => id:', id);
-  console.log('🚀 -------------------------🚀');
   try {
     const response: TGig = await (await fetch(`http://localhost:3000/gigs/${id}`)).json();
     return response;
@@ -22,9 +19,6 @@ export const fetchSongs = async (ids: number[]): Promise<TSong[] | null> => {
         songs.push(response);
       }),
     );
-    console.log('🚀 ------------------------------🚀');
-    console.log('🚀 => ids.map => songs:', songs);
-    console.log('🚀 ------------------------------🚀');
     
     return songs;
   } catch (error) {

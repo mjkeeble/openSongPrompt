@@ -1,4 +1,4 @@
-import { useSetlist } from '@context/index';
+import { useSetlist, useSongs } from '../../hooks';
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { NavIndicator, SongListButton } from '..';
@@ -10,6 +10,7 @@ import { fetchSongs } from './utils';
 const Repertoire = () => {
   const navigate = useNavigate();
   const { setSetlist } = useSetlist();
+  const { setSongData: setSongDetails } = useSongs();
   const buttonsRef = useRef<HTMLButtonElement[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
   const [repertoireList, setRepertoireList] = useState<TSong[]>([]);
@@ -18,21 +19,23 @@ const Repertoire = () => {
     const getAndSetSongs = async () => {
       const songList = await fetchSongs();
       if (songList) {
-        setRepertoireList(songList.sort((a, b) => {
-          const titleComparison = a.title.localeCompare(b.title);
-          if (titleComparison !== 0) {
-            return titleComparison;
-          }
-          return (a.version ?? '').localeCompare(b.version ?? '');
-        }));
+        setSongDetails(songList);
+        setRepertoireList(
+          songList.sort((a, b) => {
+            const titleComparison = a.title.localeCompare(b.title);
+            if (titleComparison !== 0) {
+              return titleComparison;
+            }
+            return (a.version ?? '').localeCompare(b.version ?? '');
+          }),
+        );
       }
-    }
+    };
 
-      getAndSetSongs();
-  }, []);
+    getAndSetSongs();
+  }, [setSongDetails]);
 
-  useEffect(() => {
-  }, [repertoireList]);
+  useEffect(() => {}, [repertoireList]);
 
   useEffect(() => {
     const timerId = setTimeout(() => {
@@ -60,27 +63,27 @@ const Repertoire = () => {
           break;
         case footswitch.leftShort:
           if (currentIndex > 0) {
-        buttonsRef.current[currentIndex - 1].focus();
-        buttonsRef.current[currentIndex - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
+            buttonsRef.current[currentIndex - 1].focus();
+            buttonsRef.current[currentIndex - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
           } else {
-        buttonsRef.current[repertoireList.length - 1].focus();
-        buttonsRef.current[repertoireList.length - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
+            buttonsRef.current[repertoireList.length - 1].focus();
+            buttonsRef.current[repertoireList.length - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
           }
           break;
         case footswitch.rightShort:
           if (currentIndex < buttonsRef.current.length - 1) {
-        buttonsRef.current[currentIndex + 1].focus();
-        buttonsRef.current[currentIndex + 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
+            buttonsRef.current[currentIndex + 1].focus();
+            buttonsRef.current[currentIndex + 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
           } else if (currentIndex === buttonsRef.current.length - 1) {
-        buttonsRef.current[0].focus();
-        buttonsRef.current[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+            buttonsRef.current[0].focus();
+            buttonsRef.current[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
           } else if (endOfListRef.current) {
-        endOfListRef.current.scrollIntoView({ behavior: 'smooth' });
+            endOfListRef.current.scrollIntoView({ behavior: 'smooth' });
           }
           break;
         case footswitch.leftLong:
           if (document.exitFullscreen) {
-        document.exitFullscreen();
+            document.exitFullscreen();
           }
           break;
         default:
@@ -92,11 +95,10 @@ const Repertoire = () => {
   const handleSelectSong = (id: number) => {
     let storageUpdateDebounce: NodeJS.Timeout | null = null;
 
-    
     setSetlist([Number(id)]);
     if (storageUpdateDebounce) clearTimeout(storageUpdateDebounce);
     storageUpdateDebounce = setTimeout(() => {
-      navigate(`/song/1`);
+      navigate(`/song/0`);
     }, 1000);
   };
 

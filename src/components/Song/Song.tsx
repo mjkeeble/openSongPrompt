@@ -1,25 +1,38 @@
-import { getSetlist } from '@context/index';
-
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Screensaver } from '..';
-import songs from '../../../data/songs.json';
 import { ACTIVEKEYS, BREAK } from '../../const.ts';
-import { TSong, TSongWithDuration } from '../../types';
+import { useSetlist, useSongs } from '../../hooks.ts';
+import { TSong } from '../../types';
 import LyricPage from './LyricPage.tsx';
 import TitlePage from './TitlePage.tsx';
 import { ManageInteraction } from './interaction';
 
 const Song = () => {
   const Navigate = useNavigate();
-  const setlist = getSetlist();
+  const { setlist } = useSetlist();
+  console.log('🚀 -------------------------------🚀');
+  console.log('🚀 => Song => setlist:', setlist);
+  console.log('🚀 -------------------------------🚀');
+  const { songs } = useSongs();
+  console.log('🚀 => Song => songs:', songs);
+  console.log('🚀 ---------------------------🚀');
 
   const { id } = useParams();
   const setlistIndex: number = parseInt(id!);
 
   const [currentPage, setCurrentPage] = useState<number>(0);
   const [timerHalted, setTimerHalted] = useState<boolean>(false);
-  const song: TSong | undefined = songs.find((song: TSong) => song.id === setlist[setlistIndex]);
+  const songId = setlist[setlistIndex];
+
+  const song = songs.find((songInList: TSong) => {
+    console.log('Checking song:', songInList.id, songId, songInList.id == songId);
+    return songInList.id == songId;
+  });
+  console.log('🚀 -------------------------------🚀');
+
+  console.log('Found song:', song);
+
   const duration = song?.pages[currentPage - 1]?.duration || 0;
 
   useEffect(() => {
@@ -35,9 +48,7 @@ const Song = () => {
           hasTimer: !!duration && !!song?.pages.length && currentPage < song?.pages.length,
           timerHalted,
           setTimerHalted,
-          songPages:
-            songs.find((song: TSong | TSongWithDuration) => song.id === setlist[setlistIndex] || null)?.pages.length ||
-            0,
+          songPages: song ? song.pages.length : 0,
           Navigate,
         });
       }
@@ -49,7 +60,7 @@ const Song = () => {
       document.removeEventListener('keydown', handleFootswitchInput);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentPage, setlistIndex, timerHalted]);
+  }, [currentPage, setlistIndex, song, timerHalted]);
 
   if (!setlistIndex || setlist[setlistIndex] === BREAK)
     return <Screensaver isStart={!setlistIndex} isLastSong={setlistIndex === setlist.length - 1} />;
@@ -58,7 +69,11 @@ const Song = () => {
     return (
       <>
         <h1>No song found!</h1>
-        <p>setlist[setlistIndex]: {setlist[setlistIndex]}</p>
+        <p>
+          {`setlistIndex ${setlistIndex}`}
+          <br />
+          {`songId ${setlist[setlistIndex]}`}
+        </p>
       </>
     );
   }

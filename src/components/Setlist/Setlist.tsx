@@ -1,4 +1,4 @@
-import { useSetlist, useSongs } from '@context/index';
+import { useSetlist, useSongs } from '../../hooks';
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { NavIndicator, SongListButton } from '..';
@@ -11,14 +11,11 @@ const Setlist = () => {
   const { id } = useParams<{ id: string }>();
   const Navigate = useNavigate();
   const buttonsRef = useRef<HTMLButtonElement[]>([]);
-  const { songs, setSongDetails } = useSongs();
+  const { songs, setSongData} = useSongs();
   const { setlist, setSetlist } = useSetlist();
   const [gig, setGig] = useState<TGig>();
-  
 
   useEffect(() => {
-    console.log('*********** useEffect - fetch gig ***********');
-
     const fetchAndSetGig = async () => {
       try {
         const getGig = await fetchGig(id!);
@@ -34,17 +31,14 @@ const Setlist = () => {
     };
 
     fetchAndSetGig();
-  }, [id]);
+  }, [id, setSetlist]);
 
   useEffect(() => {
     const getAndSetSongs = async () => {
-      console.log('🚀 -----------------------------------------🚀');
-      console.log('🚀 => getAndSetSongs => setlist:', setlist);
-      console.log('🚀 -----------------------------------------🚀');
       const songIds = setlist.filter((id) => id !== BREAK);
       const songList = await fetchSongs(songIds);
       if (songList) {
-        setSongDetails(songList);
+        setSongData(songList);
       }
     };
     try {
@@ -52,7 +46,7 @@ const Setlist = () => {
     } catch (error) {
       console.error('Error fetching songs:', error);
     }
-  }, [setlist, setSongDetails]);
+  }, [setlist, setSongData]);
 
   useEffect(() => {
     if (buttonsRef.current[0]) {
@@ -103,10 +97,7 @@ const Setlist = () => {
                   </li>
                 );
 
-                const song: TSong | undefined = songs.find((song) => Number(song.id) === songId);
-              console.log("🚀 ---------------------------------------🚀");
-              console.log("🚀 => {setlist.map => song:", song);
-              console.log("🚀 ---------------------------------------🚀");
+              const song: TSong | undefined = songs.find((song) => Number(song.id) === songId);
               if (!song) {
                 return (
                   <li key={index}>

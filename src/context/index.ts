@@ -1,4 +1,4 @@
-import { setlistContext, useSetlist } from './setlistContext';
-import { songsContext, useSongs } from './songsContext';
+import { SetlistContext, SetlistProvider } from './setlistContext';
+import { SongsContext, SongsProvider } from './songsContext';
 
-export { setlistContext, songsContext, useSetlist, useSongs };
+export { SetlistContext, SetlistProvider, SongsContext, SongsProvider };

@@ -19,6 +19,8 @@ export type TSong = {
   tempo?: number;
   timeSignature?: string;
   setup?: string;
+  durationMinutes?: number;
+  durationSeconds?: number;
   configLyricPageMode?: TMode;
   configChordPaneSize?: number;
   pages: TLyricPage[];
@@ -45,7 +47,6 @@ export type TAction = {
 export type TBreak = typeof BREAK;
 
 export type TSetlist = (number | TBreak)[];
-
 
 export type TInput = (typeof ACTIVEKEYS)[number] | null;
 
